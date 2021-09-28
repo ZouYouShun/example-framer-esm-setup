@@ -3,8 +3,8 @@ import {
   createElement
 } from "react";
 
-// esbuild-css-modules-plugin-namespace:/tmp/tmp-1744-qWeVPbOfR90N/main/src/Button.modules.css.js
-var digest = "4b54cbb1b9be55387935e56c851dbfed8fe8fef6b1f9ac6745cee5f280f24185";
+// esbuild-css-modules-plugin-namespace:/var/folders/lp/f1kdb05d0z12ssgn1cxz80200000gn/T/tmp-65855-ojEeuMorUehq/example-framer-esm-setup/src/Button.modules.css.js
+var digest = "e67623ed9bd3d1923105522c1f137a1f45085677ab1ab79e36881b7a17b9c3ec";
 var css = `._button_kpmle_1 {
   background-color: #c8d5ff;
 }
