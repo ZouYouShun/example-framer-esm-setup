@@ -1,6 +1,8 @@
 var __create = Object.create;
 var __defProp = Object.defineProperty;
+var __defProps = Object.defineProperties;
 var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
+var __getOwnPropDescs = Object.getOwnPropertyDescriptors;
 var __getOwnPropNames = Object.getOwnPropertyNames;
 var __getOwnPropSymbols = Object.getOwnPropertySymbols;
 var __getProtoOf = Object.getPrototypeOf;
@@ -18,6 +20,7 @@ var __spreadValues = (a2, b2) => {
     }
   return a2;
 };
+var __spreadProps = (a2, b2) => __defProps(a2, __getOwnPropDescs(b2));
 var __markAsModule = (target) => __defProp(target, "__esModule", { value: true });
 var __objRest = (source, exclude) => {
   var target = {};
@@ -2517,7 +2520,7 @@ var require_Hash = __commonJS({
     var hashGet = require_hashGet();
     var hashHas = require_hashHas();
     var hashSet = require_hashSet();
-    function Hash(entries) {
+    function Hash2(entries) {
       var index3 = -1, length = entries == null ? 0 : entries.length;
       this.clear();
       while (++index3 < length) {
@@ -2525,12 +2528,12 @@ var require_Hash = __commonJS({
         this.set(entry[0], entry[1]);
       }
     }
-    Hash.prototype.clear = hashClear;
-    Hash.prototype["delete"] = hashDelete;
-    Hash.prototype.get = hashGet;
-    Hash.prototype.has = hashHas;
-    Hash.prototype.set = hashSet;
-    module.exports = Hash;
+    Hash2.prototype.clear = hashClear;
+    Hash2.prototype["delete"] = hashDelete;
+    Hash2.prototype.get = hashGet;
+    Hash2.prototype.has = hashHas;
+    Hash2.prototype.set = hashSet;
+    module.exports = Hash2;
   }
 });
 
@@ -2675,15 +2678,15 @@ var require_Map = __commonJS({
 // node_modules/lodash/_mapCacheClear.js
 var require_mapCacheClear = __commonJS({
   "node_modules/lodash/_mapCacheClear.js"(exports, module) {
-    var Hash = require_Hash();
+    var Hash2 = require_Hash();
     var ListCache = require_ListCache();
     var Map2 = require_Map();
     function mapCacheClear() {
       this.size = 0;
       this.__data__ = {
-        "hash": new Hash(),
+        "hash": new Hash2(),
         "map": new (Map2 || ListCache)(),
-        "string": new Hash()
+        "string": new Hash2()
       };
     }
     module.exports = mapCacheClear;
@@ -14611,10 +14614,8952 @@ RcButton.displayName = "RcButton";
 var templateObject_113;
 
 // src/Battery.tsx
-import React33 from "react";
+import React426 from "react";
+
+// node_modules/@ringcentral/juno/es6/icon/index.js
+var icon_exports = {};
+__export(icon_exports, {
+  ActiveCall: () => ActiveCall_default,
+  ActivecallBorder: () => ActivecallBorder_default,
+  Add: () => Add_default,
+  AddBorder: () => AddBorder_default,
+  AddEmojiMore: () => AddEmojiMore_default,
+  AddEvent: () => AddEvent_default,
+  AddField: () => AddField_default,
+  AddIntegration: () => AddIntegration_default,
+  AddMember: () => AddMember_default,
+  AddMemberBorder: () => AddMemberBorder_default,
+  AddNewFolder: () => AddNewFolder_default,
+  AddParkLocation: () => AddParkLocation_default,
+  AddReactions: () => AddReactions_default,
+  AddTask: () => AddTask_default,
+  AddTeam: () => AddTeam_default,
+  AddTeamBorder: () => AddTeamBorder_default,
+  Address: () => Address_default,
+  Admin: () => Admin_default,
+  AdminBorder: () => AdminBorder_default,
+  Advanced: () => Advanced_default,
+  AlignCenter: () => AlignCenter_default,
+  AlignJustify: () => AlignJustify_default,
+  AlignLeft: () => AlignLeft_default,
+  AlignRight: () => AlignRight_default,
+  Analytics: () => Analytics_default,
+  AnalyticsBorder: () => AnalyticsBorder_default,
+  AppleLogo: () => AppleLogo_default,
+  Apps: () => Apps_default,
+  Archive: () => Archive_default,
+  ArrowDown: () => ArrowDown_default,
+  ArrowDown2: () => ArrowDown2_default,
+  ArrowLeft: () => ArrowLeft_default,
+  ArrowLeft2: () => ArrowLeft2_default,
+  ArrowRight: () => ArrowRight_default,
+  ArrowRight1: () => ArrowRight1_default,
+  ArrowUp: () => ArrowUp_default,
+  ArrowUp2: () => ArrowUp2_default,
+  Askfirst: () => Askfirst_default,
+  Assignment: () => Assignment_default,
+  Asterisk: () => Asterisk_default,
+  Attachment: () => Attachment_default,
+  Audio: () => Audio_default,
+  Barge: () => Barge_default,
+  Birthday: () => Birthday_default,
+  Blocked: () => Blocked_default,
+  Bold: () => Bold_default,
+  Bookmark: () => Bookmark_default,
+  BookmarkBorder: () => BookmarkBorder_default,
+  Box: () => Box_default,
+  BoxNew: () => BoxNew_default,
+  BubbleLines: () => BubbleLines_default,
+  BubbleLinesBorder: () => BubbleLinesBorder_default,
+  CallAdd: () => CallAdd_default,
+  CallList: () => CallList_default,
+  CallMore: () => CallMore_default,
+  CallOnBehalf: () => CallOnBehalf_default,
+  ChatBubble: () => ChatBubble_default,
+  Check: () => Check_default,
+  ChevronLeft: () => ChevronLeft_default,
+  ChevronRight: () => ChevronRight_default,
+  Close: () => Close_default,
+  CloudContact: () => CloudContact_default,
+  CodeSnippets: () => CodeSnippets_default,
+  Comments: () => Comments_default,
+  CompanySetup: () => CompanySetup_default,
+  CompanySetupBorder: () => CompanySetupBorder_default,
+  Computer: () => Computer_default,
+  Conference: () => Conference_default,
+  ConferenceBorder: () => ConferenceBorder_default,
+  Connect: () => Connect_default,
+  Contacts: () => Contacts_default,
+  ContactsAndCalendars: () => ContactsAndCalendars_default,
+  ContactsBorder: () => ContactsBorder_default,
+  Copy: () => Copy_default,
+  CustomizeTabs: () => CustomizeTabs_default,
+  Dashboard: () => Dashboard_default,
+  DashboardBorder: () => DashboardBorder_default,
+  Date: () => Date_default,
+  DateBorder: () => DateBorder_default,
+  DefaultAvatar: () => DefaultAvatar_default,
+  DefaultFile: () => DefaultFile_default,
+  DefaultFileD: () => DefaultFileD_default,
+  DefaultGdrive: () => DefaultGdrive_default,
+  DefaultGdriveD: () => DefaultGdriveD_default,
+  DefaultGroupAvatar: () => DefaultGroupAvatar_default,
+  DefaultIntegration: () => DefaultIntegration_default,
+  DefaultIntegrationBorder: () => DefaultIntegrationBorder_default,
+  DefaultMusic: () => DefaultMusic_default,
+  DefaultMusicD: () => DefaultMusicD_default,
+  DefaultTeamAvatar: () => DefaultTeamAvatar_default,
+  DefaultVideo: () => DefaultVideo_default,
+  DefaultVideoD: () => DefaultVideoD_default,
+  Delete: () => Delete_default,
+  DeleteCircle: () => DeleteCircle_default,
+  DeletedFile: () => DeletedFile_default,
+  DeletedFileD: () => DeletedFileD_default,
+  Deletenumber: () => Deletenumber_default,
+  Department: () => Department_default,
+  Dial: () => Dial_default,
+  Dialer: () => Dialer_default,
+  Doc: () => Doc_default,
+  DocD: () => DocD_default,
+  DockBorder: () => DockBorder_default,
+  DoubleChevronLeft: () => DoubleChevronLeft_default,
+  DoubleChevronRight: () => DoubleChevronRight_default,
+  Download: () => Download_default,
+  DownwardsArrowWithTipRightwards: () => DownwardsArrowWithTipRightwards_default,
+  Draft: () => Draft_default,
+  DragableArea: () => DragableArea_default,
+  Dropbox: () => Dropbox_default,
+  Edit: () => Edit_default,
+  Email: () => Email_default,
+  Emoji: () => Emoji_default,
+  EndAnswer: () => EndAnswer_default,
+  EventNew: () => EventNew_default,
+  EventNewBorder: () => EventNewBorder_default,
+  Evernote: () => Evernote_default,
+  Excel: () => Excel_default,
+  ExcelD: () => ExcelD_default,
+  Expand: () => Expand_default,
+  ExternalLink: () => ExternalLink_default,
+  FailedFax: () => FailedFax_default,
+  FailedFaxBorder: () => FailedFaxBorder_default,
+  Fax: () => Fax_default,
+  FaxBorder: () => FaxBorder_default,
+  Feedback: () => Feedback_default,
+  File: () => File_default,
+  FileBorder: () => FileBorder_default,
+  Filter: () => Filter_default,
+  Foldercreated: () => Foldercreated_default,
+  FontColor: () => FontColor_default,
+  Forward: () => Forward_default,
+  Forwardcall: () => Forwardcall_default,
+  Forwarding: () => Forwarding_default,
+  ForwardingBorder: () => ForwardingBorder_default,
+  GdriveLogo: () => GdriveLogo_default,
+  Gif: () => Gif_default,
+  GifFile: () => GifFile_default,
+  GifFileD: () => GifFileD_default,
+  GoodConnection: () => GoodConnection_default,
+  Google: () => Google_default,
+  GoogleCalendar2019: () => GoogleCalendar2019_default,
+  GoogleDoc: () => GoogleDoc_default,
+  GoogleDocD: () => GoogleDocD_default,
+  GoogleLogo: () => GoogleLogo_default,
+  GoogleLogoDisabled: () => GoogleLogoDisabled_default,
+  GoogleSheet: () => GoogleSheet_default,
+  GoogleSheetD: () => GoogleSheetD_default,
+  GoogleSlide: () => GoogleSlide_default,
+  GoogleSlideD: () => GoogleSlideD_default,
+  GroupDefault: () => GroupDefault_default,
+  HandUp: () => HandUp_default,
+  Hash: () => Hash_default,
+  Hd: () => Hd_default,
+  Help: () => Help_default,
+  HelpBorder: () => HelpBorder_default,
+  HideBorder: () => HideBorder_default,
+  Hold: () => Hold_default,
+  HoldAnswer: () => HoldAnswer_default,
+  HoldcallBorder: () => HoldcallBorder_default,
+  HorizontalLine: () => HorizontalLine_default,
+  Hud: () => Hud_default,
+  Ignore: () => Ignore_default,
+  ImageBroken: () => ImageBroken_default,
+  ImageBrokenD: () => ImageBrokenD_default,
+  ImagePreview: () => ImagePreview_default,
+  ImagePreviewD: () => ImagePreviewD_default,
+  InboundCallOnBehalf: () => InboundCallOnBehalf_default,
+  InboundFax: () => InboundFax_default,
+  InboundFaxBorder: () => InboundFaxBorder_default,
+  Inbox: () => Inbox_default,
+  Incall: () => Incall_default,
+  IncallBorder: () => IncallBorder_default,
+  Indent: () => Indent_default,
+  Indeterminate: () => Indeterminate_default,
+  Info: () => Info_default,
+  InsertCode: () => InsertCode_default,
+  InsertImage: () => InsertImage_default,
+  InsertLink: () => InsertLink_default,
+  InsertTable: () => InsertTable_default,
+  InsertVideo: () => InsertVideo_default,
+  Italic: () => Italic_default,
+  ItemListSelected: () => ItemListSelected_default,
+  Join: () => Join_default,
+  JoinAudioPoc: () => JoinAudioPoc_default,
+  JoinMeeting: () => JoinMeeting_default,
+  JumpToLatest: () => JumpToLatest_default,
+  JumpToUnread: () => JumpToUnread_default,
+  Keypad: () => Keypad_default,
+  Leave: () => Leave_default,
+  LeaveMeeting: () => LeaveMeeting_default,
+  ListBullet: () => ListBullet_default,
+  ListOrdered: () => ListOrdered_default,
+  ListView: () => ListView_default,
+  Location: () => Location_default,
+  LocationBorder: () => LocationBorder_default,
+  Lock: () => Lock_default,
+  LockBorder: () => LockBorder_default,
+  Login: () => Login_default,
+  Logout: () => Logout_default,
+  MacKeynote: () => MacKeynote_default,
+  MacKeynoteD: () => MacKeynoteD_default,
+  MacNumbers: () => MacNumbers_default,
+  MacNumbersD: () => MacNumbersD_default,
+  MacPages: () => MacPages_default,
+  MacPagesD: () => MacPagesD_default,
+  MarkerM: () => MarkerM_default,
+  MarkerS: () => MarkerS_default,
+  MemberBorder: () => MemberBorder_default,
+  Mention: () => Mention_default,
+  MentionBorder: () => MentionBorder_default,
+  Merge: () => Merge_default,
+  Mic: () => Mic_default,
+  MicBorder: () => MicBorder_default,
+  MicOff: () => MicOff_default,
+  MicOffBorder: () => MicOffBorder_default,
+  MicrosoftLogo: () => MicrosoftLogo_default,
+  MicrosoftLogoDisabled: () => MicrosoftLogoDisabled_default,
+  MicrosoftOutlook2019: () => MicrosoftOutlook2019_default,
+  Minimize: () => Minimize_default,
+  Missedcall: () => Missedcall_default,
+  MissedcallBorder: () => MissedcallBorder_default,
+  MonitorCall: () => MonitorCall_default,
+  MoreHoriz: () => MoreHoriz_default,
+  MoreVert: () => MoreVert_default,
+  MuteNotification: () => MuteNotification_default,
+  MuteNotificationBorder: () => MuteNotificationBorder_default,
+  NewAction: () => NewAction_default,
+  NewEmail: () => NewEmail_default,
+  NewFax: () => NewFax_default,
+  NewFile: () => NewFile_default,
+  NewNote: () => NewNote_default,
+  Nickname: () => Nickname_default,
+  NoAudio: () => NoAudio_default,
+  NoConnection: () => NoConnection_default,
+  NonEdit: () => NonEdit_default,
+  Note: () => Note_default,
+  NoteBorder: () => NoteBorder_default,
+  Notification: () => Notification_default,
+  NotificationBorder: () => NotificationBorder_default,
+  Onedrive: () => Onedrive_default,
+  OpenFolder: () => OpenFolder_default,
+  OuboundCallOnBehalf: () => OuboundCallOnBehalf_default,
+  OutboundFax: () => OutboundFax_default,
+  OutboundFaxBorder: () => OutboundFaxBorder_default,
+  Outcall: () => Outcall_default,
+  OutcallBorder: () => OutcallBorder_default,
+  Outdent: () => Outdent_default,
+  ParkCall: () => ParkCall_default,
+  ParkCallMessage: () => ParkCallMessage_default,
+  ParkCallText: () => ParkCallText_default,
+  PartnerCloudContact: () => PartnerCloudContact_default,
+  Pause: () => Pause_default,
+  PauseBorder: () => PauseBorder_default,
+  PauseCircle: () => PauseCircle_default,
+  PauseCircleBorder: () => PauseCircleBorder_default,
+  Pdf: () => Pdf_default,
+  PdfD: () => PdfD_default,
+  People: () => People_default,
+  Phone: () => Phone_default,
+  PhoneBorder: () => PhoneBorder_default,
+  PhoneOff: () => PhoneOff_default,
+  PhoneOffBorder: () => PhoneOffBorder_default,
+  PickUpCall: () => PickUpCall_default,
+  Pin: () => Pin_default,
+  Play: () => Play_default,
+  PlayBorder: () => PlayBorder_default,
+  PlayCircle: () => PlayCircle_default,
+  PlayCircleBorder: () => PlayCircleBorder_default,
+  PoorConnection: () => PoorConnection_default,
+  Ppt: () => Ppt_default,
+  PptD: () => PptD_default,
+  Previous: () => Previous_default,
+  Quote: () => Quote_default,
+  Radio: () => Radio_default,
+  RadioUnselect: () => RadioUnselect_default,
+  RcBlog: () => RcBlog_default,
+  RcCloudContact: () => RcCloudContact_default,
+  RcContact: () => RcContact_default,
+  RcHelp: () => RcHelp_default,
+  RcvMicOff: () => RcvMicOff_default,
+  RcvVideocamOff: () => RcvVideocamOff_default,
+  Read: () => Read_default,
+  Record: () => Record_default,
+  Refresh: () => Refresh_default,
+  Remove: () => Remove_default,
+  RemoveBorder: () => RemoveBorder_default,
+  RemoveField: () => RemoveField_default,
+  Repeat: () => Repeat_default,
+  Reply: () => Reply_default,
+  ResendFax: () => ResendFax_default,
+  ResetZoom: () => ResetZoom_default,
+  RichTextEditor: () => RichTextEditor_default,
+  RollAp: () => RollAp_default,
+  SaveDraft: () => SaveDraft_default,
+  Schedule: () => Schedule_default,
+  ScheduleMeeting: () => ScheduleMeeting_default,
+  Screenshare: () => Screenshare_default,
+  ScreenshareBorder: () => ScreenshareBorder_default,
+  Search: () => Search_default,
+  SearchNav: () => SearchNav_default,
+  Selects: () => Selects_default,
+  Send: () => Send_default,
+  SendFilled: () => SendFilled_default,
+  Settings: () => Settings_default,
+  SettingsBorder: () => SettingsBorder_default,
+  Share: () => Share_default,
+  Sharepoint: () => Sharepoint_default,
+  Shortcut: () => Shortcut_default,
+  ShortcutBorder: () => ShortcutBorder_default,
+  Signal0: () => Signal0_default,
+  Signal1: () => Signal1_default,
+  Signal2: () => Signal2_default,
+  Signal3: () => Signal3_default,
+  Sms: () => Sms_default,
+  SmsBorder: () => SmsBorder_default,
+  SmsDefault: () => SmsDefault_default,
+  SmsInviteBorder: () => SmsInviteBorder_default,
+  Sort: () => Sort_default,
+  SpeakerDown: () => SpeakerDown_default,
+  SpeakerMute: () => SpeakerMute_default,
+  SpeakerUp: () => SpeakerUp_default,
+  Star: () => Star_default,
+  StarBorder: () => StarBorder_default,
+  Start: () => Start_default,
+  StartMeeting: () => StartMeeting_default,
+  Stop: () => Stop_default,
+  StopBorder: () => StopBorder_default,
+  StopCircle: () => StopCircle_default,
+  StopCircleBorder: () => StopCircleBorder_default,
+  StopRecord: () => StopRecord_default,
+  Strike: () => Strike_default,
+  Svg0: () => __default,
+  Svg1: () => __default2,
+  Svg2: () => __default3,
+  Svg3: () => __default4,
+  Svg4: () => __default5,
+  Svg5: () => __default6,
+  Svg6: () => __default7,
+  Svg7: () => __default8,
+  Svg8: () => __default9,
+  Svg9: () => __default10,
+  TakeOver: () => TakeOver_default,
+  TaskNew: () => TaskNew_default,
+  TaskNewBorder: () => TaskNewBorder_default,
+  Team: () => Team_default,
+  TeamBorder: () => TeamBorder_default,
+  TeamDefault: () => TeamDefault_default,
+  Text: () => Text_default,
+  Theme: () => Theme_default,
+  Thumbup: () => Thumbup_default,
+  ThumbupBorder: () => ThumbupBorder_default,
+  Time: () => Time_default,
+  TimeBorder: () => TimeBorder_default,
+  Transcription: () => Transcription_default,
+  TransferCall: () => TransferCall_default,
+  TransferCallBorder: () => TransferCallBorder_default,
+  Unblocked: () => Unblocked_default,
+  Underline: () => Underline_default,
+  Undock: () => Undock_default,
+  UndockBorder: () => UndockBorder_default,
+  UnfoldLess: () => UnfoldLess_default,
+  UnfoldMore: () => UnfoldMore_default,
+  Unlock: () => Unlock_default,
+  Unpin: () => Unpin_default,
+  UnpinSlash: () => UnpinSlash_default,
+  Unread: () => Unread_default,
+  Unselect: () => Unselect_default,
+  UserDefault: () => UserDefault_default,
+  VideoAndMessage: () => VideoAndMessage_default,
+  VideoMeeting: () => VideoMeeting_default,
+  Videocam: () => Videocam_default,
+  VideocamBorder: () => VideocamBorder_default,
+  VideocamOff: () => VideocamOff_default,
+  VideocamOffBorder: () => VideocamOffBorder_default,
+  View: () => View_default,
+  ViewBorder: () => ViewBorder_default,
+  ViewLogBorder: () => ViewLogBorder_default,
+  Voicemail: () => Voicemail_default,
+  Warning: () => Warning_default,
+  WatchVideo: () => WatchVideo_default,
+  WeakConnection: () => WeakConnection_default,
+  Webinar: () => Webinar_default,
+  WebinarBorder: () => WebinarBorder_default,
+  Webpage: () => Webpage_default,
+  Whisper: () => Whisper_default,
+  Work: () => Work_default,
+  Workspace: () => Workspace_default,
+  WorkspaceBorder: () => WorkspaceBorder_default,
+  Zip: () => Zip_default,
+  ZipD: () => ZipD_default,
+  ZoomIn: () => ZoomIn_default,
+  ZoomOut: () => ZoomOut_default
+});
+
+// node_modules/@ringcentral/juno/es6/icon/0.js
+import React33, { forwardRef as forwardRef16, memo as memo3 } from "react";
+var __assign11 = function() {
+  __assign11 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign11.apply(this, arguments);
+};
+var Icon0 = memo3(forwardRef16(function(props, svgRef) {
+  return React33.createElement("svg", __assign11({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React33.createElement("path", { fill: "var(--color11, #000)", d: "M16 7c.489 0 .948.09 1.376.271s.8.456 1.114.827c.314.371.562.839.744 1.405s.273 1.234.273 2.004c0 .771-.091 1.438-.273 2.001s-.43 1.03-.744 1.399-.685.643-1.114.824-.887.27-1.376.27c-.494 0-.952-.09-1.376-.271s-.793-.455-1.107-.824c-.314-.369-.561-.835-.74-1.399s-.269-1.231-.269-2.001c0-.771.09-1.439.269-2.004s.426-1.034.74-1.405.683-.646 1.107-.827.883-.271 1.376-.271zm0 .928c-.296 0-.581.06-.855.181s-.514.321-.72.599c-.206.279-.371.646-.495 1.103s-.185 1.021-.185 1.694c0 .672.062 1.236.185 1.691s.288.822.495 1.1c.206.279.446.478.72.599s.559.181.855.181c.296 0 .581-.06.855-.181s.515-.321.724-.599c.209-.279.375-.646.498-1.1s.185-1.018.185-1.691c0-.672-.062-1.237-.185-1.694s-.289-.825-.498-1.103c-.209-.279-.45-.478-.724-.599s-.559-.181-.855-.181z" }), React33.createElement("path", { fill: "var(--color77, #9e9e9e)", d: "M16.198 20.583v1.471H17.6v.465h-1.402V24h-.503v-1.481H14.3v-.465h1.395v-1.471z" }));
+}));
+Icon0.displayName = "Icon0";
+Icon0["iconName"] = "0";
+var __default = Icon0;
+
+// node_modules/@ringcentral/juno/es6/icon/1.js
+import React34, { forwardRef as forwardRef17, memo as memo4 } from "react";
+var __assign12 = function() {
+  __assign12 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign12.apply(this, arguments);
+};
+var Icon1 = memo4(forwardRef17(function(props, svgRef) {
+  return React34.createElement("svg", __assign12({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React34.createElement("path", { d: "M13.498 15.148h1.805V9.025c0-.184.006-.37.018-.558L13.82 9.84c-.039.033-.078.057-.117.072a.308.308 0 01-.269-.019.292.292 0 01-.105-.097l-.328-.483L15.498 7h.85v8.148h1.653V16h-4.502v-.852z" }));
+}));
+Icon1.displayName = "Icon1";
+Icon1["iconName"] = "1";
+var __default2 = Icon1;
+
+// node_modules/@ringcentral/juno/es6/icon/2.js
+import React35, { forwardRef as forwardRef18, memo as memo5 } from "react";
+var __assign13 = function() {
+  __assign13 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign13.apply(this, arguments);
+};
+var Icon2 = memo5(forwardRef18(function(props, svgRef) {
+  return React35.createElement("svg", __assign13({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React35.createElement("path", { fill: "var(--color11, #000)", d: "M16.119 7c.381 0 .736.056 1.067.168s.616.274.857.488c.241.213.43.473.568.779s.207.654.207 1.043c0 .331-.05.638-.151.919s-.236.552-.408.811a6.033 6.033 0 01-.593.752c-.149.162-.305.325-.466.491l-2.613 2.648c.167-.046.337-.082.508-.109s.337-.04.496-.04h3.013c.121 0 .218.035.289.106s.107.162.107.273V16h-6v-.379a.647.647 0 01.201-.472l2.881-2.863c.238-.24.456-.471.653-.693s.365-.444.505-.668c.14-.224.248-.45.323-.68s.113-.475.113-.736-.042-.49-.126-.686a1.35 1.35 0 00-.86-.777 2.039 2.039 0 00-.634-.096c-.226 0-.435.033-.628.099a1.687 1.687 0 00-.888.695 1.62 1.62 0 00-.217.534c-.033.12-.084.207-.151.261s-.155.081-.264.081l-.066-.003a1.577 1.577 0 01-.078-.009l-.584-.099c.059-.406.172-.765.339-1.078s.38-.575.637-.786c.257-.211.552-.372.885-.481s.691-.165 1.076-.165z" }), React35.createElement("path", { fill: "var(--color77, #9e9e9e)", d: "M14.357 24h-.375c-.043 0-.078-.011-.105-.032s-.047-.049-.06-.082l-.335-.865h-1.607l-.335.865c-.012.03-.032.057-.06.08s-.063.035-.105.035H11l1.433-3.582h.492l1.433 3.582zm-2.347-1.33h1.338l-.563-1.457a2.72 2.72 0 01-.107-.337l-.054.189-.051.151-.563 1.455zm2.8 1.33v-3.582h1.143c.22 0 .41.022.569.065s.29.105.392.185c.102.08.178.178.227.294s.074.246.074.391c0 .088-.014.173-.041.255s-.069.157-.125.227c-.056.07-.126.133-.21.188s-.183.1-.296.135c.262.052.459.146.593.282s.2.317.2.54c0 .152-.028.29-.084.415s-.137.233-.245.323c-.108.09-.239.16-.395.209s-.334.074-.534.074H14.81zm.485-1.633v1.247h.775c.138 0 .257-.016.356-.047s.181-.076.245-.134c.064-.058.111-.126.141-.205s.045-.166.045-.261c0-.185-.065-.331-.196-.439s-.329-.161-.594-.161h-.773zm0-.344h.64c.137 0 .255-.015.355-.045s.183-.072.249-.125c.066-.053.115-.118.146-.194s.047-.159.047-.249c0-.21-.063-.364-.19-.462s-.323-.148-.59-.148h-.658v1.223zm5.275 1.237c.027 0 .051.011.073.032l.19.207c-.147.17-.325.302-.534.398s-.461.142-.756.142c-.258 0-.492-.045-.703-.134s-.389-.214-.538-.375c-.148-.161-.263-.354-.345-.579s-.122-.473-.122-.742c0-.27.044-.517.131-.742s.21-.418.369-.58c.158-.162.348-.287.569-.376s.465-.134.731-.134c.263 0 .49.041.681.122s.36.192.509.332l-.157.223c-.012.017-.025.03-.04.041s-.037.016-.065.016a.125.125 0 01-.069-.024l-.086-.059c-.033-.023-.073-.048-.117-.075s-.098-.052-.16-.075a1.373 1.373 0 00-.497-.083c-.192 0-.367.033-.526.099a1.19 1.19 0 00-.68.726 1.7 1.7 0 00-.096.587c0 .223.032.422.096.598s.152.323.262.444c.111.121.242.213.394.276s.315.095.49.095c.107 0 .203-.006.288-.019s.164-.032.236-.059c.073-.027.14-.06.203-.101l.094-.067.095-.079c.028-.025.056-.038.082-.038z" }));
+}));
+Icon2.displayName = "Icon2";
+Icon2["iconName"] = "2";
+var __default3 = Icon2;
+
+// node_modules/@ringcentral/juno/es6/icon/3.js
+import React36, { forwardRef as forwardRef19, memo as memo6 } from "react";
+var __assign14 = function() {
+  __assign14 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign14.apply(this, arguments);
+};
+var Icon3 = memo6(forwardRef19(function(props, svgRef) {
+  return React36.createElement("svg", __assign14({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React36.createElement("path", { fill: "var(--color11, #000)", d: "M16.193 7c.378 0 .728.053 1.048.16s.596.258.826.455c.231.197.411.434.54.713s.193.588.193.928c0 .278-.036.527-.109.746a1.802 1.802 0 01-.802.998 2.721 2.721 0 01-.642.276c.582.152 1.02.405 1.313.762s.44.803.44 1.339c0 .405-.078.77-.234 1.094s-.369.599-.639.826c-.27.227-.585.401-.945.522s-.745.181-1.157.181c-.474 0-.879-.058-1.216-.175s-.622-.277-.854-.482c-.233-.205-.424-.447-.574-.728s-.277-.585-.38-.912l.474-.197a.666.666 0 01.262-.055c.083 0 .157.017.221.052a.31.31 0 01.108.096l.051.093.037.085c.058.119.129.253.212.402s.195.29.337.421c.141.131.317.242.527.332s.471.135.783.135c.312 0 .585-.05.82-.15s.43-.23.586-.39a1.637 1.637 0 00.471-1.118c0-.238-.032-.455-.097-.651s-.181-.367-.349-.51c-.168-.143-.401-.256-.699-.338s-.679-.123-1.145-.123v-.793c.378-.004.702-.045.97-.123s.488-.184.658-.319c.17-.135.294-.297.371-.485s.115-.397.115-.627c0-.254-.041-.475-.122-.663s-.192-.344-.334-.467c-.141-.123-.309-.215-.502-.276s-.402-.092-.627-.092c-.225 0-.432.033-.624.098s-.361.157-.508.273c-.148.117-.271.256-.371.418s-.175.337-.225.525c-.033.119-.083.205-.15.258s-.152.08-.256.08l-.066-.003a1.577 1.577 0 01-.078-.009l-.58-.098c.058-.401.17-.757.337-1.066s.377-.568.633-.777c.256-.209.549-.368.879-.476s.687-.163 1.07-.163z" }), React36.createElement("path", { fill: "var(--color77, #9e9e9e)", d: "M14.54 22.21c0 .268-.043.512-.127.733s-.205.408-.36.565c-.155.157-.341.278-.557.364s-.457.129-.72.129h-1.34v-3.582h1.34c.263 0 .503.043.72.129a1.587 1.587 0 01.917.931c.085.22.127.464.127.733zm-.497 0c0-.22-.03-.417-.09-.59s-.145-.32-.255-.44c-.11-.12-.243-.212-.4-.275s-.331-.095-.523-.095h-.852v2.797h.852c.192 0 .366-.032.523-.095s.29-.155.4-.274c.11-.119.195-.265.255-.439s.09-.37.09-.59zm3.364-1.792v.395h-1.72v1.19h1.393v.38h-1.393v1.223h1.72v.395H15.2v-3.582h2.207zm2.906 0v.395h-1.72v1.253h1.47v.395h-1.47v1.54h-.488v-3.582h2.207z" }));
+}));
+Icon3.displayName = "Icon3";
+Icon3["iconName"] = "3";
+var __default4 = Icon3;
+
+// node_modules/@ringcentral/juno/es6/icon/4.js
+import React37, { forwardRef as forwardRef20, memo as memo7 } from "react";
+var __assign15 = function() {
+  __assign15 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign15.apply(this, arguments);
+};
+var Icon4 = memo7(forwardRef20(function(props, svgRef) {
+  return React37.createElement("svg", __assign15({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React37.createElement("path", { fill: "var(--color11, #000)", d: "M17.594 7v5.753H19v.641c0 .067-.021.124-.062.17s-.105.069-.191.069h-1.154v2.368h-1.018v-2.368h-4.116c-.086 0-.161-.024-.224-.072s-.103-.108-.12-.179l-.117-.572 4.518-5.809h1.076zm-.966 1.3l-3.377 4.453h3.325V9.041c0-.109.003-.226.01-.352l.015-.192.027-.198z" }), React37.createElement("path", { fill: "var(--color77, #9e9e9e)", d: "M13.607 23.648c.097 0 .185-.005.266-.014a1.728 1.728 0 00.432-.107c.064-.026.127-.055.19-.089v-.79h-.555c-.032 0-.057-.009-.076-.027s-.029-.041-.029-.067v-.275h1.1v1.375a1.883 1.883 0 01-.594.291c-.111.032-.23.057-.356.073s-.264.024-.412.024c-.26 0-.498-.045-.715-.134a1.642 1.642 0 01-.926-.954 2.044 2.044 0 01-.131-.742c0-.273.043-.523.129-.747s.208-.418.367-.579c.159-.161.352-.285.578-.374s.479-.133.759-.133c.142 0 .273.01.395.031s.235.051.339.09a1.651 1.651 0 01.537.331l-.137.22c-.028.045-.065.067-.11.067a.181.181 0 01-.088-.027l-.14-.085c-.052-.033-.115-.065-.189-.096a1.545 1.545 0 00-.621-.111c-.202 0-.384.033-.547.099a1.17 1.17 0 00-.683.727 1.74 1.74 0 00-.092.586c0 .227.032.429.096.606s.155.328.271.451c.117.123.255.218.415.282s.337.098.53.098zm4.978.352h-.488v-1.63h-1.93V24h-.488v-3.582h.488v1.598h1.93v-1.598h.488V24zm1.45 0h-.485v-3.582h.485V24z" }));
+}));
+Icon4.displayName = "Icon4";
+Icon4["iconName"] = "4";
+var __default5 = Icon4;
+
+// node_modules/@ringcentral/juno/es6/icon/5.js
+import React38, { forwardRef as forwardRef21, memo as memo8 } from "react";
+var __assign16 = function() {
+  __assign16 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign16.apply(this, arguments);
+};
+var Icon5 = memo8(forwardRef21(function(props, svgRef) {
+  return React38.createElement("svg", __assign16({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React38.createElement("path", { fill: "var(--color11, #000)", d: "M18.711 7.484c0 .157-.053.287-.158.388s-.282.152-.532.152h-2.954l-.433 2.335c.49-.099.943-.149 1.359-.149.49 0 .922.068 1.297.205s.688.325.942.565c.254.24.445.524.574.851s.194.683.194 1.068a2.936 2.936 0 01-.982 2.258c-.304.271-.662.479-1.073.624s-.856.217-1.333.217c-.276 0-.54-.026-.794-.078a4.195 4.195 0 01-1.32-.506 3.542 3.542 0 01-.499-.354l.354-.472a.371.371 0 01.315-.162c.083 0 .181.032.292.096s.246.136.404.214c.158.079.342.15.555.214s.465.096.758.096c.328 0 .624-.05.886-.149s.487-.241.673-.425c.186-.184.329-.405.43-.662s.151-.544.151-.863c0-.277-.043-.528-.128-.752s-.214-.414-.387-.571c-.173-.157-.388-.28-.647-.366s-.56-.13-.906-.13a5.103 5.103 0 00-1.523.236l-.735-.205.761-4.162h4.457v.484z" }), React38.createElement("path", { fill: "var(--color77, #9e9e9e)", d: "M13.633 22.762c0 .2-.025.379-.074.538s-.122.292-.217.401c-.096.109-.214.193-.354.251s-.301.087-.482.087c-.162 0-.33-.023-.505-.07l.027-.285c.003-.028.014-.051.031-.069s.044-.026.079-.026c.02 0 .044.003.073.01l.047.012c.05.015.117.023.2.023.11 0 .208-.017.294-.05s.158-.085.217-.155c.059-.07.104-.16.135-.269s.046-.239.046-.389v-2.355h.482v2.345zm1.404-.774h.182c.063 0 .114-.008.151-.024s.073-.043.106-.081l1.193-1.35c.037-.042.072-.071.106-.089s.078-.026.131-.026h.413l-1.365 1.543c-.035.038-.068.071-.099.098s-.064.048-.099.065c.047.015.088.038.123.067s.072.067.11.113l1.425 1.698h-.42c-.032 0-.058-.003-.08-.008s-.04-.012-.056-.02l-.023-.014-.061-.061-1.238-1.422-.051-.051a.238.238 0 00-.127-.057l-.046-.005-.275-.002v1.64h-.482V20.42h.482v1.57zm3.358 1.605h1.55V24H17.91v-3.582h.485v3.175z" }));
+}));
+Icon5.displayName = "Icon5";
+Icon5["iconName"] = "5";
+var __default6 = Icon5;
+
+// node_modules/@ringcentral/juno/es6/icon/6.js
+import React39, { forwardRef as forwardRef22, memo as memo9 } from "react";
+var __assign17 = function() {
+  __assign17 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign17.apply(this, arguments);
+};
+var Icon6 = memo9(forwardRef22(function(props, svgRef) {
+  return React39.createElement("svg", __assign17({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React39.createElement("path", { fill: "var(--color11, #000)", d: "M17.919 7l-3.087 3.907c.211-.145.445-.258.702-.338s.534-.121.832-.121c.356 0 .694.059 1.012.177s.598.29.838.516c.24.226.431.503.571.832s.211.705.211 1.127c0 .41-.075.791-.224 1.143s-.357.658-.624.919-.589.466-.966.615-.791.224-1.242.224c-.447 0-.852-.071-1.214-.214s-.672-.346-.929-.609-.454-.582-.593-.957-.208-.794-.208-1.258c0-.389.087-.803.261-1.242s.449-.911.826-1.416l2.255-3.037c.058-.075.139-.138.242-.189s.222-.078.354-.078h.981zm-1.913 4.292c-.298 0-.567.051-.807.152s-.444.238-.612.41c-.168.172-.296.371-.385.596s-.134.461-.134.705c0 .286.041.547.124.783s.204.439.363.609c.159.17.354.301.584.394s.492.14.786.14c.298 0 .567-.048.807-.143s.446-.228.618-.398.304-.371.398-.603.14-.484.14-.758c0-.29-.046-.552-.137-.786s-.219-.433-.385-.596c-.166-.164-.364-.289-.596-.376s-.487-.13-.764-.13z" }), React39.createElement("path", { fill: "var(--color77, #9e9e9e)", d: "M19.94 20.378c.263 0 .504.045.721.135s.404.216.559.379c.155.163.275.356.36.58s.128.47.128.739c0 .268-.043.515-.128.739s-.205.417-.36.579c-.155.162-.341.287-.559.376s-.458.134-.721.134c-.263 0-.503-.045-.72-.134s-.402-.215-.558-.376c-.155-.162-.275-.355-.36-.579s-.128-.47-.128-.739c0-.268.043-.515.128-.739s.205-.418.36-.58c.155-.163.341-.289.558-.379s.457-.135.72-.135zm-9.583.04c.043 0 .077.004.1.012s.046.032.068.07l1.27 2.267.08.198.026-.068.027-.065c.018-.043.039-.085.063-.129l1.213-2.203c.022-.038.044-.062.068-.07s.057-.012.1-.012h.357V24h-.425l.001-2.687.009-.181-1.227 2.24c-.042.075-.1.113-.175.113h-.07c-.075 0-.133-.038-.175-.113l-1.255-2.247.011.128.004.115v2.633h-.425v-3.582h.357zm4.493 0c.043 0 .075.005.096.016s.045.033.071.066l2.075 2.7-.01-.126-.003-.119v-2.538h.425v3.582h-.245c-.038 0-.07-.007-.096-.02s-.051-.036-.076-.067l-2.072-2.697.01.233v2.553H14.6v-3.582h.25zm5.09.379c-.192 0-.366.032-.523.098s-.29.158-.401.279c-.111.121-.196.269-.256.444s-.09.372-.09.593c0 .22.03.417.09.591s.145.322.256.442c.111.121.245.213.401.277s.331.096.523.096c.193 0 .368-.032.525-.096s.29-.157.4-.277c.11-.121.195-.268.255-.442s.09-.371.09-.591c0-.22-.03-.418-.09-.593s-.145-.323-.255-.444c-.11-.121-.243-.214-.4-.279s-.332-.098-.525-.098z" }));
+}));
+Icon6.displayName = "Icon6";
+Icon6["iconName"] = "6";
+var __default7 = Icon6;
+
+// node_modules/@ringcentral/juno/es6/icon/7.js
+import React40, { forwardRef as forwardRef23, memo as memo10 } from "react";
+var __assign18 = function() {
+  __assign18 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign18.apply(this, arguments);
+};
+var Icon7 = memo10(forwardRef23(function(props, svgRef) {
+  return React40.createElement("svg", __assign18({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React40.createElement("path", { fill: "var(--color11, #000)", d: "M19 7v.502c0 .142-.015.26-.046.352s-.063.17-.095.232l-3.653 7.518c-.053.109-.127.202-.222.279s-.222.116-.382.116h-.782l3.708-7.424c.053-.105.108-.201.163-.289s.118-.172.188-.251h-4.608c-.07 0-.132-.028-.188-.085S13 7.83 13 7.758v-.76h6z" }), React40.createElement("path", { fill: "var(--color77, #9e9e9e)", d: "M10.482 22.66V24H10v-3.582h1.058c.227 0 .424.026.591.079s.306.127.416.224c.11.097.192.213.246.35s.081.289.081.457c0 .167-.029.319-.088.457s-.144.258-.256.358c-.113.1-.252.178-.419.234s-.357.084-.572.084h-.575zm0-.385h.575c.138 0 .26-.018.366-.055s.195-.088.266-.154c.072-.066.126-.145.162-.236s.055-.192.055-.302c0-.228-.07-.407-.211-.535s-.354-.192-.639-.192h-.575v1.475zm5.85-.065c0 .168-.017.328-.051.48s-.084.293-.149.424a1.615 1.615 0 01-.553.633l.92.992h-.4c-.06 0-.113-.008-.16-.025s-.089-.046-.127-.087l-.63-.685a1.96 1.96 0 01-.617.095c-.263 0-.503-.045-.72-.134a1.613 1.613 0 01-.917-.955 2.066 2.066 0 01-.127-.739c0-.268.043-.515.127-.739s.205-.418.36-.58c.155-.163.341-.289.557-.379s.457-.135.72-.135c.263 0 .504.045.721.135s.404.216.559.379c.155.163.275.356.36.58s.128.47.128.739zm-.497 0c0-.22-.03-.418-.09-.593s-.145-.323-.255-.444c-.11-.121-.243-.214-.4-.279s-.332-.098-.525-.098c-.192 0-.366.032-.522.098a1.136 1.136 0 00-.657.723 1.82 1.82 0 00-.09.593c0 .22.03.417.09.591s.145.322.256.442c.111.121.245.213.401.277s.331.096.523.096c.193 0 .368-.032.525-.096s.29-.157.4-.277c.11-.121.195-.268.255-.442s.09-.371.09-.591zm1.692.295V24h-.483v-3.582h1.012c.227 0 .422.023.587.069s.301.112.409.199c.108.087.187.191.239.314s.078.26.078.411c0 .127-.02.245-.06.355s-.098.209-.174.296c-.076.087-.168.162-.277.224s-.233.108-.371.14c.06.035.113.086.16.152L19.692 24h-.43c-.088 0-.153-.034-.195-.102l-.93-1.28c-.028-.04-.059-.069-.093-.086s-.083-.026-.15-.026h-.367zm0-.353h.508c.142 0 .266-.017.374-.051s.198-.082.27-.145c.073-.063.127-.137.164-.224s.055-.183.055-.288c0-.213-.07-.374-.211-.483s-.35-.163-.629-.163h-.53v1.352zm4.523-1.175c-.015.025-.031.044-.047.056s-.038.019-.065.019a.129.129 0 01-.063-.019l-.036-.024a1.223 1.223 0 00-.349-.188.903.903 0 00-.294-.043c-.108 0-.204.015-.288.044s-.153.069-.209.119c-.056.05-.098.109-.126.176s-.043.14-.043.219c0 .1.025.183.074.249s.114.122.195.169c.081.047.172.087.275.121l.315.106c.108.037.212.078.315.124s.194.104.275.174c.081.07.146.156.195.258s.074.227.074.375c0 .157-.027.304-.08.441s-.131.257-.234.359c-.102.102-.228.182-.378.24s-.319.087-.509.087c-.232 0-.443-.042-.634-.126s-.354-.198-.489-.341l.14-.23c.013-.018.03-.034.049-.046s.04-.019.064-.019a.15.15 0 01.077.025l.148.111.064.044c.067.045.149.086.245.124s.213.056.351.056c.115 0 .218-.016.308-.047s.166-.076.229-.134c.063-.058.11-.126.144-.206s.05-.169.05-.267c0-.108-.025-.197-.074-.266s-.114-.127-.194-.174a1.354 1.354 0 00-.274-.119l-.315-.1c-.108-.034-.212-.074-.315-.119s-.194-.103-.274-.175c-.08-.072-.145-.161-.194-.269s-.074-.24-.074-.399a.947.947 0 01.288-.682c.093-.092.209-.165.346-.22s.295-.082.474-.082c.2 0 .383.032.547.095s.309.155.433.275l-.117.23z" }));
+}));
+Icon7.displayName = "Icon7";
+Icon7["iconName"] = "7";
+var __default8 = Icon7;
+
+// node_modules/@ringcentral/juno/es6/icon/8.js
+import React41, { forwardRef as forwardRef24, memo as memo11 } from "react";
+var __assign19 = function() {
+  __assign19 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign19.apply(this, arguments);
+};
+var Icon8 = memo11(forwardRef24(function(props, svgRef) {
+  return React41.createElement("svg", __assign19({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React41.createElement("path", { fill: "var(--color11, #000)", d: "M16 7c.402 0 .768.059 1.099.178s.615.283.851.491a2.162 2.162 0 01.74 1.646c0 .475-.12.884-.36 1.226s-.592.599-1.056.771c.555.156.981.417 1.279.783s.447.832.447 1.398a2.293 2.293 0 01-.836 1.83c-.263.217-.579.384-.947.501s-.774.175-1.217.175c-.443 0-.849-.058-1.217-.175s-.685-.284-.95-.501c-.265-.217-.47-.48-.615-.789s-.217-.656-.217-1.041c0-.565.149-1.031.447-1.398s.725-.628 1.28-.783c-.468-.172-.821-.429-1.059-.771s-.357-.751-.357-1.226a2.159 2.159 0 01.74-1.646c.236-.209.519-.373.848-.491S15.597 7 16.003 7zm0 4.78c-.244 0-.478.032-.702.095s-.421.163-.593.298c-.172.135-.309.31-.41.525s-.152.474-.152.777c0 .246.042.47.127.673s.207.377.366.522c.159.145.354.258.584.338s.49.12.78.12c.29 0 .55-.04.779-.12s.424-.193.584-.338c.159-.145.282-.319.366-.522s.127-.427.127-.673c0-.303-.051-.562-.152-.777s-.238-.39-.41-.525-.37-.234-.593-.298-.458-.095-.702-.095zm0-3.932c-.265 0-.498.039-.699.117s-.369.184-.503.319c-.135.135-.236.293-.304.473s-.102.373-.102.577c0 .201.029.395.087.584s.151.355.28.501c.128.145.295.262.5.35s.452.132.742.132.537-.044.742-.132.372-.205.5-.35.222-.312.279-.501.087-.383.087-.584c0-.205-.034-.397-.102-.577a1.335 1.335 0 00-.807-.792 1.946 1.946 0 00-.699-.117z" }), React41.createElement("path", { fill: "var(--color77, #9e9e9e)", d: "M13.875 20.418v.407h-1.158V24h-.485v-3.175H11.07v-.407h2.805zm1.902 3.197c.148 0 .281-.025.398-.075s.215-.12.296-.21c.081-.09.142-.198.185-.323s.064-.262.064-.413v-2.177h.483v2.178c0 .207-.033.398-.099.575s-.16.33-.282.459c-.122.129-.272.23-.449.304s-.375.11-.595.11c-.22 0-.418-.037-.595-.11a1.297 1.297 0 01-.734-.763 1.63 1.63 0 01-.099-.575v-2.178h.482v2.175c0 .15.021.288.064.413s.104.233.185.323.18.16.297.211.25.076.399.076zm1.843-3.197h.387c.043 0 .078.011.105.032s.047.049.06.082l1.012 2.527.033.089.03.096c.019.067.038.136.056.207.015-.072.031-.141.049-.207s.038-.128.061-.185l1.008-2.527c.012-.028.032-.055.06-.079s.063-.036.105-.036h.39l-1.46 3.582h-.438l-1.46-3.582z" }));
+}));
+Icon8.displayName = "Icon8";
+Icon8["iconName"] = "8";
+var __default9 = Icon8;
+
+// node_modules/@ringcentral/juno/es6/icon/9.js
+import React42, { forwardRef as forwardRef25, memo as memo12 } from "react";
+var __assign20 = function() {
+  __assign20 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign20.apply(this, arguments);
+};
+var Icon9 = memo12(forwardRef25(function(props, svgRef) {
+  return React42.createElement("svg", __assign20({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React42.createElement("path", { fill: "var(--color11, #000)", d: "M16.058 7c.443 0 .845.07 1.206.211s.671.337.929.59c.258.253.457.555.597.907s.21.741.21 1.168a3.494 3.494 0 01-.29 1.404c-.095.219-.208.438-.339.655s-.281.442-.448.674l-2.252 3.13c-.056.079-.135.142-.239.189s-.222.071-.355.071h-1.058l2.813-3.547.265-.342c.082-.108.159-.215.232-.323-.237.182-.503.321-.8.416s-.611.143-.942.143c-.348 0-.678-.056-.99-.168s-.586-.276-.823-.494c-.237-.217-.425-.484-.565-.801s-.21-.68-.21-1.09c0-.389.075-.754.226-1.093s.361-.636.632-.888c.271-.253.594-.451.968-.596s.785-.217 1.232-.217zm-.013.925c-.284 0-.543.045-.777.134s-.434.212-.6.37c-.166.157-.294.346-.384.565s-.135.46-.135.72c0 .282.042.533.126.755s.204.409.361.562c.157.153.348.269.574.348s.479.118.758.118c.31 0 .584-.049.823-.146s.44-.227.603-.388c.163-.162.288-.348.374-.559s.129-.431.129-.658c0-.277-.046-.529-.139-.755s-.22-.417-.384-.575c-.163-.157-.358-.278-.584-.363s-.474-.127-.745-.127z" }), React42.createElement("path", { fill: "var(--color77, #9e9e9e)", d: "M8.8 20.418h.402c.043 0 .079.011.107.032s.047.049.057.082l.74 2.49.019.07.048.238.054-.239.864-2.558c.01-.028.03-.055.059-.079s.065-.036.106-.036h.14c.043 0 .079.011.106.032s.047.049.059.082l.838 2.49c.03.087.057.186.08.297l.042-.23.761-2.558a.167.167 0 01.162-.115h.377l-1.117 3.582h-.435l-.908-2.733a1.618 1.618 0 01-.05-.18l-.035.14-.925 2.772h-.435l-1.117-3.582zm6.327 1.742l-1.182-1.742h.482c.035 0 .061.006.078.017s.032.028.045.05l.935 1.435a.67.67 0 01.053-.115l.883-1.31c.015-.023.031-.042.049-.056s.039-.021.064-.021h.462l-1.188 1.72 1.227 1.863h-.48c-.037 0-.065-.01-.086-.029s-.038-.04-.051-.064l-.96-1.503a.6.6 0 01-.045.1l-.935 1.402c-.015.023-.032.045-.051.064s-.046.029-.081.029h-.45l1.232-1.84zm3.763.415V24h-.483v-1.425l-1.313-2.157h.425c.043 0 .078.011.102.032s.047.048.065.08l.82 1.393c.033.058.061.113.084.165l.061.152.06-.155c.022-.052.049-.106.082-.163l.817-1.393c.015-.027.035-.052.061-.076s.06-.036.101-.036h.43l-1.315 2.157zm4.26-2.157v.18c0 .057-.017.11-.052.16l-2.027 2.848h2.045v.395h-2.68v-.19c0-.05.016-.098.047-.142l2.03-2.855H20.53v-.395h2.62z" }));
+}));
+Icon9.displayName = "Icon9";
+Icon9["iconName"] = "9";
+var __default10 = Icon9;
+
+// node_modules/@ringcentral/juno/es6/icon/CompanySetupBorder.js
+import React43, { forwardRef as forwardRef26, memo as memo13 } from "react";
+var __assign21 = function() {
+  __assign21 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign21.apply(this, arguments);
+};
+var CompanySetupBorder = memo13(forwardRef26(function(props, svgRef) {
+  return React43.createElement("svg", __assign21({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React43.createElement("path", { d: "M18.999 2.012a2 2 0 012 2L20.998 28h7.005l.001-15.988a1 1 0 00-.883-.993l-.117-.007h-5.007v-2h6.007a2 2 0 012 2L30.003 28l.114.007A1 1 0 0130.003 30l.001.012h-8.007V30h-.998l.001.012L2.001 30a1 1 0 010-2h.006l.001-23.988a2 2 0 011.851-1.994l.149-.006zm-1 2.001H4.998a1 1 0 00-1 1V28h15.001V5.013a1 1 0 00-.883-.993l-.117-.007zm8.003 16.988a1 1 0 01.117 1.993l-.116.007h-2.005a1 1 0 01-.117-1.993l.116-.007h2.005zM14.985 21a1 1 0 01.117 1.993l-.117.007H8.012a1 1 0 01-.117-1.993L8.012 21h6.973zm11.017-5.999a1 1 0 01.117 1.993l-.116.007h-2.005a1 1 0 01-.117-1.993l.116-.007h2.005zM14.985 15a1 1 0 01.117 1.993l-.117.007H8.012a1 1 0 01-.117-1.993L8.012 15h6.973zm0-5.988a1 1 0 01.117 1.993l-.117.007H8.012a1 1 0 01-.117-1.993l.117-.007h6.973z" }));
+}));
+CompanySetupBorder.displayName = "CompanySetupBorder";
+CompanySetupBorder["iconName"] = "Company-setup_border";
+var CompanySetupBorder_default = CompanySetupBorder;
+
+// node_modules/@ringcentral/juno/es6/icon/CompanySetup.js
+import React44, { forwardRef as forwardRef27, memo as memo14 } from "react";
+var __assign22 = function() {
+  __assign22 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign22.apply(this, arguments);
+};
+var CompanySetup = memo14(forwardRef27(function(props, svgRef) {
+  return React44.createElement("svg", __assign22({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React44.createElement("path", { d: "M18.999 2.012a2 2 0 011.994 1.851l.006.149V28h.997V9.012h6.007a2 2 0 011.994 1.851l.006.149L30.002 28l.114.007A1 1 0 0130.002 30l.001.012h-8.007V30h-.997v.012L2 30a1 1 0 010-2h.006l.001-23.988a2 2 0 011.851-1.994l.149-.006H19zm8.003 18.989h-2.005l-.116.007a.999.999 0 000 1.986l.116.007h2.005l.116-.007a.999.999 0 00-.117-1.993zM14.985 21l-7.089.007a1 1 0 000 1.986l.117.007 7.089-.007A1 1 0 0014.985 21zm12.017-5.999h-2.005l-.116.007a.999.999 0 000 1.986l.116.007h2.005l.116-.007a.999.999 0 00-.117-1.993zM14.985 15l-7.089.007a1 1 0 000 1.986l.117.007 7.089-.007A1 1 0 0014.985 15zm0-5.988l-7.089.007a1 1 0 000 1.986l.117.007 7.089-.007a1 1 0 00-.117-1.993z" }));
+}));
+CompanySetup.displayName = "CompanySetup";
+CompanySetup["iconName"] = "Company-setup";
+var CompanySetup_default = CompanySetup;
+
+// node_modules/@ringcentral/juno/es6/icon/Hud.js
+import React45, { forwardRef as forwardRef28, memo as memo15 } from "react";
+var __assign23 = function() {
+  __assign23 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign23.apply(this, arguments);
+};
+var Hud = memo15(forwardRef28(function(props, svgRef) {
+  return React45.createElement("svg", __assign23({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React45.createElement("path", { d: "M28 3a2 2 0 012 2v18a2 2 0 01-2 2H17v2h4a1 1 0 010 2H11a1 1 0 010-2h4v-2H4a2 2 0 01-2-2V5a2 2 0 012-2h24zm-1 2H5a1 1 0 00-1 1v16a1 1 0 001 1h22a1 1 0 001-1V6a1 1 0 00-1-1zm-3 3a1 1 0 011 1v10a1 1 0 01-1 1H8a1 1 0 01-1-1V9a1 1 0 011-1h16z" }));
+}));
+Hud.displayName = "Hud";
+Hud["iconName"] = "HUD";
+var Hud_default = Hud;
+
+// node_modules/@ringcentral/juno/es6/icon/Logout.js
+import React46, { forwardRef as forwardRef29, memo as memo16 } from "react";
+var __assign24 = function() {
+  __assign24 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign24.apply(this, arguments);
+};
+var Logout = memo16(forwardRef29(function(props, svgRef) {
+  return React46.createElement("svg", __assign24({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React46.createElement("path", { d: "M8 29h16a2.002 2.002 0 002-2v-2a1 1 0 00-2 0v1a1 1 0 01-1 1H9a1 1 0 01-1-1V6a1 1 0 011-1h14a1 1 0 011 1v1a1 1 0 002 0V5a2.002 2.002 0 00-2-2H8a2.002 2.002 0 00-2 2v22a2.002 2.002 0 002 2zm15.615-9.121L26.494 17H13.322a1 1 0 010-2h13.172l-2.879-2.879a1 1 0 011.414-1.414l4.586 4.586a.999.999 0 010 1.414l-4.586 4.586a1 1 0 01-1.414-1.414z" }));
+}));
+Logout.displayName = "Logout";
+Logout["iconName"] = "Logout";
+var Logout_default = Logout;
+
+// node_modules/@ringcentral/juno/es6/icon/NewEmail.js
+import React47, { forwardRef as forwardRef30, memo as memo17 } from "react";
+var __assign25 = function() {
+  __assign25 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign25.apply(this, arguments);
+};
+var NewEmail = memo17(forwardRef30(function(props, svgRef) {
+  return React47.createElement("svg", __assign25({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React47.createElement("path", { d: "M24 17a1 1 0 011 1v4h4a1 1 0 010 2h-4.001L25 28a1 1 0 01-2 0l-.001-4H19a1 1 0 010-2h4v-4a1 1 0 011-1zm4-12a2 2 0 012 2l.001 10.71a8.05 8.05 0 00-2-1.639L28 9l-10.197 8.764a3 3 0 01-3.599.005l-.157-.126-.822-.705-8.6 7.989a.992.992 0 00.374.072h11.252c.183.71.46 1.382.819 2.001l-13.071-.001a2 2 0 01-2-2v-18a2 2 0 012-2h24zM4 9.032v13.744l7.698-7.146L4 9.032zM27 7H5a.98.98 0 00-.255.033l10.701 9.166a1 1 0 001.097.007l.107-.08 10.605-9.092a.982.982 0 00-.256-.033z" }));
+}));
+NewEmail.displayName = "NewEmail";
+NewEmail["iconName"] = "New-email";
+var NewEmail_default = NewEmail;
+
+// node_modules/@ringcentral/juno/es6/icon/ActiveCall.js
+import React48, { forwardRef as forwardRef31, memo as memo18 } from "react";
+var __assign26 = function() {
+  __assign26 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign26.apply(this, arguments);
+};
+var ActiveCall = memo18(forwardRef31(function(props, svgRef) {
+  return React48.createElement("svg", __assign26({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React48.createElement("path", { d: "M25.075 22.515c-1.339-1.139-2.75-2.35-4.061-3.626-.515-.541-1.445-.635-2.13-.2-.41.266-.69.605-.995.941-.205.235-.41.47-.65.67 0 0-.106.035-.24.035-.346 0-1.614-.17-3.75-2.72-1.96-2.419-2.026-3.626-1.995-4.066 0-.2.106-.301.106-.301.24-.205.485-.37.79-.506.379-.2.79-.405 1.134-.739.586-.57.69-1.41.24-2.08-.995-1.51-1.96-3.05-2.75-4.63a1.899 1.899 0 00-1.995-.974c-.72.106-2.27.875-2.854 1.374-2.235 1.946-1.586 7.65 4.054 14.494 3.885 4.694 8.186 7.52 11.485 7.52.859 0 1.614-.2 2.165-.666.65-.506 1.75-1.814 1.995-2.45.341-.706.101-1.541-.55-2.08l.002.002z" }), React48.createElement("path", { d: "M21.285 17.026a.984.984 0 001.254-.83c.155-1.294.11-3.421-1.421-4.866-1.445-1.365-3.365-1.47-4.574-1.365a.987.987 0 00-.87 1.245v.005a.993.993 0 001.035.725c.84-.075 2.155-.019 3.05.83.915.866.925 2.294.814 3.19-.05.475.245.93.71 1.066h.002z" }), React48.createElement("path", { d: "M24.72 7.595c-1.626-1.541-3.901-2.374-6.57-2.419a15.07 15.07 0 00-2.454.17.986.986 0 00-.8 1.24c.13.485.61.795 1.106.72.546-.085 1.31-.165 2.17-.146 2.174.045 3.925.68 5.19 1.875 1.27 1.2 1.92 2.981 1.93 5.285.005.955-.106 1.814-.214 2.414-.09.499.21.986.694 1.13a.99.99 0 001.25-.774c.125-.685.25-1.64.25-2.72 0-2.854-.88-5.2-2.55-6.774z" }));
+}));
+ActiveCall.displayName = "ActiveCall";
+ActiveCall["iconName"] = "active-call";
+var ActiveCall_default = ActiveCall;
+
+// node_modules/@ringcentral/juno/es6/icon/ActivecallBorder.js
+import React49, { forwardRef as forwardRef32, memo as memo19 } from "react";
+var __assign27 = function() {
+  __assign27 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign27.apply(this, arguments);
+};
+var ActivecallBorder = memo19(forwardRef32(function(props, svgRef) {
+  return React49.createElement("svg", __assign27({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React49.createElement("path", { d: "M9.791 2.353a3.42 3.42 0 011.577 1.5 33.63 33.63 0 001.257 2.265 49.99 49.99 0 001.696 2.601c.414.626.579 1.307.486 2.017-.091.699-.403 1.322-.977 1.9a6.076 6.076 0 01-1.027.705 1.161 1.161 0 01-.218.137l-.171.083-.178.098-.045.022a1.99 1.99 0 00-.144.067c.016.079.043.175.083.29l.098.258c.124.331.324.717.602 1.154.285.448.649.938 1.09 1.465a13.92 13.92 0 001.328 1.391c.395.352.753.616 1.068.791.121.067.226.121.312.159l.218-.239.08-.079.085-.107.254-.263.272-.265.049-.045c.171-.156.362-.306.617-.477a3.574 3.574 0 012.169-.483c.803.071 1.484.39 1.965.905a69.978 69.978 0 001.865 1.697l.459.399.947.804 1.129.938c.586.482.976 1.073 1.157 1.757.164.617.135 1.216-.074 1.743l-.087.194c-.193.479-.565 1.044-1.117 1.713-.476.576-.912 1.028-1.295 1.343l-.161.127c-.44.363-.947.637-1.516.818a6.01 6.01 0 01-1.829.264c-1.073 0-2.192-.21-3.356-.625-1.135-.405-2.29-.984-3.466-1.737a24.373 24.373 0 01-3.044-2.327l-.431-.391a36.73 36.73 0 01-3.448-3.565c-1.492-1.787-2.714-3.551-3.664-5.291-.955-1.731-1.628-3.354-2.018-4.87-.397-1.544-.493-2.938-.281-4.173.204-1.306.769-2.366 1.703-3.149.433-.361 1.041-.728 1.828-1.11.803-.39 1.468-.63 2.018-.716a3.627 3.627 0 012.133.308zM7.966 4.022c-.314.049-.8.222-1.451.538-.661.321-1.134.608-1.416.843-.548.46-.881 1.078-1.018 1.956-.16.934-.085 2.047.247 3.337.345 1.34.953 2.809 1.836 4.41.884 1.619 2.031 3.276 3.432 4.954a34.87 34.87 0 003.283 3.393 22.997 22.997 0 003.194 2.502c1.055.675 2.074 1.187 3.059 1.538.959.342 1.853.509 2.684.509.466 0 .872-.058 1.223-.17.274-.087.514-.206.768-.392l.155-.12c.275-.206.66-.595 1.112-1.142.391-.473.643-.844.765-1.097l.106-.236c.064-.128.078-.299.017-.53-.072-.27-.226-.504-.496-.726l-1.295-1.078-.817-.695-.471-.41a71.406 71.406 0 01-1.293-1.163l-.624-.582-.088-.088c-.138-.148-.36-.25-.681-.279a1.596 1.596 0 00-.827.134l-.119.063-.049.035a3.377 3.377 0 00-.189.145l-.079.069-.16.152-.227.231-.036.047-.09.104-.159.162-.157.172a1.998 1.998 0 01-2.3.472 6.246 6.246 0 01-.459-.233c-.46-.256-.934-.607-1.428-1.047a16.01 16.01 0 01-1.531-1.601 16.348 16.348 0 01-1.243-1.674 8.88 8.88 0 01-.691-1.286l-.073-.183a5.005 5.005 0 01-.292-.913 2 2 0 011.025-2.162l.25-.12.178-.098.111-.054.05-.036.143-.086c.134-.073.249-.143.346-.21l.175-.127.102-.083.049-.052c.16-.183.247-.349.289-.528l.02-.109a.87.87 0 00-.147-.621 52.75 52.75 0 01-1.763-2.705 34.089 34.089 0 01-1.299-2.338 1.447 1.447 0 00-.553-.588l-.12-.063a1.627 1.627 0 00-.976-.142zm10.421 2.915a8.962 8.962 0 013.94 2.305 8.963 8.963 0 012.313 3.968 1 1 0 11-1.929.531 6.965 6.965 0 00-1.799-3.085 6.973 6.973 0 00-3.063-1.793 1 1 0 01.537-1.927zm-.113-5.14c2.855.475 5.499 1.819 7.589 3.909s3.434 4.735 3.91 7.59a1 1 0 11-1.973.329c-.407-2.447-1.558-4.711-3.351-6.504s-4.056-2.943-6.503-3.351a1 1 0 11.329-1.973z" }));
+}));
+ActivecallBorder.displayName = "ActivecallBorder";
+ActivecallBorder["iconName"] = "activecall_border";
+var ActivecallBorder_default = ActivecallBorder;
+
+// node_modules/@ringcentral/juno/es6/icon/AddBorder.js
+import React50, { forwardRef as forwardRef33, memo as memo20 } from "react";
+var __assign28 = function() {
+  __assign28 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign28.apply(this, arguments);
+};
+var AddBorder = memo20(forwardRef33(function(props, svgRef) {
+  return React50.createElement("svg", __assign28({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React50.createElement("path", { d: "M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm0 2C9.373 4 4 9.373 4 16s5.373 12 12 12 12-5.373 12-12S22.627 4 16 4zm0 4a1 1 0 01.993.883L17 9l.001 5.999L23 15l.117.007a1 1 0 010 1.986L23 17l-5.999-.001L17 23l-.007.117a1 1 0 01-1.986 0L15 23l.001-6.001L9 17l-.117-.007a1 1 0 010-1.986L9 15l6.001-.001L15 9l.007-.117A1 1 0 0116 8z" }));
+}));
+AddBorder.displayName = "AddBorder";
+AddBorder["iconName"] = "add_border";
+var AddBorder_default = AddBorder;
+
+// node_modules/@ringcentral/juno/es6/icon/AddEmojiMore.js
+import React51, { forwardRef as forwardRef34, memo as memo21 } from "react";
+var __assign29 = function() {
+  __assign29 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign29.apply(this, arguments);
+};
+var AddEmojiMore = memo21(forwardRef34(function(props, svgRef) {
+  return React51.createElement("svg", __assign29({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React51.createElement("path", { d: "M13.786 4c6.509 0 11.786 5.366 11.786 11.986 0 .776-.072 1.534-.211 2.269a6.598 6.598 0 00-1.743.091c.177-.758.27-1.548.27-2.361 0-5.674-4.523-10.273-10.102-10.273s-10.102 4.6-10.102 10.273c0 5.674 4.523 10.273 10.102 10.273a9.925 9.925 0 004.425-1.035c.021.607.121 1.193.29 1.749a11.56 11.56 0 01-4.715.999C7.277 27.971 2 22.605 2 15.985S7.277 3.999 13.786 3.999zm6.774 17.471c.745 0 1.349.614 1.349 1.371s-.604 1.371-1.349 1.371-1.349-.614-1.349-1.371.604-1.371 1.349-1.371zm4.046 0c.745 0 1.349.614 1.349 1.371s-.604 1.371-1.349 1.371-1.349-.614-1.349-1.371.604-1.371 1.349-1.371zm4.045 0c.745 0 1.349.614 1.349 1.371s-.604 1.371-1.349 1.371-1.349-.614-1.349-1.371.604-1.371 1.349-1.371zM18.58 17.82a.864.864 0 01.306 1.17c-1.047 1.835-2.975 2.989-5.1 2.989-2.109 0-4.025-1.137-5.077-2.949-.236-.407-.104-.932.297-1.172s.916-.105 1.153.302a4.194 4.194 0 003.628 2.108 4.195 4.195 0 003.644-2.136.835.835 0 011.151-.311zm-9.003-6.971c.93 0 1.684.767 1.684 1.712s-.754 1.712-1.684 1.712c-.93 0-1.684-.767-1.684-1.712s.754-1.712 1.684-1.712zm8.418 0c.93 0 1.684.767 1.684 1.712s-.754 1.712-1.684 1.712c-.93 0-1.684-.767-1.684-1.712s.754-1.712 1.684-1.712z" }));
+}));
+AddEmojiMore.displayName = "AddEmojiMore";
+AddEmojiMore["iconName"] = "add-emoji-more";
+var AddEmojiMore_default = AddEmojiMore;
+
+// node_modules/@ringcentral/juno/es6/icon/AddEvent.js
+import React52, { forwardRef as forwardRef35, memo as memo22 } from "react";
+var __assign30 = function() {
+  __assign30 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign30.apply(this, arguments);
+};
+var AddEvent = memo22(forwardRef35(function(props, svgRef) {
+  return React52.createElement("svg", __assign30({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React52.createElement("path", { d: "M23 17a1 1 0 011 1v4h4a1 1 0 010 2h-4.001L24 28a1 1 0 01-2 0l-.001-4H18a1 1 0 010-2h4v-4a1 1 0 011-1zM21 2a1 1 0 01.993.883L22 3v1h4a2 2 0 011.994 1.851L28 6l.001 10.755a7.992 7.992 0 00-2-1.173L26 10H6v15a1 1 0 00.883.993L7 26l8.582.001a8.01 8.01 0 001.173 2L6 28a2.001 2.001 0 01-1.995-1.851L3.999 26V6c0-1.054.816-1.918 1.851-1.995L5.999 4h4V3a1 1 0 011.993-.117l.007.117v1h8V3a1 1 0 011-1zm4 4H7a1 1 0 00-.993.883L6 7v1h20V7a1 1 0 00-.883-.993L25 6z" }));
+}));
+AddEvent.displayName = "AddEvent";
+AddEvent["iconName"] = "add-event";
+var AddEvent_default = AddEvent;
+
+// node_modules/@ringcentral/juno/es6/icon/AddField.js
+import React53, { forwardRef as forwardRef36, memo as memo23 } from "react";
+var __assign31 = function() {
+  __assign31 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign31.apply(this, arguments);
+};
+var AddField = memo23(forwardRef36(function(props, svgRef) {
+  return React53.createElement("svg", __assign31({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React53.createElement("path", { d: "M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm0 6a2 2 0 00-2 2v4h-4a2 2 0 100 4h4v4a2 2 0 104 0v-4h4a2 2 0 100-4h-4v-4a2 2 0 00-2-2z" }));
+}));
+AddField.displayName = "AddField";
+AddField["iconName"] = "add_field";
+var AddField_default = AddField;
+
+// node_modules/@ringcentral/juno/es6/icon/AddIntegration.js
+import React54, { forwardRef as forwardRef37, memo as memo24 } from "react";
+var __assign32 = function() {
+  __assign32 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign32.apply(this, arguments);
+};
+var AddIntegration = memo24(forwardRef37(function(props, svgRef) {
+  return React54.createElement("svg", __assign32({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React54.createElement("path", { d: "M13.241 0a5.517 5.517 0 015.517 5.517h5.517c1.219 0 2.207.988 2.207 2.207v5.517a5.517 5.517 0 110 11.034v5.517a2.207 2.207 0 01-2.207 2.207h-7.724v-2.207a3.31 3.31 0 00-3.116-3.305l-.194-.006a3.31 3.31 0 00-3.305 3.116l-.006.195v2.207H2.206a2.207 2.207 0 01-2.207-2.207v-7.724h2.207a3.31 3.31 0 003.305-3.116l.006-.195a3.31 3.31 0 00-3.116-3.305l-.195-.006H-.001V7.722c0-1.219.988-2.207 2.207-2.207h5.517A5.517 5.517 0 0113.24-.002zm0 2.207a3.31 3.31 0 00-3.305 3.116l-.006.194v2.207H2.206v5.517l.064.001.258.008c2.83.164 5.068 2.449 5.189 5.324l.005.248-.008.258a5.517 5.517 0 01-5.265 5.19l-.243.005v5.517h5.517l.001-.064.008-.258c.164-2.83 2.449-5.068 5.324-5.189l.248-.005.258.008a5.517 5.517 0 015.19 5.265l.005.243h5.517v-7.724h2.207a3.31 3.31 0 00.194-6.615l-.195-.006h-2.207V7.723h-7.724V5.516a3.31 3.31 0 00-3.31-3.31z" }), React54.createElement("path", { d: "M15.448 11.034c.609 0 1.103.494 1.103 1.103v3.31h3.31a1.103 1.103 0 010 2.206H16.55l.001 3.31a1.103 1.103 0 01-2.206 0l-.001-3.31h-3.309a1.103 1.103 0 010-2.206h3.31v-3.31c0-.609.494-1.103 1.103-1.103z" }));
+}));
+AddIntegration.displayName = "AddIntegration";
+AddIntegration["iconName"] = "add-integration";
+var AddIntegration_default = AddIntegration;
+
+// node_modules/@ringcentral/juno/es6/icon/AddMemberBorder.js
+import React55, { forwardRef as forwardRef38, memo as memo25 } from "react";
+var __assign33 = function() {
+  __assign33 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign33.apply(this, arguments);
+};
+var AddMemberBorder = memo25(forwardRef38(function(props, svgRef) {
+  return React55.createElement("svg", __assign33({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React55.createElement("path", { d: "M24 17a1 1 0 011 1v4h4a1 1 0 010 2h-4.001L25 28a1 1 0 01-2 0l-.001-4H19a1 1 0 010-2h4v-4a1 1 0 011-1zm-11 0c1.722 0 3.365.324 4.831.907a8.026 8.026 0 00-1.09 1.726A11.152 11.152 0 0013 19.001c-4.709 0-8.573 2.812-8.967 6.395-.05.451.335.605.519.605l12.029.001a8.01 8.01 0 001.173 2l-13.755-.001a2 2 0 01-2-2c0-5.096 5.019-9 11-9zm0-14a6 6 0 110 12 6 6 0 010-12zm0 2a4 4 0 100 8 4 4 0 000-8z" }));
+}));
+AddMemberBorder.displayName = "AddMemberBorder";
+AddMemberBorder["iconName"] = "add-member_border";
+var AddMemberBorder_default = AddMemberBorder;
+
+// node_modules/@ringcentral/juno/es6/icon/AddMember.js
+import React56, { forwardRef as forwardRef39, memo as memo26 } from "react";
+var __assign34 = function() {
+  __assign34 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign34.apply(this, arguments);
+};
+var AddMember = memo26(forwardRef39(function(props, svgRef) {
+  return React56.createElement("svg", __assign34({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React56.createElement("path", { d: "M23 16a7 7 0 110 14 7 7 0 010-14zm-10 1c1.037 0 2.046.117 3.004.338A8.965 8.965 0 0014 23c0 1.851.559 3.571 1.516 5.001L4 28a2 2 0 01-2-2c0-5.096 5.019-9 11-9zm10 1a1 1 0 00-.993.883L22 19v3h-3a1 1 0 00-.117 1.993L19 24h2.999L22 27a1 1 0 001.993.117L24 27l-.001-3H27a1 1 0 00.117-1.993L27 22h-3v-3a1 1 0 00-1-1zM13 3a6 6 0 110 12 6 6 0 010-12z" }));
+}));
+AddMember.displayName = "AddMember";
+AddMember["iconName"] = "add-member";
+var AddMember_default = AddMember;
+
+// node_modules/@ringcentral/juno/es6/icon/AddNewFolder.js
+import React57, { forwardRef as forwardRef40, memo as memo27 } from "react";
+var __assign35 = function() {
+  __assign35 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign35.apply(this, arguments);
+};
+var AddNewFolder = memo27(forwardRef40(function(props, svgRef) {
+  return React57.createElement("svg", __assign35({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React57.createElement("path", { d: "M4.545 3A2.552 2.552 0 002 5.545v15.273c0 1.4 1.145 2.545 2.545 2.545h10.284a8.899 8.899 0 01-.102-1.273 8.91 8.91 0 018.909-8.909c1.368 0 2.66.319 3.818.87V8.09c0-1.4-1.145-2.545-2.545-2.545h-9.128a2.545 2.545 0 01-1.8-.746l-1.054-1.054a2.547 2.547 0 00-1.8-.746H4.545zm19.101 12.747c-1.625 0-3.249.623-4.492 1.864a6.325 6.325 0 000 8.978c2.484 2.484 6.497 2.484 8.981 0s2.484-6.499 0-8.984a6.326 6.326 0 00-4.489-1.859zm.005 2.528c.703.001 1.273.57 1.273 1.273v1.273h1.273a1.273 1.273 0 010 2.546h-1.273v1.273a1.273 1.273 0 01-2.546 0v-1.273h-1.273a1.273 1.273 0 010-2.546h1.273v-1.273c0-.703.57-1.273 1.273-1.273z" }));
+}));
+AddNewFolder.displayName = "AddNewFolder";
+AddNewFolder["iconName"] = "add_new_folder";
+var AddNewFolder_default = AddNewFolder;
+
+// node_modules/@ringcentral/juno/es6/icon/AddParkLocation.js
+import React58, { forwardRef as forwardRef41, memo as memo28 } from "react";
+var __assign36 = function() {
+  __assign36 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign36.apply(this, arguments);
+};
+var AddParkLocation = memo28(forwardRef41(function(props, svgRef) {
+  return React58.createElement("svg", __assign36({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React58.createElement("path", { d: "M27 2a3 3 0 012.995 2.824L30 5v11h-2V5a1 1 0 00-.883-.993L27 4H5a1 1 0 00-.993.883L4 5v22a1 1 0 00.883.993L5 28h12v2H5a3 3 0 01-2.995-2.824L2 27V5a3 3 0 012.824-2.995L5 2h22zm-3 15a1 1 0 011 1v4h4a1 1 0 010 2h-4.001L25 28a1 1 0 01-2 0l-.001-4H19a1 1 0 010-2h4v-4a1 1 0 011-1zm-6.423-8.4c2.782 0 4.743 2.008 4.743 4.894 0 2.818-1.876 4.805-4.54 4.91l-.224.004h-5.988v4.608c0 .602-.359.983-.924.983-.524 0-.872-.328-.919-.857l-.005-.126V9.582c0-.559.31-.928.806-.977l.118-.006h6.933zm-.483 1.691h-5.527v6.426h5.527c2.115 0 3.326-1.194 3.326-3.224 0-2.019-1.201-3.203-3.326-3.203z" }));
+}));
+AddParkLocation.displayName = "AddParkLocation";
+AddParkLocation["iconName"] = "add-park-location";
+var AddParkLocation_default = AddParkLocation;
+
+// node_modules/@ringcentral/juno/es6/icon/AddReactions.js
+import React59, { forwardRef as forwardRef42, memo as memo29 } from "react";
+var __assign37 = function() {
+  __assign37 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign37.apply(this, arguments);
+};
+var AddReactions = memo29(forwardRef42(function(props, svgRef) {
+  return React59.createElement("svg", __assign37({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React59.createElement("path", { d: "M19.921 18.612c.44.23.589.737.334 1.133-1.145 1.776-3.253 2.893-5.576 2.893-2.306 0-4.4-1.1-5.551-2.855-.258-.394-.113-.902.325-1.135s1.002-.102 1.261.292c.823 1.255 2.318 2.04 3.966 2.04 1.66 0 3.165-.798 3.984-2.068.255-.396.818-.531 1.258-.301z" }), React59.createElement("path", { d: "M13.867 3.049c7.152-.626 13.458 4.665 14.084 11.818.012.142.022.283.03.424a7.435 7.435 0 00-2.021-.233l-.002-.016c-.529-6.052-5.865-10.529-11.917-9.999S3.512 10.908 4.042 16.96c.529 6.052 5.865 10.529 11.917 9.999a10.981 10.981 0 003.518-.907 7.424 7.424 0 001.185 1.656 12.966 12.966 0 01-4.528 1.244c-7.152.626-13.458-4.665-14.084-11.818S6.715 3.676 13.868 3.05z" }), React59.createElement("path", { d: "M26.379 18.517a1 1 0 011 1l-.001 2.62 2.621.001a1 1 0 011 1v.069a1 1 0 01-1 1l-2.621-.001.001 2.621a1 1 0 01-1 1h-.069a1 1 0 01-1-1l-.001-2.621-2.62.001a1 1 0 01-1-1v-.069a1 1 0 011-1l2.62-.001.001-2.62a1 1 0 011-1h.069zM12.5 12.25a1.75 1.75 0 11-3.501-.001 1.75 1.75 0 013.501.001zM20.5 12.25a1.75 1.75 0 11-3.501-.001 1.75 1.75 0 013.501.001z" }));
+}));
+AddReactions.displayName = "AddReactions";
+AddReactions["iconName"] = "add-reactions";
+var AddReactions_default = AddReactions;
+
+// node_modules/@ringcentral/juno/es6/icon/AddTask.js
+import React60, { forwardRef as forwardRef43, memo as memo30 } from "react";
+var __assign38 = function() {
+  __assign38 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign38.apply(this, arguments);
+};
+var AddTask = memo30(forwardRef43(function(props, svgRef) {
+  return React60.createElement("svg", __assign38({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React60.createElement("path", { d: "M16 2c7.732 0 14 6.268 14 14 0 .968-.098 1.914-.285 2.827a6.986 6.986 0 00-1.824-1.204c.072-.531.109-1.072.109-1.623 0-6.627-5.373-12-12-12S4 9.373 4 16s5.373 12 12 12c1.039 0 2.047-.132 3.008-.38a7.02 7.02 0 001.406 1.669A13.947 13.947 0 0116 30C8.268 30 2 23.732 2 16S8.268 2 16 2zm9 17a1 1 0 011 1v3h3a1 1 0 010 2h-3.001L26 28a1 1 0 01-2 0l-.001-3H21a1 1 0 010-2h3v-3a1 1 0 011-1zm-2.624-7.259a.999.999 0 010 1.414l-7.071 7.071a.99.99 0 01-.531.277l-.117.014h-.118a.997.997 0 01-.648-.291l-4.243-4.243a.999.999 0 111.414-1.414l3.535 3.535 6.365-6.363a.999.999 0 011.414 0z" }));
+}));
+AddTask.displayName = "AddTask";
+AddTask["iconName"] = "add-task";
+var AddTask_default = AddTask;
+
+// node_modules/@ringcentral/juno/es6/icon/AddTeamBorder.js
+import React61, { forwardRef as forwardRef44, memo as memo31 } from "react";
+var __assign39 = function() {
+  __assign39 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign39.apply(this, arguments);
+};
+var AddTeamBorder = memo31(forwardRef44(function(props, svgRef) {
+  return React61.createElement("svg", __assign39({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React61.createElement("path", { d: "M27 19a1 1 0 011 1v3h3a1 1 0 010 2h-3.001L28 28a1 1 0 01-2 0l-.001-3H23a1 1 0 010-2h3v-3a1 1 0 011-1zM8 19c.9 0 1.769.13 2.582.373a10.632 10.632 0 00-1.267 1.747A7.162 7.162 0 008 21c-3.081 0-5.619 1.935-5.961 4.426-.039.285.052.557.324.574l.1.003c.444.008 2.176.007 5.195-.002L7.999 26l.009.271a3.97 3.97 0 00.406 1.505l.121.225L1.999 28a2 2 0 01-2-2c0-3.955 3.654-7 8-7zm13-2c1.216 0 2.392.161 3.495.461-.925.355-1.755.9-2.443 1.587A11.391 11.391 0 0021 19c-4.791 0-8.708 2.912-8.984 6.584-.014.182.063.364.201.407l.063.009h8.01c.215.723.544 1.396.965 2H12a2 2 0 01-2-2c0-5.096 5.019-9 11-9zM8 7a5 5 0 11-.001 10.001A5 5 0 018 7zm13-4a6 6 0 110 12 6 6 0 010-12zM8 9a3 3 0 100 6 3 3 0 000-6zm13-4a4 4 0 100 8 4 4 0 000-8z" }));
+}));
+AddTeamBorder.displayName = "AddTeamBorder";
+AddTeamBorder["iconName"] = "add-team_border";
+var AddTeamBorder_default = AddTeamBorder;
+
+// node_modules/@ringcentral/juno/es6/icon/AddTeam.js
+import React62, { forwardRef as forwardRef45, memo as memo32 } from "react";
+var __assign40 = function() {
+  __assign40 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign40.apply(this, arguments);
+};
+var AddTeam = memo32(forwardRef45(function(props, svgRef) {
+  return React62.createElement("svg", __assign40({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React62.createElement("path", { d: "M27 19a5 5 0 11-.001 10.001A5 5 0 0127 19zM8 19c.9 0 1.769.13 2.582.373C8.969 21.185 8 23.459 8 26c0 .638.149 1.241.415 1.776l.121.225L2 28a2 2 0 01-2-2c0-3.955 3.654-7 8-7zm13-2c1.216 0 2.392.161 3.495.461A7.004 7.004 0 0021.255 28H12a2 2 0 01-2-2c0-5.096 5.019-9 11-9zm6 3c-.473 0-.87.329-.974.771l-.02.113-.007.117v2h-2l-.117.007a1 1 0 00-.112 1.967l.113.02.117.007h1.999l.001 2 .007.117a1 1 0 001.967.112l.02-.113.007-.117-.001-2h2.001l.117-.007a1 1 0 00.112-1.967l-.113-.02L30 23h-2v-2l-.007-.117A1 1 0 0027 20zM8 7a5 5 0 11-.001 10.001A5 5 0 018 7zm13-4a6 6 0 110 12 6 6 0 010-12z" }));
+}));
+AddTeam.displayName = "AddTeam";
+AddTeam["iconName"] = "add-team";
+var AddTeam_default = AddTeam;
+
+// node_modules/@ringcentral/juno/es6/icon/Add.js
+import React63, { forwardRef as forwardRef46, memo as memo33 } from "react";
+var __assign41 = function() {
+  __assign41 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign41.apply(this, arguments);
+};
+var Add = memo33(forwardRef46(function(props, svgRef) {
+  return React63.createElement("svg", __assign41({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React63.createElement("path", { d: "M25.899 6.101c5.467 5.467 5.467 14.332 0 19.799s-14.332 5.467-19.799 0C.633 20.433.633 11.568 6.1 6.101s14.332-5.467 19.799 0zm-8.898 8.898L17 9a1 1 0 00-1.993-.117L15 9l.001 5.999L9 15a1 1 0 00-.117 1.993L9 17l6.001-.001L15 23a1 1 0 001.993.117L17 23l.001-6.001L23 17a1 1 0 00.117-1.993L23 15l-5.999-.001z" }));
+}));
+Add.displayName = "Add";
+Add["iconName"] = "add";
+var Add_default = Add;
+
+// node_modules/@ringcentral/juno/es6/icon/Address.js
+import React64, { forwardRef as forwardRef47, memo as memo34 } from "react";
+var __assign42 = function() {
+  __assign42 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign42.apply(this, arguments);
+};
+var Address = memo34(forwardRef47(function(props, svgRef) {
+  return React64.createElement("svg", __assign42({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React64.createElement("path", { d: "M30.491 12.295L16.545 2.124a1.212 1.212 0 00-1.067 0L1.532 12.295c-.512.289-.683.91-.384 1.406s.939.662 1.452.372l1.42-.992V28.93c0 .579.47 1.034 1.067 1.034h21.821c.598 0 1.067-.455 1.067-1.034V13.081l1.406.992c.171.083.342.124.512.124.384 0 .726-.165.939-.537.342-.455.128-1.075-.342-1.364zM12.024 28V17h7.967v11h-7.967zm13.975 0h-4.001V16.141c0-.579-.47-1.034-1.067-1.034h-9.866c-.598 0-1.067.455-1.067 1.034V28H6.03V11.881l9.96-7.649 10.009 7.649V28z" }));
+}));
+Address.displayName = "Address";
+Address["iconName"] = "address";
+var Address_default = Address;
+
+// node_modules/@ringcentral/juno/es6/icon/AdminBorder.js
+import React65, { forwardRef as forwardRef48, memo as memo35 } from "react";
+var __assign43 = function() {
+  __assign43 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign43.apply(this, arguments);
+};
+var AdminBorder = memo35(forwardRef48(function(props, svgRef) {
+  return React65.createElement("svg", __assign43({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React65.createElement("path", { d: "M24.653 16.592a1.416 1.416 0 011.629-.509c.826.297 1.59.754 2.255 1.346.459.409.61 1.066.383 1.635-.097.245-.081.521.044.749s.334.364.563.382a1.435 1.435 0 011.287 1.122 7.696 7.696 0 01.001 3.367 1.434 1.434 0 01-1.288 1.123c-.228.017-.437.154-.562.381s-.141.504-.044.749a1.467 1.467 0 01-.383 1.634 6.908 6.908 0 01-2.255 1.346 1.418 1.418 0 01-1.692-.604c-.137-.224-.356-.351-.589-.351s-.453.127-.59.352a1.417 1.417 0 01-1.691.603 6.899 6.899 0 01-2.256-1.346 1.466 1.466 0 01-.383-1.635c.097-.245.081-.521-.044-.749s-.334-.364-.563-.382a1.435 1.435 0 01-1.287-1.122 7.696 7.696 0 01-.001-3.367 1.434 1.434 0 011.288-1.123c.228-.017.437-.154.562-.381s.141-.504.044-.749a1.467 1.467 0 01.383-1.634 6.908 6.908 0 012.255-1.346 1.418 1.418 0 011.692.604.693.693 0 00.589.351.68.68 0 00.508-.233l.056-.075.089-.139zM13 17c1.439 0 2.821.226 4.092.64a3.383 3.383 0 00-.114.775l-.001.175-.105.058c-.338.195-.64.447-.893.744A11.371 11.371 0 0013 19c-4.878 0-8.85 3.019-8.996 6.786L4 26l11.564.001a3.444 3.444 0 001.308 1.35l.106.058.001.175c.004.14.017.278.038.416H4.001a2 2 0 01-2-2c0-5.096 5.019-9 11-9zm9.001 1.129l-.095.044c-.16.078-.315.166-.466.262l-.223.15-.158.119.008.027a2.888 2.888 0 01-.1 1.656l-.081.196-.096.191a2.734 2.734 0 01-1.45 1.259l-.185.06-.084.02-.035.258-.015.156-.011.157-.009.315c0 .141.005.281.015.42l.019.208.035.256.085.022a2.7 2.7 0 011.426.994l.114.166.094.159c.31.565.417 1.212.317 1.837l-.041.207-.007.026.158.12c.146.104.298.2.453.288l.236.124.094.043.041-.047a2.678 2.678 0 011.569-.833l.203-.022.187-.007c.684 0 1.327.264 1.817.72l.142.143.039.046.096-.043c.16-.078.315-.166.466-.262l.223-.15.157-.12-.007-.026a2.888 2.888 0 01.1-1.656l.081-.196.096-.191a2.734 2.734 0 011.45-1.259l.185-.06.084-.021.037-.257.015-.156.011-.157L29 23c0-.141-.005-.281-.015-.42l-.019-.208-.036-.257-.084-.021a2.7 2.7 0 01-1.426-.994l-.114-.166-.094-.159a2.874 2.874 0 01-.317-1.837l.047-.234-.157-.119a5.013 5.013 0 00-.453-.288l-.236-.124-.094-.043-.065.074a2.68 2.68 0 01-1.551.807l-.2.022-.184.006a2.663 2.663 0 01-1.817-.72l-.142-.143-.04-.047zM24 21a2 2 0 11.001 3.999A2 2 0 0124 21zM13 3a6 6 0 110 12 6 6 0 010-12zm0 2a4 4 0 100 8 4 4 0 000-8z" }));
+}));
+AdminBorder.displayName = "AdminBorder";
+AdminBorder["iconName"] = "admin_border";
+var AdminBorder_default = AdminBorder;
+
+// node_modules/@ringcentral/juno/es6/icon/Admin.js
+import React66, { forwardRef as forwardRef49, memo as memo36 } from "react";
+var __assign44 = function() {
+  __assign44 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign44.apply(this, arguments);
+};
+var Admin = memo36(forwardRef49(function(props, svgRef) {
+  return React66.createElement("svg", __assign44({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React66.createElement("path", { d: "M26.281 16.083c.826.297 1.59.754 2.255 1.346.459.409.61 1.066.383 1.635-.097.245-.081.521.044.749s.334.364.563.382a1.435 1.435 0 011.287 1.122 7.696 7.696 0 01.001 3.367 1.434 1.434 0 01-1.288 1.123c-.228.017-.437.154-.562.381s-.141.504-.044.749a1.467 1.467 0 01-.383 1.634 6.908 6.908 0 01-2.255 1.346 1.418 1.418 0 01-1.692-.604c-.137-.224-.356-.351-.589-.351s-.453.127-.59.352a1.417 1.417 0 01-1.691.603 6.899 6.899 0 01-2.256-1.346 1.466 1.466 0 01-.383-1.635c.097-.245.081-.521-.044-.749s-.334-.364-.563-.382a1.435 1.435 0 01-1.287-1.122 7.696 7.696 0 01-.001-3.367 1.434 1.434 0 011.288-1.123c.228-.017.437-.154.562-.381s.141-.504.044-.749a1.467 1.467 0 01.383-1.634 6.908 6.908 0 012.255-1.346 1.418 1.418 0 011.692.604.693.693 0 00.589.351.68.68 0 00.508-.233l.056-.075.089-.139a1.416 1.416 0 011.629-.509zM13 17c1.439 0 2.821.226 4.092.64a3.383 3.383 0 00-.114.775l-.001.175-.105.058a3.447 3.447 0 00-1.636 2.229A9.627 9.627 0 0015.001 23c0 .718.079 1.43.236 2.125l.048.189c.25.873.827 1.598 1.587 2.037l.106.058.001.175c.004.14.017.278.038.416H4.001a2 2 0 01-2-2c0-5.096 5.019-9 11-9zm11 4a2 2 0 10-.001 3.999A2 2 0 0024 21zM13 3a6 6 0 110 12 6 6 0 010-12z" }));
+}));
+Admin.displayName = "Admin";
+Admin["iconName"] = "admin";
+var Admin_default = Admin;
+
+// node_modules/@ringcentral/juno/es6/icon/Advanced.js
+import React67, { forwardRef as forwardRef50, memo as memo37 } from "react";
+var __assign45 = function() {
+  __assign45 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign45.apply(this, arguments);
+};
+var Advanced = memo37(forwardRef50(function(props, svgRef) {
+  return React67.createElement("svg", __assign45({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React67.createElement("path", { d: "M20.399 4h-9.405a4 4 0 00-3.453 1.981l-4.678 8a4.001 4.001 0 000 4.038l4.678 8A4 4 0 0010.994 28h9.405a4 4 0 003.457-1.988l4.656-8a4 4 0 000-4.024l-4.656-8A4 4 0 0020.399 4zm-4.716 18c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6-2.667 6-6 6z" }));
+}));
+Advanced.displayName = "Advanced";
+Advanced["iconName"] = "advanced";
+var Advanced_default = Advanced;
+
+// node_modules/@ringcentral/juno/es6/icon/AlignCenter.js
+import React68, { forwardRef as forwardRef51, memo as memo38 } from "react";
+var __assign46 = function() {
+  __assign46 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign46.apply(this, arguments);
+};
+var AlignCenter = memo38(forwardRef51(function(props, svgRef) {
+  return React68.createElement("svg", __assign46({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React68.createElement("path", { d: "M27 24a1 1 0 010 2H5a1 1 0 010-2h22zm-4-9a1 1 0 010 2H9a1 1 0 010-2h14zm4-9a1 1 0 010 2H5a1 1 0 010-2h22z" }));
+}));
+AlignCenter.displayName = "AlignCenter";
+AlignCenter["iconName"] = "align-center";
+var AlignCenter_default = AlignCenter;
+
+// node_modules/@ringcentral/juno/es6/icon/AlignJustify.js
+import React69, { forwardRef as forwardRef52, memo as memo39 } from "react";
+var __assign47 = function() {
+  __assign47 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign47.apply(this, arguments);
+};
+var AlignJustify = memo39(forwardRef52(function(props, svgRef) {
+  return React69.createElement("svg", __assign47({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React69.createElement("path", { d: "M27 24a1 1 0 010 2H5a1 1 0 010-2h22zm0-9a1 1 0 010 2H5a1 1 0 010-2h22zm0-9a1 1 0 010 2H5a1 1 0 010-2h22z" }));
+}));
+AlignJustify.displayName = "AlignJustify";
+AlignJustify["iconName"] = "align-justify";
+var AlignJustify_default = AlignJustify;
+
+// node_modules/@ringcentral/juno/es6/icon/AlignLeft.js
+import React70, { forwardRef as forwardRef53, memo as memo40 } from "react";
+var __assign48 = function() {
+  __assign48 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign48.apply(this, arguments);
+};
+var AlignLeft = memo40(forwardRef53(function(props, svgRef) {
+  return React70.createElement("svg", __assign48({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React70.createElement("path", { d: "M27 24a1 1 0 010 2H5a1 1 0 010-2h22zm-8-9a1 1 0 010 2H5a1 1 0 010-2h14zm8-9a1 1 0 010 2H5a1 1 0 010-2h22z" }));
+}));
+AlignLeft.displayName = "AlignLeft";
+AlignLeft["iconName"] = "align-left";
+var AlignLeft_default = AlignLeft;
+
+// node_modules/@ringcentral/juno/es6/icon/AlignRight.js
+import React71, { forwardRef as forwardRef54, memo as memo41 } from "react";
+var __assign49 = function() {
+  __assign49 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign49.apply(this, arguments);
+};
+var AlignRight = memo41(forwardRef54(function(props, svgRef) {
+  return React71.createElement("svg", __assign49({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React71.createElement("path", { d: "M27 24a1 1 0 010 2H5a1 1 0 010-2h22zm0-9a1 1 0 010 2H13a1 1 0 010-2h14zm0-9a1 1 0 010 2H5a1 1 0 010-2h22z" }));
+}));
+AlignRight.displayName = "AlignRight";
+AlignRight["iconName"] = "align-right";
+var AlignRight_default = AlignRight;
+
+// node_modules/@ringcentral/juno/es6/icon/AnalyticsBorder.js
+import React72, { forwardRef as forwardRef55, memo as memo42 } from "react";
+var __assign50 = function() {
+  __assign50 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign50.apply(this, arguments);
+};
+var AnalyticsBorder = memo42(forwardRef55(function(props, svgRef) {
+  return React72.createElement("svg", __assign50({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React72.createElement("path", { d: "M28 3a2 2 0 012 2v18a2 2 0 01-2 2H17v2h4a1 1 0 010 2H11a1 1 0 010-2h4v-2H4a2 2 0 01-2-2V5a2 2 0 012-2h24zm-1 2H5a1 1 0 00-1 1v16a1 1 0 001 1h22a1 1 0 001-1V6a1 1 0 00-1-1zm-16 6a1 1 0 011 1v6a1 1 0 01-2 0v-6a1 1 0 011-1zm5-2a1 1 0 011 1v8a1 1 0 01-2 0v-8a1 1 0 011-1zm5 4a1 1 0 011 1v4a1 1 0 01-2 0v-4a1 1 0 011-1z" }));
+}));
+AnalyticsBorder.displayName = "AnalyticsBorder";
+AnalyticsBorder["iconName"] = "analytics_border";
+var AnalyticsBorder_default = AnalyticsBorder;
+
+// node_modules/@ringcentral/juno/es6/icon/Analytics.js
+import React73, { forwardRef as forwardRef56, memo as memo43 } from "react";
+var __assign51 = function() {
+  __assign51 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign51.apply(this, arguments);
+};
+var Analytics = memo43(forwardRef56(function(props, svgRef) {
+  return React73.createElement("svg", __assign51({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React73.createElement("path", { d: "M28 3a2 2 0 012 2v18a2 2 0 01-2 2H17v2h4a1 1 0 010 2H11a1 1 0 010-2h4v-2H4a2 2 0 01-2-2V5a2 2 0 012-2h24zm-17 8a1 1 0 00-.993.883L10 12v6a1 1 0 001.993.117L12 18v-6a1 1 0 00-1-1zm5-2a1 1 0 00-.993.883L15 10v8a1 1 0 001.993.117L17 18v-8a1 1 0 00-1-1zm5 4a1 1 0 00-.993.883L20 14v4a1 1 0 001.993.117L22 18v-4a1 1 0 00-1-1z" }));
+}));
+Analytics.displayName = "Analytics";
+Analytics["iconName"] = "analytics";
+var Analytics_default = Analytics;
+
+// node_modules/@ringcentral/juno/es6/icon/AppleLogo.js
+import React74, { forwardRef as forwardRef57, memo as memo44 } from "react";
+var __assign52 = function() {
+  __assign52 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign52.apply(this, arguments);
+};
+var AppleLogo = memo44(forwardRef57(function(props, svgRef) {
+  return React74.createElement("svg", __assign52({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React74.createElement("path", { d: "M16.73 8.462c1.264 0 2.848-.854 3.791-1.994.854-1.032 1.477-2.474 1.477-3.916A2.68 2.68 0 0021.945 2c-1.406.053-3.097.943-4.112 2.136-.801.908-1.531 2.332-1.531 3.791 0 .214.036.427.053.498.089.018.231.036.374.036zM12.28 30c1.727 0 2.492-1.157 4.646-1.157 2.189 0 2.67 1.121 4.593 1.121 1.887 0 3.151-1.744 4.343-3.453 1.335-1.958 1.887-3.88 1.922-3.97-.125-.036-3.738-1.513-3.738-5.661 0-3.596 2.848-5.215 3.008-5.34-1.887-2.706-4.753-2.777-5.536-2.777-2.118 0-3.845 1.282-4.931 1.282-1.175 0-2.723-1.21-4.557-1.21-3.489 0-7.031 2.884-7.031 8.331 0 3.382 1.317 6.96 2.937 9.274C9.324 28.398 10.535 30 12.279 30z" }));
+}));
+AppleLogo.displayName = "AppleLogo";
+AppleLogo["iconName"] = "apple-logo";
+var AppleLogo_default = AppleLogo;
+
+// node_modules/@ringcentral/juno/es6/icon/Apps.js
+import React75, { forwardRef as forwardRef58, memo as memo45 } from "react";
+var __assign53 = function() {
+  __assign53 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign53.apply(this, arguments);
+};
+var Apps = memo45(forwardRef58(function(props, svgRef) {
+  return React75.createElement("svg", __assign53({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React75.createElement("path", { d: "M28 18a2 2 0 012 2v8a2 2 0 01-2 2h-8a2 2 0 01-2-2v-8a2 2 0 012-2h8zm-16 0a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2v-8a2 2 0 012-2h8zm0-16a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V4a2 2 0 012-2h8zm16 0a2 2 0 012 2v8a2 2 0 01-2 2h-8a2 2 0 01-2-2V4a2 2 0 012-2h8z" }));
+}));
+Apps.displayName = "Apps";
+Apps["iconName"] = "apps";
+var Apps_default = Apps;
+
+// node_modules/@ringcentral/juno/es6/icon/Archive.js
+import React76, { forwardRef as forwardRef59, memo as memo46 } from "react";
+var __assign54 = function() {
+  __assign54 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign54.apply(this, arguments);
+};
+var Archive = memo46(forwardRef59(function(props, svgRef) {
+  return React76.createElement("svg", __assign54({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React76.createElement("path", { d: "M28 3a2 2 0 012 2v4a2 2 0 01-2 2v16a2 2 0 01-2 2H6a2 2 0 01-2-2V11a2 2 0 01-2-2V5a2 2 0 012-2h24zm-2 8H6v15a1 1 0 001 1h18a1 1 0 001-1V11zm-7 4a1 1 0 010 2h-6a1 1 0 010-2h6zm8-10H5a1 1 0 00-1 1v2a1 1 0 001 1h22a1 1 0 001-1V6a1 1 0 00-1-1z" }));
+}));
+Archive.displayName = "Archive";
+Archive["iconName"] = "archive";
+var Archive_default = Archive;
+
+// node_modules/@ringcentral/juno/es6/icon/ArrowDown2.js
+import React77, { forwardRef as forwardRef60, memo as memo47 } from "react";
+var __assign55 = function() {
+  __assign55 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign55.apply(this, arguments);
+};
+var ArrowDown2 = memo47(forwardRef60(function(props, svgRef) {
+  return React77.createElement("svg", __assign55({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React77.createElement("path", { d: "M9.636 13.05a.999.999 0 011.414 0L16 18l4.95-4.95a.999.999 0 111.414 1.414l-5.657 5.657a.999.999 0 01-1.414 0l-5.657-5.657a.999.999 0 010-1.414z" }));
+}));
+ArrowDown2.displayName = "ArrowDown2";
+ArrowDown2["iconName"] = "arrow_down";
+var ArrowDown2_default = ArrowDown2;
+
+// node_modules/@ringcentral/juno/es6/icon/ArrowDown.js
+import React78, { forwardRef as forwardRef61, memo as memo48 } from "react";
+var __assign56 = function() {
+  __assign56 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign56.apply(this, arguments);
+};
+var ArrowDown = memo48(forwardRef61(function(props, svgRef) {
+  return React78.createElement("svg", __assign56({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React78.createElement("path", { d: "M16.707 20.293l5.586-5.586A.999.999 0 0021.586 13H10.414a1 1 0 00-.707 1.707l5.586 5.586a.999.999 0 001.414 0z" }));
+}));
+ArrowDown.displayName = "ArrowDown";
+ArrowDown["iconName"] = "arrow-down";
+var ArrowDown_default = ArrowDown;
+
+// node_modules/@ringcentral/juno/es6/icon/ArrowLeft2.js
+import React79, { forwardRef as forwardRef62, memo as memo49 } from "react";
+var __assign57 = function() {
+  __assign57 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign57.apply(this, arguments);
+};
+var ArrowLeft2 = memo49(forwardRef62(function(props, svgRef) {
+  return React79.createElement("svg", __assign57({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React79.createElement("path", { d: "M18.95 9.636a.999.999 0 010 1.414L14 16l4.95 4.95a.999.999 0 11-1.414 1.414l-5.657-5.657a.999.999 0 010-1.414l5.657-5.657a.999.999 0 011.414 0z" }));
+}));
+ArrowLeft2.displayName = "ArrowLeft2";
+ArrowLeft2["iconName"] = "arrow_left";
+var ArrowLeft2_default = ArrowLeft2;
+
+// node_modules/@ringcentral/juno/es6/icon/ArrowLeft.js
+import React80, { forwardRef as forwardRef63, memo as memo50 } from "react";
+var __assign58 = function() {
+  __assign58 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign58.apply(this, arguments);
+};
+var ArrowLeft = memo50(forwardRef63(function(props, svgRef) {
+  return React80.createElement("svg", __assign58({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React80.createElement("path", { d: "M11.707 15.293l5.586-5.586a.999.999 0 011.707.707v11.172a1 1 0 01-1.707.707l-5.586-5.586a.999.999 0 010-1.414z" }));
+}));
+ArrowLeft.displayName = "ArrowLeft";
+ArrowLeft["iconName"] = "arrow-left";
+var ArrowLeft_default = ArrowLeft;
+
+// node_modules/@ringcentral/juno/es6/icon/ArrowRight.js
+import React81, { forwardRef as forwardRef64, memo as memo51 } from "react";
+var __assign59 = function() {
+  __assign59 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign59.apply(this, arguments);
+};
+var ArrowRight = memo51(forwardRef64(function(props, svgRef) {
+  return React81.createElement("svg", __assign59({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React81.createElement("path", { d: "M13.05 9.636a.999.999 0 000 1.414L18 16l-4.95 4.95a.999.999 0 101.414 1.414l5.657-5.657a.999.999 0 000-1.414l-5.657-5.657a.999.999 0 00-1.414 0z" }));
+}));
+ArrowRight.displayName = "ArrowRight";
+ArrowRight["iconName"] = "arrow_right";
+var ArrowRight_default = ArrowRight;
+
+// node_modules/@ringcentral/juno/es6/icon/ArrowRight1.js
+import React82, { forwardRef as forwardRef65, memo as memo52 } from "react";
+var __assign60 = function() {
+  __assign60 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign60.apply(this, arguments);
+};
+var ArrowRight1 = memo52(forwardRef65(function(props, svgRef) {
+  return React82.createElement("svg", __assign60({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React82.createElement("path", { d: "M20.293 15.293l-5.586-5.586a.999.999 0 00-1.707.707v11.172a1 1 0 001.707.707l5.586-5.586a.999.999 0 000-1.414z" }));
+}));
+ArrowRight1.displayName = "ArrowRight1";
+ArrowRight1["iconName"] = "arrow_right1";
+var ArrowRight1_default = ArrowRight1;
+
+// node_modules/@ringcentral/juno/es6/icon/ArrowUp2.js
+import React83, { forwardRef as forwardRef66, memo as memo53 } from "react";
+var __assign61 = function() {
+  __assign61 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign61.apply(this, arguments);
+};
+var ArrowUp2 = memo53(forwardRef66(function(props, svgRef) {
+  return React83.createElement("svg", __assign61({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React83.createElement("path", { d: "M9.636 18.95a.999.999 0 001.414 0L16 14l4.95 4.95a.999.999 0 101.414-1.414l-5.657-5.657a.999.999 0 00-1.414 0l-5.657 5.657a.999.999 0 000 1.414z" }));
+}));
+ArrowUp2.displayName = "ArrowUp2";
+ArrowUp2["iconName"] = "arrow_up";
+var ArrowUp2_default = ArrowUp2;
+
+// node_modules/@ringcentral/juno/es6/icon/ArrowUp.js
+import React84, { forwardRef as forwardRef67, memo as memo54 } from "react";
+var __assign62 = function() {
+  __assign62 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign62.apply(this, arguments);
+};
+var ArrowUp = memo54(forwardRef67(function(props, svgRef) {
+  return React84.createElement("svg", __assign62({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React84.createElement("path", { d: "M16.707 11.707l5.586 5.586A.999.999 0 0121.586 19H10.414a1 1 0 01-.707-1.707l5.586-5.586a.999.999 0 011.414 0z" }));
+}));
+ArrowUp.displayName = "ArrowUp";
+ArrowUp["iconName"] = "arrow-up";
+var ArrowUp_default = ArrowUp;
+
+// node_modules/@ringcentral/juno/es6/icon/Askfirst.js
+import React85, { forwardRef as forwardRef68, memo as memo55 } from "react";
+var __assign63 = function() {
+  __assign63 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign63.apply(this, arguments);
+};
+var Askfirst = memo55(forwardRef68(function(props, svgRef) {
+  return React85.createElement("svg", __assign63({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React85.createElement("path", { d: "M25 19a2 2 0 011.994 1.851L27 21v6a2 2 0 01-1.851 1.994L25 29h-1a3 3 0 01-2.995-2.824L21 26v-4a3 3 0 012.824-2.995L24 19h1zM8 19a3 3 0 013 3v4a3 3 0 01-3 3H7a2 2 0 01-2-2v-6a2 2 0 012-2h1zm8-17c7.732 0 14 6.268 14 14v7a1 1 0 01-2 0v-7c0-6.525-5.209-11.834-11.695-11.996L16 4C9.475 4 4.166 9.209 4.004 15.695L4 16v7a1 1 0 01-2 0v-7C2 8.268 8.268 2 16 2z" }));
+}));
+Askfirst.displayName = "Askfirst";
+Askfirst["iconName"] = "askfirst";
+var Askfirst_default = Askfirst;
+
+// node_modules/@ringcentral/juno/es6/icon/Assignment.js
+import React86, { forwardRef as forwardRef69, memo as memo56 } from "react";
+var __assign64 = function() {
+  __assign64 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign64.apply(this, arguments);
+};
+var Assignment = memo56(forwardRef69(function(props, svgRef) {
+  return React86.createElement("svg", __assign64({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React86.createElement("path", { d: "M25.333 4H19.76C19.2 2.453 17.733 1.333 16 1.333S12.8 2.453 12.24 4H6.667A2.675 2.675 0 004 6.667v18.667c0 1.467 1.2 2.667 2.667 2.667h18.667c1.467 0 2.667-1.2 2.667-2.667V6.667C28.001 5.2 26.801 4 25.334 4zM16 4c.733 0 1.333.6 1.333 1.333s-.6 1.333-1.333 1.333-1.333-.6-1.333-1.333S15.267 4 16 4zm0 5.333c2.213 0 4 1.787 4 4s-1.787 4-4 4-4-1.787-4-4 1.787-4 4-4zm8 16H8v-1.867c0-2.667 5.333-4.133 8-4.133s8 1.467 8 4.133v1.867z" }));
+}));
+Assignment.displayName = "Assignment";
+Assignment["iconName"] = "assignment";
+var Assignment_default = Assignment;
+
+// node_modules/@ringcentral/juno/es6/icon/Asterisk.js
+import React87, { forwardRef as forwardRef70, memo as memo57 } from "react";
+var __assign65 = function() {
+  __assign65 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign65.apply(this, arguments);
+};
+var Asterisk = memo57(forwardRef70(function(props, svgRef) {
+  return React87.createElement("svg", __assign65({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React87.createElement("path", { d: "M16.583 20v-2.463a1.93 1.93 0 00-.212-.896c.097.133.207.245.331.336s.265.182.424.274l2.291 1.244.583-.933-2.291-1.257c-.15-.091-.298-.16-.444-.205s-.298-.077-.457-.093a2.09 2.09 0 00.901-.311l2.278-1.244-.583-.933-2.278 1.232c-.15.091-.285.182-.404.274s-.227.199-.325.323a2.04 2.04 0 00.185-.896v-2.451h-1.166v2.463c0 .166.015.326.046.479s.086.305.166.454a2.224 2.224 0 00-.755-.647l-2.291-1.244-.583.933 2.291 1.257c.159.1.316.172.47.218s.32.077.497.093a2.365 2.365 0 00-.967.299l-2.278 1.244.583.933 2.278-1.232c.291-.166.525-.352.702-.56-.062.133-.104.27-.126.411s-.033.29-.033.448v2.451h1.166z" }));
+}));
+Asterisk.displayName = "Asterisk";
+Asterisk["iconName"] = "asterisk";
+var Asterisk_default = Asterisk;
+
+// node_modules/@ringcentral/juno/es6/icon/Attachment.js
+import React88, { forwardRef as forwardRef71, memo as memo58 } from "react";
+var __assign66 = function() {
+  __assign66 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign66.apply(this, arguments);
+};
+var Attachment = memo58(forwardRef71(function(props, svgRef) {
+  return React88.createElement("svg", __assign66({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React88.createElement("path", { d: "M15.828 24.056a4 4 0 01-5.657-5.657l8.485-8.485a.999.999 0 111.414 1.414l-8.485 8.485a2 2 0 102.828 2.828l10.96-10.96a4.5 4.5 0 00-6.364-6.364l-10.96 10.96a7 7 0 009.899 9.899l8.485-8.485a.999.999 0 111.414 1.414l-8.485 8.485a9 9 0 01-12.728 0 9 9 0 010-12.728l10.96-10.96a6.5 6.5 0 019.192 9.192l-10.96 10.96z" }));
+}));
+Attachment.displayName = "Attachment";
+Attachment["iconName"] = "attachment";
+var Attachment_default = Attachment;
+
+// node_modules/@ringcentral/juno/es6/icon/Audio.js
+import React89, { forwardRef as forwardRef72, memo as memo59 } from "react";
+var __assign67 = function() {
+  __assign67 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign67.apply(this, arguments);
+};
+var Audio = memo59(forwardRef72(function(props, svgRef) {
+  return React89.createElement("svg", __assign67({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React89.createElement("path", { d: "M18.479 4.534c.333.342.521.805.521 1.288v20.356C19 27.184 18.204 28 17.222 28c-.471 0-.924-.192-1.257-.534l-6.854-6H3.778C2.796 21.466 2 20.65 2 19.644v-7.288c0-1.006.796-1.822 1.778-1.822h5.333l6.854-6a1.746 1.746 0 012.514 0zm8.919 3.335C29.081 10.224 30 13.044 30 16s-.919 5.776-2.602 8.131a1 1 0 01-1.627-1.163C27.213 20.95 28 18.535 28 16s-.787-4.95-2.229-6.968a1 1 0 011.627-1.163zm-3.554 3.715A8.963 8.963 0 0125 16a8.953 8.953 0 01-1.171 4.441 1 1 0 11-1.738-.988A6.965 6.965 0 0023 16a6.962 6.962 0 00-.898-3.433 1 1 0 011.742-.982z" }));
+}));
+Audio.displayName = "Audio";
+Audio["iconName"] = "audio";
+var Audio_default = Audio;
+
+// node_modules/@ringcentral/juno/es6/icon/Barge.js
+import React90, { forwardRef as forwardRef73, memo as memo60 } from "react";
+var __assign68 = function() {
+  __assign68 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign68.apply(this, arguments);
+};
+var Barge = memo60(forwardRef73(function(props, svgRef) {
+  return React90.createElement("svg", __assign68({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React90.createElement("path", { d: "M8 21l4 2v3a2 2 0 11-4 0v-5zM24.849 5.225c.099.242.151.5.151.761v16.027a2 2 0 01-2.762 1.849l-13-5.353a2.001 2.001 0 01-1.239-1.849v-5.321c0-.81.489-1.541 1.239-1.849l13-5.353a2 2 0 012.611 1.088zM6 10v8a4 4 0 010-8zm21 1a3 3 0 01.176 5.995L27 17v-6z" }));
+}));
+Barge.displayName = "Barge";
+Barge["iconName"] = "barge";
+var Barge_default = Barge;
+
+// node_modules/@ringcentral/juno/es6/icon/Birthday.js
+import React91, { forwardRef as forwardRef74, memo as memo61 } from "react";
+var __assign69 = function() {
+  __assign69 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign69.apply(this, arguments);
+};
+var Birthday = memo61(forwardRef74(function(props, svgRef) {
+  return React91.createElement("svg", __assign69({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React91.createElement("path", { d: "M16.68 1.36c.469.793 2 3.473 2 4.636 0 .64-.228 1.229-.606 1.689.49.431.8 1.063.8 1.765v7.527h2.139l.001-2.814c0-.702.31-1.334.801-1.766a2.644 2.644 0 01-.607-1.688c0-1.164 1.531-3.843 2-4.636.283-.479 1.076-.479 1.359 0 .469.793 2 3.473 2 4.636 0 .62-.213 1.191-.571 1.645.58.432.979 1.083.979 1.809v2.814h1.34c1.305 0 2.389.779 2.389 2.078l-1.511 6.665 1.021.001a.787.787 0 01.687 1.17l-1.293 3.708a.787.787 0 01-.688.401H3.225a.79.79 0 01-.688-.401l-1.434-3.708a.784.784 0 01.687-1.17l.978-.001L1.3 19.055c0-1.299 1.038-2.078 2.343-2.078h1.378v-2.814c0-.727.402-1.379.984-1.811a2.652 2.652 0 01-.569-1.643c0-1.164 1.531-3.843 2-4.636.283-.479 1.076-.479 1.359 0 .469.793 2 3.473 2 4.636 0 .64-.228 1.229-.606 1.689.49.431.8 1.063.8 1.765v2.814h2.139l.001-7.527c0-.702.31-1.334.801-1.766a2.644 2.644 0 01-.607-1.688c0-1.164 1.531-3.843 2-4.636.283-.479 1.076-.479 1.359 0zM29.298 27H2.703l.839 1.963h24.772L29.299 27zm-5.624-4.572l-1.126 1.122a1.855 1.855 0 01-2.611 0l-1.126-1.122a.272.272 0 00-.381 0l-1.126 1.122c-.348.347-.812.538-1.305.538s-.957-.191-1.305-.538l-1.126-1.122a.272.272 0 00-.381 0l-1.126 1.122a1.855 1.855 0 01-2.611 0l-1.126-1.122a.272.272 0 00-.381 0L6.817 23.55a1.854 1.854 0 01-2.611 0l-.249-.249.428 1.68h23.048l.428-1.503-.071.072a1.855 1.855 0 01-2.611 0l-1.126-1.122a.272.272 0 00-.381 0zm4.616-3.373H3.619c-.435 0-.743-.433-.743 0l.589 2.312c.198-.228.454-.328.733-.05l1.126 1.121a.27.27 0 00.38 0l1.126-1.122a1.853 1.853 0 012.611 0l1.126 1.122a.27.27 0 00.381 0l1.125-1.121a1.854 1.854 0 012.611 0l1.126 1.122c.137.136.243.136.38 0l1.126-1.122a1.853 1.853 0 012.611 0l1.126 1.122a.27.27 0 00.381 0l1.125-1.121a1.854 1.854 0 012.611 0l1.126 1.122a.27.27 0 00.381 0l1.126-1.121c.207-.206.45-.165.681-.014l.641-2.248c0-.433-.399 0-.834 0zM16.508 8.665h-1.015c-.435 0-.572.352-.572.786l-.023 7.527h2.204l.023-7.527c0-.433-.183-.786-.617-.786zm-7.887 4.713H7.606c-.435 0-.572.352-.572.786l-.023 2.814h1.965v-2.814c0-.433.079-.786-.355-.786zm15.773 0h-1.015c-.435 0-.377.352-.377.786v2.814h1.987l.023-2.814c0-.433-.183-.786-.617-.786zM8.114 8.086c-.605 1.144-1.102 2.26-1.102 2.623a1.101 1.101 0 002.204 0c0-.362-.497-1.479-1.102-2.623zm15.772 0c-.605 1.144-1.102 2.26-1.102 2.623a1.101 1.101 0 002.204 0c0-.362-.497-1.479-1.102-2.623zM16 3.373c-.605 1.144-1.102 2.26-1.102 2.623a1.101 1.101 0 002.204 0c0-.362-.497-1.479-1.102-2.623z" }));
+}));
+Birthday.displayName = "Birthday";
+Birthday["iconName"] = "birthday";
+var Birthday_default = Birthday;
+
+// node_modules/@ringcentral/juno/es6/icon/Blocked.js
+import React92, { forwardRef as forwardRef75, memo as memo62 } from "react";
+var __assign70 = function() {
+  __assign70 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign70.apply(this, arguments);
+};
+var Blocked = memo62(forwardRef75(function(props, svgRef) {
+  return React92.createElement("svg", __assign70({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React92.createElement("path", { d: "M6.101 6.101C11.568.634 20.433.634 25.9 6.101s5.467 14.332 0 19.799c-5.467 5.467-14.332 5.467-19.799 0s-5.467-14.332 0-19.799zm19.063 2.15L8.252 25.163c4.715 3.996 11.786 3.77 16.234-.678 4.376-4.376 4.666-11.292.868-16.004l-.19-.23zM7.515 7.515c-4.448 4.448-4.674 11.52-.678 16.235L23.75 6.837c-4.715-3.997-11.787-3.771-16.235.678z" }));
+}));
+Blocked.displayName = "Blocked";
+Blocked["iconName"] = "blocked";
+var Blocked_default = Blocked;
+
+// node_modules/@ringcentral/juno/es6/icon/Bold.js
+import React93, { forwardRef as forwardRef76, memo as memo63 } from "react";
+var __assign71 = function() {
+  __assign71 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign71.apply(this, arguments);
+};
+var Bold = memo63(forwardRef76(function(props, svgRef) {
+  return React93.createElement("svg", __assign71({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React93.createElement("path", { d: "M16.776 28c1.386 0 2.618-.177 3.696-.531s1.985-.844 2.723-1.469c.737-.625 1.298-1.369 1.683-2.232s.578-1.804.578-2.822c0-2.822-1.639-4.603-4.917-5.344.737-.255 1.372-.564 1.906-.929s.974-.772 1.32-1.22c.346-.448.602-.929.767-1.444s.247-1.054.247-1.618c0-.985-.165-1.87-.495-2.656s-.85-1.455-1.559-2.008c-.709-.553-1.617-.979-2.723-1.278s-2.439-.448-4.001-.448H9.768c-1.105 0-2 .901-2 2.012v19.976c0 1.111.895 2.012 2 2.012h7.009zm-4.571-13.61V7.452H16c1.496 0 2.596.266 3.3.797s1.056 1.422 1.056 2.672c0 1.206-.39 2.086-1.172 2.639s-1.925.83-3.432.83h-3.547zm0 10.125v-7.037h4.488c.781 0 1.447.077 1.997.232s1.001.379 1.353.672c.352.293.611.647.776 1.062s.247.882.247 1.402c0 .498-.074.968-.223 1.411s-.39.83-.726 1.162c-.335.332-.781.598-1.337.797s-1.246.299-2.071.299h-4.505z" }));
+}));
+Bold.displayName = "Bold";
+Bold["iconName"] = "bold";
+var Bold_default = Bold;
+
+// node_modules/@ringcentral/juno/es6/icon/BookmarkBorder.js
+import React94, { forwardRef as forwardRef77, memo as memo64 } from "react";
+var __assign72 = function() {
+  __assign72 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign72.apply(this, arguments);
+};
+var BookmarkBorder = memo64(forwardRef77(function(props, svgRef) {
+  return React94.createElement("svg", __assign72({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React94.createElement("path", { d: "M25 3a2 2 0 012 2v23.178a1 1 0 01-1.537.844l-8.926-5.68a1.002 1.002 0 00-1.074 0l-8.926 5.68A1.001 1.001 0 015 28.178V5a2 2 0 012-2h18zm-1 2H8a1 1 0 00-1 1v20.357l7.926-5.044a2 2 0 012.148 0L25 26.357V6a1 1 0 00-1-1z" }));
+}));
+BookmarkBorder.displayName = "BookmarkBorder";
+BookmarkBorder["iconName"] = "bookmark_border";
+var BookmarkBorder_default = BookmarkBorder;
+
+// node_modules/@ringcentral/juno/es6/icon/Bookmark.js
+import React95, { forwardRef as forwardRef78, memo as memo65 } from "react";
+var __assign73 = function() {
+  __assign73 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign73.apply(this, arguments);
+};
+var Bookmark = memo65(forwardRef78(function(props, svgRef) {
+  return React95.createElement("svg", __assign73({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React95.createElement("path", { d: "M25 3a2 2 0 012 2v23.178a1 1 0 01-1.537.844l-8.926-5.68a1.002 1.002 0 00-1.074 0l-8.926 5.68A1.001 1.001 0 015 28.178V5a2 2 0 012-2h18z" }));
+}));
+Bookmark.displayName = "Bookmark";
+Bookmark["iconName"] = "bookmark";
+var Bookmark_default = Bookmark;
+
+// node_modules/@ringcentral/juno/es6/icon/BoxNew.js
+import React96, { forwardRef as forwardRef79, memo as memo66 } from "react";
+var __assign74 = function() {
+  __assign74 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign74.apply(this, arguments);
+};
+var BoxNew = memo66(forwardRef79(function(props, svgRef) {
+  return React96.createElement("svg", __assign74({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React96.createElement("path", { d: "M15.984 10.254c-2.15 0-4.137.674-5.769 1.811V4.073C10.215 2.928 9.273 2 8.112 2s-2.103.928-2.103 2.073v15.272c-.021.259.003 1.756.072 2.181C6.772 26.314 10.937 30 15.985 30c5.532 0 10.016-4.42 10.016-9.873s-4.484-9.873-10.016-9.873zm0 15.56c-3.186 0-5.769-2.546-5.769-5.687s2.583-5.687 5.769-5.687 5.769 2.546 5.769 5.687-2.583 5.687-5.769 5.687z" }));
+}));
+BoxNew.displayName = "BoxNew";
+BoxNew["iconName"] = "box-new";
+var BoxNew_default = BoxNew;
+
+// node_modules/@ringcentral/juno/es6/icon/Box.js
+import React97, { forwardRef as forwardRef80, memo as memo67 } from "react";
+var __assign75 = function() {
+  __assign75 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign75.apply(this, arguments);
+};
+var Box = memo67(forwardRef80(function(props, svgRef) {
+  return React97.createElement("svg", __assign75({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React97.createElement("path", { d: "M21.826 10.318l-.738-1.65c-1.25-2.192-3.377-3.59-6.918-3.339a5.687 5.687 0 00-1.788.55c-1.657.766-3.495 2.398-3.809 4.479l-1.982.629c-1.228.578-2.535 1.542-3.264 2.632a10.995 10.995 0 00-1.399 2.985c-.519 1.739.01 3.767.505 5.029 1.011 2.579 3.214 4.354 6.218 4.911l2.682.078h4.741c2.567 0 5.827.355 8.006-.235 2.808-.761 4.999-2.79 5.83-5.54 1.744-5.775-2.875-10.593-8.084-10.529zm-5.07 13.454c-1.532 0-2.845-.901-3.482-2.201-.638 1.3-1.95 2.201-3.482 2.201-2.154 0-3.9-1.765-3.9-3.943v-.048V13.282c0-.466.374-.845.835-.845s.836.379.836.845v3.312a3.857 3.857 0 012.229-.706c1.532 0 2.844.901 3.482 2.2.638-1.299 1.95-2.2 3.482-2.2 2.153 0 3.899 1.765 3.899 3.942s-1.746 3.943-3.899 3.943zm9.302-1.213c.278.372.205.903-.163 1.183s-.893.208-1.17-.165l-1.701-2.276-1.701 2.276c-.278.373-.802.446-1.17.165s-.442-.811-.164-1.183l1.987-2.658-1.987-2.659c-.278-.372-.205-.902.164-1.183s.892-.207 1.17.165l1.701 2.276 1.701-2.276c.277-.372.801-.446 1.17-.165s.441.811.163 1.183l-1.987 2.659 1.987 2.658zm-9.302-4.982c1.231 0 2.228 1.008 2.228 2.252s-.997 2.253-2.228 2.253c-1.231 0-2.229-1.009-2.229-2.253s.998-2.252 2.229-2.252zm-6.964 0c1.231 0 2.228 1.008 2.228 2.252s-.998 2.253-2.228 2.253c-1.231 0-2.229-1.009-2.229-2.253s.998-2.252 2.229-2.252z" }));
+}));
+Box.displayName = "Box";
+Box["iconName"] = "box";
+var Box_default = Box;
+
+// node_modules/@ringcentral/juno/es6/icon/BubbleLines.js
+import React98, { forwardRef as forwardRef81, memo as memo68 } from "react";
+var __assign76 = function() {
+  __assign76 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign76.apply(this, arguments);
+};
+var BubbleLines = memo68(forwardRef81(function(props, svgRef) {
+  return React98.createElement("svg", __assign76({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React98.createElement("path", { d: "M22 9a2 2 0 012 2v12a2 2 0 01-2 2h-4.586a.997.997 0 00-.707.293l-3.141 3.141a.8.8 0 01-1.131 0l-3.141-3.141A1 1 0 008.587 25H4.001a2 2 0 01-2-2V11a2 2 0 012-2h18zm6-6a2 2 0 012 2v12a2 2 0 01-2 2h-3v-9a2.001 2.001 0 00-1.851-1.995L23 8H8V5a2 2 0 012-2h18z" }));
+}));
+BubbleLines.displayName = "BubbleLines";
+BubbleLines["iconName"] = "bubble_lines";
+var BubbleLines_default = BubbleLines;
+
+// node_modules/@ringcentral/juno/es6/icon/BubbleLinesBorder.js
+import React99, { forwardRef as forwardRef82, memo as memo69 } from "react";
+var __assign77 = function() {
+  __assign77 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign77.apply(this, arguments);
+};
+var BubbleLinesBorder = memo69(forwardRef82(function(props, svgRef) {
+  return React99.createElement("svg", __assign77({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React99.createElement("path", { d: "M22 9a2 2 0 012 2v12a2 2 0 01-2 2h-4.586a.997.997 0 00-.707.293l-3.141 3.141a.8.8 0 01-1.131 0l-3.141-3.141A1 1 0 008.587 25H4.001a2 2 0 01-2-2V11a2 2 0 012-2h18zm-1 2H5a1 1 0 00-1 1v10a1 1 0 001 1h4a2 2 0 011.414.586L13 26.172l2.586-2.586A2 2 0 0117 23h4a1 1 0 001-1V12a1 1 0 00-1-1zm7-8a2 2 0 012 2v12a2 2 0 01-2 2h-3v-2h2a1 1 0 001-1V6a1 1 0 00-1-1H11a1 1 0 00-1 1v2H8V5a2 2 0 012-2h18z" }));
+}));
+BubbleLinesBorder.displayName = "BubbleLinesBorder";
+BubbleLinesBorder["iconName"] = "bubble_lines_border";
+var BubbleLinesBorder_default = BubbleLinesBorder;
+
+// node_modules/@ringcentral/juno/es6/icon/CallAdd.js
+import React100, { forwardRef as forwardRef83, memo as memo70 } from "react";
+var __assign78 = function() {
+  __assign78 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign78.apply(this, arguments);
+};
+var CallAdd = memo70(forwardRef83(function(props, svgRef) {
+  return React100.createElement("svg", __assign78({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React100.createElement("path", { d: "M16 4a2 2 0 012 2v8h8a2 2 0 110 4h-8v8a2 2 0 11-4 0v-8H6a2 2 0 110-4h8V6a2 2 0 012-2z" }));
+}));
+CallAdd.displayName = "CallAdd";
+CallAdd["iconName"] = "call-add";
+var CallAdd_default = CallAdd;
+
+// node_modules/@ringcentral/juno/es6/icon/CallList.js
+import React101, { forwardRef as forwardRef84, memo as memo71 } from "react";
+var __assign79 = function() {
+  __assign79 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign79.apply(this, arguments);
+};
+var CallList = memo71(forwardRef84(function(props, svgRef) {
+  return React101.createElement("svg", __assign79({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React101.createElement("path", { d: "M6.185 11.773l1.148 3.329c.13.367.05.712-.326.928l-1.005.58c-.961.555-1.055 1.421-.724 2.377.228.657.717 1.604 1.27 2.563l.278.473c.464.775.928 1.472 1.312 1.917.657.755 1.454 1.107 2.415.552l1.005-.58c.376-.217.715-.114.967.182l2.224 2.561c.733.806.399 1.477-.606 2.057-.909.525-1.846.576-2.845.317-2.547-.679-5.07-3.234-6.828-6.279s-2.709-6.508-2.024-9.053c.276-.995.789-1.781 1.697-2.305.948-.547 1.69-.557 2.043.382zM29 24a1 1 0 010 2H19a1 1 0 010-2h10zm0-9a1 1 0 010 2H13a1 1 0 010-2h16zm0-9a1 1 0 010 2H3a1 1 0 010-2h26z" }));
+}));
+CallList.displayName = "CallList";
+CallList["iconName"] = "call-list";
+var CallList_default = CallList;
+
+// node_modules/@ringcentral/juno/es6/icon/CallMore.js
+import React102, { forwardRef as forwardRef85, memo as memo72 } from "react";
+var __assign80 = function() {
+  __assign80 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign80.apply(this, arguments);
+};
+var CallMore = memo72(forwardRef85(function(props, svgRef) {
+  return React102.createElement("svg", __assign80({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React102.createElement("path", { d: "M6 13a3 3 0 110 6 3 3 0 010-6zm10 0a3 3 0 110 6 3 3 0 010-6zm10 0a3 3 0 110 6 3 3 0 010-6z" }));
+}));
+CallMore.displayName = "CallMore";
+CallMore["iconName"] = "call-more";
+var CallMore_default = CallMore;
+
+// node_modules/@ringcentral/juno/es6/icon/CallOnBehalf.js
+import React103, { forwardRef as forwardRef86, memo as memo73 } from "react";
+var __assign81 = function() {
+  __assign81 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign81.apply(this, arguments);
+};
+var CallOnBehalf = memo73(forwardRef86(function(props, svgRef) {
+  return React103.createElement("svg", __assign81({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React103.createElement("path", { d: "M27.11 11.037c.405.063.849.222 1.37.477.495.242.886.48 1.188.733.693.585 1.117 1.376 1.263 2.319.137.8.076 1.695-.171 2.661-.232.907-.625 1.862-1.178 2.871-.542.998-1.236 2.007-2.08 3.024a20.858 20.858 0 01-1.956 2.035 14.3 14.3 0 01-1.999 1.57c-.696.448-1.385.796-2.07 1.042a6.334 6.334 0 01-2.144.397c-.458 0-.889-.062-1.289-.19a3.418 3.418 0 01-.943-.467l-.208-.159c-.261-.195-.578-.517-.917-.931-.309-.376-.536-.712-.688-1.032l-.069-.159c-.233-.461-.284-1.074-.125-1.676a2.824 2.824 0 01.953-1.467l.845-.71.494-.429c.338-.299.664-.597.978-.895.391-.423.989-.701 1.658-.761a2.912 2.912 0 011.767.398l.125.085a4.6 4.6 0 01.205.152l.135.114-.052.049c.183-.164.39-.383.619-.654l.148-.183.176-.232.078-.11.09-.135-.154-.111a5.72 5.72 0 01-.175-.142c-.517-.518-.789-1.055-.868-1.66a2.577 2.577 0 01.418-1.771l.206-.302.369-.561c.114-.178.219-.348.317-.51.241-.401.454-.788.639-1.159.318-.585.758-1.006 1.317-1.27a2.937 2.937 0 011.731-.25zM12 17c1.439 0 2.822.226 4.092.64a3.383 3.383 0 00-.114.775l-.001.175-.105.058c-.338.195-.64.447-.893.744A11.371 11.371 0 0012 19c-4.878 0-8.85 3.019-8.996 6.786L3 26h10.981a1 1 0 00-.098 1.993L14 28H3a2 2 0 01-2-2c0-5.096 5.019-9 11-9zm14.233-3.904a.853.853 0 00-.398.386c-.193.387-.431.819-.697 1.263s-.581.928-.946 1.461a.56.56 0 00-.094.397c.021.16.091.298.246.455l.008.003.123.087.089.058c.032.02.067.04.104.06l.091.059.076.038.11.06.068.031.707.375-.146.729a2.586 2.586 0 01-.153.479 4.367 4.367 0 01-.405.782c-.178.282-.4.582-.663.898a8.648 8.648 0 01-.816.859 4.275 4.275 0 01-.755.557c-.086.048-.167.09-.242.124l-.664.302-.608-.669h-.002l.002-.146h-.126l-.01-.014.007.014-.207-.2a1.714 1.714 0 00-.217-.167.9.9 0 00-.519-.094c-.19.017-.327.08-.415.175-.281.269-.545.513-.809.751l-.424.376-.556.477-.674.564a.832.832 0 00-.294.437.492.492 0 00.015.349c.091.218.237.443.479.738.247.301.459.516.613.632.174.143.334.23.519.289.196.063.422.095.68.095.456 0 .945-.092 1.469-.28a8.166 8.166 0 001.662-.84c.575-.37 1.154-.826 1.731-1.364a18.76 18.76 0 001.774-1.845c.758-.913 1.379-1.815 1.858-2.697.479-.873.809-1.675.997-2.409.181-.71.223-1.325.134-1.845-.077-.495-.266-.848-.576-1.11-.158-.132-.417-.291-.778-.467-.357-.174-.625-.27-.802-.298a.946.946 0 00-.567.083zM12 3a6 6 0 110 12 6 6 0 010-12zm0 2a4 4 0 100 8 4 4 0 000-8z" }));
+}));
+CallOnBehalf.displayName = "CallOnBehalf";
+CallOnBehalf["iconName"] = "call_on_behalf";
+var CallOnBehalf_default = CallOnBehalf;
+
+// node_modules/@ringcentral/juno/es6/icon/ChatBubble.js
+import React104, { forwardRef as forwardRef87, memo as memo74 } from "react";
+var __assign82 = function() {
+  __assign82 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign82.apply(this, arguments);
+};
+var ChatBubble = memo74(forwardRef87(function(props, svgRef) {
+  return React104.createElement("svg", __assign82({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React104.createElement("path", { d: "M28 4a2 2 0 012 2v16a2 2 0 01-2 2h-7.586a.997.997 0 00-.707.293l-3.141 3.141a.8.8 0 01-1.131 0l-3.141-3.141a1 1 0 00-.707-.293H4.001a2 2 0 01-2-2V6a2 2 0 012-2h24zm-1 2H5a1 1 0 00-1 1v14a1 1 0 001 1h7a2 2 0 011.414.586L16 25.172l2.586-2.586A2 2 0 0120 22h7a1 1 0 001-1V7a1 1 0 00-1-1zm-7.222 3a1 1 0 011 1v7a1 1 0 01-2 0l.001-4.585-6.072 6.07a.999.999 0 11-1.414-1.414l6.072-6.07L12.779 11a1 1 0 010-2h7z" }));
+}));
+ChatBubble.displayName = "ChatBubble";
+ChatBubble["iconName"] = "chat_bubble";
+var ChatBubble_default = ChatBubble;
+
+// node_modules/@ringcentral/juno/es6/icon/Check.js
+import React105, { forwardRef as forwardRef88, memo as memo75 } from "react";
+var __assign83 = function() {
+  __assign83 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign83.apply(this, arguments);
+};
+var Check = memo75(forwardRef88(function(props, svgRef) {
+  return React105.createElement("svg", __assign83({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React105.createElement("path", { d: "M24.678 8.293a.999.999 0 011.497 1.32l-.083.094-12.314 12.314a1 1 0 01-1.32.083l-.094-.083-7.071-7.071a.999.999 0 011.32-1.497l.094.083L13.07 19.9 24.678 8.293z" }));
+}));
+Check.displayName = "Check";
+Check["iconName"] = "check";
+var Check_default = Check;
+
+// node_modules/@ringcentral/juno/es6/icon/ChevronLeft.js
+import React106, { forwardRef as forwardRef89, memo as memo76 } from "react";
+var __assign84 = function() {
+  __assign84 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign84.apply(this, arguments);
+};
+var ChevronLeft = memo76(forwardRef89(function(props, svgRef) {
+  return React106.createElement("svg", __assign84({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React106.createElement("path", { d: "M9.318 14.939a1.5 1.5 0 000 2.121l10.607 10.607a1.5 1.5 0 102.121-2.121L12.5 16l9.546-9.546a1.5 1.5 0 10-2.121-2.121L9.318 14.94z" }));
+}));
+ChevronLeft.displayName = "ChevronLeft";
+ChevronLeft["iconName"] = "chevron_left";
+var ChevronLeft_default = ChevronLeft;
+
+// node_modules/@ringcentral/juno/es6/icon/ChevronRight.js
+import React107, { forwardRef as forwardRef90, memo as memo77 } from "react";
+var __assign85 = function() {
+  __assign85 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign85.apply(this, arguments);
+};
+var ChevronRight = memo77(forwardRef90(function(props, svgRef) {
+  return React107.createElement("svg", __assign85({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React107.createElement("path", { d: "M22.682 14.939a1.5 1.5 0 010 2.121L12.075 27.667a1.5 1.5 0 11-2.121-2.121L19.5 16 9.954 6.454a1.5 1.5 0 112.121-2.121L22.682 14.94z" }));
+}));
+ChevronRight.displayName = "ChevronRight";
+ChevronRight["iconName"] = "chevron_right";
+var ChevronRight_default = ChevronRight;
+
+// node_modules/@ringcentral/juno/es6/icon/Close.js
+import React108, { forwardRef as forwardRef91, memo as memo78 } from "react";
+var __assign86 = function() {
+  __assign86 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign86.apply(this, arguments);
+};
+var Close = memo78(forwardRef91(function(props, svgRef) {
+  return React108.createElement("svg", __assign86({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React108.createElement("path", { d: "M25.899 7.515L17.414 16l8.485 8.486a1 1 0 01-1.414 1.414L16 17.413 7.515 25.9a1 1 0 01-1.414-1.414l8.485-8.487-8.485-8.484a.999.999 0 111.414-1.414l8.486 8.485 8.485-8.485A.999.999 0 1125.9 7.515z" }));
+}));
+Close.displayName = "Close";
+Close["iconName"] = "close";
+var Close_default = Close;
+
+// node_modules/@ringcentral/juno/es6/icon/CloudContact.js
+import React109, { forwardRef as forwardRef92, memo as memo79 } from "react";
+var __assign87 = function() {
+  __assign87 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign87.apply(this, arguments);
+};
+var CloudContact = memo79(forwardRef92(function(props, svgRef) {
+  return React109.createElement("svg", __assign87({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React109.createElement("path", { d: "M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm7 7H9a1 1 0 00-1 1v9a1 1 0 001 1h2.793c.133 0 .26.053.354.146l3.571 5.571a.4.4 0 00.566 0l3.571-5.571a.5.5 0 01.354-.146h2.793a1 1 0 001-1v-9a1 1 0 00-1-1z" }));
+}));
+CloudContact.displayName = "CloudContact";
+CloudContact["iconName"] = "cloud_contact";
+var CloudContact_default = CloudContact;
+
+// node_modules/@ringcentral/juno/es6/icon/CodeSnippets.js
+import React110, { forwardRef as forwardRef93, memo as memo80 } from "react";
+var __assign88 = function() {
+  __assign88 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign88.apply(this, arguments);
+};
+var CodeSnippets = memo80(forwardRef93(function(props, svgRef) {
+  return React110.createElement("svg", __assign88({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React110.createElement("path", { d: "M28 4a2 2 0 012 2v20a2 2 0 01-2 2H4a2 2 0 01-2-2V6a2 2 0 012-2h24zm0 7H4v14a1 1 0 001 1h22a1 1 0 001-1V11zM9.707 13.293l4.243 4.243a.999.999 0 010 1.414l-4.243 4.243a1 1 0 01-1.414-1.414l3.536-3.536-3.536-3.536a.999.999 0 111.414-1.414zM23 21a1 1 0 010 2h-6a1 1 0 010-2h6zm4-15H5a1 1 0 00-1 1v2h24V7a1 1 0 00-1-1z" }));
+}));
+CodeSnippets.displayName = "CodeSnippets";
+CodeSnippets["iconName"] = "code_snippets";
+var CodeSnippets_default = CodeSnippets;
+
+// node_modules/@ringcentral/juno/es6/icon/Comments.js
+import React111, { forwardRef as forwardRef94, memo as memo81 } from "react";
+var __assign89 = function() {
+  __assign89 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign89.apply(this, arguments);
+};
+var Comments = memo81(forwardRef94(function(props, svgRef) {
+  return React111.createElement("svg", __assign89({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React111.createElement("path", { d: "M28 4a2 2 0 012 2v16a2 2 0 01-2 2h-7.586a.997.997 0 00-.707.293l-3.141 3.141a.8.8 0 01-1.131 0l-3.141-3.141a1 1 0 00-.707-.293H4.001a2 2 0 01-2-2V6a2 2 0 012-2h24zm-1 2H5a1 1 0 00-1 1v14a1 1 0 001 1h7a2 2 0 011.414.586L16 25.172l2.586-2.586A2 2 0 0120 22h7a1 1 0 001-1V7a1 1 0 00-1-1zM9 12a2 2 0 11.001 3.999A2 2 0 019 12zm7 0a2 2 0 11.001 3.999A2 2 0 0116 12zm7 0a2 2 0 11.001 3.999A2 2 0 0123 12z" }));
+}));
+Comments.displayName = "Comments";
+Comments["iconName"] = "comments";
+var Comments_default = Comments;
+
+// node_modules/@ringcentral/juno/es6/icon/Computer.js
+import React112, { forwardRef as forwardRef95, memo as memo82 } from "react";
+var __assign90 = function() {
+  __assign90 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign90.apply(this, arguments);
+};
+var Computer = memo82(forwardRef95(function(props, svgRef) {
+  return React112.createElement("svg", __assign90({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React112.createElement("path", { d: "M5 24.005a2.002 2.002 0 01-2-2v-16a2.002 2.002 0 012-2h22a2.002 2.002 0 012 2v16a2.003 2.003 0 01-2 2H5zm0-17v14a1 1 0 001 1h20a1 1 0 001-1v-14a1 1 0 00-1-1H6a1 1 0 00-1 1zm-3 19h28a1 1 0 010 2H2a1 1 0 010-2z" }));
+}));
+Computer.displayName = "Computer";
+Computer["iconName"] = "computer";
+var Computer_default = Computer;
+
+// node_modules/@ringcentral/juno/es6/icon/ConferenceBorder.js
+import React113, { forwardRef as forwardRef96, memo as memo83 } from "react";
+var __assign91 = function() {
+  __assign91 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign91.apply(this, arguments);
+};
+var ConferenceBorder = memo83(forwardRef96(function(props, svgRef) {
+  return React113.createElement("svg", __assign91({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React113.createElement("path", { d: "M28.758 21.902a3 3 0 11-3 5.196 3 3 0 113-5.196zM7.34 23a3 3 0 11-5.196 3 3 3 0 015.196-3zM16 10a8 8 0 110 16 8 8 0 010-16zm10.392 14a1 1 0 101.733 1 1 1 0 00-1.733-1zm-22.15-.366a1 1 0 101.001 1.732 1 1 0 00-1.001-1.732zM16 12a6 6 0 100 12 6 6 0 000-12zm0-10a3 3 0 110 6 3 3 0 010-6zm0 2a1 1 0 100 2 1 1 0 000-2z" }));
+}));
+ConferenceBorder.displayName = "ConferenceBorder";
+ConferenceBorder["iconName"] = "conference_border";
+var ConferenceBorder_default = ConferenceBorder;
+
+// node_modules/@ringcentral/juno/es6/icon/Conference.js
+import React114, { forwardRef as forwardRef97, memo as memo84 } from "react";
+var __assign92 = function() {
+  __assign92 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign92.apply(this, arguments);
+};
+var Conference = memo84(forwardRef97(function(props, svgRef) {
+  return React114.createElement("svg", __assign92({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React114.createElement("path", { d: "M28.758 21.902a3 3 0 11-3 5.196 3 3 0 113-5.196zM7.34 23a3 3 0 11-5.196 3 3 3 0 015.196-3zM16 10a8 8 0 110 16 8 8 0 010-16zm0-8a3 3 0 110 6 3 3 0 010-6z" }));
+}));
+Conference.displayName = "Conference";
+Conference["iconName"] = "conference";
+var Conference_default = Conference;
+
+// node_modules/@ringcentral/juno/es6/icon/Connect.js
+import React115, { forwardRef as forwardRef98, memo as memo85 } from "react";
+var __assign93 = function() {
+  __assign93 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign93.apply(this, arguments);
+};
+var Connect = memo85(forwardRef98(function(props, svgRef) {
+  return React115.createElement("svg", __assign93({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React115.createElement("path", { d: "M23.344 16.945a1 1 0 00-1.32.083l-.083.094a1 1 0 00.083 1.32l2.562 2.563L12.953 21a1 1 0 00.117 1.993l11.518.012-2.564 2.565-.083.094a1 1 0 001.497 1.32l4.271-4.271.083-.094a1 1 0 00-.083-1.32l-4.271-4.271zM8.654 4.962l-.094.083-4.271 4.271a1 1 0 00-.083 1.32l.083.094 4.271 4.271a.999.999 0 001.497-1.32l-.083-.094-2.564-2.565 12.586-.012a1 1 0 00.117-1.993l-.117-.007-12.584.012 2.562-2.563a1 1 0 00.083-1.32l-.083-.094a1 1 0 00-1.32-.083z" }));
+}));
+Connect.displayName = "Connect";
+Connect["iconName"] = "connect";
+var Connect_default = Connect;
+
+// node_modules/@ringcentral/juno/es6/icon/ContactsAndCalendars.js
+import React116, { forwardRef as forwardRef99, memo as memo86 } from "react";
+var __assign94 = function() {
+  __assign94 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign94.apply(this, arguments);
+};
+var ContactsAndCalendars = memo86(forwardRef99(function(props, svgRef) {
+  return React116.createElement("svg", __assign94({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React116.createElement("path", { d: "M22 2a2 2 0 012 2v2h4a2 2 0 012 2v20a2 2 0 01-2 2H4a2 2 0 01-2-2V8a2 2 0 012-2h4V4a2 2 0 114 0v2h8V4a2 2 0 012-2zm0 18H10a2.001 2.001 0 00-1.995 1.851L8 22v4h16v-4a2 2 0 00-2-2zm-6-10a4 4 0 100 8 4 4 0 000-8z" }));
+}));
+ContactsAndCalendars.displayName = "ContactsAndCalendars";
+ContactsAndCalendars["iconName"] = "contacts_and_calendars";
+var ContactsAndCalendars_default = ContactsAndCalendars;
+
+// node_modules/@ringcentral/juno/es6/icon/ContactsBorder.js
+import React117, { forwardRef as forwardRef100, memo as memo87 } from "react";
+var __assign95 = function() {
+  __assign95 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign95.apply(this, arguments);
+};
+var ContactsBorder = memo87(forwardRef100(function(props, svgRef) {
+  return React117.createElement("svg", __assign95({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React117.createElement("path", { d: "M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm0 20c-3.209 0-6.025 1.306-7.618 3.272l.082.067c2.06 1.665 4.682 2.662 7.537 2.662s5.477-.997 7.537-2.662l.081-.066c-1.594-1.966-4.41-3.272-7.618-3.272zm8.199 2.763l-.251.229a9.08 9.08 0 00.251-.229zM16 4C9.373 4 4 9.373 4 16c0 3.011 1.109 5.763 2.941 7.87C8.94 21.506 12.285 20 16 20s7.059 1.506 9.059 3.868A11.948 11.948 0 0028 16c0-6.627-5.373-12-12-12zm0 2a6 6 0 110 12 6 6 0 010-12zm0 2a4 4 0 100 8 4 4 0 000-8z" }));
+}));
+ContactsBorder.displayName = "ContactsBorder";
+ContactsBorder["iconName"] = "contacts_border";
+var ContactsBorder_default = ContactsBorder;
+
+// node_modules/@ringcentral/juno/es6/icon/Contacts.js
+import React118, { forwardRef as forwardRef101, memo as memo88 } from "react";
+var __assign96 = function() {
+  __assign96 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign96.apply(this, arguments);
+};
+var Contacts = memo88(forwardRef101(function(props, svgRef) {
+  return React118.createElement("svg", __assign96({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React118.createElement("path", { d: "M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm0 18c-3.715 0-7.059 1.506-9.059 3.87.352.405.731.786 1.134 1.14l.307.261.082.067.272.213c2.017 1.536 4.534 2.448 7.265 2.448s5.248-.912 7.265-2.448l.272-.213.081-.066.307-.261c.403-.355.782-.736 1.135-1.142-2-2.363-5.345-3.869-9.06-3.869zm0-13a5 5 0 10.001 10.001A5 5 0 0016 7z" }));
+}));
+Contacts.displayName = "Contacts";
+Contacts["iconName"] = "contacts";
+var Contacts_default = Contacts;
+
+// node_modules/@ringcentral/juno/es6/icon/Copy.js
+import React119, { forwardRef as forwardRef102, memo as memo89 } from "react";
+var __assign97 = function() {
+  __assign97 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign97.apply(this, arguments);
+};
+var Copy = memo89(forwardRef102(function(props, svgRef) {
+  return React119.createElement("svg", __assign97({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React119.createElement("path", { d: "M27 28H10a1 1 0 01-1-1V10a1 1 0 011-1h17a1 1 0 011 1v17a1 1 0 01-1 1zm1-21H9a2 2 0 00-2 2v19a2 2 0 002 2h19a2 2 0 002-2V9a2 2 0 00-2-2zM3 18a1 1 0 01-1-1V4a2 2 0 012-2h13a1 1 0 010 2H5a1 1 0 00-1 1v12a1 1 0 01-1 1z" }));
+}));
+Copy.displayName = "Copy";
+Copy["iconName"] = "copy";
+var Copy_default = Copy;
+
+// node_modules/@ringcentral/juno/es6/icon/CustomizeTabs.js
+import React120, { forwardRef as forwardRef103, memo as memo90 } from "react";
+var __assign98 = function() {
+  __assign98 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign98.apply(this, arguments);
+};
+var CustomizeTabs = memo90(forwardRef103(function(props, svgRef) {
+  return React120.createElement("svg", __assign98({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React120.createElement("path", { d: "M22.32 22.967a1.742 1.742 0 010 3.484H4.306a1.742 1.742 0 010-3.484H22.32zm5.374-8.709a1.742 1.742 0 010 3.484H13.263a1.742 1.742 0 010-3.484h14.431zM22.32 5.55a1.742 1.742 0 010 3.484H4.306a1.742 1.742 0 010-3.484H22.32z" }));
+}));
+CustomizeTabs.displayName = "CustomizeTabs";
+CustomizeTabs["iconName"] = "customize-tabs";
+var CustomizeTabs_default = CustomizeTabs;
+
+// node_modules/@ringcentral/juno/es6/icon/DashboardBorder.js
+import React121, { forwardRef as forwardRef104, memo as memo91 } from "react";
+var __assign99 = function() {
+  __assign99 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign99.apply(this, arguments);
+};
+var DashboardBorder = memo91(forwardRef104(function(props, svgRef) {
+  return React121.createElement("svg", __assign99({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React121.createElement("path", { d: "M27 3a2 2 0 012 2v22a2 2 0 01-2 2h-8a2 2 0 01-2-2V5a2 2 0 012-2h8zM13 21a2 2 0 012 2v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4a2 2 0 012-2h8zM26 5h-6a1 1 0 00-1 1v20a1 1 0 001 1h6a1 1 0 001-1V6a1 1 0 00-1-1zM12 23H6a1 1 0 00-1 1v2a1 1 0 001 1h6a1 1 0 001-1v-2a1 1 0 00-1-1zm1-20a2 2 0 012 2v12a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h8zm-1 2H6a1 1 0 00-1 1v10a1 1 0 001 1h6a1 1 0 001-1V6a1 1 0 00-1-1z" }));
+}));
+DashboardBorder.displayName = "DashboardBorder";
+DashboardBorder["iconName"] = "dashboard_border";
+var DashboardBorder_default = DashboardBorder;
+
+// node_modules/@ringcentral/juno/es6/icon/Dashboard.js
+import React122, { forwardRef as forwardRef105, memo as memo92 } from "react";
+var __assign100 = function() {
+  __assign100 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign100.apply(this, arguments);
+};
+var Dashboard = memo92(forwardRef105(function(props, svgRef) {
+  return React122.createElement("svg", __assign100({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React122.createElement("path", { d: "M27 3a2 2 0 012 2v22a2 2 0 01-2 2h-8a2 2 0 01-2-2V5a2 2 0 012-2h8zM13 21a2 2 0 012 2v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4a2 2 0 012-2h8zm0-18a2 2 0 012 2v12a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h8z" }));
+}));
+Dashboard.displayName = "Dashboard";
+Dashboard["iconName"] = "dashboard";
+var Dashboard_default = Dashboard;
+
+// node_modules/@ringcentral/juno/es6/icon/DateBorder.js
+import React123, { forwardRef as forwardRef106, memo as memo93 } from "react";
+var __assign101 = function() {
+  __assign101 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign101.apply(this, arguments);
+};
+var DateBorder = memo93(forwardRef106(function(props, svgRef) {
+  return React123.createElement("svg", __assign101({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React123.createElement("path", { d: "M26 4h-4V3a1 1 0 00-2 0v1h-8V3a1 1 0 00-2 0v1H6a2 2 0 00-2 2v20a2 2 0 002 2h20a2 2 0 002-2V6a2 2 0 00-2-2zm-1 22H7a1 1 0 01-1-1V12h20v13a1 1 0 01-1 1zm1-16H6V7a1 1 0 011-1h3v1a1 1 0 002 0V6h8v1a1 1 0 002 0V6h3a1 1 0 011 1v3z" }));
+}));
+DateBorder.displayName = "DateBorder";
+DateBorder["iconName"] = "date_border";
+var DateBorder_default = DateBorder;
+
+// node_modules/@ringcentral/juno/es6/icon/Date.js
+import React124, { forwardRef as forwardRef107, memo as memo94 } from "react";
+var __assign102 = function() {
+  __assign102 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign102.apply(this, arguments);
+};
+var Date2 = memo94(forwardRef107(function(props, svgRef) {
+  return React124.createElement("svg", __assign102({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React124.createElement("path", { d: "M26 4h-4V3a1 1 0 00-2 0v1h-8V3a1 1 0 00-2 0v1H6a2 2 0 00-2 2v20a2 2 0 002 2h20a2 2 0 002-2V6a2 2 0 00-2-2zM4 10h24v2H4v-2z" }));
+}));
+Date2.displayName = "Date";
+Date2["iconName"] = "date";
+var Date_default = Date2;
+
+// node_modules/@ringcentral/juno/es6/icon/DefaultAvatar.js
+import React125, { forwardRef as forwardRef108, memo as memo95 } from "react";
+var __assign103 = function() {
+  __assign103 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign103.apply(this, arguments);
+};
+var DefaultAvatar = memo95(forwardRef108(function(props, svgRef) {
+  return React125.createElement("svg", __assign103({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React125.createElement("path", { d: "M7.333 24.867c.04 0 .08-.041.113-.041a42.167 42.167 0 015.467-2.049c.113 0 .113 0 .113-.621a4.708 4.708 0 00-.227-1.523c-.113-.512-.38-1.25-.5-2.049a4.743 4.743 0 01-.873-2.049 2.76 2.76 0 010-1.755v-.061c0-.232-.12-1.407-.233-2.418a4.398 4.398 0 01.88-3.162 4.382 4.382 0 013.48-1.755h1.113a4.349 4.349 0 013.473 1.755 4.398 4.398 0 01.88 3.162 22.43 22.43 0 00-.113 2.418v.116c.183.57.183 1.185 0 1.755a4.849 4.849 0 01-.953 2.049 4.71 4.71 0 01-.5 2.049 7.383 7.383 0 00-.38 1.523c0 .621 0 .621.113.621a49.085 49.085 0 015.54 2.049 12.771 12.771 0 01-17.393-.014zm18.794-.074v-.04c.121-.147.268-.3.389-.453v-.08c.121-.147.235-.3.349-.453.04-.04.04-.08.074-.08.121-.147.194-.3.308-.453.04-.04.04-.08.08-.113.074-.153.188-.307.268-.46.04-.04.04-.073.074-.113l.235-.46c.04-.033.04-.113.074-.153.083-.143.148-.295.194-.453.04-.08.04-.113.08-.193s.114-.3.188-.42.04-.113.08-.187.114-.267.154-.42c.04-.153.034-.153.074-.227s.08-.267.114-.42c.034-.153.04-.153.08-.227l.114-.42c0-.08.04-.153.04-.233s.04-.267.074-.413c.034-.147.04-.153.04-.267s.04-.307.08-.42c.04-.113 0-.153 0-.267s.04-.307.04-.493v-.92a13.144 13.144 0 00-1.81-6.891c-.22-.369-.462-.725-.724-1.066-.268-.34-.536-.666-.804-.993a11.07 11.07 0 00-.925-.913 6.628 6.628 0 00-.496-.42 12.834 12.834 0 00-2.735-1.713c-.389-.187-.811-.34-1.193-.493-.415-.15-.838-.277-1.267-.38a12.53 12.53 0 00-3.264-.42C8.7 2.662 2.684 8.626 2.666 15.995v.953c0 .153.04.307.04.46s.034.187.034.26c0 .073.04.267.04.42s.04.193.04.267c0 .073.04.267.074.42s.04.193.08.267c.04.073.074.267.114.38s.04.193.08.267c.04.073.074.267.114.38.032.087.057.176.074.267.037.132.088.259.154.38l.121.233c.034.113.114.267.147.38l.121.227c.074.113.114.267.188.38l.121.233c.079.118.142.246.188.38.04.073.08.113.121.187s.154.267.228.38c.074.113.074.12.114.193s.194.267.268.38c.074.113.08.113.121.153s.188.267.302.38l.121.113c.114.153.228.267.342.42.04.04.08.08.08.113.114.153.268.267.382.42l.074.08.463.453c5.377 4.898 13.7 4.646 18.768-.566l.349-.46z" }));
+}));
+DefaultAvatar.displayName = "DefaultAvatar";
+DefaultAvatar["iconName"] = "default-avatar";
+var DefaultAvatar_default = DefaultAvatar;
+
+// node_modules/@ringcentral/juno/es6/icon/DefaultFileD.js
+import React126, { forwardRef as forwardRef109, memo as memo96 } from "react";
+var __assign104 = function() {
+  __assign104 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign104.apply(this, arguments);
+};
+var DefaultFileD = memo96(forwardRef109(function(props, svgRef) {
+  return React126.createElement("svg", __assign104({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React126.createElement("path", { fill: "var(--color14, #222b42)", d: "M3.556 0h24.889a3.556 3.556 0 013.556 3.556v24.889a3.556 3.556 0 01-3.556 3.556H3.556A3.556 3.556 0 010 28.445V3.556A3.556 3.556 0 013.556 0z" }), React126.createElement("path", { fill: "var(--color32, #2f51b1)", d: "M22.105 8.889H9.893c-.989-.002-1.793.902-1.794 2.018 0 .091.005.182.016.272.025.222.206.379.402.35a.343.343 0 00.136-.052.933.933 0 01.522-.156h2.557c.462.001.872.333 1.021.825l.061.222c.247.825.932 1.382 1.705 1.384h8.304c.188 0 .373.056.537.162a.332.332 0 00.182.055c.198 0 .359-.181.359-.405v-2.648c0-1.119-.804-2.026-1.796-2.026z" }), React126.createElement("path", { fill: "var(--color31, #356afd)", d: "M23.965 13.314a1.879 1.879 0 00-.928-.242h-8.563a1.113 1.113 0 01-1.053-.73l-.063-.196c-.255-.73-.962-1.223-1.758-1.225H8.963a1.818 1.818 0 00-.907.232 1.779 1.779 0 00-.945 1.561v8.605c0 .99.829 1.793 1.852 1.793h14.074c1.023 0 1.852-.803 1.852-1.793v-6.454a1.77 1.77 0 00-.924-1.55z" }));
+}));
+DefaultFileD.displayName = "DefaultFileD";
+DefaultFileD["iconName"] = "default-file-D";
+var DefaultFileD_default = DefaultFileD;
+
+// node_modules/@ringcentral/juno/es6/icon/DefaultFile.js
+import React127, { forwardRef as forwardRef110, memo as memo97 } from "react";
+var __assign105 = function() {
+  __assign105 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign105.apply(this, arguments);
+};
+var __rest7 = function(s2, e2) {
+  var t2 = {};
+  for (var p in s2)
+    if (Object.prototype.hasOwnProperty.call(s2, p) && e2.indexOf(p) < 0)
+      t2[p] = s2[p];
+  if (s2 != null && typeof Object.getOwnPropertySymbols === "function")
+    for (var i2 = 0, p = Object.getOwnPropertySymbols(s2); i2 < p.length; i2++) {
+      if (e2.indexOf(p[i2]) < 0 && Object.prototype.propertyIsEnumerable.call(s2, p[i2]))
+        t2[p[i2]] = s2[p[i2]];
+    }
+  return t2;
+};
+var DefaultFile = memo97(forwardRef110(function(inProps, svgRef) {
+  var theme = RcUseTheme();
+  var _a2 = inProps.themeType, themeType = _a2 === void 0 ? theme.palette.type : _a2, props = __rest7(inProps, ["themeType"]);
+  return themeType === "dark" ? React127.createElement(DefaultFileD_default, __assign105({}, props, { ref: svgRef })) : React127.createElement("svg", __assign105({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React127.createElement("path", { fill: "var(--color25, #fff)", opacity: 0.992, d: "M3.556 0h24.889a3.556 3.556 0 013.556 3.556v24.889a3.556 3.556 0 01-3.556 3.556H3.556A3.556 3.556 0 010 28.445V3.556A3.556 3.556 0 013.556 0z" }), React127.createElement("path", { fill: "var(--color48, #4975ed)", opacity: 0.16, d: "M3.556 0h24.889a3.556 3.556 0 013.556 3.556v24.889a3.556 3.556 0 01-3.556 3.556H3.556A3.556 3.556 0 010 28.445V3.556A3.556 3.556 0 013.556 0z" }), React127.createElement("path", { fill: "var(--color32, #2f51b1)", d: "M22.105 8.889H9.893c-.989-.002-1.793.902-1.794 2.018 0 .091.005.182.016.272.025.222.206.379.402.35a.343.343 0 00.136-.052.933.933 0 01.522-.156h2.557c.462.001.872.333 1.021.825l.061.222c.247.825.932 1.382 1.705 1.384h8.304c.188 0 .373.056.537.162a.332.332 0 00.182.055c.198 0 .359-.181.359-.405v-2.648c0-1.119-.804-2.026-1.796-2.026z" }), React127.createElement("path", { fill: "var(--color49, #4b77f1)", d: "M23.965 13.314a1.879 1.879 0 00-.928-.242h-8.563a1.113 1.113 0 01-1.053-.73l-.063-.196c-.255-.73-.962-1.223-1.758-1.225H8.963a1.818 1.818 0 00-.907.232 1.779 1.779 0 00-.945 1.561v8.605c0 .99.829 1.793 1.852 1.793h14.074c1.023 0 1.852-.803 1.852-1.793v-6.454a1.77 1.77 0 00-.924-1.55z" }));
+}));
+DefaultFile.displayName = "DefaultFile";
+DefaultFile["iconName"] = "default-file";
+var DefaultFile_default = DefaultFile;
+
+// node_modules/@ringcentral/juno/es6/icon/DefaultGdriveD.js
+import React128, { forwardRef as forwardRef111, memo as memo98 } from "react";
+var __assign106 = function() {
+  __assign106 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign106.apply(this, arguments);
+};
+var DefaultGdriveD = memo98(forwardRef111(function(props, svgRef) {
+  return React128.createElement("svg", __assign106({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React128.createElement("path", { fill: "var(--color14, #222b42)", d: "M3.556 0h24.889a3.556 3.556 0 013.556 3.556v24.889a3.556 3.556 0 01-3.556 3.556H3.556A3.556 3.556 0 010 28.445V3.556A3.556 3.556 0 013.556 0z" }), React128.createElement("path", { fill: "var(--color15, #ffc107)", d: "M13.333 8.889h5.778l5.778 9.778h-5.778z" }), React128.createElement("path", { fill: "var(--color16, #1976d2)", d: "M9.778 24l3.038-5.333h12.073L21.877 24z" }), React128.createElement("path", { fill: "var(--color17, #4caf50)", d: "M7.111 19.015L10.021 24 16 13.926l-2.963-5.037z" }));
+}));
+DefaultGdriveD.displayName = "DefaultGdriveD";
+DefaultGdriveD["iconName"] = "default-gdrive-D";
+var DefaultGdriveD_default = DefaultGdriveD;
+
+// node_modules/@ringcentral/juno/es6/icon/DefaultGdrive.js
+import React129, { forwardRef as forwardRef112, memo as memo99 } from "react";
+var __assign107 = function() {
+  __assign107 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign107.apply(this, arguments);
+};
+var __rest8 = function(s2, e2) {
+  var t2 = {};
+  for (var p in s2)
+    if (Object.prototype.hasOwnProperty.call(s2, p) && e2.indexOf(p) < 0)
+      t2[p] = s2[p];
+  if (s2 != null && typeof Object.getOwnPropertySymbols === "function")
+    for (var i2 = 0, p = Object.getOwnPropertySymbols(s2); i2 < p.length; i2++) {
+      if (e2.indexOf(p[i2]) < 0 && Object.prototype.propertyIsEnumerable.call(s2, p[i2]))
+        t2[p[i2]] = s2[p[i2]];
+    }
+  return t2;
+};
+var DefaultGdrive = memo99(forwardRef112(function(inProps, svgRef) {
+  var theme = RcUseTheme();
+  var _a2 = inProps.themeType, themeType = _a2 === void 0 ? theme.palette.type : _a2, props = __rest8(inProps, ["themeType"]);
+  return themeType === "dark" ? React129.createElement(DefaultGdriveD_default, __assign107({}, props, { ref: svgRef })) : React129.createElement("svg", __assign107({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React129.createElement("path", { fill: "var(--color25, #fff)", opacity: 0.992, d: "M3.556 0h24.889a3.556 3.556 0 013.556 3.556v24.889a3.556 3.556 0 01-3.556 3.556H3.556A3.556 3.556 0 010 28.445V3.556A3.556 3.556 0 013.556 0z" }), React129.createElement("path", { fill: "var(--color51, #a7aaae)", opacity: 0.16, d: "M3.556 0h24.889a3.556 3.556 0 013.556 3.556v24.889a3.556 3.556 0 01-3.556 3.556H3.556A3.556 3.556 0 010 28.445V3.556A3.556 3.556 0 013.556 0z" }), React129.createElement("path", { fill: "var(--color15, #ffc107)", d: "M13.333 8.889h5.778l5.778 9.778h-5.778z" }), React129.createElement("path", { fill: "var(--color16, #1976d2)", d: "M9.778 24l3.039-5.333h12.072L21.878 24z" }), React129.createElement("path", { fill: "var(--color17, #4caf50)", d: "M7.111 19.015L10.021 24 16 13.926l-2.963-5.037z" }));
+}));
+DefaultGdrive.displayName = "DefaultGdrive";
+DefaultGdrive["iconName"] = "default-gdrive";
+var DefaultGdrive_default = DefaultGdrive;
+
+// node_modules/@ringcentral/juno/es6/icon/DefaultGroupAvatar.js
+import React130, { forwardRef as forwardRef113, memo as memo100 } from "react";
+var __assign108 = function() {
+  __assign108 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign108.apply(this, arguments);
+};
+var DefaultGroupAvatar = memo100(forwardRef113(function(props, svgRef) {
+  return React130.createElement("svg", __assign108({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React130.createElement("path", { d: "M5.483 27.417c1.234-.457 2.559-.914 3.61-1.188.137 0 .137 0 .137-.731 0-.868-.137-1.279-.274-1.691-.137-.548-.411-1.416-.548-2.285-.274-.274-.731-1.005-1.005-2.285-.274-1.142-.137-1.554 0-2.011v-.137c0-.274-.137-1.554-.274-2.696-.137-.731 0-2.285 1.005-3.564.548-.868 1.828-1.828 3.975-2.011h1.279c2.102.183 3.381 1.188 3.975 2.056 1.005 1.279 1.142 2.833 1.005 3.564-.137 1.005-.137 2.422-.137 2.696v.137c.137.411.274.868 0 2.011-.274 1.279-.731 2.011-1.005 2.285 0 .868-.274 1.691-.548 2.285-.137.548-.411 1.142-.411 1.691 0 .731 0 .731.137.731 2.011.548 5.118 1.691 6.397 2.285.503.228.868.503 1.142.823a15.519 15.519 0 01-7.905 2.148 15.9 15.9 0 01-10.556-4.113zm18.918 1.599c-.228-.32-.457-.548-.685-.685-1.371-.594-4.524-1.965-6.626-2.559-.137 0-.32 0-.137-.777.046-.32.183-.548.32-.868.228-.64.548-1.325.548-2.239.32-.32.777-1.051 1.051-2.422.32-1.188.137-1.645 0-2.102v-.137c0-.32 0-1.828.137-2.879.137-.777 0-2.422-1.051-3.793-.503-.731-1.554-1.645-3.107-2.056.685-.64 1.828-1.188 3.381-1.325h1.279c2.148.137 3.427 1.142 3.975 2.011 1.005 1.279 1.142 2.833 1.005 3.564-.137 1.005-.137 2.422-.137 2.696v.137c.137.411.274.868 0 2.011-.274 1.279-.731 2.011-1.005 2.285 0 .868-.274 1.691-.548 2.285-.137.548-.411 1.142-.411 1.691 0 .731 0 .731.137.731 1.508.411 3.61 1.188 5.164 1.782-1.051 1.005-2.102 1.873-3.29 2.65z" }));
+}));
+DefaultGroupAvatar.displayName = "DefaultGroupAvatar";
+DefaultGroupAvatar["iconName"] = "default-group-avatar";
+var DefaultGroupAvatar_default = DefaultGroupAvatar;
+
+// node_modules/@ringcentral/juno/es6/icon/DefaultIntegrationBorder.js
+import React131, { forwardRef as forwardRef114, memo as memo101 } from "react";
+var __assign109 = function() {
+  __assign109 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign109.apply(this, arguments);
+};
+var DefaultIntegrationBorder = memo101(forwardRef114(function(props, svgRef) {
+  return React131.createElement("svg", __assign109({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React131.createElement("path", { d: "M14 1a5 5 0 015 5h5a2 2 0 012 2v5a5 5 0 010 10v5a2 2 0 01-2 2h-7v-2a3 3 0 00-2.824-2.995L14 25a3 3 0 00-2.995 2.824L11 28v2H4a2 2 0 01-2-2v-7h2a3 3 0 002.995-2.824L7 18a3 3 0 00-2.824-2.995L4 15H2V8a2 2 0 012-2h5a5 5 0 015-5zm0 2a3 3 0 00-2.995 2.824L11 6v2H4v5l.058.001.234.008c2.564.149 4.593 2.219 4.702 4.825l.005.225-.008.234a5 5 0 01-4.772 4.703l-.22.005v5h5L9 27.943l.008-.234c.149-2.564 2.219-4.593 4.825-4.703l.225-.005.234.008a5 5 0 014.703 4.772l.005.22h5v-7h2a3 3 0 00.176-5.995L26 15.001h-2v-7h-7v-2a3 3 0 00-3-3z" }));
+}));
+DefaultIntegrationBorder.displayName = "DefaultIntegrationBorder";
+DefaultIntegrationBorder["iconName"] = "default-integration_border";
+var DefaultIntegrationBorder_default = DefaultIntegrationBorder;
+
+// node_modules/@ringcentral/juno/es6/icon/DefaultIntegration.js
+import React132, { forwardRef as forwardRef115, memo as memo102 } from "react";
+var __assign110 = function() {
+  __assign110 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign110.apply(this, arguments);
+};
+var DefaultIntegration = memo102(forwardRef115(function(props, svgRef) {
+  return React132.createElement("svg", __assign110({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React132.createElement("path", { d: "M14 1a4 4 0 014 4v1h6a2 2 0 012 2v6h1a4 4 0 010 8h-1v6a2 2 0 01-2 2h-6v-1a4 4 0 00-3.8-3.995L14 25a4 4 0 00-3.995 3.8L10 29v1H4a2 2 0 01-2-2v-6h1a4 4 0 003.995-3.8L7 18a4 4 0 00-3.8-3.995L3 14H2V8a2 2 0 012-2h6V5a4 4 0 014-4z" }));
+}));
+DefaultIntegration.displayName = "DefaultIntegration";
+DefaultIntegration["iconName"] = "default-integration";
+var DefaultIntegration_default = DefaultIntegration;
+
+// node_modules/@ringcentral/juno/es6/icon/DefaultMusicD.js
+import React133, { forwardRef as forwardRef116, memo as memo103 } from "react";
+var __assign111 = function() {
+  __assign111 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign111.apply(this, arguments);
+};
+var DefaultMusicD = memo103(forwardRef116(function(props, svgRef) {
+  return React133.createElement("svg", __assign111({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React133.createElement("path", { fill: "var(--color14, #222b42)", d: "M3.556 0h24.889a3.556 3.556 0 013.556 3.556v24.889a3.556 3.556 0 01-3.556 3.556H3.556A3.556 3.556 0 010 28.445V3.556A3.556 3.556 0 013.556 0z" }), React133.createElement("path", { fill: "var(--color31, #356afd)", d: "M22.222 7.111a2.667 2.667 0 012.667 2.667v12.444a2.667 2.667 0 01-2.667 2.667H9.778a2.667 2.667 0 01-2.667-2.667V9.778a2.667 2.667 0 012.667-2.667h12.444z" }), React133.createElement("path", { fill: "var(--color20, #f1f1f1)", d: "M20.793 9.787l-8 1.778a.444.444 0 00-.348.434v7.032a2.567 2.567 0 00-1.333-.364c-1.225 0-2.222.797-2.222 1.778s.997 1.778 2.222 1.778 2.222-.797 2.222-1.778v-5.422l7.111-1.581v3.811a2.567 2.567 0 00-1.333-.364c-1.226 0-2.222.797-2.222 1.778s.996 1.778 2.222 1.778 2.222-.797 2.222-1.778v-8.445a.443.443 0 00-.54-.434z" }));
+}));
+DefaultMusicD.displayName = "DefaultMusicD";
+DefaultMusicD["iconName"] = "default-music-D";
+var DefaultMusicD_default = DefaultMusicD;
+
+// node_modules/@ringcentral/juno/es6/icon/DefaultMusic.js
+import React134, { forwardRef as forwardRef117, memo as memo104 } from "react";
+var __assign112 = function() {
+  __assign112 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign112.apply(this, arguments);
+};
+var __rest9 = function(s2, e2) {
+  var t2 = {};
+  for (var p in s2)
+    if (Object.prototype.hasOwnProperty.call(s2, p) && e2.indexOf(p) < 0)
+      t2[p] = s2[p];
+  if (s2 != null && typeof Object.getOwnPropertySymbols === "function")
+    for (var i2 = 0, p = Object.getOwnPropertySymbols(s2); i2 < p.length; i2++) {
+      if (e2.indexOf(p[i2]) < 0 && Object.prototype.propertyIsEnumerable.call(s2, p[i2]))
+        t2[p[i2]] = s2[p[i2]];
+    }
+  return t2;
+};
+var DefaultMusic = memo104(forwardRef117(function(inProps, svgRef) {
+  var theme = RcUseTheme();
+  var _a2 = inProps.themeType, themeType = _a2 === void 0 ? theme.palette.type : _a2, props = __rest9(inProps, ["themeType"]);
+  return themeType === "dark" ? React134.createElement(DefaultMusicD_default, __assign112({}, props, { ref: svgRef })) : React134.createElement("svg", __assign112({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React134.createElement("path", { fill: "var(--color25, #fff)", opacity: 0.992, d: "M3.556 0h24.889a3.556 3.556 0 013.556 3.556v24.889a3.556 3.556 0 01-3.556 3.556H3.556A3.556 3.556 0 010 28.445V3.556A3.556 3.556 0 013.556 0z" }), React134.createElement("path", { fill: "var(--color48, #4975ed)", opacity: 0.16, d: "M3.556 0h24.889a3.556 3.556 0 013.556 3.556v24.889a3.556 3.556 0 01-3.556 3.556H3.556A3.556 3.556 0 010 28.445V3.556A3.556 3.556 0 013.556 0z" }), React134.createElement("path", { fill: "var(--color49, #4b77f1)", d: "M22.222 7.111a2.667 2.667 0 012.667 2.667v12.444a2.667 2.667 0 01-2.667 2.667H9.778a2.667 2.667 0 01-2.667-2.667V9.778a2.667 2.667 0 012.667-2.667h12.444zm-1.429 2.676l-8 1.778a.444.444 0 00-.348.434v7.032a2.567 2.567 0 00-1.333-.364c-1.225 0-2.222.797-2.222 1.778s.997 1.778 2.222 1.778 2.222-.797 2.222-1.778v-5.422l7.111-1.581v3.811a2.567 2.567 0 00-1.333-.364c-1.226 0-2.222.797-2.222 1.778s.996 1.778 2.222 1.778 2.222-.797 2.222-1.778v-8.445a.443.443 0 00-.54-.434z" }));
+}));
+DefaultMusic.displayName = "DefaultMusic";
+DefaultMusic["iconName"] = "default-music";
+var DefaultMusic_default = DefaultMusic;
+
+// node_modules/@ringcentral/juno/es6/icon/DefaultTeamAvatar.js
+import React135, { forwardRef as forwardRef118, memo as memo105 } from "react";
+var __assign113 = function() {
+  __assign113 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign113.apply(this, arguments);
+};
+var DefaultTeamAvatar = memo105(forwardRef118(function(props, svgRef) {
+  return React135.createElement("svg", __assign113({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React135.createElement("path", { d: "M30.002 10c0 1.083-.396 2.021-1.188 2.813s-1.73 1.188-2.813 1.188c-1.083 0-2.021-.396-2.813-1.188S22 11.083 22 10c0-1.083.396-2.021 1.188-2.813s1.73-1.188 2.813-1.188c1.083 0 2.021.396 2.813 1.188s1.188 1.73 1.188 2.813zm-20 0c0 1.083-.396 2.021-1.188 2.813s-1.73 1.188-2.813 1.188c-1.083 0-2.021-.396-2.813-1.188S2 11.083 2 10c0-1.083.396-2.021 1.188-2.813s1.73-1.188 2.813-1.188c1.083 0 2.021.396 2.813 1.188s1.188 1.73 1.188 2.813zm10 17.999c0 1.083-.396 2.021-1.188 2.813S17.084 32 16.001 32c-1.083 0-2.021-.396-2.813-1.188S12 29.082 12 27.999c0-1.083.396-2.021 1.188-2.813s1.73-1.188 2.813-1.188c1.083 0 2.021.396 2.813 1.188s1.188 1.73 1.188 2.813zm10-5.999c0 1.083-.396 2.021-1.188 2.813s-1.73 1.188-2.813 1.188c-1.083 0-2.021-.396-2.813-1.188S22 23.083 22 22c0-1.083.396-2.021 1.188-2.813s1.73-1.188 2.813-1.188c1.083 0 2.021.396 2.813 1.188s1.188 1.73 1.188 2.813zm-20 0c0 1.083-.396 2.021-1.188 2.813s-1.73 1.188-2.813 1.188c-1.083 0-2.021-.396-2.813-1.188S2 23.083 2 22c0-1.083.396-2.021 1.188-2.813s1.73-1.188 2.813-1.188c1.083 0 2.021.396 2.813 1.188s1.188 1.73 1.188 2.813zm10-17.999c0 1.083-.396 2.021-1.188 2.813s-1.73 1.188-2.813 1.188c-1.083 0-2.021-.396-2.813-1.188S12 5.084 12 4.001c0-1.083.396-2.021 1.188-2.813S14.918 0 16.001 0c1.083 0 2.021.396 2.813 1.188s1.188 1.73 1.188 2.813z" }));
+}));
+DefaultTeamAvatar.displayName = "DefaultTeamAvatar";
+DefaultTeamAvatar["iconName"] = "default-team-avatar";
+var DefaultTeamAvatar_default = DefaultTeamAvatar;
+
+// node_modules/@ringcentral/juno/es6/icon/DefaultVideoD.js
+import React136, { forwardRef as forwardRef119, memo as memo106 } from "react";
+var __assign114 = function() {
+  __assign114 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign114.apply(this, arguments);
+};
+var DefaultVideoD = memo106(forwardRef119(function(props, svgRef) {
+  return React136.createElement("svg", __assign114({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React136.createElement("path", { fill: "var(--color14, #222b42)", d: "M3.556 0h24.889a3.556 3.556 0 013.556 3.556v24.889a3.556 3.556 0 01-3.556 3.556H3.556A3.556 3.556 0 010 28.445V3.556A3.556 3.556 0 013.556 0z" }), React136.createElement("path", { fill: "var(--color31, #356afd)", d: "M16 7.111c-4.91 0-8.889 3.98-8.889 8.889S11.09 24.889 16 24.889a8.89 8.89 0 000-17.778z" }), React136.createElement("path", { fill: "var(--color20, #f1f1f1)", d: "M19.497 16.771l-4.918 3.394c-.614.424-1.119.155-1.119-.597v-7.136c0-.752.505-1.021 1.119-.597l4.916 3.394c.614.424.615 1.118.002 1.542z" }));
+}));
+DefaultVideoD.displayName = "DefaultVideoD";
+DefaultVideoD["iconName"] = "default-video-D";
+var DefaultVideoD_default = DefaultVideoD;
+
+// node_modules/@ringcentral/juno/es6/icon/DefaultVideo.js
+import React137, { forwardRef as forwardRef120, memo as memo107 } from "react";
+var __assign115 = function() {
+  __assign115 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign115.apply(this, arguments);
+};
+var __rest10 = function(s2, e2) {
+  var t2 = {};
+  for (var p in s2)
+    if (Object.prototype.hasOwnProperty.call(s2, p) && e2.indexOf(p) < 0)
+      t2[p] = s2[p];
+  if (s2 != null && typeof Object.getOwnPropertySymbols === "function")
+    for (var i2 = 0, p = Object.getOwnPropertySymbols(s2); i2 < p.length; i2++) {
+      if (e2.indexOf(p[i2]) < 0 && Object.prototype.propertyIsEnumerable.call(s2, p[i2]))
+        t2[p[i2]] = s2[p[i2]];
+    }
+  return t2;
+};
+var DefaultVideo = memo107(forwardRef120(function(inProps, svgRef) {
+  var theme = RcUseTheme();
+  var _a2 = inProps.themeType, themeType = _a2 === void 0 ? theme.palette.type : _a2, props = __rest10(inProps, ["themeType"]);
+  return themeType === "dark" ? React137.createElement(DefaultVideoD_default, __assign115({}, props, { ref: svgRef })) : React137.createElement("svg", __assign115({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React137.createElement("path", { fill: "var(--color25, #fff)", opacity: 0.992, d: "M3.556 0h24.889a3.556 3.556 0 013.556 3.556v24.889a3.556 3.556 0 01-3.556 3.556H3.556A3.556 3.556 0 010 28.445V3.556A3.556 3.556 0 013.556 0z" }), React137.createElement("path", { fill: "var(--color48, #4975ed)", opacity: 0.16, d: "M3.556 0h24.889a3.556 3.556 0 013.556 3.556v24.889a3.556 3.556 0 01-3.556 3.556H3.556A3.556 3.556 0 010 28.445V3.556A3.556 3.556 0 013.556 0z" }), React137.createElement("path", { fill: "var(--color49, #4b77f1)", d: "M16 7.111c-4.91 0-8.889 3.98-8.889 8.889S11.09 24.889 16 24.889a8.89 8.89 0 000-17.778zm3.497 9.66l-4.918 3.394c-.614.424-1.119.155-1.119-.597v-7.136c0-.752.505-1.021 1.119-.597l4.916 3.394c.614.424.615 1.118.002 1.542z" }));
+}));
+DefaultVideo.displayName = "DefaultVideo";
+DefaultVideo["iconName"] = "default-video";
+var DefaultVideo_default = DefaultVideo;
+
+// node_modules/@ringcentral/juno/es6/icon/DeleteCircle.js
+import React138, { forwardRef as forwardRef121, memo as memo108 } from "react";
+var __assign116 = function() {
+  __assign116 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign116.apply(this, arguments);
+};
+var DeleteCircle = memo108(forwardRef121(function(props, svgRef) {
+  return React138.createElement("svg", __assign116({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React138.createElement("path", { d: "M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm-4.243 8.343a.999.999 0 00-1.497 1.32l.083.094 4.243 4.241-4.243 4.244a.999.999 0 001.32 1.497l.094-.083L16 17.412l4.243 4.244a.999.999 0 001.497-1.32l-.083-.094-4.243-4.244 4.243-4.241a.999.999 0 00-1.32-1.497l-.094.083L16 14.584l-4.243-4.241z" }));
+}));
+DeleteCircle.displayName = "DeleteCircle";
+DeleteCircle["iconName"] = "delete_circle";
+var DeleteCircle_default = DeleteCircle;
+
+// node_modules/@ringcentral/juno/es6/icon/Delete.js
+import React139, { forwardRef as forwardRef122, memo as memo109 } from "react";
+var __assign117 = function() {
+  __assign117 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign117.apply(this, arguments);
+};
+var Delete = memo109(forwardRef122(function(props, svgRef) {
+  return React139.createElement("svg", __assign117({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React139.createElement("path", { d: "M20 2a2 2 0 012 2v2h6a1 1 0 010 2h-1.083l-.837 20.083A2 2 0 0124.082 30H7.919a2 2 0 01-1.998-1.917L5.084 8H4.001a1 1 0 010-2h6V4a2 2 0 012-2h8zm4.914 6H7.085l.793 19.042a1 1 0 00.999.958h14.245a1 1 0 00.999-.958L24.913 8zM13 12a1 1 0 011 1v10a1 1 0 01-2 0V13a1 1 0 011-1zm6 0a1 1 0 011 1v10a1 1 0 01-2 0V13a1 1 0 011-1zm0-8h-6a1 1 0 00-1 1v1h8V5a1 1 0 00-1-1z" }));
+}));
+Delete.displayName = "Delete";
+Delete["iconName"] = "delete";
+var Delete_default = Delete;
+
+// node_modules/@ringcentral/juno/es6/icon/DeletedFile.js
+import React141, { forwardRef as forwardRef124, memo as memo111 } from "react";
+
+// node_modules/@ringcentral/juno/es6/icon/DeletedFileD.js
+import React140, { forwardRef as forwardRef123, memo as memo110 } from "react";
+var __assign118 = function() {
+  __assign118 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign118.apply(this, arguments);
+};
+var DeletedFileD = memo110(forwardRef123(function(props, svgRef) {
+  return React140.createElement("svg", __assign118({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React140.createElement("path", { fill: "var(--color7, #30323a)", d: "M3.556 0h24.889a3.556 3.556 0 013.556 3.556v24.889a3.556 3.556 0 01-3.556 3.556H3.556A3.556 3.556 0 010 28.445V3.556A3.556 3.556 0 013.556 0z" }), React140.createElement("path", { fill: "var(--color8, #8f9199)", d: "M17.778 8c.982 0 1.778.796 1.778 1.778v.889h3.556a.889.889 0 110 1.778h-.889v9.778c0 .982-.796 1.778-1.778 1.778h-8.889a1.778 1.778 0 01-1.778-1.778v-9.778h-.889a.889.889 0 110-1.778h3.556v-.889c0-.982.796-1.778 1.778-1.778h3.555zm0 6.222a.889.889 0 00-.883.785l-.006.104v5.333a.889.889 0 001.772.104l.006-.104v-5.333a.889.889 0 00-.889-.889zm-3.556 0a.889.889 0 00-.883.785l-.006.104v5.333a.889.889 0 001.772.104l.006-.104v-5.333a.889.889 0 00-.889-.889zm3.556-4.444h-3.556v.889h3.556v-.889z" }));
+}));
+DeletedFileD.displayName = "DeletedFileD";
+DeletedFileD["iconName"] = "deleted_file_D";
+var DeletedFileD_default = DeletedFileD;
+
+// node_modules/@ringcentral/juno/es6/icon/DeletedFile.js
+var __assign119 = function() {
+  __assign119 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign119.apply(this, arguments);
+};
+var __rest11 = function(s2, e2) {
+  var t2 = {};
+  for (var p in s2)
+    if (Object.prototype.hasOwnProperty.call(s2, p) && e2.indexOf(p) < 0)
+      t2[p] = s2[p];
+  if (s2 != null && typeof Object.getOwnPropertySymbols === "function")
+    for (var i2 = 0, p = Object.getOwnPropertySymbols(s2); i2 < p.length; i2++) {
+      if (e2.indexOf(p[i2]) < 0 && Object.prototype.propertyIsEnumerable.call(s2, p[i2]))
+        t2[p[i2]] = s2[p[i2]];
+    }
+  return t2;
+};
+var DeletedFile = memo111(forwardRef124(function(inProps, svgRef) {
+  var theme = RcUseTheme();
+  var _a2 = inProps.themeType, themeType = _a2 === void 0 ? theme.palette.type : _a2, props = __rest11(inProps, ["themeType"]);
+  return themeType === "dark" ? React141.createElement(DeletedFileD_default, __assign119({}, props, { ref: svgRef })) : React141.createElement("svg", __assign119({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React141.createElement("path", { fill: "var(--color12, #e8e9ed)", d: "M3.556 0h24.889a3.556 3.556 0 013.556 3.556v24.889a3.556 3.556 0 01-3.556 3.556H3.556A3.556 3.556 0 010 28.445V3.556A3.556 3.556 0 013.556 0z" }), React141.createElement("path", { fill: "var(--color13, #81899d)", d: "M17.778 8c.982 0 1.778.796 1.778 1.778v.889h3.556a.889.889 0 110 1.778h-.889v9.778c0 .982-.796 1.778-1.778 1.778h-8.889a1.778 1.778 0 01-1.778-1.778v-9.778h-.889a.889.889 0 110-1.778h3.556v-.889c0-.982.796-1.778 1.778-1.778h3.556zm0 6.222a.889.889 0 00-.883.785l-.006.104v5.333a.889.889 0 001.772.104l.006-.104v-5.333a.889.889 0 00-.889-.889zm-3.556 0a.889.889 0 00-.883.785l-.006.104v5.333a.889.889 0 001.772.104l.006-.104v-5.333a.889.889 0 00-.889-.889zm3.556-4.444h-3.556v.889h3.556v-.889z" }));
+}));
+DeletedFile.displayName = "DeletedFile";
+DeletedFile["iconName"] = "deleted_file";
+var DeletedFile_default = DeletedFile;
+
+// node_modules/@ringcentral/juno/es6/icon/Deletenumber.js
+import React142, { forwardRef as forwardRef125, memo as memo112 } from "react";
+var __assign120 = function() {
+  __assign120 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign120.apply(this, arguments);
+};
+var Deletenumber = memo112(forwardRef125(function(props, svgRef) {
+  return React142.createElement("svg", __assign120({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React142.createElement("path", { d: "M28 6a2 2 0 012 2v16a2 2 0 01-2 2H10.891a2.003 2.003 0 01-1.487-.662l-7.2-8a2 2 0 010-2.676l7.2-8c.379-.421.92-.662 1.487-.662H28zm-1 2H11.336a.996.996 0 00-.743.331l-6.3 7a1 1 0 000 1.338l6.3 7a1 1 0 00.743.331H27a1 1 0 001-1V9a1 1 0 00-1-1zm-10.536 3.05L20 14.584l3.536-3.534a.999.999 0 111.414 1.414l-3.536 3.534 3.536 3.537a.999.999 0 11-1.414 1.414L20 17.412l-3.536 3.537a.999.999 0 11-1.414-1.414l3.536-3.537-3.536-3.534a.999.999 0 111.414-1.414z" }));
+}));
+Deletenumber.displayName = "Deletenumber";
+Deletenumber["iconName"] = "deletenumber";
+var Deletenumber_default = Deletenumber;
+
+// node_modules/@ringcentral/juno/es6/icon/Department.js
+import React143, { forwardRef as forwardRef126, memo as memo113 } from "react";
+var __assign121 = function() {
+  __assign121 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign121.apply(this, arguments);
+};
+var Department = memo113(forwardRef126(function(props, svgRef) {
+  return React143.createElement("svg", __assign121({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React143.createElement("path", { d: "M11 18a2 2 0 012 2v8a2 2 0 01-2 2H3a2 2 0 01-2-2v-8a2 2 0 012-2h8zm18 0a2 2 0 012 2v8a2 2 0 01-2 2h-8a2 2 0 01-2-2v-8a2 2 0 012-2h8zm-18 2H3v8h8v-8zm18 0h-8v8h8v-8zM20 2a2 2 0 012 2v8a2 2 0 01-2 2h-8a2 2 0 01-2-2V4a2 2 0 012-2h8zm0 2h-8v8h8V4z" }));
+}));
+Department.displayName = "Department";
+Department["iconName"] = "department";
+var Department_default = Department;
+
+// node_modules/@ringcentral/juno/es6/icon/Dial.js
+import React144, { forwardRef as forwardRef127, memo as memo114 } from "react";
+var __assign122 = function() {
+  __assign122 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign122.apply(this, arguments);
+};
+var Dial = memo114(forwardRef127(function(props, svgRef) {
+  return React144.createElement("svg", __assign122({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React144.createElement("path", { d: "M28 3a1 1 0 00-1 1v12a1 1 0 01-1 1l-19.586.001 6.536-6.536a.999.999 0 10-1.414-1.414l-8.243 8.243a.999.999 0 000 1.414l8.243 8.243a.999.999 0 101.414-1.414l-6.536-6.535L27 19.001a2 2 0 002-2v-13a1 1 0 00-1-1z" }));
+}));
+Dial.displayName = "Dial";
+Dial["iconName"] = "dial";
+var Dial_default = Dial;
+
+// node_modules/@ringcentral/juno/es6/icon/Dialer.js
+import React145, { forwardRef as forwardRef128, memo as memo115 } from "react";
+var __assign123 = function() {
+  __assign123 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign123.apply(this, arguments);
+};
+var Dialer = memo115(forwardRef128(function(props, svgRef) {
+  return React145.createElement("svg", __assign123({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React145.createElement("path", { d: "M7 17a3 3 0 110 6 3 3 0 010-6zm9 0a3 3 0 110 6 3 3 0 010-6zm0 8a3 3 0 110 6 3 3 0 010-6zm9-8a3 3 0 110 6 3 3 0 010-6zM7 9a3 3 0 110 6 3 3 0 010-6zm9 0a3 3 0 110 6 3 3 0 010-6zm9 0a3 3 0 110 6 3 3 0 010-6zM7 1a3 3 0 110 6 3 3 0 010-6zm9 0a3 3 0 110 6 3 3 0 010-6zm9 0a3 3 0 110 6 3 3 0 010-6z" }));
+}));
+Dialer.displayName = "Dialer";
+Dialer["iconName"] = "dialer";
+var Dialer_default = Dialer;
+
+// node_modules/@ringcentral/juno/es6/icon/DocD.js
+import React146, { forwardRef as forwardRef129, memo as memo116 } from "react";
+var __assign124 = function() {
+  __assign124 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign124.apply(this, arguments);
+};
+var DocD = memo116(forwardRef129(function(props, svgRef) {
+  return React146.createElement("svg", __assign124({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React146.createElement("path", { fill: "var(--color39, #222f42)", d: "M3.556 0h24.889a3.556 3.556 0 013.556 3.556v24.889a3.556 3.556 0 01-3.556 3.556H3.556A3.556 3.556 0 010 28.445V3.556A3.556 3.556 0 013.556 0z" }), React146.createElement("path", { fill: "var(--color40, #4169a1)", d: "M11.919 8c-.601 0-1.108.208-1.522.624s-.62.927-.62 1.532v11.688c0 .605.207 1.116.62 1.532s.921.624 1.522.624h8.161c.601 0 1.108-.208 1.522-.624s.62-.927.62-1.532v-9.059L16.671 8h-4.752z" }), React146.createElement("path", { fill: "var(--color20, #f1f1f1)", d: "M17.009 20.53l-1.202-4.842h-.037l-1.24 4.842h-1.052l-1.954-6.129h1.09l1.39 5.032 1.24-5.032h1.089l1.278 5.032 1.39-5.032h1.014l-1.916 6.129z" }));
+}));
+DocD.displayName = "DocD";
+DocD["iconName"] = "doc-D";
+var DocD_default = DocD;
+
+// node_modules/@ringcentral/juno/es6/icon/Doc.js
+import React147, { forwardRef as forwardRef130, memo as memo117 } from "react";
+var __assign125 = function() {
+  __assign125 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign125.apply(this, arguments);
+};
+var __rest12 = function(s2, e2) {
+  var t2 = {};
+  for (var p in s2)
+    if (Object.prototype.hasOwnProperty.call(s2, p) && e2.indexOf(p) < 0)
+      t2[p] = s2[p];
+  if (s2 != null && typeof Object.getOwnPropertySymbols === "function")
+    for (var i2 = 0, p = Object.getOwnPropertySymbols(s2); i2 < p.length; i2++) {
+      if (e2.indexOf(p[i2]) < 0 && Object.prototype.propertyIsEnumerable.call(s2, p[i2]))
+        t2[p[i2]] = s2[p[i2]];
+    }
+  return t2;
+};
+var Doc = memo117(forwardRef130(function(inProps, svgRef) {
+  var theme = RcUseTheme();
+  var _a2 = inProps.themeType, themeType = _a2 === void 0 ? theme.palette.type : _a2, props = __rest12(inProps, ["themeType"]);
+  return themeType === "dark" ? React147.createElement(DocD_default, __assign125({}, props, { ref: svgRef })) : React147.createElement("svg", __assign125({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React147.createElement("path", { fill: "var(--color25, #fff)", opacity: 0.992, d: "M3.556 0h24.889a3.556 3.556 0 013.556 3.556v24.889a3.556 3.556 0 01-3.556 3.556H3.556A3.556 3.556 0 010 28.445V3.556A3.556 3.556 0 013.556 0z" }), React147.createElement("path", { fill: "var(--color40, #4169a1)", opacity: 0.16, d: "M3.556 0h24.889a3.556 3.556 0 013.556 3.556v24.889a3.556 3.556 0 01-3.556 3.556H3.556A3.556 3.556 0 010 28.445V3.556A3.556 3.556 0 013.556 0z" }), React147.createElement("path", { fill: "var(--color40, #4169a1)", d: "M11.919 8c-.601 0-1.108.208-1.522.624s-.62.927-.62 1.532v11.688c0 .605.207 1.116.62 1.532s.921.624 1.522.624h8.161c.601 0 1.108-.208 1.522-.624s.62-.927.62-1.532v-9.059L16.671 8h-4.752zm5.09 12.53l-1.202-4.842h-.038l-1.24 4.842h-1.052l-1.954-6.128h1.09l1.39 5.031 1.24-5.031h1.09l1.277 5.031L19 14.402h1.014l-1.916 6.128h-1.09z" }));
+}));
+Doc.displayName = "Doc";
+Doc["iconName"] = "doc";
+var Doc_default = Doc;
+
+// node_modules/@ringcentral/juno/es6/icon/DockBorder.js
+import React148, { forwardRef as forwardRef131, memo as memo118 } from "react";
+var __assign126 = function() {
+  __assign126 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign126.apply(this, arguments);
+};
+var DockBorder = memo118(forwardRef131(function(props, svgRef) {
+  return React148.createElement("svg", __assign126({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React148.createElement("path", { d: "M8 10v2H4v16h16v-4h2v4a2 2 0 01-2 2H4a2 2 0 01-2-2V12a2 2 0 012-2h4zm20-8a2 2 0 012 2v16a2 2 0 01-2 2H12a2 2 0 01-2-2V4a2 2 0 012-2h16zm0 2H12v16h16V4zm-2.808 2.707a.999.999 0 010 1.414l-6.498 6.499 2.356 2.309h-6L15 11l2.266 2.221 6.513-6.514a.999.999 0 011.414 0z" }));
+}));
+DockBorder.displayName = "DockBorder";
+DockBorder["iconName"] = "dock_border";
+var DockBorder_default = DockBorder;
+
+// node_modules/@ringcentral/juno/es6/icon/DoubleChevronLeft.js
+import React149, { forwardRef as forwardRef132, memo as memo119 } from "react";
+var __assign127 = function() {
+  __assign127 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign127.apply(this, arguments);
+};
+var DoubleChevronLeft = memo119(forwardRef132(function(props, svgRef) {
+  return React149.createElement("svg", __assign127({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React149.createElement("path", { d: "M5 4a1 1 0 011 1v22a1 1 0 01-2 0V5a1 1 0 011-1zm12.314 2.101a.999.999 0 010 1.414L9.827 15H27a1 1 0 010 2H9.829l7.485 7.485a.999.999 0 11-1.414 1.414l-9.192-9.192a.999.999 0 010-1.414L15.9 6.101a.999.999 0 011.414 0z" }));
+}));
+DoubleChevronLeft.displayName = "DoubleChevronLeft";
+DoubleChevronLeft["iconName"] = "double-chevron_left";
+var DoubleChevronLeft_default = DoubleChevronLeft;
+
+// node_modules/@ringcentral/juno/es6/icon/DoubleChevronRight.js
+import React150, { forwardRef as forwardRef133, memo as memo120 } from "react";
+var __assign128 = function() {
+  __assign128 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign128.apply(this, arguments);
+};
+var DoubleChevronRight = memo120(forwardRef133(function(props, svgRef) {
+  return React150.createElement("svg", __assign128({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React150.createElement("path", { d: "M26.899 4a1 1 0 00-1 1v22a1 1 0 002 0V5a1 1 0 00-1-1zM14.586 6.101a.999.999 0 000 1.414L22.073 15H5a1 1 0 000 2h17.07l-7.485 7.485a.999.999 0 101.414 1.414l9.192-9.192a.999.999 0 000-1.414l-9.192-9.192a.999.999 0 00-1.414 0z" }));
+}));
+DoubleChevronRight.displayName = "DoubleChevronRight";
+DoubleChevronRight["iconName"] = "double-chevron_right";
+var DoubleChevronRight_default = DoubleChevronRight;
+
+// node_modules/@ringcentral/juno/es6/icon/Download.js
+import React151, { forwardRef as forwardRef134, memo as memo121 } from "react";
+var __assign129 = function() {
+  __assign129 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign129.apply(this, arguments);
+};
+var Download = memo121(forwardRef134(function(props, svgRef) {
+  return React151.createElement("svg", __assign129({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React151.createElement("path", { d: "M27 26a1 1 0 010 2H5a1 1 0 010-2h22zM16 3a1 1 0 01.993.883L17 4v16.17l6.885-6.875a.998.998 0 011.493 1.316l-.083.094-8.588 8.588a.999.999 0 01-1.414 0l-8.588-8.588a.998.998 0 011.316-1.493l.094.083L15 20.17V4a1 1 0 011-1z" }));
+}));
+Download.displayName = "Download";
+Download["iconName"] = "download";
+var Download_default = Download;
+
+// node_modules/@ringcentral/juno/es6/icon/DownwardsArrowWithTipRightwards.js
+import React152, { forwardRef as forwardRef135, memo as memo122 } from "react";
+var __assign130 = function() {
+  __assign130 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign130.apply(this, arguments);
+};
+var DownwardsArrowWithTipRightwards = memo122(forwardRef135(function(props, svgRef) {
+  return React152.createElement("svg", __assign130({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React152.createElement("path", { d: "M4 3a1 1 0 011 1v12a1 1 0 001 1l19.586.001-6.536-6.536a.999.999 0 111.414-1.414l8.243 8.243a.999.999 0 010 1.414l-8.243 8.243a.999.999 0 11-1.414-1.414l6.536-6.535L5 19.001a2 2 0 01-2-2v-13a1 1 0 011-1z" }));
+}));
+DownwardsArrowWithTipRightwards.displayName = "DownwardsArrowWithTipRightwards";
+DownwardsArrowWithTipRightwards["iconName"] = "downwards-arrow-with-tip-rightwards";
+var DownwardsArrowWithTipRightwards_default = DownwardsArrowWithTipRightwards;
+
+// node_modules/@ringcentral/juno/es6/icon/Draft.js
+import React153, { forwardRef as forwardRef136, memo as memo123 } from "react";
+var __assign131 = function() {
+  __assign131 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign131.apply(this, arguments);
+};
+var Draft = memo123(forwardRef136(function(props, svgRef) {
+  return React153.createElement("svg", __assign131({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React153.createElement("path", { d: "M29 27a1 1 0 010 2H14a1 1 0 010-2h15zm-.99-23a4 4 0 010 5.657L10.761 26.906c-.279.279-.635.47-1.022.547l-5.006 1.001a1 1 0 01-1.177-1.176l1.001-5.006c.077-.387.268-.743.547-1.022L22.353 4.001a4 4 0 015.657 0zm-7.071 4.242L6.597 22.584l2.828 2.828L23.767 11.07l-2.828-2.828zm2.828-2.828l-1.413 1.413 2.828 2.828 1.413-1.414a2 2 0 10-2.828-2.828z" }));
+}));
+Draft.displayName = "Draft";
+Draft["iconName"] = "draft";
+var Draft_default = Draft;
+
+// node_modules/@ringcentral/juno/es6/icon/DragableArea.js
+import React154, { forwardRef as forwardRef137, memo as memo124 } from "react";
+var __assign132 = function() {
+  __assign132 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign132.apply(this, arguments);
+};
+var DragableArea = memo124(forwardRef137(function(props, svgRef) {
+  return React154.createElement("svg", __assign132({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React154.createElement("path", { d: "M11 23a3 3 0 110 6 3 3 0 010-6zm10 0a3 3 0 110 6 3 3 0 010-6zM11 13a3 3 0 110 6 3 3 0 010-6zm10 0a3 3 0 110 6 3 3 0 010-6zM11 3a3 3 0 110 6 3 3 0 010-6zm10 0a3 3 0 110 6 3 3 0 010-6z" }));
+}));
+DragableArea.displayName = "DragableArea";
+DragableArea["iconName"] = "dragable_area";
+var DragableArea_default = DragableArea;
+
+// node_modules/@ringcentral/juno/es6/icon/Dropbox.js
+import React155, { forwardRef as forwardRef138, memo as memo125 } from "react";
+var __assign133 = function() {
+  __assign133 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign133.apply(this, arguments);
+};
+var Dropbox = memo125(forwardRef138(function(props, svgRef) {
+  return React155.createElement("svg", __assign133({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React155.createElement("path", { d: "M10.519 22.653l-7.852-5.227 5.416-4.441 7.916 4.998-5.48 4.67zm5.48-4.671l7.918-4.997 5.416 4.44-7.837 5.228-5.497-4.671zm.033 1.017l5.496 4.653 2.357-1.572v1.769l-7.853 4.801v.016l-.016-.016-.017.016v-.016l-7.835-4.801V22.08l2.356 1.572L16 18.999v-.033l.017.016.016-.016v.033zM2.667 8.56l7.852-5.227 5.48 4.671-7.916 4.981L2.667 8.56zm18.829-5.227l7.837 5.227-5.416 4.425-7.918-4.981 5.497-4.671z" }));
+}));
+Dropbox.displayName = "Dropbox";
+Dropbox["iconName"] = "dropbox";
+var Dropbox_default = Dropbox;
+
+// node_modules/@ringcentral/juno/es6/icon/Edit.js
+import React156, { forwardRef as forwardRef139, memo as memo126 } from "react";
+var __assign134 = function() {
+  __assign134 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign134.apply(this, arguments);
+};
+var Edit = memo126(forwardRef139(function(props, svgRef) {
+  return React156.createElement("svg", __assign134({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React156.createElement("path", { d: "M28.01 4a4 4 0 010 5.657L10.761 26.906c-.279.279-.635.47-1.022.547l-5.006 1.001a1 1 0 01-1.177-1.176l1.001-5.006c.077-.387.268-.743.547-1.022L22.353 4.001a4 4 0 015.657 0zm-4.242 7.07L20.94 8.242 6.598 22.584l2.828 2.828L23.768 11.07zm2.827-5.656a2 2 0 00-2.828 0l-1.413 1.413 2.828 2.828 1.413-1.414a2 2 0 000-2.828z" }));
+}));
+Edit.displayName = "Edit";
+Edit["iconName"] = "edit";
+var Edit_default = Edit;
+
+// node_modules/@ringcentral/juno/es6/icon/Email.js
+import React157, { forwardRef as forwardRef140, memo as memo127 } from "react";
+var __assign135 = function() {
+  __assign135 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign135.apply(this, arguments);
+};
+var Email = memo127(forwardRef140(function(props, svgRef) {
+  return React157.createElement("svg", __assign135({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React157.createElement("path", { d: "M28 5a2 2 0 012 2v18a2 2 0 01-2 2H4a2 2 0 01-2-2V7a2 2 0 012-2h24zM4 9.032v13.744l7.698-7.146 1.529 1.31-8.601 7.988A.992.992 0 005 25h22c.132 0 .259-.026.374-.072l-8.602-7.988-.82.704-.149.12a3 3 0 01-3.599.005l-.157-.126L3.999 9.031zm24-.001l-7.699 6.599L28 22.779V24l-.007.122A.987.987 0 0028 24V9.031zM27 7H5a.98.98 0 00-.255.033l10.701 9.166a1 1 0 001.097.007l.107-.08 10.605-9.092a.982.982 0 00-.256-.033z" }));
+}));
+Email.displayName = "Email";
+Email["iconName"] = "email";
+var Email_default = Email;
+
+// node_modules/@ringcentral/juno/es6/icon/Emoji.js
+import React158, { forwardRef as forwardRef141, memo as memo128 } from "react";
+var __assign136 = function() {
+  __assign136 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign136.apply(this, arguments);
+};
+var Emoji = memo128(forwardRef141(function(props, svgRef) {
+  return React158.createElement("svg", __assign136({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React158.createElement("path", { d: "M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm0 2C9.373 4 4 9.373 4 16s5.373 12 12 12 12-5.373 12-12S22.627 4 16 4zm4.328 14.505a1 1 0 111.73 1.004A6.997 6.997 0 0116 23a6.996 6.996 0 01-6.031-3.445 1 1 0 111.723-1.017A4.997 4.997 0 0016.001 21a4.995 4.995 0 004.328-2.495zM11 10a2 2 0 11.001 3.999A2 2 0 0111 10zm10 0a2 2 0 11.001 3.999A2 2 0 0121 10z" }));
+}));
+Emoji.displayName = "Emoji";
+Emoji["iconName"] = "emoji";
+var Emoji_default = Emoji;
+
+// node_modules/@ringcentral/juno/es6/icon/EndAnswer.js
+import React159, { forwardRef as forwardRef142, memo as memo129 } from "react";
+var __assign137 = function() {
+  __assign137 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign137.apply(this, arguments);
+};
+var EndAnswer = memo129(forwardRef142(function(props, svgRef) {
+  return React159.createElement("svg", __assign137({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React159.createElement("path", { fill: "var(--color10, #f54c3d)", d: "M8 0c4.371 0 7.923 3.497 7.999 7.838a12.833 12.833 0 00-8.161 8.159l.162.002c-4.418 0-8-3.573-8-7.98v-.04C0 3.646 3.461.12 7.776.002L8-.001zm0 6.541c-1.621.015-2.615.344-3.437 1.021-.383.315-.53.678-.53 1.156l.003.07.01.06a.866.866 0 00.272.478c.192.158.419.227.751.18l1.121-.188c.382-.072.399-.404.391-.697l-.004-.22.001-.03c.011-.135.104-.213.347-.228.219-.015.89-.001 1.116 0 .183.001.759-.019.954 0 .254.024.348.109.352.261l-.003.218.002.048c.024.286.158.618.555.673l1.123.188.061.006a.964.964 0 00.67-.213.776.776 0 00.276-.443l.018-.113-.002-.077c-.017-.479-.154-.814-.608-1.188-.745-.614-1.815-.978-3.44-.964z" }), React159.createElement("path", { fill: "var(--color73, #299e0b)", d: "M20 8c6.627 0 12 5.373 12 12s-5.373 12-12 12S8 26.627 8 20 13.373 8 20 8zm-2.083 6.541a1.451 1.451 0 00-.853-.123c-.22.034-.486.13-.807.286a3.66 3.66 0 00-.731.444c-.373.314-.6.737-.681 1.26-.085.494-.046 1.052.112 1.669.156.607.425 1.256.807 1.948.38.696.869 1.402 1.466 2.116.453.532.912 1.007 1.379 1.426.459.425.923.789 1.39 1.087.47.301.932.533 1.386.695.465.166.913.25 1.342.25.265 0 .509-.035.731-.105.228-.072.431-.182.606-.327.168-.126.365-.325.582-.588.221-.267.37-.493.447-.685.114-.229.138-.497.064-.775a1.353 1.353 0 00-.463-.703c-.418-.345-.756-.63-1.014-.856s-.506-.453-.746-.679a1.203 1.203 0 00-.786-.362 1.437 1.437 0 00-.868.193 2.097 2.097 0 00-.247.191c-.063.058-.14.134-.23.229l-.03.037-.004.006-.032.031-.087.096a1.693 1.693 0 01-.125-.064 2.47 2.47 0 01-.427-.317 5.516 5.516 0 01-.531-.557 5.786 5.786 0 01-.436-.586 2.595 2.595 0 01-.241-.462 1.307 1.307 0 01-.073-.219.645.645 0 01.058-.027.767.767 0 00.089-.048l.068-.033a.428.428 0 00.087-.055 2.329 2.329 0 00.411-.283c.229-.231.354-.48.391-.76a1.162 1.162 0 00-.194-.807c-.264-.382-.489-.727-.678-1.04s-.356-.615-.503-.906a1.366 1.366 0 00-.631-.6z" }));
+}));
+EndAnswer.displayName = "EndAnswer";
+EndAnswer["iconName"] = "end--answer";
+var EndAnswer_default = EndAnswer;
+
+// node_modules/@ringcentral/juno/es6/icon/EventNewBorder.js
+import React160, { forwardRef as forwardRef143, memo as memo130 } from "react";
+var __assign138 = function() {
+  __assign138 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign138.apply(this, arguments);
+};
+var EventNewBorder = memo130(forwardRef143(function(props, svgRef) {
+  return React160.createElement("svg", __assign138({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React160.createElement("path", { d: "M21 2a1 1 0 01.993.883L22 3v1h4a2 2 0 011.994 1.851L28 6v20a2 2 0 01-1.851 1.994L26 28H6a2.001 2.001 0 01-1.995-1.851L3.999 26V6c0-1.054.816-1.918 1.851-1.995l.149-.006h4v-1a1 1 0 011.993-.117l.007.117v1h8v-1a1 1 0 011-1zm5 8H6v15a1 1 0 00.883.993L7 26h18a1 1 0 00.993-.883L26 25V10zm-13 3h6a1 1 0 01.923 1.385l-.049.101-5 9a1 1 0 01-1.799-.866l.051-.105 4.175-7.514h-4.3a1 1 0 01-.117-1.993l.117-.007zm12-7H7a1 1 0 00-.993.883L6 7v1h20V7a1 1 0 00-.883-.993L25 6z" }));
+}));
+EventNewBorder.displayName = "EventNewBorder";
+EventNewBorder["iconName"] = "event-new_border";
+var EventNewBorder_default = EventNewBorder;
+
+// node_modules/@ringcentral/juno/es6/icon/EventNew.js
+import React161, { forwardRef as forwardRef144, memo as memo131 } from "react";
+var __assign139 = function() {
+  __assign139 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign139.apply(this, arguments);
+};
+var EventNew = memo131(forwardRef144(function(props, svgRef) {
+  return React161.createElement("svg", __assign139({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React161.createElement("path", { d: "M28 10v16a2 2 0 01-1.851 1.994L26 28H6a2.001 2.001 0 01-1.995-1.851L3.999 26V10h24zm-9 3h-6l-.117.007a1 1 0 000 1.986L13 15h4.301l-4.175 7.514-.051.105a1 1 0 001.736.965l.063-.099 5-9 .049-.101a1 1 0 00-.805-1.378L19 12.999zM4 6c0-1.054.816-1.918 1.851-1.995L6 3.999h4v-1a1 1 0 011.993-.117l.007.117v1h8v-1a1 1 0 011.993-.117l.007.117v1h4a2 2 0 011.994 1.851l.006.149v2H4v-2z" }));
+}));
+EventNew.displayName = "EventNew";
+EventNew["iconName"] = "event-new";
+var EventNew_default = EventNew;
+
+// node_modules/@ringcentral/juno/es6/icon/Evernote.js
+import React162, { forwardRef as forwardRef145, memo as memo132 } from "react";
+var __assign140 = function() {
+  __assign140 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign140.apply(this, arguments);
+};
+var Evernote = memo132(forwardRef145(function(props, svgRef) {
+  return React162.createElement("svg", __assign140({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React162.createElement("path", { d: "M21.631 15.271a5.645 5.645 0 00-1.063.063c.094-.744.407-1.657 1.515-1.619 1.226.042 1.397 1.18 1.401 1.95-.517-.227-1.157-.371-1.854-.395zm5.242-8.073c-.206-1.077-.857-1.609-1.446-1.817-.636-.226-1.927-.46-3.548-.648-1.305-.151-2.836-.138-3.763-.111-.112-.747-.645-1.431-1.242-1.667-1.592-.629-4.051-.477-4.683-.303-.502.138-1.057.419-1.366.854-.207.291-.342.663-.343 1.183 0 .295.008.988.016 1.604.007.618.016 1.17.016 1.174 0 .55-.454.997-1.017.998h-2.58c-.55 0-.971.091-1.292.234s-.55.338-.723.566c-.344.455-.405 1.015-.403 1.587 0 0 .005.468.12 1.373.096.7.869 5.593 1.603 7.081.285.578.474.82 1.034 1.075 1.246.524 4.094 1.108 5.428 1.275 1.332.167 2.168.52 2.667-.507.001-.003.099-.256.235-.626.433-1.287.493-2.43.493-3.256 0-.085.126-.088.126 0 0 .583-.114 2.648 1.474 3.203.627.218 1.928.413 3.249.565 1.196.135 2.063.597 2.063 3.608 0 1.832-.392 2.083-2.44 2.083-1.66 0-2.294.043-2.294-1.253 0-1.047 1.055-.937 1.836-.937.349 0 .096-.255.096-.901 0-.643.409-1.014.023-1.023-2.701-.073-4.292-.004-4.292 3.316 0 3.013 1.174 3.573 5.009 3.573 3.007 0 4.068-.097 5.309-3.88.246-.746.841-3.027 1.199-6.854.228-2.42-.214-9.724-.564-11.567zm-20.076.531h2.582a.265.265 0 00.267-.262c0-.001-.031-2.172-.031-2.777v-.006c0-.496.106-.929.29-1.291l.088-.163a.056.056 0 00-.03.016L4.95 8.128a.059.059 0 00-.019.029c.104-.05.246-.119.266-.127.436-.194.966-.3 1.599-.3z" }));
+}));
+Evernote.displayName = "Evernote";
+Evernote["iconName"] = "evernote";
+var Evernote_default = Evernote;
+
+// node_modules/@ringcentral/juno/es6/icon/ExcelD.js
+import React163, { forwardRef as forwardRef146, memo as memo133 } from "react";
+var __assign141 = function() {
+  __assign141 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign141.apply(this, arguments);
+};
+var ExcelD = memo133(forwardRef146(function(props, svgRef) {
+  return React163.createElement("svg", __assign141({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React163.createElement("path", { fill: "var(--color33, #1e2f27)", d: "M3.556 0h24.889a3.556 3.556 0 013.556 3.556v24.889a3.556 3.556 0 01-3.556 3.556H3.556A3.556 3.556 0 010 28.445V3.556A3.556 3.556 0 013.556 0z" }), React163.createElement("path", { fill: "var(--color34, #008f4d)", d: "M11.915 8l4.844.023 5.463 5.114v8.889c0 .605-.215.933-.627 1.349s-.918.624-1.518.624h-8.171c-.6 0-1.106-.208-1.518-.624s-.61-.743-.61-1.349v-11.87c0-.606.206-1.116.619-1.533s.918-.624 1.518-.624z" }), React163.createElement("path", { fill: "var(--color20, #f1f1f1)", d: "M14.258 14.051h-1.387l2.287 3.141-2.474 3.52h1.312l1.837-2.763 1.836 2.763h1.425l-2.587-3.595 2.287-3.066h-1.312l-1.649 2.347-1.575-2.347z" }));
+}));
+ExcelD.displayName = "ExcelD";
+ExcelD["iconName"] = "excel-D";
+var ExcelD_default = ExcelD;
+
+// node_modules/@ringcentral/juno/es6/icon/Excel.js
+import React164, { forwardRef as forwardRef147, memo as memo134 } from "react";
+var __assign142 = function() {
+  __assign142 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign142.apply(this, arguments);
+};
+var __rest13 = function(s2, e2) {
+  var t2 = {};
+  for (var p in s2)
+    if (Object.prototype.hasOwnProperty.call(s2, p) && e2.indexOf(p) < 0)
+      t2[p] = s2[p];
+  if (s2 != null && typeof Object.getOwnPropertySymbols === "function")
+    for (var i2 = 0, p = Object.getOwnPropertySymbols(s2); i2 < p.length; i2++) {
+      if (e2.indexOf(p[i2]) < 0 && Object.prototype.propertyIsEnumerable.call(s2, p[i2]))
+        t2[p[i2]] = s2[p[i2]];
+    }
+  return t2;
+};
+var Excel = memo134(forwardRef147(function(inProps, svgRef) {
+  var theme = RcUseTheme();
+  var _a2 = inProps.themeType, themeType = _a2 === void 0 ? theme.palette.type : _a2, props = __rest13(inProps, ["themeType"]);
+  return themeType === "dark" ? React164.createElement(ExcelD_default, __assign142({}, props, { ref: svgRef })) : React164.createElement("svg", __assign142({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React164.createElement("path", { fill: "var(--color25, #fff)", opacity: 0.992, d: "M3.556 0h24.889a3.556 3.556 0 013.556 3.556v24.889a3.556 3.556 0 01-3.556 3.556H3.556A3.556 3.556 0 010 28.445V3.556A3.556 3.556 0 013.556 0z" }), React164.createElement("path", { fill: "var(--color53, #007640)", opacity: 0.16, d: "M3.556 0h24.889a3.556 3.556 0 013.556 3.556v24.889a3.556 3.556 0 01-3.556 3.556H3.556A3.556 3.556 0 010 28.445V3.556A3.556 3.556 0 013.556 0z" }), React164.createElement("path", { fill: "var(--color53, #007640)", d: "M11.915 8l4.844.023 5.463 5.114v8.889c0 .605-.215.933-.627 1.349s-.918.624-1.518.624h-8.171c-.6 0-1.106-.208-1.518-.624s-.61-.743-.61-1.349v-11.87c0-.606.206-1.116.619-1.533s.918-.624 1.518-.624zm2.343 6.051h-1.387l2.287 3.141-2.474 3.52h1.312l1.837-2.763 1.837 2.763h1.425l-2.587-3.595 2.287-3.066h-1.312l-1.649 2.346-1.575-2.346z" }));
+}));
+Excel.displayName = "Excel";
+Excel["iconName"] = "excel";
+var Excel_default = Excel;
+
+// node_modules/@ringcentral/juno/es6/icon/Expand.js
+import React165, { forwardRef as forwardRef148, memo as memo135 } from "react";
+var __assign143 = function() {
+  __assign143 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign143.apply(this, arguments);
+};
+var Expand = memo135(forwardRef148(function(props, svgRef) {
+  return React165.createElement("svg", __assign143({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React165.createElement("path", { d: "M5 18a1 1 0 011 1l.001 5.586 5.827-5.829a.999.999 0 111.414 1.414L7.415 26H13a1 1 0 010 2H5a1 1 0 01-1-1v-8a1 1 0 011-1zM27 4a1 1 0 011 1v8a1 1 0 01-2 0l-.001-5.586-5.827 5.829a.999.999 0 11-1.414-1.414L24.585 6H19a1 1 0 010-2h8z" }));
+}));
+Expand.displayName = "Expand";
+Expand["iconName"] = "expand";
+var Expand_default = Expand;
+
+// node_modules/@ringcentral/juno/es6/icon/ExternalLink.js
+import React166, { forwardRef as forwardRef149, memo as memo136 } from "react";
+var __assign144 = function() {
+  __assign144 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign144.apply(this, arguments);
+};
+var ExternalLink = memo136(forwardRef149(function(props, svgRef) {
+  return React166.createElement("svg", __assign144({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React166.createElement("path", { d: "M25 29H5a2 2 0 01-2-2V7a2 2 0 012-2h8a1 1 0 010 2H6a1 1 0 00-1 1v18a1 1 0 001 1h18a1 1 0 001-1v-7a1 1 0 012 0v8a2 2 0 01-2 2zM20 4a1 1 0 001 1h4.59l-7.885 7.885a.998.998 0 001.41 1.41L27 6.41V11a1 1 0 002 0V4a1 1 0 00-1-1h-7a1 1 0 00-1 1z" }));
+}));
+ExternalLink.displayName = "ExternalLink";
+ExternalLink["iconName"] = "external_link";
+var ExternalLink_default = ExternalLink;
+
+// node_modules/@ringcentral/juno/es6/icon/FailedFaxBorder.js
+import React167, { forwardRef as forwardRef150, memo as memo137 } from "react";
+var __assign145 = function() {
+  __assign145 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign145.apply(this, arguments);
+};
+var FailedFaxBorder = memo137(forwardRef150(function(props, svgRef) {
+  return React167.createElement("svg", __assign145({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React167.createElement("path", { d: "M23 4a1 1 0 010 2h-2v13.757c0 .796-.316 1.559-.879 2.121l-5.536 5.536a2 2 0 01-1.238.578l-.176.008H4.999a2 2 0 01-2-2V6h-2a1 1 0 010-2h22zm5 18a2 2 0 11.001 3.999A2 2 0 0128 22zM19 6H5v19a1 1 0 001 1h6v-5a2 2 0 012-2h5V6zm-.83 15H15a1 1 0 00-1 1v3.17L18.17 21zM28 6c.552 0 1 .348 1 .778v12.444c0 .43-.448.778-1 .778s-1-.348-1-.778V6.778c0-.43.448-.778 1-.778zm-12.833 8c.46 0 .833.448.833 1s-.373 1-.833 1H8.834c-.46 0-.833-.448-.833-1s.373-1 .833-1h6.333zm0-5c.46 0 .833.448.833 1s-.373 1-.833 1H8.834c-.46 0-.833-.448-.833-1s.373-1 .833-1h6.333z" }));
+}));
+FailedFaxBorder.displayName = "FailedFaxBorder";
+FailedFaxBorder["iconName"] = "failed-fax_border";
+var FailedFaxBorder_default = FailedFaxBorder;
+
+// node_modules/@ringcentral/juno/es6/icon/FailedFax.js
+import React168, { forwardRef as forwardRef151, memo as memo138 } from "react";
+var __assign146 = function() {
+  __assign146 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign146.apply(this, arguments);
+};
+var FailedFax = memo138(forwardRef151(function(props, svgRef) {
+  return React168.createElement("svg", __assign146({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React168.createElement("path", { d: "M23 4a1 1 0 010 2h-2v13h-7a2.001 2.001 0 00-1.995 1.851L12 21v7H5a2 2 0 01-2-2V6H1a1 1 0 010-2h22zm-2.272 17l-.025.058a3.003 3.003 0 01-.582.82l-5.536 5.536a2.022 2.022 0 01-.415.319l-.17.086V22a1 1 0 01.883-.993L15 21h5.728zM28 22a2 2 0 11.001 3.999A2 2 0 0128 22zm0-16c.552 0 1 .348 1 .778v12.444c0 .43-.448.778-1 .778s-1-.348-1-.778V6.778c0-.43.448-.778 1-.778zm-12.833 8H8.834c-.46 0-.833.448-.833 1 0 .513.322.935.736.993l.097.007h6.333c.46 0 .833-.448.833-1s-.373-1-.833-1zm0-5H8.834c-.46 0-.833.448-.833 1 0 .513.322.935.736.993l.097.007h6.333c.46 0 .833-.448.833-1s-.373-1-.833-1z" }));
+}));
+FailedFax.displayName = "FailedFax";
+FailedFax["iconName"] = "failed-fax";
+var FailedFax_default = FailedFax;
+
+// node_modules/@ringcentral/juno/es6/icon/FaxBorder.js
+import React169, { forwardRef as forwardRef152, memo as memo139 } from "react";
+var __assign147 = function() {
+  __assign147 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign147.apply(this, arguments);
+};
+var FaxBorder = memo139(forwardRef152(function(props, svgRef) {
+  return React169.createElement("svg", __assign147({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React169.createElement("path", { d: "M29 3a1 1 0 010 2h-2v15h-7a2 2 0 00-1.994 1.851L18 22v7H7a2 2 0 01-2-2V5H3a1 1 0 010-2h26zm-2.272 19l-.025.058a3.003 3.003 0 01-.582.82l-5.536 5.536a2.022 2.022 0 01-.415.319l-.17.086V23a1 1 0 01.883-.993L21 22h5.728zM21 14H11a1 1 0 00-.117 1.993L11 16h10a1 1 0 000-2zm0-6H11a1 1 0 00-.117 1.993L11 10h10a1 1 0 000-2z" }));
+}));
+FaxBorder.displayName = "FaxBorder";
+FaxBorder["iconName"] = "fax_border";
+var FaxBorder_default = FaxBorder;
+
+// node_modules/@ringcentral/juno/es6/icon/Fax.js
+import React170, { forwardRef as forwardRef153, memo as memo140 } from "react";
+var __assign148 = function() {
+  __assign148 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign148.apply(this, arguments);
+};
+var Fax = memo140(forwardRef153(function(props, svgRef) {
+  return React170.createElement("svg", __assign148({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React170.createElement("path", { d: "M29 3a1 1 0 010 2h-2v15.757c0 .796-.316 1.559-.879 2.121l-5.536 5.536a2 2 0 01-1.238.578l-.176.008H6.999a2 2 0 01-2-2V5h-2a1 1 0 010-2h26zm-4 2H7v21a1 1 0 001 1h10v-5a2 2 0 012-2h5V5zm-.83 17H21a1 1 0 00-1 1v3.17L24.17 22zM21 14a1 1 0 010 2H11a1 1 0 010-2h10zm0-6a1 1 0 010 2H11a1 1 0 010-2h10z" }));
+}));
+Fax.displayName = "Fax";
+Fax["iconName"] = "fax";
+var Fax_default = Fax;
+
+// node_modules/@ringcentral/juno/es6/icon/Feedback.js
+import React171, { forwardRef as forwardRef154, memo as memo141 } from "react";
+var __assign149 = function() {
+  __assign149 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign149.apply(this, arguments);
+};
+var Feedback = memo141(forwardRef154(function(props, svgRef) {
+  return React171.createElement("svg", __assign149({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React171.createElement("path", { d: "M26.667 2.667a2.667 2.667 0 012.667 2.667v16a2.667 2.667 0 01-2.667 2.667h-12L9.113 29a.666.666 0 01-1.112-.496v-4.503H5.334a2.667 2.667 0 01-2.667-2.667v-16a2.667 2.667 0 012.667-2.667h21.333zM15.994 17.333a1.334 1.334 0 10-.002 2.666 1.334 1.334 0 10.002-2.666zM16 6.667l-.142.005a1.853 1.853 0 00-1.705 1.989l.411 5.343a1.44 1.44 0 002.872 0l.415-5.414.001-.071A1.852 1.852 0 0016 6.667z" }));
+}));
+Feedback.displayName = "Feedback";
+Feedback["iconName"] = "feedback";
+var Feedback_default = Feedback;
+
+// node_modules/@ringcentral/juno/es6/icon/FileBorder.js
+import React172, { forwardRef as forwardRef155, memo as memo142 } from "react";
+var __assign150 = function() {
+  __assign150 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign150.apply(this, arguments);
+};
+var FileBorder = memo142(forwardRef155(function(props, svgRef) {
+  return React172.createElement("svg", __assign150({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React172.createElement("path", { d: "M30 26a2 2 0 01-2 2H4a2 2 0 01-2-2V6a2 2 0 012-2h7.821a2 2 0 011.459.632l1.923 2.052a.996.996 0 00.612.309l.118.007H28a2 2 0 012 2v17zm-2-12H4v11a1 1 0 001 1h22a1 1 0 001-1V14zM10.955 6H5a1 1 0 00-1 1v5h24v-2a1 1 0 00-1-1l-11.419-.021a2.998 2.998 0 01-1.836-.928l-1.33-1.419A2 2 0 0010.956 6z" }));
+}));
+FileBorder.displayName = "FileBorder";
+FileBorder["iconName"] = "file_border";
+var FileBorder_default = FileBorder;
+
+// node_modules/@ringcentral/juno/es6/icon/File.js
+import React173, { forwardRef as forwardRef156, memo as memo143 } from "react";
+var __assign151 = function() {
+  __assign151 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign151.apply(this, arguments);
+};
+var File = memo143(forwardRef156(function(props, svgRef) {
+  return React173.createElement("svg", __assign151({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React173.createElement("path", { d: "M30 14v12a2 2 0 01-2 2H4a2 2 0 01-2-2V14h28zM2 6a2 2 0 012-2h7.821a2 2 0 011.459.632l1.923 2.052a.996.996 0 00.612.309l.118.007H28a2 2 0 012 2v3H2V6z" }));
+}));
+File.displayName = "File";
+File["iconName"] = "file";
+var File_default = File;
+
+// node_modules/@ringcentral/juno/es6/icon/Filter.js
+import React174, { forwardRef as forwardRef157, memo as memo144 } from "react";
+var __assign152 = function() {
+  __assign152 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign152.apply(this, arguments);
+};
+var Filter = memo144(forwardRef157(function(props, svgRef) {
+  return React174.createElement("svg", __assign152({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React174.createElement("path", { d: "M18 29h-4a2 2 0 01-2-2v-8.176a.997.997 0 00-.293-.707L4.59 11A1.996 1.996 0 014 9.59V5a2 2 0 012-2h20a2 2 0 012 2v4.59a1.996 1.996 0 01-.59 1.41l-7.117 7.117a1 1 0 00-.293.707V27a2 2 0 01-2 2zM6 6v3.176c0 .265.105.52.293.707l7.121 7.121A2 2 0 0114 18.418V26a1 1 0 001 1h2a1 1 0 001-1v-7.582a2 2 0 01.586-1.414l7.121-7.121A1 1 0 0026 9.176V6a1 1 0 00-1-1H7a1 1 0 00-1 1z" }));
+}));
+Filter.displayName = "Filter";
+Filter["iconName"] = "filter";
+var Filter_default = Filter;
+
+// node_modules/@ringcentral/juno/es6/icon/Foldercreated.js
+import React175, { forwardRef as forwardRef158, memo as memo145 } from "react";
+var __assign153 = function() {
+  __assign153 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign153.apply(this, arguments);
+};
+var Foldercreated = memo145(forwardRef158(function(props, svgRef) {
+  return React175.createElement("svg", __assign153({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React175.createElement("path", { d: "M27.2 7.95H16l-1.98-1.944a2.826 2.826 0 00-1.98-.806H4.799c-1.54 0-2.8 1.237-2.8 2.75v16.5c0 1.512 1.26 2.75 2.8 2.75h22.4c1.54 0 2.8-1.238 2.8-2.75V10.7c0-1.512-1.26-2.75-2.8-2.75z" }));
+}));
+Foldercreated.displayName = "Foldercreated";
+Foldercreated["iconName"] = "foldercreated";
+var Foldercreated_default = Foldercreated;
+
+// node_modules/@ringcentral/juno/es6/icon/FontColor.js
+import React176, { forwardRef as forwardRef159, memo as memo146 } from "react";
+var __assign154 = function() {
+  __assign154 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign154.apply(this, arguments);
+};
+var FontColor = memo146(forwardRef159(function(props, svgRef) {
+  return React176.createElement("svg", __assign154({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React176.createElement("path", { fill: "var(--color11, #000)", d: "M16.873 3.511l.054.113 7.5 18.5a1 1 0 01-1.803.857l-.05-.106-1.976-4.876h-9.195l-1.975 4.876a1.001 1.001 0 01-1.192.589l-.111-.038a1.001 1.001 0 01-.589-1.192l.038-.111 7.5-18.5c.304-.751 1.294-.824 1.732-.22l.068.107zM16 6.66L12.213 16h7.573L16 6.66z" }), React176.createElement("path", { fill: "var(--color47, #212121)", d: "M27 25v3H5v-3z" }));
+}));
+FontColor.displayName = "FontColor";
+FontColor["iconName"] = "font-color";
+var FontColor_default = FontColor;
+
+// node_modules/@ringcentral/juno/es6/icon/Forward.js
+import React177, { forwardRef as forwardRef160, memo as memo147 } from "react";
+var __assign155 = function() {
+  __assign155 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign155.apply(this, arguments);
+};
+var Forward = memo147(forwardRef160(function(props, svgRef) {
+  return React177.createElement("svg", __assign155({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React177.createElement("path", { d: "M17.101 6.101a.999.999 0 000 1.414L24.586 15H5a1 1 0 000 2h19.588L17.1 24.486a.999.999 0 101.414 1.414l9.192-9.192a.999.999 0 000-1.414l-9.192-9.192a.999.999 0 00-1.414 0z" }));
+}));
+Forward.displayName = "Forward";
+Forward["iconName"] = "forward";
+var Forward_default = Forward;
+
+// node_modules/@ringcentral/juno/es6/icon/Forwardcall.js
+import React178, { forwardRef as forwardRef161, memo as memo148 } from "react";
+var __assign156 = function() {
+  __assign156 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign156.apply(this, arguments);
+};
+var Forwardcall = memo148(forwardRef161(function(props, svgRef) {
+  return React178.createElement("svg", __assign156({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React178.createElement("path", { d: "M9.791 2.353a3.42 3.42 0 011.577 1.5 33.63 33.63 0 001.257 2.265 49.99 49.99 0 001.696 2.601c.414.626.579 1.307.486 2.017-.091.699-.403 1.322-.977 1.9a6.076 6.076 0 01-1.027.705 1.161 1.161 0 01-.218.137l-.171.083-.178.098-.045.022a1.99 1.99 0 00-.144.067c.016.079.043.175.083.29l.098.258c.124.331.324.717.602 1.154.285.448.649.938 1.09 1.465a13.92 13.92 0 001.328 1.391c.395.352.753.616 1.068.791.121.067.226.121.312.159l.218-.239.08-.079.085-.107.254-.263.272-.265.049-.045c.171-.156.362-.306.617-.477a3.574 3.574 0 012.169-.483c.803.071 1.484.39 1.965.905a69.978 69.978 0 001.865 1.697l.459.399.947.804 1.129.938c.586.482.976 1.073 1.157 1.757.164.617.135 1.216-.074 1.743l-.087.194c-.193.479-.565 1.044-1.117 1.713-.476.576-.912 1.028-1.295 1.343l-.161.127c-.44.363-.947.637-1.516.818a6.01 6.01 0 01-1.829.264c-1.073 0-2.192-.21-3.356-.625-1.135-.405-2.29-.984-3.466-1.737a24.373 24.373 0 01-3.044-2.327l-.431-.391a36.73 36.73 0 01-3.448-3.565c-1.492-1.787-2.714-3.551-3.664-5.291-.955-1.731-1.628-3.354-2.018-4.87-.397-1.544-.493-2.938-.281-4.173.204-1.306.769-2.366 1.703-3.149.433-.361 1.041-.728 1.828-1.11.803-.39 1.468-.63 2.018-.716a3.627 3.627 0 012.133.308zm15.916-.06l4.243 4.243a.999.999 0 010 1.414l-4.243 4.243a.999.999 0 11-1.414-1.414l3.536-3.536-3.536-3.536a.999.999 0 111.414-1.414zm-5 0l4.243 4.243a.999.999 0 010 1.414l-4.243 4.243a.999.999 0 11-1.414-1.414l3.536-3.536-3.536-3.536a.999.999 0 111.414-1.414z" }));
+}));
+Forwardcall.displayName = "Forwardcall";
+Forwardcall["iconName"] = "forwardcall";
+var Forwardcall_default = Forwardcall;
+
+// node_modules/@ringcentral/juno/es6/icon/ForwardingBorder.js
+import React179, { forwardRef as forwardRef162, memo as memo149 } from "react";
+var __assign157 = function() {
+  __assign157 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign157.apply(this, arguments);
+};
+var ForwardingBorder = memo149(forwardRef162(function(props, svgRef) {
+  return React179.createElement("svg", __assign157({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React179.createElement("path", { d: "M19.287 27.703l.127-.117 10.172-10.172a2 2 0 00.117-2.701l-.117-.127L19.414 4.414a2 2 0 00-3.408 1.265L16 5.828 15.999 11 15 10.999c-7.18 0-13 5.82-13 13v3c0 1.192 1.711 1.384 1.975.221a8 8 0 017.538-6.217l.263-.004h4.222l.001 5.171a2 2 0 003.287 1.531zM14 13h2.999a1 1 0 00.993-.883l.007-.117L18 6.311c0-.11.09-.2.2-.2.053 0 .104.021.141.059l9.689 9.689a.2.2 0 010 .283l-9.689 9.689a.2.2 0 01-.342-.141l-.001-5.688a1 1 0 00-1-1l-5.531.005a9.996 9.996 0 00-7.179 3.365l-.202.235.04-.284c.759-4.955 4.824-8.822 9.873-9.277l-.001-.045z" }));
+}));
+ForwardingBorder.displayName = "ForwardingBorder";
+ForwardingBorder["iconName"] = "forwarding_border";
+var ForwardingBorder_default = ForwardingBorder;
+
+// node_modules/@ringcentral/juno/es6/icon/Forwarding.js
+import React180, { forwardRef as forwardRef163, memo as memo150 } from "react";
+var __assign158 = function() {
+  __assign158 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign158.apply(this, arguments);
+};
+var Forwarding = memo150(forwardRef163(function(props, svgRef) {
+  return React180.createElement("svg", __assign158({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React180.createElement("path", { d: "M19.287 27.703l.127-.117 10.172-10.172a2 2 0 00.117-2.701l-.117-.127L19.414 4.414a2 2 0 00-3.408 1.265L16 5.828 15.999 11 15 10.999c-7.18 0-13 5.82-13 13v3c0 1.192 1.711 1.384 1.975.221a8 8 0 017.538-6.217l.263-.004h4.222l.001 5.171a2 2 0 003.287 1.531z" }));
+}));
+Forwarding.displayName = "Forwarding";
+Forwarding["iconName"] = "forwarding";
+var Forwarding_default = Forwarding;
+
+// node_modules/@ringcentral/juno/es6/icon/GdriveLogo.js
+import React181, { forwardRef as forwardRef164, memo as memo151 } from "react";
+var __assign159 = function() {
+  __assign159 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign159.apply(this, arguments);
+};
+var GdriveLogo = memo151(forwardRef164(function(props, svgRef) {
+  return React181.createElement("svg", __assign159({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React181.createElement("path", { fill: "var(--color1, #0066da)", d: "M4.117 24.441l1.235 2.133c.257.449.625.802 1.058 1.058l4.41-7.633H2c0 .497.128.994.385 1.443l1.732 2.999z" }), React181.createElement("path", { fill: "var(--color2, #00ac47)", d: "M16 11.018l-4.41-7.633a2.909 2.909 0 00-1.058 1.058L2.385 18.555A2.9 2.9 0 002 19.998h8.82L16 11.017z" }), React181.createElement("path", { fill: "var(--color3, #ea4335)", d: "M25.59 27.632a2.909 2.909 0 001.058-1.058l.513-.882 2.454-4.25A2.9 2.9 0 0030 19.999h-8.821l1.877 3.688 2.534 3.945z" }), React181.createElement("path", { fill: "var(--color4, #00832d)", d: "M16 11.018l4.41-7.633A2.815 2.815 0 0018.967 3h-5.934a2.98 2.98 0 00-1.443.385L16 11.018z" }), React181.createElement("path", { fill: "var(--color5, #2684fc)", d: "M21.18 19.999H10.82l-4.41 7.633c.433.257.93.385 1.443.385h16.293a2.98 2.98 0 001.443-.385l-4.41-7.633z" }), React181.createElement("path", { fill: "var(--color6, #ffba00)", d: "M25.542 11.499l-4.073-7.056a2.909 2.909 0 00-1.058-1.058l-4.41 7.633 5.18 8.981h8.804a2.9 2.9 0 00-.385-1.443L25.543 11.5z" }));
+}));
+GdriveLogo.displayName = "GdriveLogo";
+GdriveLogo["iconName"] = "gdrive-logo";
+var GdriveLogo_default = GdriveLogo;
+
+// node_modules/@ringcentral/juno/es6/icon/GifFileD.js
+import React182, { forwardRef as forwardRef165, memo as memo152 } from "react";
+var __assign160 = function() {
+  __assign160 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign160.apply(this, arguments);
+};
+var GifFileD = memo152(forwardRef165(function(props, svgRef) {
+  return React182.createElement("svg", __assign160({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React182.createElement("path", { fill: "var(--color14, #222b42)", d: "M3.556 0h24.889a3.556 3.556 0 013.556 3.556v24.889a3.556 3.556 0 01-3.556 3.556H3.556A3.556 3.556 0 010 28.445V3.556A3.556 3.556 0 013.556 0z" }), React182.createElement("path", { fill: "var(--color31, #356afd)", d: "M9.778 7.111h12.444a2.667 2.667 0 012.667 2.667v12.444a2.667 2.667 0 01-2.667 2.667H9.778a2.667 2.667 0 01-2.667-2.667V9.778a2.667 2.667 0 012.667-2.667z" }), React182.createElement("path", { fill: "var(--color20, #f1f1f1)", d: "M12.396 19.627c.264 0 .51-.014.738-.042s.442-.07.642-.127c.2-.056.388-.128.564-.216s.346-.19.509-.309v-2.6h-2.138v.676c0 .062.022.115.067.158s.105.064.182.064h.804V18.4c-.181.086-.371.153-.571.202s-.435.073-.704.073c-.305 0-.587-.053-.844-.158s-.48-.257-.667-.456c-.187-.198-.332-.442-.436-.731s-.156-.619-.156-.989c0-.344.049-.655.147-.933s.237-.517.418-.716c.181-.199.399-.351.656-.458s.543-.16.86-.16a2.765 2.765 0 01.922.142c.12.041.23.09.329.147l.291.169a.407.407 0 00.218.071c.113 0 .203-.055.271-.164l.347-.542c-.267-.249-.592-.451-.976-.607s-.838-.233-1.362-.233c-.513 0-.975.08-1.387.24s-.762.385-1.051.676c-.289.29-.512.637-.669 1.04s-.236.846-.236 1.329c0 .477.081.917.242 1.32s.386.75.673 1.04c.287.29.628.517 1.022.68s.825.244 1.293.244zm4.915-.071v-6.427h-1.2v6.427h1.2zm2.649 0v-2.618h2.404v-.956H19.96V14.08h2.849v-.951h-4.053v6.427h1.204z" }));
+}));
+GifFileD.displayName = "GifFileD";
+GifFileD["iconName"] = "gif-file-D";
+var GifFileD_default = GifFileD;
+
+// node_modules/@ringcentral/juno/es6/icon/GifFile.js
+import React183, { forwardRef as forwardRef166, memo as memo153 } from "react";
+var __assign161 = function() {
+  __assign161 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign161.apply(this, arguments);
+};
+var __rest14 = function(s2, e2) {
+  var t2 = {};
+  for (var p in s2)
+    if (Object.prototype.hasOwnProperty.call(s2, p) && e2.indexOf(p) < 0)
+      t2[p] = s2[p];
+  if (s2 != null && typeof Object.getOwnPropertySymbols === "function")
+    for (var i2 = 0, p = Object.getOwnPropertySymbols(s2); i2 < p.length; i2++) {
+      if (e2.indexOf(p[i2]) < 0 && Object.prototype.propertyIsEnumerable.call(s2, p[i2]))
+        t2[p[i2]] = s2[p[i2]];
+    }
+  return t2;
+};
+var GifFile = memo153(forwardRef166(function(inProps, svgRef) {
+  var theme = RcUseTheme();
+  var _a2 = inProps.themeType, themeType = _a2 === void 0 ? theme.palette.type : _a2, props = __rest14(inProps, ["themeType"]);
+  return themeType === "dark" ? React183.createElement(GifFileD_default, __assign161({}, props, { ref: svgRef })) : React183.createElement("svg", __assign161({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React183.createElement("path", { fill: "var(--color25, #fff)", opacity: 0.992, d: "M3.556 0h24.889a3.556 3.556 0 013.556 3.556v24.889a3.556 3.556 0 01-3.556 3.556H3.556A3.556 3.556 0 010 28.445V3.556A3.556 3.556 0 013.556 0z" }), React183.createElement("path", { fill: "var(--color48, #4975ed)", opacity: 0.16, d: "M3.556 0h24.889a3.556 3.556 0 013.556 3.556v24.889a3.556 3.556 0 01-3.556 3.556H3.556A3.556 3.556 0 010 28.445V3.556A3.556 3.556 0 013.556 0z" }), React183.createElement("path", { fill: "var(--color49, #4b77f1)", d: "M9.778 7.111h12.444a2.667 2.667 0 012.667 2.667v12.444a2.667 2.667 0 01-2.667 2.667H9.778a2.667 2.667 0 01-2.667-2.667V9.778a2.667 2.667 0 012.667-2.667z" }), React183.createElement("path", { fill: "var(--color25, #fff)", d: "M12.396 19.627c.264 0 .51-.014.738-.042s.442-.07.642-.127c.2-.056.388-.128.564-.216s.346-.19.509-.309v-2.6h-2.138v.676c0 .062.022.115.067.158s.105.064.182.064h.804V18.4c-.181.086-.371.153-.571.202s-.435.073-.704.073c-.305 0-.587-.053-.844-.158s-.48-.257-.667-.456c-.187-.198-.332-.442-.436-.731s-.156-.619-.156-.989c0-.344.049-.655.147-.933s.237-.517.418-.716c.181-.199.399-.351.656-.458s.543-.16.86-.16a2.765 2.765 0 01.922.142c.12.041.23.09.329.147l.291.169a.407.407 0 00.218.071c.113 0 .203-.055.271-.164l.347-.542c-.267-.249-.592-.451-.976-.607s-.838-.233-1.362-.233c-.513 0-.975.08-1.387.24s-.762.385-1.051.676c-.289.29-.512.637-.669 1.04s-.236.846-.236 1.329c0 .477.081.917.242 1.32s.386.75.673 1.04c.287.29.628.517 1.022.68s.825.244 1.293.244zm4.915-.071v-6.427h-1.2v6.427h1.2zm2.649 0v-2.618h2.404v-.956H19.96V14.08h2.849v-.951h-4.053v6.427h1.204z" }));
+}));
+GifFile.displayName = "GifFile";
+GifFile["iconName"] = "gif-file";
+var GifFile_default = GifFile;
+
+// node_modules/@ringcentral/juno/es6/icon/Gif.js
+import React184, { forwardRef as forwardRef167, memo as memo154 } from "react";
+var __assign162 = function() {
+  __assign162 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign162.apply(this, arguments);
+};
+var Gif = memo154(forwardRef167(function(props, svgRef) {
+  return React184.createElement("svg", __assign162({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React184.createElement("path", { d: "M9.36 18.008c.464 0 .897.034 1.298.103s.775.168 1.121.298c.346.13.666.288.96.474.293.185.566.393.82.625l.123.112-.529.846c-.126.2-.305.309-.521.309a.766.766 0 01-.382-.116l-.293-.174-.284-.177a4.048 4.048 0 00-.45-.217 4.647 4.647 0 00-.805-.241 5.347 5.347 0 00-1.106-.1c-.621 0-1.179.101-1.677.302-.496.2-.917.485-1.265.855s-.617.822-.805 1.354a5.407 5.407 0 00-.285 1.809c0 .703.099 1.327.296 1.872.196.543.471 1 .825 1.375s.772.659 1.258.856a4.265 4.265 0 001.621.297c.302 0 .579-.014.829-.043.25-.028.485-.071.705-.127s.428-.124.622-.203c.161-.066.322-.139.484-.221V25.67h-1.576c-.151 0-.282-.047-.382-.143s-.154-.221-.154-.361v-.58a.5.5 0 01.5-.5h2.42a1 1 0 011 1v3.6l-.083.162a6.276 6.276 0 01-1.961.962 7.46 7.46 0 01-1.171.239c-.414.052-.862.078-1.345.078-.857 0-1.646-.148-2.364-.443s-1.339-.711-1.859-1.245c-.52-.534-.926-1.174-1.215-1.919s-.434-1.56-.434-2.448c0-.898.142-1.72.425-2.463.284-.746.691-1.387 1.221-1.921s1.169-.949 1.917-1.242c.747-.292 1.581-.438 2.501-.438zm7.616.128c.539 0 .976.437.976.976v9.912a.976.976 0 01-1.952 0v-9.912c0-.539.437-.976.976-.976zm10.28 0a.832.832 0 010 1.664h-4.672v3.608h3.872a.832.832 0 010 1.664h-3.872v3.948a.98.98 0 01-1.96 0v-9.884a1 1 0 011-1h5.632zM19.249 2c.484 0 .952.176 1.317.495l6.751 5.908A2 2 0 0128 9.908V15a1 1 0 01-2 0v-4.639c0-.288-.124-.563-.341-.753l-6.127-5.361A.996.996 0 0018.873 4H7a1 1 0 00-1 1v10a1 1 0 01-2 0V4a2 2 0 012-2h13.249z" }));
+}));
+Gif.displayName = "Gif";
+Gif["iconName"] = "gif";
+var Gif_default = Gif;
+
+// node_modules/@ringcentral/juno/es6/icon/GoodConnection.js
+import React185, { forwardRef as forwardRef168, memo as memo155 } from "react";
+var __assign163 = function() {
+  __assign163 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign163.apply(this, arguments);
+};
+var GoodConnection = memo155(forwardRef168(function(props, svgRef) {
+  return React185.createElement("svg", __assign163({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React185.createElement("path", { d: "M27 4a2 2 0 012 2v20a2 2 0 01-2 2h-2a2 2 0 01-2-2V6a2 2 0 012-2h2zM17 14a2 2 0 012 2v10a2 2 0 01-2 2h-2a2 2 0 01-2-2V16a2 2 0 012-2h2zM7 20a2 2 0 012 2v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4a2 2 0 012-2h2z" }));
+}));
+GoodConnection.displayName = "GoodConnection";
+GoodConnection["iconName"] = "good-connection";
+var GoodConnection_default = GoodConnection;
+
+// node_modules/@ringcentral/juno/es6/icon/GoogleCalendar2019.js
+import React186, { forwardRef as forwardRef169, memo as memo156 } from "react";
+var __assign164 = function() {
+  __assign164 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign164.apply(this, arguments);
+};
+var GoogleCalendar2019 = memo156(forwardRef169(function(props, svgRef) {
+  return React186.createElement("svg", __assign164({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React186.createElement("path", { fill: "var(--color55, #c7c7c7)", d: "M26 2.357H6c-.789 0-1.429.639-1.429 1.429v2.143h22.857V3.786c0-.789-.639-1.429-1.429-1.429zM8.857 4.5a.714.714 0 110-1.429.714.714 0 010 1.429zm14.286 0a.714.714 0 110-1.429.714.714 0 010 1.429z" }), React186.createElement("path", { fill: "var(--color16, #1976d2)", d: "M30.286 6.643c.074-.416-1.006-1.429-1.429-1.429H3.143c-.714 0-1.502 1.013-1.429 1.429.588 3.331 2.143 10.714 2.143 10.714h24.286s1.555-7.383 2.143-10.714z" }), React186.createElement("path", { fill: "var(--color56, #1e88e5)", d: "M28.143 17.357H3.857S2.302 24.74 1.714 28.071c0 .819.566 1.429 1.429 1.429h25.714c.422 0 1.429-.357 1.429-1.429-.588-3.331-2.143-10.714-2.143-10.714z" }), React186.createElement("path", { fill: "var(--color57, #fafafa)", d: "M13.524 17.357c.703.232 1.205.607 1.504 1.112.309.523.464 1.107.464 1.755 0 1.13-.371 2.019-1.111 2.666s-1.688.971-2.841.971c-1.13 0-2.066-.305-2.807-.916s-1.097-1.439-1.069-2.483l.026-.051h1.601c0 .653.2 1.173.601 1.559s.95.579 1.649.579c.71 0 1.266-.193 1.669-.579s.605-.957.605-1.712c0-.766-.179-1.331-.536-1.695s-.923-.545-1.695-.545h-1.465v-.661h3.406zm7.931 0h1.678v6.326h-1.678v-6.326z" }), React186.createElement("path", { fill: "var(--color58, #e0e0e0)", d: "M9.376 14.526h-1.61l-.017-.051c-.029-.937.311-1.734 1.018-2.389s1.631-.984 2.773-.984c1.147 0 2.061.305 2.743.916s1.022 1.481 1.022 2.611c0 .511-.155 1.021-.464 1.529s-.774.896-1.393 1.163l.076.037h-3.407v-.651h1.465c.744 0 1.271-.186 1.58-.558s.464-.89.464-1.554c0-.71-.176-1.249-.528-1.619s-.871-.554-1.559-.554c-.653 0-1.177.191-1.571.575-.381.37-.579.859-.592 1.529zm13.757 2.831h-1.678v-4.441l-2.539.034v-1.21l4.216-.46v6.077z" }), React186.createElement("path", { fill: "var(--color16, #1976d2)", d: "M3.143 5.214c-1.027 0-1.502 1.013-1.429 1.429.588 3.331 2.143 10.714 2.143 10.714L3.143 5.214zm25 12.143s1.555-7.383 2.143-10.714c0-1.161-1.006-1.429-1.429-1.429l-.714 12.143z" }));
+}));
+GoogleCalendar2019.displayName = "GoogleCalendar2019";
+GoogleCalendar2019["iconName"] = "google-calendar-2019";
+var GoogleCalendar2019_default = GoogleCalendar2019;
+
+// node_modules/@ringcentral/juno/es6/icon/GoogleDocD.js
+import React187, { forwardRef as forwardRef170, memo as memo157 } from "react";
+var __assign165 = function() {
+  __assign165 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign165.apply(this, arguments);
+};
+var GoogleDocD = memo157(forwardRef170(function(props, svgRef) {
+  return React187.createElement("svg", __assign165({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React187.createElement("path", { fill: "var(--color26, #223442)", d: "M3.556 0h24.889a3.556 3.556 0 013.556 3.556v24.889a3.556 3.556 0 01-3.556 3.556H3.556A3.556 3.556 0 010 28.445V3.556A3.556 3.556 0 013.556 0z" }), React187.createElement("path", { fill: "var(--color27, #2196f3)", d: "M16.759 8.023l5.463 5.114v8.889c0 .605-.215.933-.627 1.349s-.918.624-1.518.624h-8.171c-.6 0-1.106-.208-1.518-.624s-.61-.743-.61-1.349v-11.87c0-.606.206-1.116.619-1.533s.918-.624 1.518-.624l4.844.023z" }), React187.createElement("path", { fill: "var(--color20, #f1f1f1)", d: "M16.494 20.148v.988h-4.938v-.988h4.938zm3.95-1.975v.988h-8.889v-.988h8.889zm0-1.975v.988h-8.889v-.988h8.889zm0-1.976v.988h-8.889v-.988h8.889z" }));
+}));
+GoogleDocD.displayName = "GoogleDocD";
+GoogleDocD["iconName"] = "google-doc-D";
+var GoogleDocD_default = GoogleDocD;
+
+// node_modules/@ringcentral/juno/es6/icon/GoogleDoc.js
+import React188, { forwardRef as forwardRef171, memo as memo158 } from "react";
+var __assign166 = function() {
+  __assign166 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign166.apply(this, arguments);
+};
+var __rest15 = function(s2, e2) {
+  var t2 = {};
+  for (var p in s2)
+    if (Object.prototype.hasOwnProperty.call(s2, p) && e2.indexOf(p) < 0)
+      t2[p] = s2[p];
+  if (s2 != null && typeof Object.getOwnPropertySymbols === "function")
+    for (var i2 = 0, p = Object.getOwnPropertySymbols(s2); i2 < p.length; i2++) {
+      if (e2.indexOf(p[i2]) < 0 && Object.prototype.propertyIsEnumerable.call(s2, p[i2]))
+        t2[p[i2]] = s2[p[i2]];
+    }
+  return t2;
+};
+var GoogleDoc = memo158(forwardRef171(function(inProps, svgRef) {
+  var theme = RcUseTheme();
+  var _a2 = inProps.themeType, themeType = _a2 === void 0 ? theme.palette.type : _a2, props = __rest15(inProps, ["themeType"]);
+  return themeType === "dark" ? React188.createElement(GoogleDocD_default, __assign166({}, props, { ref: svgRef })) : React188.createElement("svg", __assign166({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React188.createElement("path", { fill: "var(--color25, #fff)", opacity: 0.992, d: "M3.556 0h24.889a3.556 3.556 0 013.556 3.556v24.889a3.556 3.556 0 01-3.556 3.556H3.556A3.556 3.556 0 010 28.445V3.556A3.556 3.556 0 013.556 0z" }), React188.createElement("path", { fill: "var(--color27, #2196f3)", opacity: 0.16, d: "M3.556 0h24.889a3.556 3.556 0 013.556 3.556v24.889a3.556 3.556 0 01-3.556 3.556H3.556A3.556 3.556 0 010 28.445V3.556A3.556 3.556 0 013.556 0z" }), React188.createElement("path", { fill: "var(--color27, #2196f3)", d: "M11.915 8l4.844.023 5.463 5.114v8.889c0 .605-.215.933-.627 1.349s-.918.624-1.518.624h-8.171c-.6 0-1.106-.208-1.518-.624s-.61-.743-.61-1.349v-11.87c0-.606.206-1.116.619-1.533s.918-.624 1.518-.624zm4.579 12.148h-4.938v.988h4.938v-.988zm3.95-1.975h-8.889v.988h8.889v-.988zm0-1.975h-8.889v.988h8.889v-.988zm0-1.976h-8.889v.988h8.889v-.988z" }));
+}));
+GoogleDoc.displayName = "GoogleDoc";
+GoogleDoc["iconName"] = "google-doc";
+var GoogleDoc_default = GoogleDoc;
+
+// node_modules/@ringcentral/juno/es6/icon/GoogleLogoDisabled.js
+import React189, { forwardRef as forwardRef172, memo as memo159 } from "react";
+var __assign167 = function() {
+  __assign167 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign167.apply(this, arguments);
+};
+var GoogleLogoDisabled = memo159(forwardRef172(function(props, svgRef) {
+  return React189.createElement("svg", __assign167({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React189.createElement("path", { d: "M27.767 13.65H26.8v-.05H16v4.8h6.782A7.197 7.197 0 018.8 16 7.2 7.2 0 0116 8.8c1.835 0 3.505.692 4.777 1.823l3.394-3.394A11.946 11.946 0 0016 4C9.373 4 4 9.373 4 16s5.373 12 12 12 12-5.373 12-12c0-.805-.083-1.59-.233-2.35z" }));
+}));
+GoogleLogoDisabled.displayName = "GoogleLogoDisabled";
+GoogleLogoDisabled["iconName"] = "google-logo-disabled";
+var GoogleLogoDisabled_default = GoogleLogoDisabled;
+
+// node_modules/@ringcentral/juno/es6/icon/GoogleLogo.js
+import React190, { forwardRef as forwardRef173, memo as memo160 } from "react";
+var __assign168 = function() {
+  __assign168 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign168.apply(this, arguments);
+};
+var GoogleLogo = memo160(forwardRef173(function(props, svgRef) {
+  return React190.createElement("svg", __assign168({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React190.createElement("path", { fill: "var(--color15, #ffc107)", d: "M27.767 13.65H26.8v-.05H16v4.8h6.782A7.197 7.197 0 018.8 16 7.2 7.2 0 0116 8.8c1.835 0 3.505.692 4.777 1.823l3.394-3.394A11.946 11.946 0 0016 4C9.373 4 4 9.373 4 16s5.373 12 12 12 12-5.373 12-12c0-.805-.083-1.59-.233-2.35z" }), React190.createElement("path", { fill: "var(--color42, #ff3d00)", d: "M5.384 10.415l3.943 2.891A7.197 7.197 0 0116.001 8.8c1.835 0 3.505.692 4.777 1.823l3.394-3.394A11.946 11.946 0 0016.001 4c-4.609 0-8.606 2.602-10.616 6.415z" }), React190.createElement("path", { fill: "var(--color17, #4caf50)", d: "M16 28c3.1 0 5.916-1.186 8.045-3.115l-3.714-3.143A7.143 7.143 0 0116 23.2c-3.121 0-5.771-1.99-6.77-4.768l-3.913 3.015C7.303 25.333 11.336 28 16 28z" }), React190.createElement("path", { fill: "var(--color16, #1976d2)", d: "M27.767 13.65H26.8v-.05H16v4.8h6.782a7.229 7.229 0 01-2.452 3.343l.002-.001 3.714 3.143c-.263.239 3.955-2.884 3.955-8.884 0-.805-.083-1.59-.233-2.35z" }));
+}));
+GoogleLogo.displayName = "GoogleLogo";
+GoogleLogo["iconName"] = "google-logo";
+var GoogleLogo_default = GoogleLogo;
+
+// node_modules/@ringcentral/juno/es6/icon/GoogleSheetD.js
+import React191, { forwardRef as forwardRef174, memo as memo161 } from "react";
+var __assign169 = function() {
+  __assign169 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign169.apply(this, arguments);
+};
+var GoogleSheetD = memo161(forwardRef174(function(props, svgRef) {
+  return React191.createElement("svg", __assign169({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React191.createElement("path", { fill: "var(--color29, #1e2f1f)", d: "M3.556 0h24.889a3.556 3.556 0 013.556 3.556v24.889a3.556 3.556 0 01-3.556 3.556H3.556A3.556 3.556 0 010 28.445V3.556A3.556 3.556 0 013.556 0z" }), React191.createElement("path", { fill: "var(--color30, #43a047)", d: "M11.915 8l4.844.023 5.463 5.114v8.889c0 .605-.215.933-.627 1.349s-.918.624-1.518.624h-8.171c-.6 0-1.106-.208-1.518-.624s-.61-.743-.61-1.349v-11.87c0-.606.206-1.116.619-1.533s.918-.624 1.518-.624z" }), React191.createElement("path", { fill: "var(--color20, #f1f1f1)", d: "M20.444 14.222v6.914h-8.889v-6.914h8.889zm-5.926 4.938h-1.975v.988h1.975v-.988zm4.939 0h-3.951v.988h3.951v-.988zm-4.939-1.975h-1.975v.988h1.975v-.988zm4.939 0h-3.951v.988h3.951v-.988zm-4.939-1.975h-1.975v.988h1.975v-.988zm4.939 0h-3.951v.988h3.951v-.988z" }));
+}));
+GoogleSheetD.displayName = "GoogleSheetD";
+GoogleSheetD["iconName"] = "google-sheet-D";
+var GoogleSheetD_default = GoogleSheetD;
+
+// node_modules/@ringcentral/juno/es6/icon/GoogleSheet.js
+import React192, { forwardRef as forwardRef175, memo as memo162 } from "react";
+var __assign170 = function() {
+  __assign170 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign170.apply(this, arguments);
+};
+var __rest16 = function(s2, e2) {
+  var t2 = {};
+  for (var p in s2)
+    if (Object.prototype.hasOwnProperty.call(s2, p) && e2.indexOf(p) < 0)
+      t2[p] = s2[p];
+  if (s2 != null && typeof Object.getOwnPropertySymbols === "function")
+    for (var i2 = 0, p = Object.getOwnPropertySymbols(s2); i2 < p.length; i2++) {
+      if (e2.indexOf(p[i2]) < 0 && Object.prototype.propertyIsEnumerable.call(s2, p[i2]))
+        t2[p[i2]] = s2[p[i2]];
+    }
+  return t2;
+};
+var GoogleSheet = memo162(forwardRef175(function(inProps, svgRef) {
+  var theme = RcUseTheme();
+  var _a2 = inProps.themeType, themeType = _a2 === void 0 ? theme.palette.type : _a2, props = __rest16(inProps, ["themeType"]);
+  return themeType === "dark" ? React192.createElement(GoogleSheetD_default, __assign170({}, props, { ref: svgRef })) : React192.createElement("svg", __assign170({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React192.createElement("path", { fill: "var(--color25, #fff)", opacity: 0.992, d: "M3.556 0h24.889a3.556 3.556 0 013.556 3.556v24.889a3.556 3.556 0 01-3.556 3.556H3.556A3.556 3.556 0 010 28.445V3.556A3.556 3.556 0 013.556 0z" }), React192.createElement("path", { fill: "var(--color30, #43a047)", opacity: 0.16, d: "M3.556 0h24.889a3.556 3.556 0 013.556 3.556v24.889a3.556 3.556 0 01-3.556 3.556H3.556A3.556 3.556 0 010 28.445V3.556A3.556 3.556 0 013.556 0z" }), React192.createElement("path", { fill: "var(--color30, #43a047)", d: "M11.915 8l4.844.023 5.463 5.114v8.889c0 .605-.215.933-.627 1.349s-.918.624-1.518.624h-8.171c-.6 0-1.106-.208-1.518-.624s-.61-.743-.61-1.349v-11.87c0-.606.206-1.116.619-1.533s.918-.624 1.518-.624zm7.542 6.222h-7.901v6.914h8.889v-6.914h-.988zm-6.914.988h1.975v.988h-1.975v-.988zm0 1.975h1.975v.988h-1.975v-.988zm0 1.975h1.975v.988h-1.975v-.988zm6.914.988h-3.951v-.988h3.951v.988zm0-1.975h-3.951v-.988h3.951v.988zm0-1.975h-3.951v-.988h3.951v.988z" }));
+}));
+GoogleSheet.displayName = "GoogleSheet";
+GoogleSheet["iconName"] = "google-sheet";
+var GoogleSheet_default = GoogleSheet;
+
+// node_modules/@ringcentral/juno/es6/icon/GoogleSlideD.js
+import React193, { forwardRef as forwardRef176, memo as memo163 } from "react";
+var __assign171 = function() {
+  __assign171 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign171.apply(this, arguments);
+};
+var GoogleSlideD = memo163(forwardRef176(function(props, svgRef) {
+  return React193.createElement("svg", __assign171({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React193.createElement("path", { fill: "var(--color23, #2f291e)", d: "M3.556 0h24.889a3.556 3.556 0 013.556 3.556v24.889a3.556 3.556 0 01-3.556 3.556H3.556A3.556 3.556 0 010 28.445V3.556A3.556 3.556 0 013.556 0z" }), React193.createElement("path", { fill: "var(--color28, #f6ad16)", d: "M16.756 8l5.466 4.962-.024 8.878c0 .607-.204 1.118-.612 1.535s-.909.625-1.503.625h-8.154c-.594 0-1.095-.209-1.503-.625s-.612-.929-.612-1.535l-.035-11.661c0-.607.204-1.118.612-1.535s.909-.625 1.503-.625l4.862-.018z" }), React193.createElement("path", { fill: "var(--color20, #f1f1f1)", d: "M18.667 15.111h-5.333a.889.889 0 00-.889.889v4.444c0 .491.398.889.889.889h5.333a.889.889 0 00.889-.889V16a.889.889 0 00-.889-.889z" }));
+}));
+GoogleSlideD.displayName = "GoogleSlideD";
+GoogleSlideD["iconName"] = "google-slide-D";
+var GoogleSlideD_default = GoogleSlideD;
+
+// node_modules/@ringcentral/juno/es6/icon/GoogleSlide.js
+import React194, { forwardRef as forwardRef177, memo as memo164 } from "react";
+var __assign172 = function() {
+  __assign172 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign172.apply(this, arguments);
+};
+var __rest17 = function(s2, e2) {
+  var t2 = {};
+  for (var p in s2)
+    if (Object.prototype.hasOwnProperty.call(s2, p) && e2.indexOf(p) < 0)
+      t2[p] = s2[p];
+  if (s2 != null && typeof Object.getOwnPropertySymbols === "function")
+    for (var i2 = 0, p = Object.getOwnPropertySymbols(s2); i2 < p.length; i2++) {
+      if (e2.indexOf(p[i2]) < 0 && Object.prototype.propertyIsEnumerable.call(s2, p[i2]))
+        t2[p[i2]] = s2[p[i2]];
+    }
+  return t2;
+};
+var GoogleSlide = memo164(forwardRef177(function(inProps, svgRef) {
+  var theme = RcUseTheme();
+  var _a2 = inProps.themeType, themeType = _a2 === void 0 ? theme.palette.type : _a2, props = __rest17(inProps, ["themeType"]);
+  return themeType === "dark" ? React194.createElement(GoogleSlideD_default, __assign172({}, props, { ref: svgRef })) : React194.createElement("svg", __assign172({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React194.createElement("path", { fill: "var(--color25, #fff)", opacity: 0.992, d: "M3.556 0h24.889a3.556 3.556 0 013.556 3.556v24.889a3.556 3.556 0 01-3.556 3.556H3.556A3.556 3.556 0 010 28.445V3.556A3.556 3.556 0 013.556 0z" }), React194.createElement("path", { fill: "var(--color28, #f6ad16)", opacity: 0.16, d: "M3.556 0h24.889a3.556 3.556 0 013.556 3.556v24.889a3.556 3.556 0 01-3.556 3.556H3.556A3.556 3.556 0 010 28.445V3.556A3.556 3.556 0 013.556 0z" }), React194.createElement("path", { fill: "var(--color28, #f6ad16)", d: "M16.756 8l5.466 4.962-.024 8.878c0 .607-.204 1.118-.612 1.535s-.909.625-1.503.625h-8.154c-.594 0-1.095-.209-1.503-.625s-.612-.929-.612-1.535l-.035-11.661c0-.607.204-1.118.612-1.535s.909-.625 1.503-.625l4.862-.018zm1.911 7.111h-5.333a.889.889 0 00-.889.889v4.444c0 .491.398.889.889.889h5.333a.889.889 0 00.889-.889V16a.889.889 0 00-.889-.889z" }));
+}));
+GoogleSlide.displayName = "GoogleSlide";
+GoogleSlide["iconName"] = "google-slide";
+var GoogleSlide_default = GoogleSlide;
+
+// node_modules/@ringcentral/juno/es6/icon/Google.js
+import React195, { forwardRef as forwardRef178, memo as memo165 } from "react";
+var __assign173 = function() {
+  __assign173 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign173.apply(this, arguments);
+};
+var Google = memo165(forwardRef178(function(props, svgRef) {
+  return React195.createElement("svg", __assign173({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React195.createElement("path", { d: "M2.667 20.421L6.864 28l8.148-14.527-4.321-7.579-8.025 14.527zm10.494 0L8.964 28h16.173l4.197-7.579H13.161zM20.197 4h-8.395l8.518 15.158h8.395L20.197 4z" }));
+}));
+Google.displayName = "Google";
+Google["iconName"] = "google";
+var Google_default = Google;
+
+// node_modules/@ringcentral/juno/es6/icon/GroupDefault.js
+import React196, { forwardRef as forwardRef179, memo as memo166 } from "react";
+var __assign174 = function() {
+  __assign174 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign174.apply(this, arguments);
+};
+var GroupDefault = memo166(forwardRef179(function(props, svgRef) {
+  return React196.createElement("svg", __assign174({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React196.createElement("path", { d: "M13.389 8.019c2.102.183 3.381 1.188 3.975 2.056 1.005 1.279 1.142 2.833 1.005 3.564-.119.87-.135 2.048-.137 2.527v.306l.047.146c.116.38.195.855-.047 1.864-.274 1.279-.731 2.011-1.005 2.285 0 .868-.274 1.691-.548 2.285-.137.548-.411 1.142-.411 1.691l.001.292c.003.439.021.439.137.439 2.011.548 5.118 1.691 6.397 2.285.413.188 1.041.688 1.404 1.038a15.134 15.134 0 01-8.205 2.402 15.154 15.154 0 01-10.749-4.453l.232-.13.324-.119c1.138-.416 2.327-.819 3.286-1.069l.037-.001c.1-.007.1-.072.1-.73 0-.868-.137-1.279-.274-1.691l-.037-.144c-.145-.549-.386-1.345-.511-2.141l-.04-.042c-.277-.303-.704-1.024-.965-2.242-.274-1.142-.137-1.554 0-2.011v-.137c0-.274-.137-1.554-.274-2.696-.137-.731 0-2.285 1.005-3.564.548-.868 1.828-1.828 3.975-2.011h1.279zm6.123-1.645c2.148.137 3.427 1.142 3.976 2.011 1.005 1.279 1.142 2.833 1.005 3.564-.125.92-.136 2.184-.137 2.602v.231l.047.146c.116.38.195.855-.047 1.864-.274 1.279-.731 2.011-1.005 2.285 0 .868-.274 1.691-.548 2.285-.137.548-.411 1.142-.411 1.691l.001.292c.003.439.021.439.136.439 1.418.387 3.633 1.303 5.184 1.905a15.26 15.26 0 01-2.902 2.699 8.23 8.23 0 00-1.094-.857l-.972-.42c-1.576-.675-3.957-1.66-5.653-2.139l-.038-.001c-.129-.006-.265-.07-.099-.776.046-.32.183-.548.32-.868l.054-.149c.222-.598.494-1.247.494-2.091l.044-.046c.317-.341.745-1.067 1.007-2.376.32-1.188.137-1.645 0-2.102l.002-.563c.006-.607.032-1.66.135-2.453.137-.777 0-2.422-1.051-3.793-.503-.731-1.554-1.645-3.107-2.056.685-.64 1.828-1.188 3.381-1.325h1.279z" }));
+}));
+GroupDefault.displayName = "GroupDefault";
+GroupDefault["iconName"] = "group-default";
+var GroupDefault_default = GroupDefault;
+
+// node_modules/@ringcentral/juno/es6/icon/HandUp.js
+import React197, { forwardRef as forwardRef180, memo as memo167 } from "react";
+var __assign175 = function() {
+  __assign175 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign175.apply(this, arguments);
+};
+var HandUp = memo167(forwardRef180(function(props, svgRef) {
+  return React197.createElement("svg", __assign175({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React197.createElement("path", { d: "M28.52 20.419a3.22 3.22 0 01-2.233.709l-.204-.021-4.453-.628c-1.326-.181-2.174-.863-2.253-1.818l-.006-.162.01-.728c-.01-.507-.324-.789-1.172-.871a25.213 25.213 0 00-2.087-.104 37.206 37.206 0 00-2.448.085c-.811.052-1.122.309-1.158.761l-.003.1.012.734c.027.979-.735 1.68-2.01 1.919l-.217.035-4.068.592c-1.108.157-1.863-.074-2.503-.602-.446-.367-.781-.99-.905-1.595l-.033-.2-.009-.233c-.003-1.594.49-2.804 1.766-3.855 2.739-2.257 6.051-3.353 11.456-3.402 5.419-.049 8.985 1.166 11.468 3.212 1.515 1.248 1.97 2.363 2.027 3.961l.006.256-.061.377c-.122.585-.453 1.091-.92 1.476z" }));
+}));
+HandUp.displayName = "HandUp";
+HandUp["iconName"] = "hand-up";
+var HandUp_default = HandUp;
+
+// node_modules/@ringcentral/juno/es6/icon/Hash.js
+import React198, { forwardRef as forwardRef181, memo as memo168 } from "react";
+var __assign176 = function() {
+  __assign176 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign176.apply(this, arguments);
+};
+var Hash = memo168(forwardRef181(function(props, svgRef) {
+  return React198.createElement("svg", __assign176({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React198.createElement("path", { d: "M16.523 11l-.559 2.65h1.645l.559-2.65h.526c.111 0 .203.031.276.094s.11.144.11.245a.367.367 0 01-.007.082l-.486 2.23h1.412l-.087.471c-.022.121-.074.21-.157.267s-.208.085-.376.085h-.919l-.433 2.047h1.192c.107 0 .189.024.246.072s.087.133.087.254l-.008.101-.066.395H17.9L17.341 20h-.54c-.102 0-.189-.036-.26-.107s-.107-.163-.107-.276l.001-.024.007-.047.479-2.202h-1.645l-.473 2.23c-.036.155-.103.265-.203.33s-.214.097-.343.097h-.526l.566-2.657h-.972c-.102 0-.182-.024-.24-.072s-.087-.131-.087-.248l.001-.033.007-.074.059-.396h1.359l.433-2.047h-1.545l.087-.465c.022-.121.073-.211.153-.27s.206-.088.38-.088h1.052l.48-2.248c.027-.126.088-.224.183-.295s.21-.107.343-.107h.533zm.959 3.473h-1.645l-.433 2.047h1.645l.433-2.047z" }));
+}));
+Hash.displayName = "Hash";
+Hash["iconName"] = "hash";
+var Hash_default = Hash;
+
+// node_modules/@ringcentral/juno/es6/icon/Hd.js
+import React199, { forwardRef as forwardRef182, memo as memo169 } from "react";
+var __assign177 = function() {
+  __assign177 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign177.apply(this, arguments);
+};
+var Hd = memo169(forwardRef182(function(props, svgRef) {
+  return React199.createElement("svg", __assign177({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React199.createElement("path", { d: "M3.5 7A1.5 1.5 0 015 8.5L4.999 14H10V8.5A1.5 1.5 0 0111.5 7h1A1.5 1.5 0 0114 8.5v16a1.5 1.5 0 01-1.5 1.5h-1a1.5 1.5 0 01-1.5-1.5V18H4.999L5 24.5A1.5 1.5 0 013.5 26h-1A1.5 1.5 0 011 24.5v-16A1.5 1.5 0 012.5 7h1zm18.217 0c2.374 0 4.487.607 6.291 1.87 1.828 1.239 2.991 4.57 2.991 7.509 0 2.987-1.163 6.319-2.968 7.654C26.227 25.32 24.066 26 21.716 26h-3.229c-1.424 0-2.489-.79-2.489-2.248V9.366c0-1.457 1.064-2.367 2.489-2.367h3.229zm-.55 4H20v10.984l1.167.016c4.473 0 5.909-2.456 5.909-6 0-3.148-1.437-5-5.909-5z" }));
+}));
+Hd.displayName = "Hd";
+Hd["iconName"] = "hd";
+var Hd_default = Hd;
+
+// node_modules/@ringcentral/juno/es6/icon/HelpBorder.js
+import React200, { forwardRef as forwardRef183, memo as memo170 } from "react";
+var __assign178 = function() {
+  __assign178 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign178.apply(this, arguments);
+};
+var HelpBorder = memo170(forwardRef183(function(props, svgRef) {
+  return React200.createElement("svg", __assign178({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React200.createElement("path", { d: "M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm0 2C9.373 4 4 9.373 4 16s5.373 12 12 12 12-5.373 12-12S22.627 4 16 4zm-.42 16.75c.207 0 .403.04.59.12s.347.187.48.32.24.293.32.48.12.383.12.59c0 .213-.04.412-.12.595s-.187.342-.32.475a1.532 1.532 0 01-1.07.43 1.56 1.56 0 01-1.085-.43c-.137-.133-.243-.292-.32-.475s-.115-.382-.115-.595c0-.207.038-.403.115-.59s.183-.347.32-.48.298-.24.485-.32.387-.12.6-.12zM16 9c.58 0 1.108.08 1.585.24s.885.388 1.225.685c.34.297.603.655.79 1.075s.28.89.28 1.41c0 .507-.073.945-.22 1.315s-.332.692-.555.965c-.223.273-.465.51-.725.71l-.74.565c-.233.177-.435.35-.605.52a1.064 1.064 0 00-.277.45l-.028.125-.23 1.46h-1.69l-.17-1.63-.008-.046-.002-.124c0-.293.073-.548.22-.765s.33-.42.55-.61c.22-.19.457-.375.71-.555s.49-.375.71-.585c.22-.21.403-.448.55-.715s.22-.58.22-.94c0-.24-.045-.455-.135-.645s-.215-.353-.375-.49-.352-.242-.575-.315-.465-.11-.725-.11c-.38 0-.702.042-.965.125s-.487.177-.67.28c-.183.103-.338.197-.465.28s-.24.125-.34.125c-.206 0-.362-.073-.47-.22l-.7-1.11c.227-.2.475-.39.745-.57a5.336 5.336 0 011.895-.785A5.79 5.79 0 0116 9z" }));
+}));
+HelpBorder.displayName = "HelpBorder";
+HelpBorder["iconName"] = "help_border";
+var HelpBorder_default = HelpBorder;
+
+// node_modules/@ringcentral/juno/es6/icon/Help.js
+import React201, { forwardRef as forwardRef184, memo as memo171 } from "react";
+var __assign179 = function() {
+  __assign179 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign179.apply(this, arguments);
+};
+var Help = memo171(forwardRef184(function(props, svgRef) {
+  return React201.createElement("svg", __assign179({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React201.createElement("path", { d: "M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm-.42 18.75c-.213 0-.413.04-.6.12s-.348.187-.485.32-.243.293-.32.48-.115.383-.115.59c0 .213.038.412.115.595s.183.342.32.475a1.56 1.56 0 001.085.43 1.532 1.532 0 001.07-.43c.133-.133.24-.292.32-.475s.12-.382.12-.595c0-.207-.04-.403-.12-.59s-.187-.347-.32-.48-.293-.24-.48-.32-.383-.12-.59-.12zM16 9c-.427 0-.823.038-1.19.115s-.707.182-1.02.315c-.313.133-.605.29-.875.47s-.518.37-.745.57l.7 1.11c.108.147.264.22.47.22.1 0 .213-.042.34-.125s.282-.177.465-.28c.183-.103.407-.197.67-.28s.585-.125.965-.125c.26 0 .502.037.725.11s.415.178.575.315c.16.137.285.3.375.49s.135.405.135.645c0 .36-.073.673-.22.94s-.33.505-.55.715c-.22.21-.457.405-.71.585s-.49.365-.71.555c-.22.19-.403.393-.55.61s-.22.472-.22.765l.002.124.008.046.17 1.63h1.69l.23-1.46.028-.125c.049-.164.141-.314.277-.45.17-.17.372-.343.605-.52l.74-.565c.26-.2.502-.437.725-.71s.408-.595.555-.965.22-.808.22-1.315c0-.52-.093-.99-.28-1.41s-.45-.778-.79-1.075c-.34-.297-.748-.525-1.225-.685S16.58 9 16 9z" }));
+}));
+Help.displayName = "Help";
+Help["iconName"] = "help";
+var Help_default = Help;
+
+// node_modules/@ringcentral/juno/es6/icon/HideBorder.js
+import React202, { forwardRef as forwardRef185, memo as memo172 } from "react";
+var __assign180 = function() {
+  __assign180 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign180.apply(this, arguments);
+};
+var HideBorder = memo172(forwardRef185(function(props, svgRef) {
+  return React202.createElement("svg", __assign180({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React202.createElement("path", { d: "M28.749 3.293a.999.999 0 010 1.414l-3.546 3.546C28.731 10.822 31 14.256 31 16c0 3-6.716 11-15 11-2.706 0-5.245-.854-7.437-2.108l-3.856 3.856a.999.999 0 11-1.414-1.414L27.335 3.292a.999.999 0 011.414 0zm-4.978 6.392l-2.862 2.863a6 6 0 01-8.36 8.36l-2.514 2.514C11.952 24.433 13.987 25 16 25c3.233 0 6.526-1.462 9.29-3.88 1.169-1.022 2.162-2.156 2.853-3.223.569-.878.857-1.609.857-1.897s-.289-1.019-.857-1.897c-.691-1.066-1.684-2.2-2.853-3.223a18.306 18.306 0 00-1.519-1.195zM16 5c2.201 0 4.292.565 6.176 1.451l-1.515 1.516c-1.523-.625-3.099-.966-4.661-.966-3.233 0-6.526 1.462-9.29 3.88-1.169 1.022-2.162 2.156-2.853 3.223-.568.878-.857 1.609-.857 1.897s.289 1.019.857 1.897c.691 1.066 1.684 2.2 2.853 3.223.142.125.286.247.432.366l-1.421 1.42C2.815 20.471 1 17.561 1 16.001c0-3 6.716-11 15-11zm3.462 8.995l-5.467 5.467a4 4 0 005.467-5.467zM16 10c.78 0 1.525.149 2.208.419l-1.624 1.623a4 4 0 00-4.542 4.542l-1.623 1.624A6 6 0 0116 10z" }));
+}));
+HideBorder.displayName = "HideBorder";
+HideBorder["iconName"] = "hide_border";
+var HideBorder_default = HideBorder;
+
+// node_modules/@ringcentral/juno/es6/icon/HoldAnswer.js
+import React203, { forwardRef as forwardRef186, memo as memo173 } from "react";
+var __assign181 = function() {
+  __assign181 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign181.apply(this, arguments);
+};
+var HoldAnswer = memo173(forwardRef186(function(props, svgRef) {
+  return React203.createElement("svg", __assign181({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React203.createElement("path", { fill: "var(--color52, #4475fd)", d: "M8 0c4.371 0 7.923 3.497 7.999 7.838a12.833 12.833 0 00-8.161 8.159l.162.002c-4.418 0-8-3.573-8-7.98v-.04C0 3.646 3.461.12 7.776.002L8-.001zM6.2 4.8l-.045.002A.6.6 0 005.6 5.4v5.2a.6.6 0 00.6.6l.045-.002A.6.6 0 006.8 10.6V5.4a.6.6 0 00-.6-.6zm3.6 0l-.045.002A.6.6 0 009.2 5.4v5.2a.6.6 0 00.6.6l.045-.002a.6.6 0 00.555-.598V5.4a.6.6 0 00-.6-.6z" }), React203.createElement("path", { fill: "var(--color73, #299e0b)", d: "M20 8c6.627 0 12 5.373 12 12s-5.373 12-12 12S8 26.627 8 20 13.373 8 20 8zm-2.083 6.541a1.451 1.451 0 00-.853-.123c-.22.034-.486.13-.807.286a3.66 3.66 0 00-.731.444c-.373.314-.6.737-.681 1.26-.085.494-.046 1.052.112 1.669.156.607.425 1.256.807 1.948.38.696.869 1.402 1.466 2.116.453.532.912 1.007 1.379 1.426.459.425.923.789 1.39 1.087.47.301.932.533 1.386.695.465.166.913.25 1.342.25.265 0 .509-.035.731-.105.228-.072.431-.182.606-.327.168-.126.365-.325.582-.588.221-.267.37-.493.447-.685.114-.229.138-.497.064-.775a1.353 1.353 0 00-.463-.703c-.418-.345-.756-.63-1.014-.856s-.506-.453-.746-.679a1.203 1.203 0 00-.786-.362 1.437 1.437 0 00-.868.193 2.097 2.097 0 00-.247.191c-.063.058-.14.134-.23.229l-.03.037-.004.006-.032.031-.087.096a1.693 1.693 0 01-.125-.064 2.47 2.47 0 01-.427-.317 5.516 5.516 0 01-.531-.557 5.786 5.786 0 01-.436-.586 2.595 2.595 0 01-.241-.462 1.307 1.307 0 01-.073-.219.645.645 0 01.058-.027.767.767 0 00.089-.048l.068-.033a.428.428 0 00.087-.055 2.329 2.329 0 00.411-.283c.229-.231.354-.48.391-.76a1.162 1.162 0 00-.194-.807c-.264-.382-.489-.727-.678-1.04s-.356-.615-.503-.906a1.366 1.366 0 00-.631-.6z" }));
+}));
+HoldAnswer.displayName = "HoldAnswer";
+HoldAnswer["iconName"] = "hold-answer";
+var HoldAnswer_default = HoldAnswer;
+
+// node_modules/@ringcentral/juno/es6/icon/Hold.js
+import React204, { forwardRef as forwardRef187, memo as memo174 } from "react";
+var __assign182 = function() {
+  __assign182 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign182.apply(this, arguments);
+};
+var Hold = memo174(forwardRef187(function(props, svgRef) {
+  return React204.createElement("svg", __assign182({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React204.createElement("path", { d: "M10 4a2 2 0 012 2v20a2 2 0 01-1.851 1.994L10 28a2 2 0 01-2-2V6c0-1.054.816-1.918 1.851-1.995L10 3.999zm12 0a2 2 0 012 2v20a2 2 0 01-1.851 1.994L22 28a2 2 0 01-2-2V6c0-1.054.816-1.918 1.851-1.995L22 3.999z" }));
+}));
+Hold.displayName = "Hold";
+Hold["iconName"] = "hold";
+var Hold_default = Hold;
+
+// node_modules/@ringcentral/juno/es6/icon/HoldcallBorder.js
+import React205, { forwardRef as forwardRef188, memo as memo175 } from "react";
+var __assign183 = function() {
+  __assign183 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign183.apply(this, arguments);
+};
+var HoldcallBorder = memo175(forwardRef188(function(props, svgRef) {
+  return React205.createElement("svg", __assign183({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React205.createElement("path", { d: "M9.791 2.353a3.42 3.42 0 011.577 1.5 33.63 33.63 0 001.257 2.265 49.99 49.99 0 001.696 2.601c.414.626.579 1.307.486 2.017-.091.699-.403 1.322-.977 1.9a6.076 6.076 0 01-1.027.705 1.161 1.161 0 01-.218.137l-.171.083-.178.098-.045.022a1.99 1.99 0 00-.144.067c.016.079.043.175.083.29l.098.258c.124.331.324.717.602 1.154.285.448.649.938 1.09 1.465a13.92 13.92 0 001.328 1.391c.395.352.753.616 1.068.791.121.067.226.121.312.159l.218-.239.08-.079.085-.107.254-.263.272-.265.049-.045c.171-.156.362-.306.617-.477a3.574 3.574 0 012.169-.483c.803.071 1.484.39 1.965.905a69.978 69.978 0 001.865 1.697l.459.399.947.804 1.129.938c.586.482.976 1.073 1.157 1.757.164.617.135 1.216-.074 1.743l-.087.194c-.193.479-.565 1.044-1.117 1.713-.476.576-.912 1.028-1.295 1.343l-.161.127c-.44.363-.947.637-1.516.818a6.01 6.01 0 01-1.829.264c-1.073 0-2.192-.21-3.356-.625-1.135-.405-2.29-.984-3.466-1.737a24.373 24.373 0 01-3.044-2.327l-.431-.391a36.73 36.73 0 01-3.448-3.565c-1.492-1.787-2.714-3.551-3.664-5.291-.955-1.731-1.628-3.354-2.018-4.87-.397-1.544-.493-2.938-.281-4.173.204-1.306.769-2.366 1.703-3.149.433-.361 1.041-.728 1.828-1.11.803-.39 1.468-.63 2.018-.716a3.627 3.627 0 012.133.308zM7.966 4.022c-.314.049-.8.222-1.451.538-.661.321-1.134.608-1.416.843-.548.46-.881 1.078-1.018 1.956-.16.934-.085 2.047.247 3.337.345 1.34.953 2.809 1.836 4.41.884 1.619 2.031 3.276 3.432 4.954a34.87 34.87 0 003.283 3.393 22.997 22.997 0 003.194 2.502c1.055.675 2.074 1.187 3.059 1.538.959.342 1.853.509 2.684.509.466 0 .872-.058 1.223-.17.274-.087.514-.206.768-.392l.155-.12c.275-.206.66-.595 1.112-1.142.391-.473.643-.844.765-1.097l.106-.236c.064-.128.078-.299.017-.53-.072-.27-.226-.504-.496-.726l-1.295-1.078-.817-.695-.471-.41a71.406 71.406 0 01-1.293-1.163l-.624-.582-.088-.088c-.138-.148-.36-.25-.681-.279a1.596 1.596 0 00-.827.134l-.119.063-.049.035a3.377 3.377 0 00-.189.145l-.079.069-.16.152-.227.231-.036.047-.09.104-.159.162-.157.172a1.998 1.998 0 01-2.3.472 6.246 6.246 0 01-.459-.233c-.46-.256-.934-.607-1.428-1.047a16.01 16.01 0 01-1.531-1.601 16.348 16.348 0 01-1.243-1.674 8.88 8.88 0 01-.691-1.286l-.073-.183a5.005 5.005 0 01-.292-.913 2 2 0 011.025-2.162l.25-.12.178-.098.111-.054.05-.036.143-.086c.134-.073.249-.143.346-.21l.175-.127.102-.083.049-.052c.16-.183.247-.349.289-.528l.02-.109a.87.87 0 00-.147-.621 52.75 52.75 0 01-1.763-2.705 34.089 34.089 0 01-1.299-2.338 1.447 1.447 0 00-.553-.588l-.12-.063a1.627 1.627 0 00-.976-.142zM27 3a1 1 0 011 1v10a1 1 0 01-2 0V4a1 1 0 011-1zm-6 0a1 1 0 011 1v10a1 1 0 01-2 0V4a1 1 0 011-1z" }));
+}));
+HoldcallBorder.displayName = "HoldcallBorder";
+HoldcallBorder["iconName"] = "holdcall_border";
+var HoldcallBorder_default = HoldcallBorder;
+
+// node_modules/@ringcentral/juno/es6/icon/HorizontalLine.js
+import React206, { forwardRef as forwardRef189, memo as memo176 } from "react";
+var __assign184 = function() {
+  __assign184 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign184.apply(this, arguments);
+};
+var HorizontalLine = memo176(forwardRef189(function(props, svgRef) {
+  return React206.createElement("svg", __assign184({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React206.createElement("path", { d: "M5 15h22a1 1 0 010 2H5a1 1 0 010-2z" }));
+}));
+HorizontalLine.displayName = "HorizontalLine";
+HorizontalLine["iconName"] = "horizontal-line";
+var HorizontalLine_default = HorizontalLine;
+
+// node_modules/@ringcentral/juno/es6/icon/Ignore.js
+import React207, { forwardRef as forwardRef190, memo as memo177 } from "react";
+var __assign185 = function() {
+  __assign185 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign185.apply(this, arguments);
+};
+var Ignore = memo177(forwardRef190(function(props, svgRef) {
+  return React207.createElement("svg", __assign185({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React207.createElement("path", { d: "M26.286 14c.947 0 1.714.895 1.714 2s-.767 2-1.714 2H5.715c-.947 0-1.714-.895-1.714-2s.768-2 1.714-2h20.571z" }));
+}));
+Ignore.displayName = "Ignore";
+Ignore["iconName"] = "ignore";
+var Ignore_default = Ignore;
+
+// node_modules/@ringcentral/juno/es6/icon/ImageBrokenD.js
+import React208, { forwardRef as forwardRef191, memo as memo178 } from "react";
+var __assign186 = function() {
+  __assign186 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign186.apply(this, arguments);
+};
+var ImageBrokenD = memo178(forwardRef191(function(props, svgRef) {
+  return React208.createElement("svg", __assign186({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React208.createElement("path", { fill: "var(--color7, #30323a)", d: "M3.556 0h24.889a3.556 3.556 0 013.556 3.556v24.889a3.556 3.556 0 01-3.556 3.556H3.556A3.556 3.556 0 010 28.445V3.556A3.556 3.556 0 013.556 0z" }), React208.createElement("path", { fill: "var(--color8, #8f9199)", d: "M11.893 8.018L16.755 8l5.466 4.962-.024 8.878c0 .607-.204 1.118-.612 1.535s-.909.625-1.503.625h-8.154c-.594 0-1.095-.209-1.503-.625s-.612-.929-.612-1.535l-.035-11.661c0-.607.204-1.118.612-1.535s.909-.625 1.503-.625z" }), React208.createElement("path", { fill: "var(--color20, #f1f1f1)", d: "M18.329 14.738c.585 0 .944.535 1.542 1.822l.627 1.388.141.297.06.121.119.223.118.2c.037.059.072.109.104.151l.057.069.027-.021a.753.753 0 00.086-.097l.106-.152.126-.206.144-.259.161-.311.176-.362.19-.413.1-.225-.006 1.994c-.41.651-.782.962-1.157.962l-.121-.005c-.327-.029-.53-.198-.853-.803l-.146-.287-.165-.346-.091-.197-.608-1.346-.151-.314-.151-.295-.135-.246-.115-.195-.091-.142-.063-.087c-.016-.019-.026-.029-.03-.029-.008 0-.02.008-.036.023l-.059.07-.082.118-.105.167-.2.344-.161.293-.184.346-.579 1.133-.215.403c-.548.998-.913 1.395-1.442 1.395-.525 0-.919-.43-1.473-1.396l-.231-.415-.675-1.274-.258-.469-.302-.522-.102-.163-.034-.048c-.003-.004-.006-.006-.007-.006l-.008-.002-.016-.026c-.003-.004-.008-.005-.016.003l-.042.052-.086.131-2.212 3.692-.005-1.744.868-1.464.08-.13.211-.331.219-.321c.381-.531.659-.75 1.008-.75l.113.004c.3.021.49.147.814.666l.16.269.184.331.103.191.784 1.487.209.374c.165.285.307.506.438.676.046.059.088.109.124.149l.124.124.028.022c.017 0 .044-.019.081-.057l.085-.1.108-.149.129-.197.148-.245.166-.291.089-.163.36-.7.404-.792.193-.364.172-.306c.408-.699.658-.904 1.048-.927l.08-.002z" }));
+}));
+ImageBrokenD.displayName = "ImageBrokenD";
+ImageBrokenD["iconName"] = "image-broken-D";
+var ImageBrokenD_default = ImageBrokenD;
+
+// node_modules/@ringcentral/juno/es6/icon/ImageBroken.js
+import React209, { forwardRef as forwardRef192, memo as memo179 } from "react";
+var __assign187 = function() {
+  __assign187 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign187.apply(this, arguments);
+};
+var __rest18 = function(s2, e2) {
+  var t2 = {};
+  for (var p in s2)
+    if (Object.prototype.hasOwnProperty.call(s2, p) && e2.indexOf(p) < 0)
+      t2[p] = s2[p];
+  if (s2 != null && typeof Object.getOwnPropertySymbols === "function")
+    for (var i2 = 0, p = Object.getOwnPropertySymbols(s2); i2 < p.length; i2++) {
+      if (e2.indexOf(p[i2]) < 0 && Object.prototype.propertyIsEnumerable.call(s2, p[i2]))
+        t2[p[i2]] = s2[p[i2]];
+    }
+  return t2;
+};
+var ImageBroken = memo179(forwardRef192(function(inProps, svgRef) {
+  var theme = RcUseTheme();
+  var _a2 = inProps.themeType, themeType = _a2 === void 0 ? theme.palette.type : _a2, props = __rest18(inProps, ["themeType"]);
+  return themeType === "dark" ? React209.createElement(ImageBrokenD_default, __assign187({}, props, { ref: svgRef })) : React209.createElement("svg", __assign187({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React209.createElement("path", { fill: "var(--color25, #fff)", opacity: 0.992, d: "M3.556 0h24.889a3.556 3.556 0 013.556 3.556v24.889a3.556 3.556 0 01-3.556 3.556H3.556A3.556 3.556 0 010 28.445V3.556A3.556 3.556 0 013.556 0z" }), React209.createElement("path", { fill: "var(--color51, #a7aaae)", opacity: 0.16, d: "M3.556 0h24.889a3.556 3.556 0 013.556 3.556v24.889a3.556 3.556 0 01-3.556 3.556H3.556A3.556 3.556 0 010 28.445V3.556A3.556 3.556 0 013.556 0z" }), React209.createElement("path", { fill: "var(--color51, #a7aaae)", d: "M11.893 8.018L16.755 8l5.466 4.962-.024 8.878c0 .607-.204 1.118-.612 1.535s-.909.625-1.503.625h-8.154c-.594 0-1.095-.209-1.503-.625s-.612-.929-.612-1.535l-.035-11.661c0-.607.204-1.118.612-1.535s.909-.625 1.503-.625z" }), React209.createElement("path", { fill: "var(--color76, #f1f1f2)", d: "M18.329 14.738c.585 0 .944.535 1.542 1.822l.627 1.388c.134.291.216.453.32.64.083.15.157.267.221.351l.057.069.027-.021c.255-.235.893-1.441 1.677-3.452l.195-.509.832.313-.323.84c-1.01 2.563-1.726 3.74-2.456 3.74l-.121-.005c-.444-.039-.66-.336-1.255-1.633l-.608-1.346-.151-.314c-.316-.637-.559-.994-.585-.994-.06 0-.34.43-.826 1.361l-.464.91c-.747 1.461-1.143 2.021-1.771 2.021-.595 0-1.021-.552-1.704-1.811l-.675-1.274c-.445-.822-.688-1.208-.702-1.208l-.008-.002c-.028-.016.01-.11-.16.161l-2.439 4.071-.763-.456 1.744-2.952c.081-.134.145-.241.188-.309l.211-.331c.502-.764.815-1.071 1.227-1.071l.113.004c.415.029.619.259 1.261 1.456l.784 1.487.209.374c.165.285.307.506.438.676.16.207.275.296.276.296.079 0 .382-.414.805-1.202l.36-.7.298-.587c.764-1.487 1.025-1.803 1.599-1.803z" }));
+}));
+ImageBroken.displayName = "ImageBroken";
+ImageBroken["iconName"] = "image-broken";
+var ImageBroken_default = ImageBroken;
+
+// node_modules/@ringcentral/juno/es6/icon/ImagePreviewD.js
+import React210, { forwardRef as forwardRef193, memo as memo180 } from "react";
+var __assign188 = function() {
+  __assign188 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign188.apply(this, arguments);
+};
+var ImagePreviewD = memo180(forwardRef193(function(props, svgRef) {
+  return React210.createElement("svg", __assign188({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React210.createElement("path", { fill: "var(--color7, #30323a)", d: "M3.556 0h24.889a3.556 3.556 0 013.556 3.556v24.889a3.556 3.556 0 01-3.556 3.556H3.556A3.556 3.556 0 010 28.445V3.556A3.556 3.556 0 013.556 0z" }), React210.createElement("path", { fill: "var(--color8, #8f9199)", d: "M16.756 8l5.466 4.962-.024 8.878c0 .607-.204 1.118-.612 1.535s-.909.625-1.503.625h-8.154c-.594 0-1.095-.209-1.503-.625s-.612-.929-.612-1.535l-.035-11.661c0-.607.204-1.118.612-1.535s.909-.625 1.503-.625l4.862-.018z" }), React210.createElement("path", { fill: "var(--color20, #f1f1f1)", d: "M17.393 14.633l2.987 5.82-3.789-.001.012.015h-5.134l2.209-3.896 1.562 2.081 2.153-4.02zm-3.615-2.189a1.333 1.333 0 110 2.667 1.333 1.333 0 010-2.667z" }));
+}));
+ImagePreviewD.displayName = "ImagePreviewD";
+ImagePreviewD["iconName"] = "image-preview-D";
+var ImagePreviewD_default = ImagePreviewD;
+
+// node_modules/@ringcentral/juno/es6/icon/ImagePreview.js
+import React211, { forwardRef as forwardRef194, memo as memo181 } from "react";
+var __assign189 = function() {
+  __assign189 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign189.apply(this, arguments);
+};
+var __rest19 = function(s2, e2) {
+  var t2 = {};
+  for (var p in s2)
+    if (Object.prototype.hasOwnProperty.call(s2, p) && e2.indexOf(p) < 0)
+      t2[p] = s2[p];
+  if (s2 != null && typeof Object.getOwnPropertySymbols === "function")
+    for (var i2 = 0, p = Object.getOwnPropertySymbols(s2); i2 < p.length; i2++) {
+      if (e2.indexOf(p[i2]) < 0 && Object.prototype.propertyIsEnumerable.call(s2, p[i2]))
+        t2[p[i2]] = s2[p[i2]];
+    }
+  return t2;
+};
+var ImagePreview = memo181(forwardRef194(function(inProps, svgRef) {
+  var theme = RcUseTheme();
+  var _a2 = inProps.themeType, themeType = _a2 === void 0 ? theme.palette.type : _a2, props = __rest19(inProps, ["themeType"]);
+  return themeType === "dark" ? React211.createElement(ImagePreviewD_default, __assign189({}, props, { ref: svgRef })) : React211.createElement("svg", __assign189({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React211.createElement("path", { fill: "var(--color25, #fff)", opacity: 0.992, d: "M3.556 0h24.889a3.556 3.556 0 013.556 3.556v24.889a3.556 3.556 0 01-3.556 3.556H3.556A3.556 3.556 0 010 28.445V3.556A3.556 3.556 0 013.556 0z" }), React211.createElement("path", { fill: "var(--color51, #a7aaae)", opacity: 0.16, d: "M3.556 0h24.889a3.556 3.556 0 013.556 3.556v24.889a3.556 3.556 0 01-3.556 3.556H3.556A3.556 3.556 0 010 28.445V3.556A3.556 3.556 0 013.556 0z" }), React211.createElement("path", { fill: "var(--color51, #a7aaae)", d: "M16.756 8l5.466 4.962-.024 8.878c0 .607-.204 1.118-.612 1.535s-.909.625-1.503.625h-8.154c-.594 0-1.095-.209-1.503-.625s-.612-.929-.612-1.535l-.035-11.661c0-.607.204-1.118.612-1.535s.909-.625 1.503-.625l4.862-.018zm.637 6.633l-2.153 4.02-1.562-2.081-2.209 3.896h5.134l-.012-.015 3.789.001-2.987-5.82zm-3.615-2.189a1.333 1.333 0 100 2.667 1.333 1.333 0 000-2.667z" }));
+}));
+ImagePreview.displayName = "ImagePreview";
+ImagePreview["iconName"] = "image-preview";
+var ImagePreview_default = ImagePreview;
+
+// node_modules/@ringcentral/juno/es6/icon/InboundCallOnBehalf.js
+import React212, { forwardRef as forwardRef195, memo as memo182 } from "react";
+var __assign190 = function() {
+  __assign190 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign190.apply(this, arguments);
+};
+var InboundCallOnBehalf = memo182(forwardRef195(function(props, svgRef) {
+  return React212.createElement("svg", __assign190({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React212.createElement("path", { d: "M12 17c1.439 0 2.822.226 4.092.64a3.383 3.383 0 00-.114.775l-.001.175-.105.058c-.338.195-.64.447-.893.744A11.371 11.371 0 0012 19c-4.878 0-8.85 3.019-8.996 6.786L3 26l13.564.001a3.444 3.444 0 001.308 1.35l.106.058.001.175c.004.14.017.278.038.416H3.001a2 2 0 01-2-2c0-5.096 5.019-9 11-9zm18.701-1.701a1.02 1.02 0 010 1.443l-7.217 7.216 5.701.001a1.02 1.02 0 110 2.042H21.02a1.02 1.02 0 01-1.021-1.021v-8.165a1.02 1.02 0 112.042 0l-.001 5.7 7.217-7.216a1.02 1.02 0 011.443 0zM12 3a6 6 0 110 12 6 6 0 010-12zm0 2a4 4 0 100 8 4 4 0 000-8z" }));
+}));
+InboundCallOnBehalf.displayName = "InboundCallOnBehalf";
+InboundCallOnBehalf["iconName"] = "inbound_call_on_behalf";
+var InboundCallOnBehalf_default = InboundCallOnBehalf;
+
+// node_modules/@ringcentral/juno/es6/icon/InboundFaxBorder.js
+import React213, { forwardRef as forwardRef196, memo as memo183 } from "react";
+var __assign191 = function() {
+  __assign191 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign191.apply(this, arguments);
+};
+var InboundFaxBorder = memo183(forwardRef196(function(props, svgRef) {
+  return React213.createElement("svg", __assign191({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React213.createElement("path", { d: "M23 4a1 1 0 010 2h-2v13.757c0 .796-.316 1.559-.879 2.121l-5.536 5.536a2 2 0 01-1.238.578l-.176.008H4.999a2 2 0 01-2-2V6h-2a1 1 0 010-2h22zm-4 2H5v19a1 1 0 001 1h6v-5a2 2 0 012-2h5V6zm-.83 15H15a1 1 0 00-1 1v3.17L18.17 21zm10.209-10.293a1 1 0 011.497 1.32l-.083.094L26.086 16l3.707 3.879a1 1 0 01-1.32 1.497l-.094-.083-4.586-4.586a1 1 0 01-.083-1.32l.083-.094 4.586-4.586zM15.167 14c.46 0 .833.448.833 1s-.373 1-.833 1H8.834c-.46 0-.833-.448-.833-1s.373-1 .833-1h6.333zm0-5c.46 0 .833.448.833 1s-.373 1-.833 1H8.834c-.46 0-.833-.448-.833-1s.373-1 .833-1h6.333z" }));
+}));
+InboundFaxBorder.displayName = "InboundFaxBorder";
+InboundFaxBorder["iconName"] = "inbound-fax_border";
+var InboundFaxBorder_default = InboundFaxBorder;
+
+// node_modules/@ringcentral/juno/es6/icon/InboundFax.js
+import React214, { forwardRef as forwardRef197, memo as memo184 } from "react";
+var __assign192 = function() {
+  __assign192 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign192.apply(this, arguments);
+};
+var InboundFax = memo184(forwardRef197(function(props, svgRef) {
+  return React214.createElement("svg", __assign192({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React214.createElement("path", { d: "M23 4a1 1 0 010 2h-2v13h-7a2.001 2.001 0 00-1.995 1.851L12 21v7H5a2 2 0 01-2-2V6H1a1 1 0 010-2h22zm-2.272 17l-.025.058a3.003 3.003 0 01-.582.82l-5.536 5.536a2.022 2.022 0 01-.415.319l-.17.086V22a1 1 0 01.883-.993L15 21h5.728zm7.651-10.293a1 1 0 011.497 1.32l-.083.094L26.086 16l3.707 3.879a1 1 0 01-1.32 1.497l-.094-.083-4.586-4.586a1 1 0 01-.083-1.32l.083-.094 4.586-4.586zM15.167 14H8.834c-.46 0-.833.448-.833 1 0 .513.322.935.736.993l.097.007h6.333c.46 0 .833-.448.833-1s-.373-1-.833-1zm0-5H8.834c-.46 0-.833.448-.833 1 0 .513.322.935.736.993l.097.007h6.333c.46 0 .833-.448.833-1s-.373-1-.833-1z" }));
+}));
+InboundFax.displayName = "InboundFax";
+InboundFax["iconName"] = "inbound-fax";
+var InboundFax_default = InboundFax;
+
+// node_modules/@ringcentral/juno/es6/icon/Inbox.js
+import React215, { forwardRef as forwardRef198, memo as memo185 } from "react";
+var __assign193 = function() {
+  __assign193 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign193.apply(this, arguments);
+};
+var Inbox = memo185(forwardRef198(function(props, svgRef) {
+  return React215.createElement("svg", __assign193({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React215.createElement("path", { d: "M30 25a2 2 0 01-2 2H4a2 2 0 01-2-2V14.333c0-.865.281-1.708.8-2.4L7.4 5.8A2 2 0 019 5h14c.63 0 1.222.296 1.6.8l4.6 6.133c.519.692.8 1.535.8 2.4V25zM11.1 15H4v9a1 1 0 001 1h22a1 1 0 001-1v-9h-7.1a5.002 5.002 0 01-9.752.212L11.1 15zm11.4-8h-13a1 1 0 00-.8.4l-3.96 5.28a.2.2 0 00.16.32H12a1 1 0 011 1 3 3 0 005.995.176l.012-.293A1 1 0 0120 13h7.1a.2.2 0 00.16-.32L23.3 7.4a1 1 0 00-.8-.4z" }));
+}));
+Inbox.displayName = "Inbox";
+Inbox["iconName"] = "inbox";
+var Inbox_default = Inbox;
+
+// node_modules/@ringcentral/juno/es6/icon/IncallBorder.js
+import React216, { forwardRef as forwardRef199, memo as memo186 } from "react";
+var __assign194 = function() {
+  __assign194 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign194.apply(this, arguments);
+};
+var IncallBorder = memo186(forwardRef199(function(props, svgRef) {
+  return React216.createElement("svg", __assign194({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React216.createElement("path", { d: "M9.791 2.353a3.42 3.42 0 011.577 1.5 33.63 33.63 0 001.257 2.265 49.99 49.99 0 001.696 2.601c.414.626.579 1.307.486 2.017-.091.699-.403 1.322-.977 1.9a6.076 6.076 0 01-1.027.705 1.161 1.161 0 01-.218.137l-.171.083-.178.098-.045.022a1.99 1.99 0 00-.144.067c.016.079.043.175.083.29l.098.258c.124.331.324.717.602 1.154.285.448.649.938 1.09 1.465a13.92 13.92 0 001.328 1.391c.395.352.753.616 1.068.791.121.067.226.121.312.159l.218-.239.08-.079.085-.107.254-.263.222-.218a5.112 5.112 0 01.716-.569 3.574 3.574 0 012.169-.483c.803.071 1.484.39 1.965.905a69.978 69.978 0 001.865 1.697l.459.399.947.804c.346.29.722.603 1.129.938.586.482.976 1.073 1.157 1.757.164.617.135 1.216-.074 1.743l-.087.194c-.193.479-.565 1.044-1.117 1.713-.476.576-.912 1.028-1.295 1.343l-.161.127c-.44.363-.947.637-1.516.818a6.008 6.008 0 01-1.828.264c-1.073 0-2.192-.21-3.356-.625-1.135-.405-2.29-.984-3.466-1.737a24.373 24.373 0 01-3.044-2.327l-.431-.391a36.73 36.73 0 01-3.448-3.565c-1.492-1.787-2.714-3.551-3.664-5.291-.955-1.731-1.628-3.354-2.018-4.87-.397-1.544-.493-2.938-.281-4.173.204-1.306.769-2.366 1.703-3.149.433-.361 1.041-.728 1.828-1.11.803-.39 1.468-.63 2.018-.716a3.627 3.627 0 012.133.308zM7.966 4.022c-.314.049-.8.222-1.451.538-.661.321-1.134.608-1.416.843-.548.46-.881 1.078-1.018 1.956-.16.934-.085 2.047.247 3.337.345 1.34.953 2.809 1.836 4.41.884 1.619 2.031 3.276 3.432 4.954a34.87 34.87 0 003.283 3.393 22.997 22.997 0 003.194 2.502c1.055.675 2.074 1.187 3.059 1.538.959.342 1.853.509 2.684.509.466 0 .872-.058 1.223-.17.274-.087.514-.206.768-.392l.155-.12c.275-.206.66-.595 1.112-1.142.391-.473.643-.844.765-1.097l.106-.236c.064-.128.078-.299.017-.53-.072-.27-.226-.504-.496-.726l-1.295-1.078-.817-.695a71.406 71.406 0 01-1.764-1.573l-.624-.582-.088-.088c-.138-.148-.36-.25-.681-.279a1.596 1.596 0 00-.827.134l-.119.063-.049.035a3.377 3.377 0 00-.189.145l-.079.069-.16.152-.227.231-.036.047-.09.104-.159.162-.157.172a1.998 1.998 0 01-2.3.472 6.246 6.246 0 01-.459-.233c-.46-.256-.934-.607-1.428-1.047a16.01 16.01 0 01-1.531-1.601 16.348 16.348 0 01-1.243-1.674 8.88 8.88 0 01-.691-1.286l-.073-.183a5.005 5.005 0 01-.292-.913 2 2 0 011.025-2.162l.25-.12.178-.098.111-.054.05-.036.143-.086c.134-.073.249-.143.346-.21l.175-.127.102-.083.049-.052c.16-.183.247-.349.289-.528l.02-.109a.87.87 0 00-.147-.621 52.75 52.75 0 01-1.763-2.705 34.089 34.089 0 01-1.299-2.338 1.447 1.447 0 00-.553-.588l-.12-.063a1.627 1.627 0 00-.976-.142zm21.741-1.729a.999.999 0 010 1.414l-7.072 7.07 5.586.001a1 1 0 010 2h-8a1 1 0 01-1-1v-8a1 1 0 012 0l-.001 5.585 7.072-7.07a.999.999 0 011.414 0z" }));
+}));
+IncallBorder.displayName = "IncallBorder";
+IncallBorder["iconName"] = "incall_border";
+var IncallBorder_default = IncallBorder;
+
+// node_modules/@ringcentral/juno/es6/icon/Incall.js
+import React217, { forwardRef as forwardRef200, memo as memo187 } from "react";
+var __assign195 = function() {
+  __assign195 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign195.apply(this, arguments);
+};
+var Incall = memo187(forwardRef200(function(props, svgRef) {
+  return React217.createElement("svg", __assign195({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React217.createElement("path", { d: "M9.791 2.353a3.42 3.42 0 011.577 1.5 33.63 33.63 0 001.257 2.265 49.99 49.99 0 001.696 2.601c.414.626.579 1.307.486 2.017-.091.699-.403 1.322-.977 1.9a6.076 6.076 0 01-1.027.705 1.161 1.161 0 01-.218.137l-.171.083-.178.098-.045.022a1.99 1.99 0 00-.144.067c.016.079.043.175.083.29l.098.258c.124.331.324.717.602 1.154.285.448.649.938 1.09 1.465a13.92 13.92 0 001.328 1.391c.395.352.753.616 1.068.791.121.067.226.121.312.159l.218-.239.08-.079.085-.107.254-.263.222-.218a5.112 5.112 0 01.716-.569 3.574 3.574 0 012.169-.483c.803.071 1.484.39 1.965.905a69.978 69.978 0 001.865 1.697l.459.399.947.804c.346.29.722.603 1.129.938.586.482.976 1.073 1.157 1.757.164.617.135 1.216-.074 1.743l-.087.194c-.193.479-.565 1.044-1.117 1.713-.476.576-.912 1.028-1.295 1.343l-.161.127c-.44.363-.947.637-1.516.818a6.008 6.008 0 01-1.828.264c-1.073 0-2.192-.21-3.356-.625-1.135-.405-2.29-.984-3.466-1.737a24.373 24.373 0 01-3.044-2.327l-.431-.391a36.73 36.73 0 01-3.448-3.565c-1.492-1.787-2.714-3.551-3.664-5.291-.955-1.731-1.628-3.354-2.018-4.87-.397-1.544-.493-2.938-.281-4.173.204-1.306.769-2.366 1.703-3.149.433-.361 1.041-.728 1.828-1.11.803-.39 1.468-.63 2.018-.716a3.627 3.627 0 012.133.308zm19.916-.06a.999.999 0 010 1.414l-7.072 7.07 5.586.001a1 1 0 010 2h-8a1 1 0 01-1-1v-8a1 1 0 012 0l-.001 5.585 7.072-7.07a.999.999 0 011.414 0z" }));
+}));
+Incall.displayName = "Incall";
+Incall["iconName"] = "incall";
+var Incall_default = Incall;
+
+// node_modules/@ringcentral/juno/es6/icon/Indent.js
+import React218, { forwardRef as forwardRef201, memo as memo188 } from "react";
+var __assign196 = function() {
+  __assign196 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign196.apply(this, arguments);
+};
+var Indent = memo188(forwardRef201(function(props, svgRef) {
+  return React218.createElement("svg", __assign196({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React218.createElement("path", { d: "M27 24a1 1 0 010 2H5a1 1 0 010-2h22zM5.598 12.201l.174.114 3.737 2.73c.591.444.658 1.332.152 1.85l-.152.131-3.737 2.684c-.772.548-1.656.304-1.761-.611l-.01-.206v-5.748c-.01-1.043.784-1.413 1.598-.943zM27 15a1 1 0 010 2H13a1 1 0 010-2h14zm0-9a1 1 0 010 2H5a1 1 0 010-2h22z" }));
+}));
+Indent.displayName = "Indent";
+Indent["iconName"] = "indent";
+var Indent_default = Indent;
+
+// node_modules/@ringcentral/juno/es6/icon/Indeterminate.js
+import React219, { forwardRef as forwardRef202, memo as memo189 } from "react";
+var __assign197 = function() {
+  __assign197 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign197.apply(this, arguments);
+};
+var Indeterminate = memo189(forwardRef202(function(props, svgRef) {
+  return React219.createElement("svg", __assign197({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React219.createElement("path", { d: "M27 2a3 3 0 013 3v22a3 3 0 01-3 3H5a3 3 0 01-3-3V5a3 3 0 013-3h22zm-3.333 12.667H8.334a1.333 1.333 0 00-.128 2.66l.128.006h15.333a1.333 1.333 0 00.128-2.66l-.128-.006z" }));
+}));
+Indeterminate.displayName = "Indeterminate";
+Indeterminate["iconName"] = "indeterminate";
+var Indeterminate_default = Indeterminate;
+
+// node_modules/@ringcentral/juno/es6/icon/Info.js
+import React220, { forwardRef as forwardRef203, memo as memo190 } from "react";
+var __assign198 = function() {
+  __assign198 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign198.apply(this, arguments);
+};
+var Info = memo190(forwardRef203(function(props, svgRef) {
+  return React220.createElement("svg", __assign198({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React220.createElement("path", { d: "M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm0 2C9.373 4 4 9.373 4 16s5.373 12 12 12 12-5.373 12-12S22.627 4 16 4zm0 9a1 1 0 011 1v10a1 1 0 01-2 0V14a1 1 0 011-1zm0-6a2 2 0 11.001 3.999A2 2 0 0116 7z" }));
+}));
+Info.displayName = "Info";
+Info["iconName"] = "info";
+var Info_default = Info;
+
+// node_modules/@ringcentral/juno/es6/icon/InsertCode.js
+import React221, { forwardRef as forwardRef204, memo as memo191 } from "react";
+var __assign199 = function() {
+  __assign199 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign199.apply(this, arguments);
+};
+var InsertCode = memo191(forwardRef204(function(props, svgRef) {
+  return React221.createElement("svg", __assign199({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React221.createElement("path", { d: "M18.722 4.025a1 1 0 01.773 1.082l-.019.115-5 22a1 1 0 01-1.97-.329l.019-.115 5-22a.999.999 0 011.197-.753zm5.983 5.68l4.881 4.881a2 2 0 010 2.828l-4.881 4.881a.998.998 0 01-1.411-1.411l4.17-4.178a1 1 0 000-1.413l-4.17-4.178a.998.998 0 011.411-1.411zm-16 0a.999.999 0 01.001 1.411l-4.17 4.178a1 1 0 000 1.413l4.17 4.178a.998.998 0 01-1.411 1.411l-4.881-4.881a2 2 0 010-2.828l4.881-4.881a.998.998 0 011.41 0z" }));
+}));
+InsertCode.displayName = "InsertCode";
+InsertCode["iconName"] = "insert-code";
+var InsertCode_default = InsertCode;
+
+// node_modules/@ringcentral/juno/es6/icon/InsertImage.js
+import React222, { forwardRef as forwardRef205, memo as memo192 } from "react";
+var __assign200 = function() {
+  __assign200 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign200.apply(this, arguments);
+};
+var InsertImage = memo192(forwardRef205(function(props, svgRef) {
+  return React222.createElement("svg", __assign200({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React222.createElement("path", { d: "M4 28a2 2 0 01-2-2V6a2 2 0 012-2h24a2 2 0 012 2v20a2 2 0 01-1.851 1.994L28 28H4zM27 6H5a1 1 0 00-1 1v18a1 1 0 001 1h1.585L17.42 15.166a3.999 3.999 0 015.111-.456l.173.127L28 18.955V7a1 1 0 00-1-1zm-8.035 10.461l-.13.119L9.415 26h17.586a1 1 0 001-.983v-3.528l-6.523-5.074a2 2 0 00-2.512.045zM10 9a3 3 0 110 6 3 3 0 010-6z" }));
+}));
+InsertImage.displayName = "InsertImage";
+InsertImage["iconName"] = "insert-image";
+var InsertImage_default = InsertImage;
+
+// node_modules/@ringcentral/juno/es6/icon/InsertLink.js
+import React223, { forwardRef as forwardRef206, memo as memo193 } from "react";
+var __assign201 = function() {
+  __assign201 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign201.apply(this, arguments);
+};
+var InsertLink = memo193(forwardRef206(function(props, svgRef) {
+  return React223.createElement("svg", __assign201({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React223.createElement("path", { d: "M16.607 5.494a7 7 0 019.899 9.899l-2.364 2.367a9.05 9.05 0 00-.122-2.708l1.071-1.073a5 5 0 000-7.071 5 5 0 00-7.071 0l-4.243 4.243a5 5 0 002.828 8.485l-1.645 1.645a6.999 6.999 0 01-2.597-11.544l4.243-4.243zM6 16.101l2.364-2.367a9.05 9.05 0 00.122 2.708l-1.071 1.073a5 5 0 000 7.071 5 5 0 007.071 0l4.243-4.243a5 5 0 00-2.828-8.485l1.645-1.645a6.999 6.999 0 012.597 11.544L15.9 26a7 7 0 01-9.899-9.899z" }));
+}));
+InsertLink.displayName = "InsertLink";
+InsertLink["iconName"] = "insert-link";
+var InsertLink_default = InsertLink;
+
+// node_modules/@ringcentral/juno/es6/icon/InsertTable.js
+import React224, { forwardRef as forwardRef207, memo as memo194 } from "react";
+var __assign202 = function() {
+  __assign202 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign202.apply(this, arguments);
+};
+var InsertTable = memo194(forwardRef207(function(props, svgRef) {
+  return React224.createElement("svg", __assign202({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React224.createElement("path", { d: "M28 4a2 2 0 012 2v20a2 2 0 01-2 2H4a2 2 0 01-2-2V6a2 2 0 012-2h24zM11 15H4v10a1 1 0 001 1h6V15zm17 0H13v11h14a1 1 0 001-1V15zM5 6a1 1 0 00-1 1v6h7V6H5zm8 7h15V7a1 1 0 00-1-1H13v7z" }));
+}));
+InsertTable.displayName = "InsertTable";
+InsertTable["iconName"] = "insert-table";
+var InsertTable_default = InsertTable;
+
+// node_modules/@ringcentral/juno/es6/icon/InsertVideo.js
+import React225, { forwardRef as forwardRef208, memo as memo195 } from "react";
+var __assign203 = function() {
+  __assign203 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign203.apply(this, arguments);
+};
+var InsertVideo = memo195(forwardRef208(function(props, svgRef) {
+  return React225.createElement("svg", __assign203({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React225.createElement("path", { d: "M28 4a2 2 0 012 2v20a2 2 0 01-2 2H4a2 2 0 01-2-2V6a2 2 0 012-2h24zm-1 2H5a1 1 0 00-1 1v18a1 1 0 001 1h22a1 1 0 001-1V7a1 1 0 00-1-1zm-12.337 6.241l.109.074 3.737 2.73c.606.455.661 1.38.11 1.891l-.11.091-3.737 2.684c-.791.562-1.7.291-1.768-.681L13 18.893v-5.748c-.01-1.024.756-1.4 1.554-.967l.109.064z" }));
+}));
+InsertVideo.displayName = "InsertVideo";
+InsertVideo["iconName"] = "insert-video";
+var InsertVideo_default = InsertVideo;
+
+// node_modules/@ringcentral/juno/es6/icon/Italic.js
+import React226, { forwardRef as forwardRef209, memo as memo196 } from "react";
+var __assign204 = function() {
+  __assign204 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign204.apply(this, arguments);
+};
+var Italic = memo196(forwardRef209(function(props, svgRef) {
+  return React226.createElement("svg", __assign204({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React226.createElement("path", { d: "M26 4a1 1 0 010 2h-6.237l-5.455 20H20a1 1 0 010 2H6a1 1 0 010-2h6.236L17.69 6H12a1 1 0 010-2h14z" }));
+}));
+Italic.displayName = "Italic";
+Italic["iconName"] = "italic";
+var Italic_default = Italic;
+
+// node_modules/@ringcentral/juno/es6/icon/ItemListSelected.js
+import React227, { forwardRef as forwardRef210, memo as memo197 } from "react";
+var __assign205 = function() {
+  __assign205 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign205.apply(this, arguments);
+};
+var ItemListSelected = memo197(forwardRef210(function(props, svgRef) {
+  return React227.createElement("svg", __assign205({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React227.createElement("path", { fill: "var(--color52, #4475fd)", d: "M16 2.667C8.64 2.667 2.667 8.64 2.667 16S8.64 29.333 16 29.333 29.333 23.36 29.333 16 23.36 2.667 16 2.667zm-2.286 19.908L8 16.861l1.611-1.611 4.103 4.091 8.674-8.674 1.611 1.623-10.286 10.286z" }));
+}));
+ItemListSelected.displayName = "ItemListSelected";
+ItemListSelected["iconName"] = "item-list-selected";
+var ItemListSelected_default = ItemListSelected;
+
+// node_modules/@ringcentral/juno/es6/icon/JoinAudioPoc.js
+import React228, { forwardRef as forwardRef211, memo as memo198 } from "react";
+var __assign206 = function() {
+  __assign206 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign206.apply(this, arguments);
+};
+var JoinAudioPoc = memo198(forwardRef211(function(props, svgRef) {
+  return React228.createElement("svg", __assign206({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React228.createElement("path", { d: "M25.899 6.101c5.467 5.467 5.467 14.332 0 19.799s-14.332 5.467-19.799 0C.633 20.433.633 11.568 6.1 6.101s14.332-5.467 19.799 0zm-8.898 8.898L17 9a1 1 0 00-1.993-.117L15 9l.001 5.999L9 15a1 1 0 00-.117 1.993L9 17l6.001-.001L15 23a1 1 0 001.993.117L17 23l.001-6.001L23 17a1 1 0 00.117-1.993L23 15l-5.999-.001z" }));
+}));
+JoinAudioPoc.displayName = "JoinAudioPoc";
+JoinAudioPoc["iconName"] = "join-audio-poc";
+var JoinAudioPoc_default = JoinAudioPoc;
+
+// node_modules/@ringcentral/juno/es6/icon/JoinMeeting.js
+import React229, { forwardRef as forwardRef212, memo as memo199 } from "react";
+var __assign207 = function() {
+  __assign207 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign207.apply(this, arguments);
+};
+var JoinMeeting = memo199(forwardRef212(function(props, svgRef) {
+  return React229.createElement("svg", __assign207({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React229.createElement("path", { d: "M27.556 5.333A2.667 2.667 0 0130.223 8v16a2.667 2.667 0 01-2.667 2.667H8A2.667 2.667 0 015.333 24v-4.444h1.778V24c0 .456.343.832.785.883l.104.006h19.556a.889.889 0 00.883-.785l.006-.104V8a.889.889 0 00-.785-.883l-.104-.006H8a.889.889 0 00-.883.785L7.111 8v4.444H5.333V8A2.667 2.667 0 018 5.333h19.556zM12.597 11.34l3.619 3.619a.91.91 0 01.172.241.89.89 0 010 1.602.863.863 0 01-.171.241l-3.619 3.619a.889.889 0 01-1.257-1.257l2.513-2.515H2.667a.889.889 0 110-1.778h11.187l-2.513-2.514a.889.889 0 011.257-1.257z" }));
+}));
+JoinMeeting.displayName = "JoinMeeting";
+JoinMeeting["iconName"] = "join_meeting";
+var JoinMeeting_default = JoinMeeting;
+
+// node_modules/@ringcentral/juno/es6/icon/Join.js
+import React230, { forwardRef as forwardRef213, memo as memo200 } from "react";
+var __assign208 = function() {
+  __assign208 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign208.apply(this, arguments);
+};
+var Join = memo200(forwardRef213(function(props, svgRef) {
+  return React230.createElement("svg", __assign208({ viewBox: "0 0 27 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React230.createElement("path", { d: "M2.667 5.49h21.02a2.667 2.667 0 012.667 2.667v21.02a2.667 2.667 0 01-2.667 2.667H2.667A2.667 2.667 0 010 29.177V8.157A2.667 2.667 0 012.667 5.49zm.666 3.334V28.51h19.686V8.824H3.333zM13.176 0a5.49 5.49 0 015.49 5.49h-3.294a2.196 2.196 0 10-4.392 0H7.686A5.49 5.49 0 0113.176 0z" }), React230.createElement("path", { d: "M14.274 19.765a5.49 5.49 0 015.49 5.49h-2.196a3.294 3.294 0 00-3.294-3.294h-2.196a3.294 3.294 0 00-3.294 3.294H6.588l.007-.274a5.49 5.49 0 015.483-5.216zm-1.098-8.785a3.294 3.294 0 110 6.589 3.294 3.294 0 010-6.589zm0 2.196a1.099 1.099 0 10.001 2.197 1.099 1.099 0 00-.001-2.197z" }));
+}));
+Join.displayName = "Join";
+Join["iconName"] = "join";
+var Join_default = Join;
+
+// node_modules/@ringcentral/juno/es6/icon/JumpToLatest.js
+import React231, { forwardRef as forwardRef214, memo as memo201 } from "react";
+var __assign209 = function() {
+  __assign209 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign209.apply(this, arguments);
+};
+var JumpToLatest = memo201(forwardRef214(function(props, svgRef) {
+  return React231.createElement("svg", __assign209({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React231.createElement("path", { d: "M6.101 17.101a.999.999 0 011.414 0L15 24.586V5a1 1 0 012 0v19.588l7.486-7.488a.999.999 0 111.414 1.414l-9.192 9.192a.999.999 0 01-1.414 0l-9.192-9.192a.999.999 0 010-1.414z" }));
+}));
+JumpToLatest.displayName = "JumpToLatest";
+JumpToLatest["iconName"] = "jump-to-latest";
+var JumpToLatest_default = JumpToLatest;
+
+// node_modules/@ringcentral/juno/es6/icon/JumpToUnread.js
+import React232, { forwardRef as forwardRef215, memo as memo202 } from "react";
+var __assign210 = function() {
+  __assign210 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign210.apply(this, arguments);
+};
+var JumpToUnread = memo202(forwardRef215(function(props, svgRef) {
+  return React232.createElement("svg", __assign210({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React232.createElement("path", { d: "M6.101 14.899a.999.999 0 001.414 0L15 7.413v19.586a1 1 0 002 0V7.411l7.486 7.488a.999.999 0 101.414-1.414l-9.192-9.192a.999.999 0 00-1.414 0l-9.192 9.192a.999.999 0 000 1.414z" }));
+}));
+JumpToUnread.displayName = "JumpToUnread";
+JumpToUnread["iconName"] = "jump-to-unread";
+var JumpToUnread_default = JumpToUnread;
+
+// node_modules/@ringcentral/juno/es6/icon/Keypad.js
+import React233, { forwardRef as forwardRef216, memo as memo203 } from "react";
+var __assign211 = function() {
+  __assign211 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign211.apply(this, arguments);
+};
+var Keypad = memo203(forwardRef216(function(props, svgRef) {
+  return React233.createElement("svg", __assign211({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React233.createElement("path", { d: "M7 22a3 3 0 110 6 3 3 0 010-6zm9 0a3 3 0 110 6 3 3 0 010-6zm9 0a3 3 0 110 6 3 3 0 010-6zM7 13a3 3 0 110 6 3 3 0 010-6zm9 0a3 3 0 110 6 3 3 0 010-6zm9 0a3 3 0 110 6 3 3 0 010-6zM7 4a3 3 0 110 6 3 3 0 010-6zm9 0a3 3 0 110 6 3 3 0 010-6zm9 0a3 3 0 110 6 3 3 0 010-6z" }));
+}));
+Keypad.displayName = "Keypad";
+Keypad["iconName"] = "keypad";
+var Keypad_default = Keypad;
+
+// node_modules/@ringcentral/juno/es6/icon/LeaveMeeting.js
+import React234, { forwardRef as forwardRef217, memo as memo204 } from "react";
+var __assign212 = function() {
+  __assign212 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign212.apply(this, arguments);
+};
+var LeaveMeeting = memo204(forwardRef217(function(props, svgRef) {
+  return React234.createElement("svg", __assign212({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React234.createElement("path", { d: "M30.825 21.116a3.86 3.86 0 01-2.674.85l-.245-.026-5.332-.752c-1.588-.217-2.603-1.034-2.697-2.177l-.007-.193.012-.872c-.012-.608-.388-.945-1.403-1.042a30.137 30.137 0 00-2.5-.125 43.57 43.57 0 00-2.932.102c-.971.063-1.344.371-1.386.911l-.004.119.014.879c.032 1.172-.88 2.012-2.406 2.298l-.26.042-4.872.709c-1.326.187-2.23-.088-2.998-.72-.534-.44-.936-1.186-1.084-1.909l-.04-.24L0 18.691c-.003-1.909.587-3.357 2.115-4.616 3.28-2.703 7.246-4.015 13.718-4.074 6.49-.058 10.759 1.396 13.733 3.847 1.814 1.495 2.359 2.83 2.428 4.743l.007.307-.073.451c-.146.7-.543 1.306-1.102 1.767z" }));
+}));
+LeaveMeeting.displayName = "LeaveMeeting";
+LeaveMeeting["iconName"] = "leave-meeting";
+var LeaveMeeting_default = LeaveMeeting;
+
+// node_modules/@ringcentral/juno/es6/icon/Leave.js
+import React235, { forwardRef as forwardRef218, memo as memo205 } from "react";
+var __assign213 = function() {
+  __assign213 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign213.apply(this, arguments);
+};
+var Leave = memo205(forwardRef218(function(props, svgRef) {
+  return React235.createElement("svg", __assign213({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React235.createElement("path", { d: "M11.272 2.688a4.5 4.5 0 015.231 6.274c.309.075.607.2.88.371l4.986-1.336a1.998 1.998 0 011.932.518l2.726 2.797a3 3 0 11-4.243 4.243l-1.094-1.164-1.011.271 2.849 4.747 3.028-.222.234-.009c.242-.005.566-.003.702.009 1.377.118 2.362.715 2.739 2.121a3 3 0 01-2.121 3.674l-6.258.784a1.001 1.001 0 01-.711-.182l-3.374-2.443-1.227.731.963 3.591a3 3 0 01-5.795 1.553L9.93 22.855a3 3 0 011.038-3.131c.137-.116.287-.223.449-.316l1.616-.88-.834-.986-.581.301c-.928.473-1.652.799-2.172.979-.936.323-2.188.514-3.099-.059a2.998 2.998 0 01-.806-.576l-2.958-3.356a3 3 0 114.243-4.243l1.867 1.689 2.037-1.078a4.5 4.5 0 01.543-8.51zm-7.276 9.314a1 1 0 00-.078 1.327l3.036 3.443c.054.054.112.1.173.139l.284.158a1 1 0 00.809.116l-.299.111.525-.207c.793-.31 1.999-.904 3.62-1.781a1 1 0 011.302.267l.064.099 1.825 2.704a1 1 0 01-.269 1.302l-.112.072-2.458 1.387a1.386 1.386 0 00-.208.153 1 1 0 00-.37.927l.024.117 1.778 6.161a1 1 0 001.956-.403l-.024-.114-1.159-4.322a1 1 0 01.477-1.131l2.565-1.338a.998.998 0 011.06.085l3.151 2.35c.213.159.48.226.743.188l5.182-.762a1 1 0 00.707-1.225c-.133-.495-.605-.776-1.111-.731l-1.902.146-2.031.149c-.472.061-.92-.082-1.14-.49l-5.46-9.523a1 1 0 00-1.262-.418l-.104.053-6.927 3.766-2.952-2.774a.999.999 0 00-1.414 0zm14.746-.964l.969 1.811 2.577-.689 1.911 1.98a.999.999 0 001.492-1.327l-.078-.087-2.726-2.797-4.145 1.109zM11.79 4.619a2.5 2.5 0 101.294 4.83 2.5 2.5 0 00-1.294-4.83z" }));
+}));
+Leave.displayName = "Leave";
+Leave["iconName"] = "leave";
+var Leave_default = Leave;
+
+// node_modules/@ringcentral/juno/es6/icon/ListBullet.js
+import React236, { forwardRef as forwardRef219, memo as memo206 } from "react";
+var __assign214 = function() {
+  __assign214 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign214.apply(this, arguments);
+};
+var ListBullet = memo206(forwardRef219(function(props, svgRef) {
+  return React236.createElement("svg", __assign214({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React236.createElement("path", { d: "M6 23a2 2 0 11.001 3.999A2 2 0 016 23zm21 1a1 1 0 010 2H11a1 1 0 010-2h16zM6 14a2 2 0 11.001 3.999A2 2 0 016 14zm21 1a1 1 0 010 2H11a1 1 0 010-2h16zM6 5a2 2 0 11.001 3.999A2 2 0 016 5zm21 1a1 1 0 010 2H11a1 1 0 010-2h16z" }));
+}));
+ListBullet.displayName = "ListBullet";
+ListBullet["iconName"] = "list-bullet";
+var ListBullet_default = ListBullet;
+
+// node_modules/@ringcentral/juno/es6/icon/ListOrdered.js
+import React237, { forwardRef as forwardRef220, memo as memo207 } from "react";
+var __assign215 = function() {
+  __assign215 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign215.apply(this, arguments);
+};
+var ListOrdered = memo207(forwardRef220(function(props, svgRef) {
+  return React237.createElement("svg", __assign215({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React237.createElement("path", { d: "M5.172 21.127c1.285 0 2.215.561 2.215 1.531 0 .715-.429 1.155-1.075 1.322l-.142.032v.041c.957.082 1.436.615 1.436 1.34 0 1.094-.916 1.791-2.434 1.791-1.053 0-2.256-.492-2.256-1.395 0-.369.26-.602.656-.602.219 0 .369.109.52.273.246.301.602.547 1.08.547.492 0 .875-.287.875-.711 0-.416-.303-.647-.866-.679l-.146-.004h-.219c-.342 0-.561-.205-.561-.52 0-.32.177-.507.462-.541l.099-.006h.205c.574 0 .93-.232.93-.629 0-.438-.328-.67-.793-.67-.328 0-.581.097-.834.368l-.095.11c-.178.219-.301.314-.574.314-.355 0-.602-.232-.602-.574 0-.848 1.094-1.34 2.119-1.34zm-.027-8.285c1.367 0 2.242.711 2.242 1.736 0 .702-.274 1.118-1.077 1.826l-.18.156-1.176.998v.041h2.064c.328 0 .561.219.561.588a.544.544 0 01-.468.554l-.092.007H3.601c-.397 0-.656-.26-.656-.629a.81.81 0 01.237-.6l.091-.084 1.764-1.518c.697-.588.875-.861.875-1.23 0-.396-.314-.684-.738-.684-.377 0-.645.151-.825.434l-.063.112c-.15.301-.342.396-.629.396-.383 0-.643-.205-.643-.602 0-.82.889-1.504 2.133-1.504zM27 24a1 1 0 010 2H11a1 1 0 010-2h16zm0-9a1 1 0 010 2H11a1 1 0 010-2h16zM5.596 4.543c.48 0 .819.28.869.731l.006.116v4.43c0 .533-.314.793-.779.793-.442 0-.732-.221-.774-.675l-.005-.118V6.074h-.027l-.684.492c-.219.15-.301.178-.465.178a.532.532 0 01-.547-.547c0-.223.1-.365.301-.522l.109-.08.984-.684c.301-.219.561-.369 1.012-.369zM27 6a1 1 0 010 2H11a1 1 0 010-2h16z" }));
+}));
+ListOrdered.displayName = "ListOrdered";
+ListOrdered["iconName"] = "list-ordered";
+var ListOrdered_default = ListOrdered;
+
+// node_modules/@ringcentral/juno/es6/icon/ListView.js
+import React238, { forwardRef as forwardRef221, memo as memo208 } from "react";
+var __assign216 = function() {
+  __assign216 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign216.apply(this, arguments);
+};
+var ListView = memo208(forwardRef221(function(props, svgRef) {
+  return React238.createElement("svg", __assign216({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React238.createElement("path", { d: "M26.667 22.667a1.333 1.333 0 010 2.666H5.334a1.333 1.333 0 010-2.666h21.333zm0-8a1.333 1.333 0 010 2.666H5.334a1.333 1.333 0 010-2.666h21.333zm0-8a1.333 1.333 0 010 2.666H5.334a1.333 1.333 0 010-2.666h21.333z" }));
+}));
+ListView.displayName = "ListView";
+ListView["iconName"] = "list-view";
+var ListView_default = ListView;
+
+// node_modules/@ringcentral/juno/es6/icon/LocationBorder.js
+import React239, { forwardRef as forwardRef222, memo as memo209 } from "react";
+var __assign217 = function() {
+  __assign217 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign217.apply(this, arguments);
+};
+var LocationBorder = memo209(forwardRef222(function(props, svgRef) {
+  return React239.createElement("svg", __assign217({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React239.createElement("path", { d: "M16 2c6.627 0 12 5.373 12 12 0 4.418-4 10.418-12 18C8 24.418 4 18.418 4 14 4 7.373 9.373 2 16 2zm0 2C10.477 4 6 8.477 6 14c0 3.433 3.233 8.527 9.801 15.024l.199.196.199-.196c6.442-6.372 9.675-11.395 9.797-14.824L26 14c0-5.523-4.477-10-10-10zm0 4a5 5 0 11-.001 10.001A5 5 0 0116 8zm0 2a3 3 0 100 6 3 3 0 000-6z" }));
+}));
+LocationBorder.displayName = "LocationBorder";
+LocationBorder["iconName"] = "location_border";
+var LocationBorder_default = LocationBorder;
+
+// node_modules/@ringcentral/juno/es6/icon/Location.js
+import React240, { forwardRef as forwardRef223, memo as memo210 } from "react";
+var __assign218 = function() {
+  __assign218 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign218.apply(this, arguments);
+};
+var Location = memo210(forwardRef223(function(props, svgRef) {
+  return React240.createElement("svg", __assign218({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React240.createElement("path", { d: "M16 2c6.627 0 12 5.373 12 12 0 4.418-4 10.418-12 18C8 24.418 4 18.418 4 14 4 7.373 9.373 2 16 2zm0 7a4 4 0 100 8 4 4 0 000-8z" }));
+}));
+Location.displayName = "Location";
+Location["iconName"] = "location";
+var Location_default = Location;
+
+// node_modules/@ringcentral/juno/es6/icon/LockBorder.js
+import React241, { forwardRef as forwardRef224, memo as memo211 } from "react";
+var __assign219 = function() {
+  __assign219 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign219.apply(this, arguments);
+};
+var LockBorder = memo211(forwardRef224(function(props, svgRef) {
+  return React241.createElement("svg", __assign219({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React241.createElement("path", { d: "M16 2a6 6 0 016 6l-.001 6H24a2 2 0 011.994 1.851L26 16v12a2 2 0 01-1.851 1.994L24 30H8a2.001 2.001 0 01-1.995-1.851L6 28V16c0-1.054.816-1.918 1.851-1.995L8 14h1.999L10 8a6 6 0 016-6zm7 14H9a1 1 0 00-.993.883L8 17v10a1 1 0 00.883.993L9 28h14a1 1 0 00.993-.883L24 27V17a1 1 0 00-.883-.993L23 16zm-7 3a1 1 0 011 1v4a1 1 0 01-2 0v-4a1 1 0 011-1zm0-15a4 4 0 00-3.995 3.8L12 8l-.001 6h8L20 8a4 4 0 00-3.8-3.995L16 4z" }));
+}));
+LockBorder.displayName = "LockBorder";
+LockBorder["iconName"] = "lock_border";
+var LockBorder_default = LockBorder;
+
+// node_modules/@ringcentral/juno/es6/icon/Lock.js
+import React242, { forwardRef as forwardRef225, memo as memo212 } from "react";
+var __assign220 = function() {
+  __assign220 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign220.apply(this, arguments);
+};
+var Lock = memo212(forwardRef225(function(props, svgRef) {
+  return React242.createElement("svg", __assign220({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React242.createElement("path", { d: "M16 2a6 6 0 016 6l-.001 6H24a2 2 0 011.994 1.851L26 16v12a2 2 0 01-1.851 1.994L24 30H8a2.001 2.001 0 01-1.995-1.851L6 28V16c0-1.054.816-1.918 1.851-1.995L8 14h1.999L10 8a6 6 0 016-6zm0 17a1 1 0 00-.993.883L15 20v4a1 1 0 001.993.117L17 24v-4a1 1 0 00-1-1zm0-15a4 4 0 00-3.995 3.8L12 8l-.001 6h8L20 8a4 4 0 00-3.8-3.995L16 4z" }));
+}));
+Lock.displayName = "Lock";
+Lock["iconName"] = "lock";
+var Lock_default = Lock;
+
+// node_modules/@ringcentral/juno/es6/icon/Login.js
+import React243, { forwardRef as forwardRef226, memo as memo213 } from "react";
+var __assign221 = function() {
+  __assign221 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign221.apply(this, arguments);
+};
+var Login = memo213(forwardRef226(function(props, svgRef) {
+  return React243.createElement("svg", __assign221({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React243.createElement("path", { d: "M27 29H12a2.002 2.002 0 01-2-2v-2a1 1 0 012 0v1a1 1 0 001 1h13a1 1 0 001-1V6a1 1 0 00-1-1H13a1 1 0 00-1 1v1a1 1 0 01-2 0V5a2.002 2.002 0 012-2h15a2.002 2.002 0 012 2v22a2.002 2.002 0 01-2 2zm-12.707-9.121L17.172 17H4a1 1 0 010-2h13.172l-2.879-2.879a1 1 0 011.414-1.414l4.586 4.586a.999.999 0 010 1.414l-4.586 4.586a1 1 0 01-1.414-1.414z" }));
+}));
+Login.displayName = "Login";
+Login["iconName"] = "login";
+var Login_default = Login;
+
+// node_modules/@ringcentral/juno/es6/icon/MacKeynoteD.js
+import React244, { forwardRef as forwardRef227, memo as memo214 } from "react";
+var __assign222 = function() {
+  __assign222 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign222.apply(this, arguments);
+};
+var MacKeynoteD = memo214(forwardRef227(function(props, svgRef) {
+  return React244.createElement("svg", __assign222({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React244.createElement("path", { fill: "var(--color21, #223642)", d: "M3.556 0h24.889a3.556 3.556 0 013.556 3.556v24.889a3.556 3.556 0 01-3.556 3.556H3.556A3.556 3.556 0 010 28.445V3.556A3.556 3.556 0 013.556 0z" }), React244.createElement("path", { fill: "var(--color22, #039dfa)", d: "M24.889 16a8.894 8.894 0 01-5.787 8.333 8.864 8.864 0 01-3.102.556 8.876 8.876 0 01-3.163-.579A8.89 8.89 0 1124.889 16z" }), React244.createElement("path", { fill: "var(--color20, #f1f1f1)", d: "M16.406 18.258v5.307c0 .4.319.724.713.724h1.911c.059 0 .116.015.165.041a8.67 8.67 0 01-3.07.558 8.68 8.68 0 01-3.13-.581.357.357 0 01.113-.019h1.911a.72.72 0 00.714-.724v-5.307h.673zm6.73-1.138a.678.678 0 01-.673.683H9.788a.678.678 0 01-.673-.683zm-7.533-8.724a.62.62 0 01.615.624v.133a.62.62 0 01-.615.624h-1.387a.616.616 0 01-.591-.452H11.89a.556.556 0 00-.551.559v.788h10.283c.367 0 .671.291.691.663l.298 5.33H9.525l.298-5.33a.697.697 0 01.691-.663h.412v-.788a.97.97 0 01.962-.976h1.722a.618.618 0 01.605-.512z" }));
+}));
+MacKeynoteD.displayName = "MacKeynoteD";
+MacKeynoteD["iconName"] = "mac-keynote-D";
+var MacKeynoteD_default = MacKeynoteD;
+
+// node_modules/@ringcentral/juno/es6/icon/MacKeynote.js
+import React245, { forwardRef as forwardRef228, memo as memo215 } from "react";
+var __assign223 = function() {
+  __assign223 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign223.apply(this, arguments);
+};
+var __rest20 = function(s2, e2) {
+  var t2 = {};
+  for (var p in s2)
+    if (Object.prototype.hasOwnProperty.call(s2, p) && e2.indexOf(p) < 0)
+      t2[p] = s2[p];
+  if (s2 != null && typeof Object.getOwnPropertySymbols === "function")
+    for (var i2 = 0, p = Object.getOwnPropertySymbols(s2); i2 < p.length; i2++) {
+      if (e2.indexOf(p[i2]) < 0 && Object.prototype.propertyIsEnumerable.call(s2, p[i2]))
+        t2[p[i2]] = s2[p[i2]];
+    }
+  return t2;
+};
+var MacKeynote = memo215(forwardRef228(function(inProps, svgRef) {
+  var theme = RcUseTheme();
+  var _a2 = inProps.themeType, themeType = _a2 === void 0 ? theme.palette.type : _a2, props = __rest20(inProps, ["themeType"]);
+  return themeType === "dark" ? React245.createElement(MacKeynoteD_default, __assign223({}, props, { ref: svgRef })) : React245.createElement("svg", __assign223({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React245.createElement("path", { fill: "var(--color25, #fff)", opacity: 0.992, d: "M3.556 0h24.889a3.556 3.556 0 013.556 3.556v24.889a3.556 3.556 0 01-3.556 3.556H3.556A3.556 3.556 0 010 28.445V3.556A3.556 3.556 0 013.556 0z" }), React245.createElement("path", { fill: "var(--color22, #039dfa)", opacity: 0.16, d: "M3.556 0h24.889a3.556 3.556 0 013.556 3.556v24.889a3.556 3.556 0 01-3.556 3.556H3.556A3.556 3.556 0 010 28.445V3.556A3.556 3.556 0 013.556 0z" }), React245.createElement("path", { fill: "var(--color22, #039dfa)", d: "M24.889 16a8.894 8.894 0 01-5.787 8.333 8.864 8.864 0 01-3.102.556 8.876 8.876 0 01-3.163-.579A8.89 8.89 0 1124.889 16z" }), React245.createElement("path", { fill: "var(--color50, #f2f2f2)", d: "M9.114 17.12c0 .377.301.683.673.683h12.675a.678.678 0 00.673-.683H9.114zM19.195 24.33a8.67 8.67 0 01-3.07.558 8.68 8.68 0 01-3.13-.581.357.357 0 01.113-.019h1.911a.72.72 0 00.714-.724v-5.307h.673v5.307c0 .4.319.724.713.724h1.911c.059 0 .116.015.165.041zM22.314 11.334a.697.697 0 00-.691-.663H11.34v-.788c0-.308.247-.559.551-.559h1.735c.074.261.31.452.591.452h1.387a.62.62 0 00.615-.624v-.133a.62.62 0 00-.615-.624h-1.387a.618.618 0 00-.605.512H11.89a.97.97 0 00-.962.976v.788h-.412a.696.696 0 00-.691.663l-.298 5.33h13.086l-.298-5.33z" }));
+}));
+MacKeynote.displayName = "MacKeynote";
+MacKeynote["iconName"] = "mac-keynote";
+var MacKeynote_default = MacKeynote;
+
+// node_modules/@ringcentral/juno/es6/icon/MacNumbersD.js
+import React246, { forwardRef as forwardRef229, memo as memo216 } from "react";
+var __assign224 = function() {
+  __assign224 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign224.apply(this, arguments);
+};
+var MacNumbersD = memo216(forwardRef229(function(props, svgRef) {
+  return React246.createElement("svg", __assign224({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React246.createElement("path", { fill: "var(--color18, #2a3d27)", d: "M3.556 0h24.889a3.556 3.556 0 013.556 3.556v24.889a3.556 3.556 0 01-3.556 3.556H3.556A3.556 3.556 0 010 28.445V3.556A3.556 3.556 0 013.556 0z" }), React246.createElement("path", { fill: "var(--color19, #54cb43)", d: "M22.667 7.111c1.227 0 2.222.995 2.222 2.222v13.333a2.222 2.222 0 01-2.222 2.222H9.334a2.222 2.222 0 01-2.222-2.222V9.333c0-1.227.995-2.222 2.222-2.222h13.333z" }), React246.createElement("path", { fill: "var(--color20, #f1f1f1)", d: "M22.389 21v.556H9.611V21h12.778zm-3.333-10.556v10h-2.778v-10h2.778zm-6.667 8.334v1.667H9.611v-1.667h2.778zM15.722 16v4.444h-2.778V16h2.778zm6.667-2.778v7.222h-2.778v-7.222h2.778z" }));
+}));
+MacNumbersD.displayName = "MacNumbersD";
+MacNumbersD["iconName"] = "mac-numbers-D";
+var MacNumbersD_default = MacNumbersD;
+
+// node_modules/@ringcentral/juno/es6/icon/MacNumbers.js
+import React247, { forwardRef as forwardRef230, memo as memo217 } from "react";
+var __assign225 = function() {
+  __assign225 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign225.apply(this, arguments);
+};
+var __rest21 = function(s2, e2) {
+  var t2 = {};
+  for (var p in s2)
+    if (Object.prototype.hasOwnProperty.call(s2, p) && e2.indexOf(p) < 0)
+      t2[p] = s2[p];
+  if (s2 != null && typeof Object.getOwnPropertySymbols === "function")
+    for (var i2 = 0, p = Object.getOwnPropertySymbols(s2); i2 < p.length; i2++) {
+      if (e2.indexOf(p[i2]) < 0 && Object.prototype.propertyIsEnumerable.call(s2, p[i2]))
+        t2[p[i2]] = s2[p[i2]];
+    }
+  return t2;
+};
+var MacNumbers = memo217(forwardRef230(function(inProps, svgRef) {
+  var theme = RcUseTheme();
+  var _a2 = inProps.themeType, themeType = _a2 === void 0 ? theme.palette.type : _a2, props = __rest21(inProps, ["themeType"]);
+  return themeType === "dark" ? React247.createElement(MacNumbersD_default, __assign225({}, props, { ref: svgRef })) : React247.createElement("svg", __assign225({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React247.createElement("path", { fill: "var(--color25, #fff)", opacity: 0.992, d: "M3.556 0h24.889a3.556 3.556 0 013.556 3.556v24.889a3.556 3.556 0 01-3.556 3.556H3.556A3.556 3.556 0 010 28.445V3.556A3.556 3.556 0 013.556 0z" }), React247.createElement("path", { fill: "var(--color19, #54cb43)", opacity: 0.16, d: "M3.556 0h24.889a3.556 3.556 0 013.556 3.556v24.889a3.556 3.556 0 01-3.556 3.556H3.556A3.556 3.556 0 010 28.445V3.556A3.556 3.556 0 013.556 0z" }), React247.createElement("path", { fill: "var(--color19, #54cb43)", d: "M22.667 7.111c1.227 0 2.222.995 2.222 2.222v13.333a2.222 2.222 0 01-2.222 2.222H9.334a2.222 2.222 0 01-2.222-2.222V9.333c0-1.227.995-2.222 2.222-2.222h13.333zM22.389 21H9.611v.556h12.778V21zm-10-2.222H9.611v1.667h2.778v-1.667zM15.722 16h-2.778v4.444h2.778V16zm3.334-5.556h-2.778v10h2.778v-10zm3.333 2.778h-2.778v7.222h2.778v-7.222z" }));
+}));
+MacNumbers.displayName = "MacNumbers";
+MacNumbers["iconName"] = "mac-numbers";
+var MacNumbers_default = MacNumbers;
+
+// node_modules/@ringcentral/juno/es6/icon/MacPagesD.js
+import React248, { forwardRef as forwardRef231, memo as memo218 } from "react";
+var __assign226 = function() {
+  __assign226 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign226.apply(this, arguments);
+};
+var MacPagesD = memo218(forwardRef231(function(props, svgRef) {
+  return React248.createElement("svg", __assign226({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React248.createElement("path", { fill: "var(--color23, #2f291e)", d: "M3.556 0h24.889a3.556 3.556 0 013.556 3.556v24.889a3.556 3.556 0 01-3.556 3.556H3.556A3.556 3.556 0 010 28.445V3.556A3.556 3.556 0 013.556 0z" }), React248.createElement("path", { fill: "var(--color24, #ffbc31)", d: "M22.667 7.111c1.227 0 2.222.995 2.222 2.222v11.689H11.163a.191.191 0 00-.039.378l.038.004h13.726v1.263a2.222 2.222 0 01-2.222 2.222H9.333a2.222 2.222 0 01-2.222-2.222V9.334c0-1.227.995-2.222 2.222-2.222h13.333z" }), React248.createElement("path", { fill: "var(--color25, #fff)", d: "M24.889 21.022v.382L11.125 21.4a.19.19 0 01.039-.378H24.89zM11.537 19.85l.401.395-.496.289-.038.016a.154.154 0 01-.19-.184l.02-.049.303-.466zm7.809-8.311l.872.864-7.088 7.147c-.085.078-.176.15-.272.215l-.147.092-.627.325-.469-.466.344-.63.087-.127c.06-.083.124-.163.192-.239l.105-.111 7.002-7.07zm2.001-1.11a.61.61 0 01.076.781l-.07.086-.982.99-.873-.864.982-.99.054-.048a.612.612 0 01.814.045z" }));
+}));
+MacPagesD.displayName = "MacPagesD";
+MacPagesD["iconName"] = "mac-pages-D";
+var MacPagesD_default = MacPagesD;
+
+// node_modules/@ringcentral/juno/es6/icon/MacPages.js
+import React249, { forwardRef as forwardRef232, memo as memo219 } from "react";
+var __assign227 = function() {
+  __assign227 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign227.apply(this, arguments);
+};
+var __rest22 = function(s2, e2) {
+  var t2 = {};
+  for (var p in s2)
+    if (Object.prototype.hasOwnProperty.call(s2, p) && e2.indexOf(p) < 0)
+      t2[p] = s2[p];
+  if (s2 != null && typeof Object.getOwnPropertySymbols === "function")
+    for (var i2 = 0, p = Object.getOwnPropertySymbols(s2); i2 < p.length; i2++) {
+      if (e2.indexOf(p[i2]) < 0 && Object.prototype.propertyIsEnumerable.call(s2, p[i2]))
+        t2[p[i2]] = s2[p[i2]];
+    }
+  return t2;
+};
+var MacPages = memo219(forwardRef232(function(inProps, svgRef) {
+  var theme = RcUseTheme();
+  var _a2 = inProps.themeType, themeType = _a2 === void 0 ? theme.palette.type : _a2, props = __rest22(inProps, ["themeType"]);
+  return themeType === "dark" ? React249.createElement(MacPagesD_default, __assign227({}, props, { ref: svgRef })) : React249.createElement("svg", __assign227({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React249.createElement("path", { fill: "var(--color25, #fff)", opacity: 0.992, d: "M3.556 0h24.889a3.556 3.556 0 013.556 3.556v24.889a3.556 3.556 0 01-3.556 3.556H3.556A3.556 3.556 0 010 28.445V3.556A3.556 3.556 0 013.556 0z" }), React249.createElement("path", { fill: "var(--color24, #ffbc31)", opacity: 0.16, d: "M3.556 0h24.889a3.556 3.556 0 013.556 3.556v24.889a3.556 3.556 0 01-3.556 3.556H3.556A3.556 3.556 0 010 28.445V3.556A3.556 3.556 0 013.556 0z" }), React249.createElement("path", { fill: "var(--color24, #ffbc31)", d: "M22.667 7.111c1.227 0 2.222.995 2.222 2.222v11.689H11.163a.191.191 0 00-.039.378l.038.004h13.726v1.263a2.222 2.222 0 01-2.222 2.222H9.333a2.222 2.222 0 01-2.222-2.222V9.334c0-1.227.995-2.222 2.222-2.222h13.333zM11.537 19.85l-.303.466a.157.157 0 00.022.194.154.154 0 00.148.04l.038-.016.496-.289-.401-.395zm7.809-8.311l-7.002 7.07a2.863 2.863 0 00-.298.351l-.087.127-.344.63.469.466.627-.325c.15-.087.291-.19.419-.308l.094-.091 6.994-7.057-.872-.864zm2.001-1.11a.612.612 0 00-.814-.045l-.054.048-.982.99.873.864.982-.99a.613.613 0 00-.005-.867z" }));
+}));
+MacPages.displayName = "MacPages";
+MacPages["iconName"] = "mac-pages";
+var MacPages_default = MacPages;
+
+// node_modules/@ringcentral/juno/es6/icon/MarkerM.js
+import React250, { forwardRef as forwardRef233, memo as memo220 } from "react";
+var __assign228 = function() {
+  __assign228 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign228.apply(this, arguments);
+};
+var MarkerM = memo220(forwardRef233(function(props, svgRef) {
+  return React250.createElement("svg", __assign228({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React250.createElement("path", { fill: "var(--color25, #fff)", d: "M15.76 28.205l.662-.632.675-.651c5.969-5.818 8.982-10.512 8.982-14.218 0-5.776-4.617-10.464-10.32-10.464S5.439 6.928 5.439 12.704c0 3.843 3.24 8.75 9.658 14.869l.662.632zm-8.4-15.501c0-4.722 3.764-8.544 8.4-8.544s8.4 3.822 8.4 8.544c0 2.982-2.679 7.203-8.091 12.538l-.309.303c-5.619-5.478-8.4-9.802-8.4-12.841z" }), React250.createElement("path", { fill: "var(--color74, #ffd800)", d: "M7.36 12.704c0-4.722 3.764-8.544 8.4-8.544s8.4 3.822 8.4 8.544c0 2.982-2.679 7.203-8.091 12.538l-.309.303c-5.619-5.478-8.4-9.802-8.4-12.841z" }));
+}));
+MarkerM.displayName = "MarkerM";
+MarkerM["iconName"] = "marker_m";
+var MarkerM_default = MarkerM;
+
+// node_modules/@ringcentral/juno/es6/icon/MarkerS.js
+import React251, { forwardRef as forwardRef234, memo as memo221 } from "react";
+var __assign229 = function() {
+  __assign229 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign229.apply(this, arguments);
+};
+var MarkerS = memo221(forwardRef234(function(props, svgRef) {
+  return React251.createElement("svg", __assign229({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React251.createElement("path", { fill: "var(--color25, #fff)", d: "M14.671 28.015l1.079 1.032.69-.658C23.125 22.015 26.5 16.904 26.5 12.9 26.5 6.884 21.691 2 15.75 2S5 6.883 5 12.9c0 3.925 3.244 8.914 9.671 15.115zM7 12.9C7 7.981 10.921 4 15.75 4s8.75 3.981 8.75 8.9c0 3.098-2.775 7.479-8.38 13.013l-.37.363C9.897 20.57 7 16.065 7 12.9z" }), React251.createElement("path", { fill: "var(--color52, #4475fd)", d: "M7 12.9C7 7.981 10.921 4 15.75 4s8.75 3.981 8.75 8.9c0 3.098-2.775 7.479-8.38 13.013l-.37.363C9.897 20.57 7 16.065 7 12.9z" }));
+}));
+MarkerS.displayName = "MarkerS";
+MarkerS["iconName"] = "marker_s";
+var MarkerS_default = MarkerS;
+
+// node_modules/@ringcentral/juno/es6/icon/MemberBorder.js
+import React252, { forwardRef as forwardRef235, memo as memo222 } from "react";
+var __assign230 = function() {
+  __assign230 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign230.apply(this, arguments);
+};
+var MemberBorder = memo222(forwardRef235(function(props, svgRef) {
+  return React252.createElement("svg", __assign230({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React252.createElement("path", { d: "M16 18c7.067 0 13 4.315 13 10a2 2 0 01-2 2H5a2 2 0 01-2-2c0-5.685 5.933-10 13-10zm0 2c-5.736 0-10.447 3.193-10.955 7.269-.063.503.17.731.567.731H26.53c.239 0 .48-.158.444-.551C26.585 23.288 21.82 20 16 20zm0-18a7 7 0 110 14 7 7 0 010-14zm0 2a5 5 0 10.001 10.001A5 5 0 0016 4z" }));
+}));
+MemberBorder.displayName = "MemberBorder";
+MemberBorder["iconName"] = "member_border";
+var MemberBorder_default = MemberBorder;
+
+// node_modules/@ringcentral/juno/es6/icon/MentionBorder.js
+import React253, { forwardRef as forwardRef236, memo as memo223 } from "react";
+var __assign231 = function() {
+  __assign231 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign231.apply(this, arguments);
+};
+var MentionBorder = memo223(forwardRef236(function(props, svgRef) {
+  return React253.createElement("svg", __assign231({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React253.createElement("path", { d: "M2 16c0 8.366 6.205 14 14 14 2.107 0 4.113-.292 5.357-.698.876-.279 1.155-.736 1.155-1.206s-.368-.825-.838-.825c-.122 0-.276.016-.457.055l-.14.034c-1.549.381-2.882.635-4.672.635-6.944 0-12.223-4.745-12.223-11.918 0-6.868 5.063-12.083 11.791-12.083 5.954 0 12.007 4.007 12.007 10.596 0 3.847-2.371 6.599-4.466 6.599-1.396 0-2.184-.813-2.184-2.196v-8.607c0-.686-.381-1.104-1.028-1.104-.635 0-1.028.419-1.028 1.104v1.447h-.114c-.647-1.562-2.234-2.552-4.126-2.552-3.288 0-5.599 2.806-5.599 6.83 0 4.063 2.298 6.894 5.649 6.894 1.968 0 3.491-1.066 4.228-2.869h.114c.241 1.79 1.752 2.882 3.758 2.882 3.542 0 6.814-3.641 6.814-8.516 0-7.376-6.497-12.5-14-12.5-7.884 0-14 5.824-14 14zm13.313 5.25c-2.272 0-3.72-1.892-3.72-4.9 0-2.958 1.46-4.85 3.732-4.85 2.336 0 3.809 1.854 3.809 4.799 0 3.009-1.511 4.951-3.821 4.951z" }));
+}));
+MentionBorder.displayName = "MentionBorder";
+MentionBorder["iconName"] = "mention_border";
+var MentionBorder_default = MentionBorder;
+
+// node_modules/@ringcentral/juno/es6/icon/Mention.js
+import React254, { forwardRef as forwardRef237, memo as memo224 } from "react";
+var __assign232 = function() {
+  __assign232 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign232.apply(this, arguments);
+};
+var Mention = memo224(forwardRef237(function(props, svgRef) {
+  return React254.createElement("svg", __assign232({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React254.createElement("path", { d: "M16 2c7.755 0 14 5.37 14 12.554 0 4.812-3.235 8.711-7.071 8.711-1.666 0-3.019-.715-3.692-1.915l-.1-.194-.03.046c-.807 1.176-2.027 1.895-3.489 2.027l-.261.017-.239.005c-3.525 0-5.948-2.964-5.948-7.147 0-4.133 2.424-7.086 5.899-7.086 1.279 0 2.439.429 3.296 1.179l.179.165.117.12.003-.051c.054-.746.51-1.276 1.199-1.39l.141-.017.147-.006c.856 0 1.426.564 1.486 1.412l.005.153v8.3c0 1.067.544 1.618 1.606 1.618 1.877 0 3.806-2.639 3.806-5.863 0-5.623-5.063-9.717-11.078-9.717-6.2 0-10.87 4.793-10.87 11.151 0 6.5 4.719 10.992 11.286 10.992 1.371 0 2.455-.143 3.965-.497l.569-.137a2.62 2.62 0 01.546-.065 1.29 1.29 0 011.308 1.296c0 .753-.5 1.333-1.459 1.638-1.31.428-3.32.698-5.321.698-7.986 0-14-5.844-14-14 0-8.064 6.024-14 14-14zm-.556 10.346c-1.884 0-3.098 1.567-3.098 4.149 0 2.628 1.201 4.197 3.086 4.197 1.924 0 3.184-1.62 3.184-4.246 0-2.568-1.223-4.1-3.171-4.1z" }));
+}));
+Mention.displayName = "Mention";
+Mention["iconName"] = "mention";
+var Mention_default = Mention;
+
+// node_modules/@ringcentral/juno/es6/icon/Merge.js
+import React255, { forwardRef as forwardRef238, memo as memo225 } from "react";
+var __assign233 = function() {
+  __assign233 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign233.apply(this, arguments);
+};
+var Merge = memo225(forwardRef238(function(props, svgRef) {
+  return React255.createElement("svg", __assign233({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React255.createElement("path", { d: "M23.221 12.175c.312.457.108.828-.439.828h-5.074l.002.813c.008.593.036-.467-.015.708-.059 1.373.436 2.492 1.285 3.516.701.846 1.523 1.523 2.451 2.104.874.548 1.748 1.121 2.522 1.799 1.454 1.272 2.151 2.994 2.553 4.846.416 1.919.461 3.954.461 3.954a.482.482 0 01-.489.505h-2.432a.53.53 0 01-.514-.406l-.011-.087s-.03-1.06-.081-1.829c-.097-1.479-.27-1.465-.818-2.86a4.394 4.394 0 00-1.857-2.207c-.736-.449-1.474-.896-2.19-1.378-1.032-.696-1.871-1.595-2.576-2.659l-.092.094a.253.253 0 00-.033.042c-.848 1.289-1.978 2.272-3.285 3.062l-.824.505-.417.243c-1.212.676-1.901 1.739-2.264 3.051l-.238.867c-.268 1.005-.352 1.512-.38 2.753l-.006.326a.488.488 0 01-.496.474H5.495a.468.468 0 01-.471-.403l-.004-.089s.065-3.058.867-5.46c.64-1.919 1.848-3.386 3.534-4.467.436-.279.873-.557 1.323-.813 1.104-.63 1.956-1.527 2.687-2.55.53-.741.807-1.564.793-2.495l-.002-1.933H9.786c-.354 0-.463-.32-.357-.586l.022-.05 6.041-10.536c.254-.443.659-.472.938-.091l.738 1.209c2.41 3.898 6.051 9.198 6.051 9.198z" }));
+}));
+Merge.displayName = "Merge";
+Merge["iconName"] = "merge";
+var Merge_default = Merge;
+
+// node_modules/@ringcentral/juno/es6/icon/MicBorder.js
+import React256, { forwardRef as forwardRef239, memo as memo226 } from "react";
+var __assign234 = function() {
+  __assign234 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign234.apply(this, arguments);
+};
+var MicBorder = memo226(forwardRef239(function(props, svgRef) {
+  return React256.createElement("svg", __assign234({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React256.createElement("path", { d: "M24 12a1 1 0 011 1v3c0 4.632-3.5 8.447-7.999 8.945L17 29a1 1 0 01-2 0v-4.055A9 9 0 017 16v-3a1 1 0 012 0v3a7 7 0 1014 0v-3a1 1 0 011-1zM16 2a5 5 0 015 5v9a5 5 0 01-10 0V7a5 5 0 015-5zm0 2a3 3 0 00-3 3v9a3 3 0 106 0V7a3 3 0 00-3-3z" }));
+}));
+MicBorder.displayName = "MicBorder";
+MicBorder["iconName"] = "mic_border";
+var MicBorder_default = MicBorder;
+
+// node_modules/@ringcentral/juno/es6/icon/MicOffBorder.js
+import React257, { forwardRef as forwardRef240, memo as memo227 } from "react";
+var __assign235 = function() {
+  __assign235 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign235.apply(this, arguments);
+};
+var MicOffBorder = memo227(forwardRef240(function(props, svgRef) {
+  return React257.createElement("svg", __assign235({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React257.createElement("path", { d: "M24 12a1 1 0 011 1v3c0 4.632-3.5 8.447-7.999 8.945L17 29a1 1 0 01-2 0v-4.055a8.952 8.952 0 01-3.791-1.325l1.461-1.461A7 7 0 0023 16v-3a1 1 0 011-1zm5.435-8.021a.999.999 0 010 1.414L5.393 29.435a.999.999 0 11-1.414-1.414L28.021 3.979a.999.999 0 011.414 0zM21 13.828V16a5 5 0 01-6.827 4.656l1.661-1.66.165.004a3 3 0 003-3v-.172l2-2zM8 12a1 1 0 011 1v3c0 1.206.305 2.341.842 3.332l-1.462 1.46A8.961 8.961 0 017 16v-3a1 1 0 011-1zm8-10a5 5 0 015 5v1.172l-2 2V7a3 3 0 10-6 0v9l.005.167-1.66 1.662A4.978 4.978 0 0111 16V7a5 5 0 015-5z" }));
+}));
+MicOffBorder.displayName = "MicOffBorder";
+MicOffBorder["iconName"] = "mic-off_border";
+var MicOffBorder_default = MicOffBorder;
+
+// node_modules/@ringcentral/juno/es6/icon/MicOff.js
+import React258, { forwardRef as forwardRef241, memo as memo228 } from "react";
+var __assign236 = function() {
+  __assign236 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign236.apply(this, arguments);
+};
+var MicOff = memo228(forwardRef241(function(props, svgRef) {
+  return React258.createElement("svg", __assign236({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React258.createElement("path", { d: "M24 12a1 1 0 011 1v3c0 4.632-3.5 8.447-7.999 8.945L17 29a1 1 0 01-2 0v-4.055a8.952 8.952 0 01-3.791-1.325l1.461-1.461A7 7 0 0023 16v-3a1 1 0 011-1zm5.435-8.021a.999.999 0 010 1.414L5.393 29.435a.999.999 0 11-1.414-1.414L28.021 3.979a.999.999 0 011.414 0zM21 13.828V16a5 5 0 01-6.827 4.656L21 13.828zM8 12a1 1 0 011 1v3c0 1.206.305 2.341.842 3.332l-1.462 1.46A8.961 8.961 0 017 16v-3a1 1 0 011-1zm8-10a5 5 0 015 5v1.172l-9.655 9.656A4.978 4.978 0 0111 15.999v-9a5 5 0 015-5z" }));
+}));
+MicOff.displayName = "MicOff";
+MicOff["iconName"] = "mic-off";
+var MicOff_default = MicOff;
+
+// node_modules/@ringcentral/juno/es6/icon/Mic.js
+import React259, { forwardRef as forwardRef242, memo as memo229 } from "react";
+var __assign237 = function() {
+  __assign237 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign237.apply(this, arguments);
+};
+var Mic = memo229(forwardRef242(function(props, svgRef) {
+  return React259.createElement("svg", __assign237({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React259.createElement("path", { d: "M24 12a1 1 0 011 1v3c0 4.632-3.5 8.447-7.999 8.945L17 29a1 1 0 01-2 0v-4.055A9 9 0 017 16v-3a1 1 0 012 0v3a7 7 0 1014 0v-3a1 1 0 011-1zM16 2a5 5 0 015 5v9a5 5 0 01-10 0V7a5 5 0 015-5z" }));
+}));
+Mic.displayName = "Mic";
+Mic["iconName"] = "mic";
+var Mic_default = Mic;
+
+// node_modules/@ringcentral/juno/es6/icon/MicrosoftLogoDisabled.js
+import React260, { forwardRef as forwardRef243, memo as memo230 } from "react";
+var __assign238 = function() {
+  __assign238 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign238.apply(this, arguments);
+};
+var MicrosoftLogoDisabled = memo230(forwardRef243(function(props, svgRef) {
+  return React260.createElement("svg", __assign238({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React260.createElement("path", { d: "M15.403 15.403H4V4h11.403zM27.997 15.403H16.592V4h11.403v11.403zM15.403 28H4V16.597h11.403zM27.997 28H16.592V16.597h11.403V28z" }));
+}));
+MicrosoftLogoDisabled.displayName = "MicrosoftLogoDisabled";
+MicrosoftLogoDisabled["iconName"] = "microsoft-logo-disabled";
+var MicrosoftLogoDisabled_default = MicrosoftLogoDisabled;
+
+// node_modules/@ringcentral/juno/es6/icon/MicrosoftLogo.js
+import React261, { forwardRef as forwardRef244, memo as memo231 } from "react";
+var __assign239 = function() {
+  __assign239 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign239.apply(this, arguments);
+};
+var MicrosoftLogo = memo231(forwardRef244(function(props, svgRef) {
+  return React261.createElement("svg", __assign239({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React261.createElement("path", { fill: "var(--color43, #f1511b)", d: "M15.403 15.403H4V4h11.403z" }), React261.createElement("path", { fill: "var(--color44, #80cc28)", d: "M27.997 15.403H16.592V4h11.403v11.403z" }), React261.createElement("path", { fill: "var(--color45, #00adef)", d: "M15.403 28H4V16.597h11.403z" }), React261.createElement("path", { fill: "var(--color46, #fbbc09)", d: "M27.997 28H16.592V16.597h11.403V28z" }));
+}));
+MicrosoftLogo.displayName = "MicrosoftLogo";
+MicrosoftLogo["iconName"] = "microsoft-logo";
+var MicrosoftLogo_default = MicrosoftLogo;
+
+// node_modules/@ringcentral/juno/es6/icon/MicrosoftOutlook2019.js
+import React262, { forwardRef as forwardRef245, memo as memo232 } from "react";
+var __assign240 = function() {
+  __assign240 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign240.apply(this, arguments);
+};
+var MicrosoftOutlook2019 = memo232(forwardRef245(function(props, svgRef) {
+  return React262.createElement("svg", __assign240({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React262.createElement("path", { fill: "var(--color59, #1a237e)", d: "M30.005 15.68l-5.116-2.98v8.281h5.396v-4.813a.567.567 0 00-.281-.489z" }), React262.createElement("path", { fill: "var(--color60, #0c4999)", d: "M23.085 5.029h6.461v-.791c0-.684-.554-1.237-1.236-1.237H11.476c-.683 0-1.237.554-1.237 1.237v.791h12.846z" }), React262.createElement("path", { fill: "var(--color61, #0f73d9)", d: "M23.085 22.659h5.224c.683 0 1.237-.554 1.237-1.237v-4.876h-6.461v6.114z" }), React262.createElement("path", { fill: "var(--color62, #0f439d)", d: "M10.24 16.546v4.876c0 .683.554 1.237 1.237 1.237h5.195v-6.113l-6.432-.001z" }), React262.createElement("path", { fill: "var(--color63, #2ecdfd)", d: "M23.085 5.029h6.461v5.734h-6.461z" }), React262.createElement("path", { fill: "var(--color64, #1c5fb0)", d: "M10.24 5.029h6.432v5.734H10.24z" }), React262.createElement("path", { fill: "var(--color65, #1467c7)", d: "M16.671 16.546h6.414v6.113h-6.414z" }), React262.createElement("path", { fill: "var(--color66, #1690d5)", d: "M16.671 5.029h6.414v5.734h-6.414z" }), React262.createElement("path", { fill: "var(--color67, #1bb4ff)", d: "M23.085 10.762h6.461v5.783h-6.461z" }), React262.createElement("path", { fill: "var(--color68, #074daf)", d: "M10.24 10.762h6.432v5.783H10.24z" }), React262.createElement("path", { fill: "var(--color69, #2076d4)", d: "M16.671 10.762h6.414v5.783h-6.414z" }), React262.createElement("path", { fill: "var(--color70, #2ed0ff)", d: "M9.886 28.714h19.193c.666 0 1.206-.54 1.206-1.206V16.17s-.021.47-1.251 1.155c-.929.517-19.646 11.079-19.646 11.079s.167.31.498.31z" }), React262.createElement("path", { fill: "var(--color71, #139fe2)", d: "M29.056 28.712l-18.993.002c-.666 0-1.206-.54-1.206-1.206V16.619l20.974 11.83c-.175.14-.397.263-.774.263z" }), React262.createElement("path", { fill: "var(--color72, #00488d)", d: "M14.799 23H2.915a1.201 1.201 0 01-1.201-1.201V9.915c0-.663.538-1.201 1.201-1.201h11.884c.663 0 1.201.538 1.201 1.201v11.884c0 .663-.538 1.201-1.201 1.201z" }), React262.createElement("path", { fill: "var(--color25, #fff)", d: "M8.796 12.096c-2.236 0-3.584 1.709-3.584 3.816s1.342 3.816 3.584 3.816 3.584-1.709 3.584-3.816-1.347-3.816-3.584-3.816zm0 6.344c-1.269 0-2.027-1.131-2.027-2.528s.762-2.528 2.027-2.528c1.265 0 2.028 1.132 2.028 2.528s-.76 2.528-2.028 2.528z" }));
+}));
+MicrosoftOutlook2019.displayName = "MicrosoftOutlook2019";
+MicrosoftOutlook2019["iconName"] = "microsoft-outlook-2019";
+var MicrosoftOutlook2019_default = MicrosoftOutlook2019;
+
+// node_modules/@ringcentral/juno/es6/icon/Minimize.js
+import React263, { forwardRef as forwardRef246, memo as memo233 } from "react";
+var __assign241 = function() {
+  __assign241 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign241.apply(this, arguments);
+};
+var Minimize = memo233(forwardRef246(function(props, svgRef) {
+  return React263.createElement("svg", __assign241({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React263.createElement("path", { d: "M5.333 18v-4h21.333v4z" }));
+}));
+Minimize.displayName = "Minimize";
+Minimize["iconName"] = "minimize";
+var Minimize_default = Minimize;
+
+// node_modules/@ringcentral/juno/es6/icon/MissedcallBorder.js
+import React264, { forwardRef as forwardRef247, memo as memo234 } from "react";
+var __assign242 = function() {
+  __assign242 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign242.apply(this, arguments);
+};
+var MissedcallBorder = memo234(forwardRef247(function(props, svgRef) {
+  return React264.createElement("svg", __assign242({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React264.createElement("path", { d: "M9.791 2.353a3.42 3.42 0 011.577 1.5 33.63 33.63 0 001.257 2.265 49.99 49.99 0 001.696 2.601c.414.626.579 1.307.486 2.017-.091.699-.403 1.322-.977 1.9a6.076 6.076 0 01-1.027.705 1.161 1.161 0 01-.218.137l-.171.083-.178.098-.045.022a1.99 1.99 0 00-.144.067c.016.079.043.175.083.29l.098.258c.124.331.324.717.602 1.154.285.448.649.938 1.09 1.465a13.92 13.92 0 001.328 1.391c.395.352.753.616 1.068.791.121.067.226.121.312.159l.218-.239.08-.079.085-.107.254-.263.272-.265.049-.045c.171-.156.362-.306.617-.477a3.574 3.574 0 012.169-.483c.803.071 1.484.39 1.965.905a69.978 69.978 0 001.865 1.697l.459.399.947.804 1.129.938c.586.482.976 1.073 1.157 1.757.164.617.135 1.216-.074 1.743l-.087.194c-.193.479-.565 1.044-1.117 1.713-.476.576-.912 1.028-1.295 1.343l-.161.127c-.44.363-.947.637-1.516.818a6.01 6.01 0 01-1.829.264c-1.073 0-2.192-.21-3.356-.625-1.135-.405-2.29-.984-3.466-1.737a24.373 24.373 0 01-3.044-2.327l-.431-.391a36.73 36.73 0 01-3.448-3.565c-1.492-1.787-2.714-3.551-3.664-5.291-.955-1.731-1.628-3.354-2.018-4.87-.397-1.544-.493-2.938-.281-4.173.204-1.306.769-2.366 1.703-3.149.433-.361 1.041-.728 1.828-1.11.803-.39 1.468-.63 2.018-.716a3.627 3.627 0 012.133.308zM7.966 4.022c-.314.049-.8.222-1.451.538-.661.321-1.134.608-1.416.843-.548.46-.881 1.078-1.018 1.956-.16.934-.085 2.047.247 3.337.345 1.34.953 2.809 1.836 4.41.884 1.619 2.031 3.276 3.432 4.954a34.87 34.87 0 003.283 3.393 22.997 22.997 0 003.194 2.502c1.055.675 2.074 1.187 3.059 1.538.959.342 1.853.509 2.684.509.466 0 .872-.058 1.223-.17.274-.087.514-.206.768-.392l.155-.12c.275-.206.66-.595 1.112-1.142.391-.473.643-.844.765-1.097l.106-.236c.064-.128.078-.299.017-.53-.072-.27-.226-.504-.496-.726l-1.295-1.078-.817-.695-.471-.41a71.406 71.406 0 01-1.293-1.163l-.624-.582-.088-.088c-.138-.148-.36-.25-.681-.279a1.596 1.596 0 00-.827.134l-.119.063-.049.035a3.377 3.377 0 00-.189.145l-.079.069-.16.152-.227.231-.036.047-.09.104-.159.162-.157.172a1.998 1.998 0 01-2.3.472 6.246 6.246 0 01-.459-.233c-.46-.256-.934-.607-1.428-1.047a16.01 16.01 0 01-1.531-1.601 16.348 16.348 0 01-1.243-1.674 8.88 8.88 0 01-.691-1.286l-.073-.183a5.005 5.005 0 01-.292-.913 2 2 0 011.025-2.162l.25-.12.178-.098.111-.054.05-.036.143-.086c.134-.073.249-.143.346-.21l.175-.127.102-.083.049-.052c.16-.183.247-.349.289-.528l.02-.109a.87.87 0 00-.147-.621 52.75 52.75 0 01-1.763-2.705 34.089 34.089 0 01-1.299-2.338 1.447 1.447 0 00-.553-.588l-.12-.063a1.627 1.627 0 00-.976-.142zm13.241-1.729l3.536 3.535 3.535-3.535a.999.999 0 111.414 1.414l-3.535 3.535 3.535 3.536a.999.999 0 11-1.414 1.414l-3.535-3.536-3.536 3.536a.999.999 0 11-1.414-1.414l3.536-3.536-3.536-3.535a.999.999 0 111.414-1.414z" }));
+}));
+MissedcallBorder.displayName = "MissedcallBorder";
+MissedcallBorder["iconName"] = "missedcall_border";
+var MissedcallBorder_default = MissedcallBorder;
+
+// node_modules/@ringcentral/juno/es6/icon/Missedcall.js
+import React265, { forwardRef as forwardRef248, memo as memo235 } from "react";
+var __assign243 = function() {
+  __assign243 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign243.apply(this, arguments);
+};
+var Missedcall = memo235(forwardRef248(function(props, svgRef) {
+  return React265.createElement("svg", __assign243({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React265.createElement("path", { d: "M9.791 2.353a3.42 3.42 0 011.577 1.5 33.63 33.63 0 001.257 2.265 49.99 49.99 0 001.696 2.601c.414.626.579 1.307.486 2.017-.091.699-.403 1.322-.977 1.9a6.076 6.076 0 01-1.027.705 1.161 1.161 0 01-.218.137l-.171.083-.178.098-.045.022a1.99 1.99 0 00-.144.067c.016.079.043.175.083.29l.098.258c.124.331.324.717.602 1.154.285.448.649.938 1.09 1.465a13.92 13.92 0 001.328 1.391c.395.352.753.616 1.068.791.121.067.226.121.312.159l.218-.239.08-.079.085-.107.254-.263.272-.265.049-.045c.171-.156.362-.306.617-.477a3.574 3.574 0 012.169-.483c.803.071 1.484.39 1.965.905a69.978 69.978 0 001.865 1.697l.459.399.947.804 1.129.938c.586.482.976 1.073 1.157 1.757.164.617.135 1.216-.074 1.743l-.087.194c-.193.479-.565 1.044-1.117 1.713-.476.576-.912 1.028-1.295 1.343l-.161.127c-.44.363-.947.637-1.516.818a6.01 6.01 0 01-1.829.264c-1.073 0-2.192-.21-3.356-.625-1.135-.405-2.29-.984-3.466-1.737a24.373 24.373 0 01-3.044-2.327l-.431-.391a36.73 36.73 0 01-3.448-3.565c-1.492-1.787-2.714-3.551-3.664-5.291-.955-1.731-1.628-3.354-2.018-4.87-.397-1.544-.493-2.938-.281-4.173.204-1.306.769-2.366 1.703-3.149.433-.361 1.041-.728 1.828-1.11.803-.39 1.468-.63 2.018-.716a3.627 3.627 0 012.133.308zm11.416-.06l3.536 3.535 3.535-3.535a.999.999 0 111.414 1.414l-3.535 3.535 3.535 3.536a.999.999 0 11-1.414 1.414l-3.535-3.536-3.536 3.536a.999.999 0 11-1.414-1.414l3.536-3.536-3.536-3.535a.999.999 0 111.414-1.414z" }));
+}));
+Missedcall.displayName = "Missedcall";
+Missedcall["iconName"] = "missedcall";
+var Missedcall_default = Missedcall;
+
+// node_modules/@ringcentral/juno/es6/icon/MonitorCall.js
+import React266, { forwardRef as forwardRef249, memo as memo236 } from "react";
+var __assign244 = function() {
+  __assign244 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign244.apply(this, arguments);
+};
+var MonitorCall = memo236(forwardRef249(function(props, svgRef) {
+  return React266.createElement("svg", __assign244({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React266.createElement("path", { d: "M17 24a3 3 0 110 6h-2a3 3 0 110-6h2zm1-22a8 8 0 018 8v1h1a3 3 0 012.995 2.824L30 14v4a3 3 0 01-3 3h-1v3a4 4 0 01-4 4h-2v-2.001L22 26a2 2 0 001.994-1.851L24 24V10a6 6 0 00-5.775-5.996L18 4h-4a6 6 0 00-5.996 5.775L8 10v11H5a3 3 0 01-3-3v-4a3 3 0 013-3h1v-1a8 8 0 018-8h4zm-1 24h-2a1 1 0 00-.117 1.993L15 28h2a1 1 0 00.117-1.993L17 26zM6 13H5a1 1 0 00-.993.883L4 14v4a1 1 0 00.883.993L5 19h1v-6zm21 0h-1v6h1l.117-.007A1 1 0 0028 18v-4l-.007-.117A1 1 0 0027 13z" }));
+}));
+MonitorCall.displayName = "MonitorCall";
+MonitorCall["iconName"] = "monitor_call";
+var MonitorCall_default = MonitorCall;
+
+// node_modules/@ringcentral/juno/es6/icon/MoreHoriz.js
+import React267, { forwardRef as forwardRef250, memo as memo237 } from "react";
+var __assign245 = function() {
+  __assign245 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign245.apply(this, arguments);
+};
+var MoreHoriz = memo237(forwardRef250(function(props, svgRef) {
+  return React267.createElement("svg", __assign245({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React267.createElement("path", { d: "M9 16a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zm9.5 0a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zm9.5 0a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z" }));
+}));
+MoreHoriz.displayName = "MoreHoriz";
+MoreHoriz["iconName"] = "more_horiz";
+var MoreHoriz_default = MoreHoriz;
+
+// node_modules/@ringcentral/juno/es6/icon/MoreVert.js
+import React268, { forwardRef as forwardRef251, memo as memo238 } from "react";
+var __assign246 = function() {
+  __assign246 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign246.apply(this, arguments);
+};
+var MoreVert = memo238(forwardRef251(function(props, svgRef) {
+  return React268.createElement("svg", __assign246({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React268.createElement("path", { d: "M16 23a2.5 2.5 0 110 5 2.5 2.5 0 010-5zm0-9.5a2.5 2.5 0 110 5 2.5 2.5 0 010-5zM16 4a2.5 2.5 0 110 5 2.5 2.5 0 010-5z" }));
+}));
+MoreVert.displayName = "MoreVert";
+MoreVert["iconName"] = "more_vert";
+var MoreVert_default = MoreVert;
+
+// node_modules/@ringcentral/juno/es6/icon/MuteNotificationBorder.js
+import React269, { forwardRef as forwardRef252, memo as memo239 } from "react";
+var __assign247 = function() {
+  __assign247 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign247.apply(this, arguments);
+};
+var MuteNotificationBorder = memo239(forwardRef252(function(props, svgRef) {
+  return React269.createElement("svg", __assign247({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React269.createElement("path", { d: "M24.574 10.255c.277.865.426 1.787.426 2.745v3.264c0 1.34.449 2.642 1.275 3.698l2.195 2.805A2 2 0 0126.895 26l-5.995.001a5.002 5.002 0 01-9.8 0H8.827L10.828 24h16.066l-2.195-2.805a8.001 8.001 0 01-1.7-4.93v-3.264c0-.369-.029-.732-.084-1.086l1.658-1.659zm4.861-6.276a.999.999 0 010 1.414L5.393 29.435a.999.999 0 11-1.414-1.414L28.021 3.979a.999.999 0 011.414 0zM18.829 26.001h-5.658a3 3 0 005.658 0zM16 2a1 1 0 011 1l.001 1.055a8.975 8.975 0 015.449 2.668l-1.414 1.415A7 7 0 009 13v3.264a7.995 7.995 0 01-1.7 4.93l-2.195 2.805h.067l-1.447 1.448a2.003 2.003 0 01-.195-2.681l2.195-2.805A6 6 0 007 16.263v-3.264a9 9 0 018-8.945V2.999a1 1 0 011-1z" }));
+}));
+MuteNotificationBorder.displayName = "MuteNotificationBorder";
+MuteNotificationBorder["iconName"] = "mute-notification_border";
+var MuteNotificationBorder_default = MuteNotificationBorder;
+
+// node_modules/@ringcentral/juno/es6/icon/MuteNotification.js
+import React270, { forwardRef as forwardRef253, memo as memo240 } from "react";
+var __assign248 = function() {
+  __assign248 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign248.apply(this, arguments);
+};
+var MuteNotification = memo240(forwardRef253(function(props, svgRef) {
+  return React270.createElement("svg", __assign248({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React270.createElement("path", { d: "M25 13v3.264c0 1.34.449 2.642 1.275 3.698l2.195 2.805A2 2 0 0126.895 26l-5.995.001a5.002 5.002 0 01-9.8 0H8.827l15.746-15.746c.277.865.426 1.787.426 2.745zm4.435-9.021a.999.999 0 010 1.414L5.393 29.435a.999.999 0 11-1.414-1.414L28.021 3.979a.999.999 0 011.414 0zM18.829 26.001h-5.658a3 3 0 005.658 0zM16 2a1 1 0 011 1l.001 1.055a8.975 8.975 0 015.449 2.668L3.725 25.448a2.003 2.003 0 01-.195-2.681l2.195-2.805A6 6 0 007 16.264V13a9 9 0 018-8.945V3a1 1 0 011-1z" }));
+}));
+MuteNotification.displayName = "MuteNotification";
+MuteNotification["iconName"] = "mute-notification";
+var MuteNotification_default = MuteNotification;
+
+// node_modules/@ringcentral/juno/es6/icon/NewAction.js
+import React271, { forwardRef as forwardRef254, memo as memo241 } from "react";
+var __assign249 = function() {
+  __assign249 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign249.apply(this, arguments);
+};
+var NewAction = memo241(forwardRef254(function(props, svgRef) {
+  return React271.createElement("svg", __assign249({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React271.createElement("path", { d: "M16 3a1.5 1.5 0 011.5 1.5v10h10a1.5 1.5 0 010 3H17.499l.001 10a1.5 1.5 0 01-3 0l-.001-10H4.5a1.5 1.5 0 010-3h10v-10A1.5 1.5 0 0116 3z" }));
+}));
+NewAction.displayName = "NewAction";
+NewAction["iconName"] = "new-action";
+var NewAction_default = NewAction;
+
+// node_modules/@ringcentral/juno/es6/icon/NewFax.js
+import React272, { forwardRef as forwardRef255, memo as memo242 } from "react";
+var __assign250 = function() {
+  __assign250 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign250.apply(this, arguments);
+};
+var NewFax = memo242(forwardRef255(function(props, svgRef) {
+  return React272.createElement("svg", __assign250({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React272.createElement("path", { d: "M22.999 18a1 1 0 011 1v4h4a1 1 0 010 2h-4.001l.001 4a1 1 0 01-2 0l-.001-4h-3.999a1 1 0 010-2h4v-4a1 1 0 011-1zM29 3a1 1 0 010 2h-2v12a1 1 0 01-2 0V5H7v21a1 1 0 001 1h8a1 1 0 010 2H7a2 2 0 01-2-2V5H3a1 1 0 010-2h26zm-8 11a1 1 0 010 2H11a1 1 0 010-2h10zm0-6a1 1 0 010 2H11a1 1 0 010-2h10z" }));
+}));
+NewFax.displayName = "NewFax";
+NewFax["iconName"] = "new-fax";
+var NewFax_default = NewFax;
+
+// node_modules/@ringcentral/juno/es6/icon/NewFile.js
+import React273, { forwardRef as forwardRef256, memo as memo243 } from "react";
+var __assign251 = function() {
+  __assign251 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign251.apply(this, arguments);
+};
+var NewFile = memo243(forwardRef256(function(props, svgRef) {
+  return React273.createElement("svg", __assign251({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React273.createElement("path", { d: "M24 17a1 1 0 011 1v4h4a1 1 0 010 2h-4.001L25 28a1 1 0 01-2 0l-.001-4H19a1 1 0 010-2h4v-4a1 1 0 011-1zM11.821 3a2 2 0 011.459.632l1.923 2.052a.996.996 0 00.612.309l.118.007H28a2 2 0 012 2l.001 9.71a8.05 8.05 0 00-2-1.639L28 13H4v11a1 1 0 001 1h11.252c.183.71.46 1.382.819 2.001L4 27a2 2 0 01-2-2V5a2 2 0 012-2h7.821zm-.866 2H5a1 1 0 00-1 1v5h24V9a1 1 0 00-1-1l-11.419-.021a2.998 2.998 0 01-1.836-.928l-1.33-1.419A2 2 0 0010.956 5z" }));
+}));
+NewFile.displayName = "NewFile";
+NewFile["iconName"] = "new-file";
+var NewFile_default = NewFile;
+
+// node_modules/@ringcentral/juno/es6/icon/NewNote.js
+import React274, { forwardRef as forwardRef257, memo as memo244 } from "react";
+var __assign252 = function() {
+  __assign252 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign252.apply(this, arguments);
+};
+var NewNote = memo244(forwardRef257(function(props, svgRef) {
+  return React274.createElement("svg", __assign252({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React274.createElement("path", { d: "M15.999 2c6.525 0 11.834 5.209 11.996 11.695l.004.305v3a1 1 0 01-1.993.117L25.999 17v-3c0-5.429-4.327-9.848-9.72-9.996L15.999 4H7a1 1 0 00-1 1v22a1 1 0 001 1h8.999a1 1 0 01.117 1.993l-.117.007H6a2 2 0 01-2-2V4a2 2 0 012-2h9.999zm7 16a1 1 0 011 1v4h4a1 1 0 010 2h-4.001l.001 4a1 1 0 01-2 0l-.001-4h-3.999a1 1 0 010-2h4v-4a1 1 0 011-1zm-7-1l.117.007a1 1 0 010 1.986l-.117.007h-4.997l-.117-.007a1 1 0 010-1.986l.117-.007h4.997zm5-6l.117.007a1 1 0 010 1.986l-.117.007-10.113-.007a1 1 0 010-1.986l.117-.007H21z" }));
+}));
+NewNote.displayName = "NewNote";
+NewNote["iconName"] = "new-note";
+var NewNote_default = NewNote;
+
+// node_modules/@ringcentral/juno/es6/icon/Nickname.js
+import React275, { forwardRef as forwardRef258, memo as memo245 } from "react";
+var __assign253 = function() {
+  __assign253 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign253.apply(this, arguments);
+};
+var Nickname = memo245(forwardRef258(function(props, svgRef) {
+  return React275.createElement("svg", __assign253({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React275.createElement("path", { d: "M13 17c1.722 0 3.365.324 4.831.907a8.026 8.026 0 00-1.09 1.726A11.152 11.152 0 0013 19.001c-4.709 0-8.573 2.812-8.967 6.395-.05.451.335.605.519.605l12.029.001a8.01 8.01 0 001.173 2l-13.755-.001a2 2 0 01-2-2c0-5.096 5.019-9 11-9zm16 9a1 1 0 010 2h-8a1 1 0 010-2h8zm-4-4a1 1 0 010 2h-4a1 1 0 010-2h4zm4-4a1 1 0 010 2h-8a1 1 0 010-2h8zM13 3a6 6 0 110 12 6 6 0 010-12zm0 2a4 4 0 100 8 4 4 0 000-8z" }));
+}));
+Nickname.displayName = "Nickname";
+Nickname["iconName"] = "nickname";
+var Nickname_default = Nickname;
+
+// node_modules/@ringcentral/juno/es6/icon/NoAudio.js
+import React276, { forwardRef as forwardRef259, memo as memo246 } from "react";
+var __assign254 = function() {
+  __assign254 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign254.apply(this, arguments);
+};
+var NoAudio = memo246(forwardRef259(function(props, svgRef) {
+  return React276.createElement("svg", __assign254({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React276.createElement("path", { d: "M18.479 4.534c.333.342.521.805.521 1.288v20.356C19 27.184 18.204 28 17.222 28c-.471 0-.924-.192-1.257-.534l-6.854-6H3.778C2.796 21.466 2 20.65 2 19.644v-7.288c0-1.006.796-1.822 1.778-1.822h5.333l6.854-6a1.746 1.746 0 012.514 0zm4.693 7.223l2.83 2.828 2.827-2.828a.999.999 0 111.414 1.414l-2.827 2.828 2.827 2.828a.999.999 0 11-1.414 1.414l-2.827-2.828-2.83 2.828a.999.999 0 11-1.414-1.414l2.83-2.828-2.83-2.828a.999.999 0 111.414-1.414z" }));
+}));
+NoAudio.displayName = "NoAudio";
+NoAudio["iconName"] = "no-audio";
+var NoAudio_default = NoAudio;
+
+// node_modules/@ringcentral/juno/es6/icon/NoConnection.js
+import React277, { forwardRef as forwardRef260, memo as memo247 } from "react";
+var __assign255 = function() {
+  __assign255 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign255.apply(this, arguments);
+};
+var NoConnection = memo247(forwardRef260(function(props, svgRef) {
+  return React277.createElement("svg", __assign255({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React277.createElement("path", { fill: "var(--color11, #000)", opacity: 0.32, d: "M27 4a2 2 0 012 2v20a2 2 0 01-2 2h-2a2 2 0 01-2-2V6a2 2 0 012-2h2zM17 14a2 2 0 012 2v10a2 2 0 01-2 2h-2a2 2 0 01-2-2v-8.634l2.191 2.165a1.593 1.593 0 002.257 0l1.069-1.058.092-.103.098-.136c.456-.695.372-1.634-.218-2.218l-2.039-2.017h.551zM7 20a2 2 0 012 2v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4a2 2 0 012-2h2zm8.026-6l2.759 2.727a.769.769 0 01.053 1.005l-.025.031-1.068 1.058a.593.593 0 01-.851 0l-2.893-2.86.005-.109a2.001 2.001 0 011.838-1.845l.183-.006z" }), React277.createElement("path", { fill: "var(--color10, #f54c3d)", d: "M11 10.018l4.893-4.838a.59.59 0 01.774-.065l.076.065 1.041 1.029a.774.774 0 01.061.995l-.061.069L13.003 12l4.781 4.728a.769.769 0 01.053 1.005l-.025.031-1.068 1.058a.593.593 0 01-.851 0L11 13.983l-4.894 4.839a.59.59 0 01-.774.065l-.076-.065-1.041-1.029a.774.774 0 01-.061-.995l.061-.069 4.78-4.728-4.78-4.727a.769.769 0 01-.053-1.005l.053-.059 1.041-1.029a.593.593 0 01.851 0L11 10.019z" }));
+}));
+NoConnection.displayName = "NoConnection";
+NoConnection["iconName"] = "no-connection";
+var NoConnection_default = NoConnection;
+
+// node_modules/@ringcentral/juno/es6/icon/NonEdit.js
+import React278, { forwardRef as forwardRef261, memo as memo248 } from "react";
+var __assign256 = function() {
+  __assign256 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign256.apply(this, arguments);
+};
+var NonEdit = memo248(forwardRef261(function(props, svgRef) {
+  return React278.createElement("svg", __assign256({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React278.createElement("path", { d: "M2.565 3.979a1 1 0 011.32-.083l.094.083 24.042 24.042a.999.999 0 01-1.32 1.497l-.094-.083L2.565 5.393a.999.999 0 010-1.414zm9.197 10.611l1.414 1.414-6.579 6.58 2.828 2.828 6.579-6.579 1.414 1.414-6.659 6.659c-.279.279-.635.47-1.022.547l-5.006 1.001a1 1 0 01-1.177-1.176l1.001-5.006c.077-.387.268-.743.547-1.022l6.658-6.659zM28.01 4a4 4 0 010 5.657l-7.763 7.762-1.414-1.414 4.935-4.934-2.828-2.828-4.935 4.934-1.414-1.414 7.762-7.762a4 4 0 015.657 0zm-4.243 1.414l-1.413 1.413 2.828 2.828 1.413-1.414a2 2 0 10-2.828-2.828z" }));
+}));
+NonEdit.displayName = "NonEdit";
+NonEdit["iconName"] = "non-edit";
+var NonEdit_default = NonEdit;
+
+// node_modules/@ringcentral/juno/es6/icon/NoteBorder.js
+import React279, { forwardRef as forwardRef262, memo as memo249 } from "react";
+var __assign257 = function() {
+  __assign257 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign257.apply(this, arguments);
+};
+var NoteBorder = memo249(forwardRef262(function(props, svgRef) {
+  return React279.createElement("svg", __assign257({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React279.createElement("path", { d: "M16 2c6.627 0 12 5.373 12 12v14a2 2 0 01-2 2H6a2 2 0 01-2-2V4a2 2 0 012-2h10zm0 2H7a1 1 0 00-1 1v22a1 1 0 001 1h18a1 1 0 001-1V14c0-5.523-4.477-10-10-10zm2 14a1 1 0 010 2h-7a1 1 0 010-2h7zm3-6a1 1 0 010 2H11a1 1 0 010-2h10z" }));
+}));
+NoteBorder.displayName = "NoteBorder";
+NoteBorder["iconName"] = "note_border";
+var NoteBorder_default = NoteBorder;
+
+// node_modules/@ringcentral/juno/es6/icon/Note.js
+import React280, { forwardRef as forwardRef263, memo as memo250 } from "react";
+var __assign258 = function() {
+  __assign258 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign258.apply(this, arguments);
+};
+var Note = memo250(forwardRef263(function(props, svgRef) {
+  return React280.createElement("svg", __assign258({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React280.createElement("path", { d: "M16 2c6.627 0 12 5.373 12 12v14a2 2 0 01-2 2H6a2 2 0 01-2-2V4a2 2 0 012-2h10zm2 16h-7a1 1 0 00-.117 1.993L11 20h7a1 1 0 00.117-1.993L18 18zm3-6H11a1 1 0 00-.117 1.993L11 14h10a1 1 0 00.117-1.993L21 12z" }));
+}));
+Note.displayName = "Note";
+Note["iconName"] = "note";
+var Note_default = Note;
+
+// node_modules/@ringcentral/juno/es6/icon/NotificationBorder.js
+import React281, { forwardRef as forwardRef264, memo as memo251 } from "react";
+var __assign259 = function() {
+  __assign259 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign259.apply(this, arguments);
+};
+var NotificationBorder = memo251(forwardRef264(function(props, svgRef) {
+  return React281.createElement("svg", __assign259({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React281.createElement("path", { d: "M16 2a1 1 0 011 1l.001 1.055A9.001 9.001 0 0125 13v3.264c0 1.34.449 2.642 1.275 3.698l2.195 2.805A2 2 0 0126.895 26l-5.995.001a5.002 5.002 0 01-9.8 0L5.105 26a2 2 0 01-1.575-3.233l2.195-2.805A6 6 0 007 16.264V13a9 9 0 018-8.945V3a1 1 0 011-1zm2.829 24.001h-5.658a3 3 0 005.658 0zM16 6a7 7 0 00-7 7v3.264a7.995 7.995 0 01-1.7 4.93l-2.195 2.805h21.79L24.7 21.194a8.001 8.001 0 01-1.7-4.93V13a7 7 0 00-7-7z" }));
+}));
+NotificationBorder.displayName = "NotificationBorder";
+NotificationBorder["iconName"] = "notification_border";
+var NotificationBorder_default = NotificationBorder;
+
+// node_modules/@ringcentral/juno/es6/icon/Notification.js
+import React282, { forwardRef as forwardRef265, memo as memo252 } from "react";
+var __assign260 = function() {
+  __assign260 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign260.apply(this, arguments);
+};
+var Notification = memo252(forwardRef265(function(props, svgRef) {
+  return React282.createElement("svg", __assign260({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React282.createElement("path", { d: "M16 2a1 1 0 011 1l.001 1.055A9.001 9.001 0 0125 13v3.264c0 1.34.449 2.642 1.275 3.698l2.195 2.805A2 2 0 0126.895 26l-5.995.001a5.002 5.002 0 01-9.8 0L5.105 26a2 2 0 01-1.575-3.233l2.195-2.805A6 6 0 007 16.264V13a9 9 0 018-8.945V3a1 1 0 011-1zm2.829 24.001h-5.658a3 3 0 005.658 0z" }));
+}));
+Notification.displayName = "Notification";
+Notification["iconName"] = "notification";
+var Notification_default = Notification;
+
+// node_modules/@ringcentral/juno/es6/icon/Onedrive.js
+import React283, { forwardRef as forwardRef266, memo as memo253 } from "react";
+var __assign261 = function() {
+  __assign261 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign261.apply(this, arguments);
+};
+var Onedrive = memo253(forwardRef266(function(props, svgRef) {
+  return React283.createElement("svg", __assign261({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React283.createElement("path", { d: "M27.933 18.397c1.492.535 2.193 1.659 2.065 3.311-.083 1.081-.586 1.944-1.386 2.372l-.375.201-8.349.016c-6.415.013-8.454-.01-8.806-.098-1.695-.424-2.64-1.774-2.643-3.777-.001-.64.045-.947.205-1.359.391-1.009 1.427-1.771 2.789-2.051.678-.14.887-.289.887-.636 0-.109.081-.433.179-.72.448-1.304 1.278-2.392 2.164-2.837.928-.465 1.396-.57 2.519-.565 1.594.008 2.389.355 3.501 1.525l.611.644.548-.19c2.652-.92 5.296.645 5.509 3.261l.058.715.522.188zM7.729 22.665c.099.194.154.379.123.411-.081.081-2.67.053-3.028-.032-.99-.236-2.038-1.111-2.53-2.113C2.015 20.363 2 20.28 2 19.275c0-.956.024-1.11.246-1.584.468-1 1.365-1.723 2.491-2.007.237-.06.46-.156.496-.213s.074-.367.087-.689c.079-2.001 1.39-3.765 3.22-4.332.989-.305 2.232-.23 3.307.2.341.137.303.167 1.024-.781.427-.56 1.289-1.258 1.995-1.613.761-.383 1.553-.559 2.5-.557 2.648.007 4.929 1.665 5.772 4.197.27.808.256 1.035-.062 1.042-.139.003-.536.08-.883.17l-.631.165-.576-.577c-1.624-1.626-4.274-1.978-6.527-.866a5.417 5.417 0 00-2.169 1.914c-.39.592-.886 1.699-.886 1.973 0 .194-.157.292-.83.513-2.082.683-3.297 2.262-3.296 4.283 0 .736.19 1.636.452 2.151z" }));
+}));
+Onedrive.displayName = "Onedrive";
+Onedrive["iconName"] = "onedrive";
+var Onedrive_default = Onedrive;
+
+// node_modules/@ringcentral/juno/es6/icon/OpenFolder.js
+import React284, { forwardRef as forwardRef267, memo as memo254 } from "react";
+var __assign262 = function() {
+  __assign262 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign262.apply(this, arguments);
+};
+var OpenFolder = memo254(forwardRef267(function(props, svgRef) {
+  return React284.createElement("svg", __assign262({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React284.createElement("path", { d: "M29.004 19.489c.489 0 .896.352.98.817l.016.179v5.976a.996.996 0 01-1.976.179l-.016-.179-.002-3.239-5.381 5.382a.996.996 0 01-1.524-1.271l.115-.138 5.715-5.717-3.904.002a.996.996 0 01-.98-.817l-.016-.179c0-.489.352-.896.817-.98l.179-.016h5.976zM11.783 2.999a1.99 1.99 0 011.453.63l1.915 2.044a1 1 0 00.61.308l.117.007h12.019c1.1 0 1.992.892 1.992 1.992l.001 9.671a8.002 8.002 0 00-1.992-1.632l-.001-3.059H3.992v10.957c0 .55.446.996.996.996h11.208c.182.707.459 1.376.816 1.993l-13.019-.001c-1.1 0-1.992-.892-1.992-1.992V4.992c0-1.1.892-1.992 1.992-1.992h7.79zm-.864 1.992H4.988a.996.996 0 00-.996.996v4.98h23.905V8.975a.996.996 0 00-.996-.996l-11.374-.021a2.989 2.989 0 01-1.829-.924L12.373 5.62a1.992 1.992 0 00-1.453-.63z" }));
+}));
+OpenFolder.displayName = "OpenFolder";
+OpenFolder["iconName"] = "open-folder";
+var OpenFolder_default = OpenFolder;
+
+// node_modules/@ringcentral/juno/es6/icon/OuboundCallOnBehalf.js
+import React285, { forwardRef as forwardRef268, memo as memo255 } from "react";
+var __assign263 = function() {
+  __assign263 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign263.apply(this, arguments);
+};
+var OuboundCallOnBehalf = memo255(forwardRef268(function(props, svgRef) {
+  return React285.createElement("svg", __assign263({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React285.createElement("path", { d: "M12 17c1.439 0 2.822.226 4.092.64a3.383 3.383 0 00-.114.775l-.001.175-.105.058c-.338.195-.64.447-.893.744A11.371 11.371 0 0012 19c-4.878 0-8.85 3.019-8.996 6.786L3 26l13.564.001a3.444 3.444 0 001.308 1.35l.106.058.001.175c.004.14.017.278.038.416H3.001a2 2 0 01-2-2c0-5.096 5.019-9 11-9zm17.979-2A1.02 1.02 0 0131 16.021v8.165a1.02 1.02 0 11-2.042 0l.001-5.7-7.217 7.216a1.02 1.02 0 11-1.443-1.443l7.217-7.216-5.701-.001a1.02 1.02 0 110-2.042h8.165zM12 3a6 6 0 110 12 6 6 0 010-12zm0 2a4 4 0 100 8 4 4 0 000-8z" }));
+}));
+OuboundCallOnBehalf.displayName = "OuboundCallOnBehalf";
+OuboundCallOnBehalf["iconName"] = "oubound_call_on_behalf";
+var OuboundCallOnBehalf_default = OuboundCallOnBehalf;
+
+// node_modules/@ringcentral/juno/es6/icon/OutboundFaxBorder.js
+import React286, { forwardRef as forwardRef269, memo as memo256 } from "react";
+var __assign264 = function() {
+  __assign264 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign264.apply(this, arguments);
+};
+var OutboundFaxBorder = memo256(forwardRef269(function(props, svgRef) {
+  return React286.createElement("svg", __assign264({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React286.createElement("path", { d: "M23 4a1 1 0 010 2h-2v13.757c0 .796-.316 1.559-.879 2.121l-5.536 5.536a2 2 0 01-1.238.578l-.176.008H4.999a2 2 0 01-2-2V6h-2a1 1 0 010-2h22zm-4 2H5v19a1 1 0 001 1h6v-5a2 2 0 012-2h5V6zm-.83 15H15a1 1 0 00-1 1v3.17L18.17 21zm7.037-10.293l4.586 4.586a1 1 0 010 1.414l-4.586 4.586a1 1 0 01-1.414-1.414L27.5 16l-3.707-3.879a1 1 0 011.414-1.414zM15.167 14c.46 0 .833.448.833 1s-.373 1-.833 1H8.834c-.46 0-.833-.448-.833-1s.373-1 .833-1h6.333zm0-5c.46 0 .833.448.833 1s-.373 1-.833 1H8.834c-.46 0-.833-.448-.833-1s.373-1 .833-1h6.333z" }));
+}));
+OutboundFaxBorder.displayName = "OutboundFaxBorder";
+OutboundFaxBorder["iconName"] = "outbound-fax_border";
+var OutboundFaxBorder_default = OutboundFaxBorder;
+
+// node_modules/@ringcentral/juno/es6/icon/OutboundFax.js
+import React287, { forwardRef as forwardRef270, memo as memo257 } from "react";
+var __assign265 = function() {
+  __assign265 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign265.apply(this, arguments);
+};
+var OutboundFax = memo257(forwardRef270(function(props, svgRef) {
+  return React287.createElement("svg", __assign265({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React287.createElement("path", { d: "M23 4a1 1 0 010 2h-2v13h-7a2.001 2.001 0 00-1.995 1.851L12 21v7H5a2 2 0 01-2-2V6H1a1 1 0 010-2h22zm-2.272 17l-.025.058a3.003 3.003 0 01-.582.82l-5.536 5.536a2.022 2.022 0 01-.415.319l-.17.086V22a1 1 0 01.883-.993L15 21h5.728zm4.479-10.293l4.586 4.586a1 1 0 010 1.414l-4.586 4.586a1 1 0 01-1.414-1.414L27.5 16l-3.707-3.879a1 1 0 011.414-1.414zM15.167 14H8.834c-.46 0-.833.448-.833 1 0 .513.322.935.736.993l.097.007h6.333c.46 0 .833-.448.833-1s-.373-1-.833-1zm0-5H8.834c-.46 0-.833.448-.833 1 0 .513.322.935.736.993l.097.007h6.333c.46 0 .833-.448.833-1s-.373-1-.833-1z" }));
+}));
+OutboundFax.displayName = "OutboundFax";
+OutboundFax["iconName"] = "outbound-fax";
+var OutboundFax_default = OutboundFax;
+
+// node_modules/@ringcentral/juno/es6/icon/OutcallBorder.js
+import React288, { forwardRef as forwardRef271, memo as memo258 } from "react";
+var __assign266 = function() {
+  __assign266 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign266.apply(this, arguments);
+};
+var OutcallBorder = memo258(forwardRef271(function(props, svgRef) {
+  return React288.createElement("svg", __assign266({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React288.createElement("path", { d: "M9.791 2.353a3.42 3.42 0 011.577 1.5 33.63 33.63 0 001.257 2.265 49.99 49.99 0 001.696 2.601c.414.626.579 1.307.486 2.017-.091.699-.403 1.322-.977 1.9a6.076 6.076 0 01-1.027.705 1.161 1.161 0 01-.218.137l-.171.083-.178.098-.045.022a1.99 1.99 0 00-.144.067c.016.079.043.175.083.29l.098.258c.124.331.324.717.602 1.154.285.448.649.938 1.09 1.465a13.92 13.92 0 001.328 1.391c.395.352.753.616 1.068.791.121.067.226.121.312.159l.218-.239.08-.079.085-.107.254-.263.272-.265.049-.045c.171-.156.362-.306.617-.477a3.574 3.574 0 012.169-.483c.803.071 1.484.39 1.965.905a69.978 69.978 0 001.865 1.697l.459.399.947.804 1.129.938c.586.482.976 1.073 1.157 1.757.164.617.135 1.216-.074 1.743l-.087.194c-.193.479-.565 1.044-1.117 1.713-.476.576-.912 1.028-1.295 1.343l-.161.127c-.44.363-.947.637-1.516.818a6.01 6.01 0 01-1.829.264c-1.073 0-2.192-.21-3.356-.625-1.135-.405-2.29-.984-3.466-1.737a24.373 24.373 0 01-3.044-2.327l-.431-.391a36.73 36.73 0 01-3.448-3.565c-1.492-1.787-2.714-3.551-3.664-5.291-.955-1.731-1.628-3.354-2.018-4.87-.397-1.544-.493-2.938-.281-4.173.204-1.306.769-2.366 1.703-3.149.433-.361 1.041-.728 1.828-1.11.803-.39 1.468-.63 2.018-.716a3.627 3.627 0 012.133.308zM7.966 4.022c-.314.049-.8.222-1.451.538-.661.321-1.134.608-1.416.843-.548.46-.881 1.078-1.018 1.956-.16.934-.085 2.047.247 3.337.345 1.34.953 2.809 1.836 4.41.884 1.619 2.031 3.276 3.432 4.954a34.87 34.87 0 003.283 3.393 22.997 22.997 0 003.194 2.502c1.055.675 2.074 1.187 3.059 1.538.959.342 1.853.509 2.684.509.466 0 .872-.058 1.223-.17.274-.087.514-.206.768-.392l.155-.12c.275-.206.66-.595 1.112-1.142.391-.473.643-.844.765-1.097l.106-.236c.064-.128.078-.299.017-.53-.072-.27-.226-.504-.496-.726l-1.295-1.078-.817-.695-.471-.41a71.406 71.406 0 01-1.293-1.163l-.624-.582-.088-.088c-.138-.148-.36-.25-.681-.279a1.596 1.596 0 00-.827.134l-.119.063-.049.035a3.377 3.377 0 00-.189.145l-.079.069-.16.152-.227.231-.036.047-.09.104-.159.162-.157.172a1.998 1.998 0 01-2.3.472 6.246 6.246 0 01-.459-.233c-.46-.256-.934-.607-1.428-1.047a16.01 16.01 0 01-1.531-1.601 16.348 16.348 0 01-1.243-1.674 8.88 8.88 0 01-.691-1.286l-.073-.183a5.005 5.005 0 01-.292-.913 2 2 0 011.025-2.162l.25-.12.178-.098.111-.054.05-.036.143-.086c.134-.073.249-.143.346-.21l.175-.127.102-.083.049-.052c.16-.183.247-.349.289-.528l.02-.109a.87.87 0 00-.147-.621 52.75 52.75 0 01-1.763-2.705 34.089 34.089 0 01-1.299-2.338 1.447 1.447 0 00-.553-.588l-.12-.063a1.627 1.627 0 00-.976-.142zM29 2a1 1 0 011 1v8a1 1 0 01-2 0l.001-5.585-7.072 7.07a.999.999 0 11-1.414-1.414l7.072-7.07L21.001 4a1 1 0 010-2h8z" }));
+}));
+OutcallBorder.displayName = "OutcallBorder";
+OutcallBorder["iconName"] = "outcall_border";
+var OutcallBorder_default = OutcallBorder;
+
+// node_modules/@ringcentral/juno/es6/icon/Outcall.js
+import React289, { forwardRef as forwardRef272, memo as memo259 } from "react";
+var __assign267 = function() {
+  __assign267 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign267.apply(this, arguments);
+};
+var Outcall = memo259(forwardRef272(function(props, svgRef) {
+  return React289.createElement("svg", __assign267({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React289.createElement("path", { d: "M9.791 2.353a3.42 3.42 0 011.577 1.5 33.63 33.63 0 001.257 2.265 49.99 49.99 0 001.696 2.601c.414.626.579 1.307.486 2.017-.091.699-.403 1.322-.977 1.9a6.076 6.076 0 01-1.027.705 1.161 1.161 0 01-.218.137l-.171.083-.178.098-.045.022a1.99 1.99 0 00-.144.067c.016.079.043.175.083.29l.098.258c.124.331.324.717.602 1.154.285.448.649.938 1.09 1.465a13.92 13.92 0 001.328 1.391c.395.352.753.616 1.068.791.121.067.226.121.312.159l.218-.239.08-.079.085-.107.254-.263.272-.265.049-.045c.171-.156.362-.306.617-.477a3.574 3.574 0 012.169-.483c.803.071 1.484.39 1.965.905a69.978 69.978 0 001.865 1.697l.459.399.947.804 1.129.938c.586.482.976 1.073 1.157 1.757.164.617.135 1.216-.074 1.743l-.087.194c-.193.479-.565 1.044-1.117 1.713-.476.576-.912 1.028-1.295 1.343l-.161.127c-.44.363-.947.637-1.516.818a6.01 6.01 0 01-1.829.264c-1.073 0-2.192-.21-3.356-.625-1.135-.405-2.29-.984-3.466-1.737a24.373 24.373 0 01-3.044-2.327l-.431-.391a36.73 36.73 0 01-3.448-3.565c-1.492-1.787-2.714-3.551-3.664-5.291-.955-1.731-1.628-3.354-2.018-4.87-.397-1.544-.493-2.938-.281-4.173.204-1.306.769-2.366 1.703-3.149.433-.361 1.041-.728 1.828-1.11.803-.39 1.468-.63 2.018-.716a3.627 3.627 0 012.133.308zM29 2a1 1 0 011 1v8a1 1 0 01-2 0l.001-5.585-7.072 7.07a.999.999 0 11-1.414-1.414l7.072-7.07L21.001 4a1 1 0 010-2h8z" }));
+}));
+Outcall.displayName = "Outcall";
+Outcall["iconName"] = "outcall";
+var Outcall_default = Outcall;
+
+// node_modules/@ringcentral/juno/es6/icon/Outdent.js
+import React290, { forwardRef as forwardRef273, memo as memo260 } from "react";
+var __assign268 = function() {
+  __assign268 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign268.apply(this, arguments);
+};
+var Outdent = memo260(forwardRef273(function(props, svgRef) {
+  return React290.createElement("svg", __assign268({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React290.createElement("path", { d: "M27 24a1 1 0 010 2H5a1 1 0 010-2h22zM8.402 12.201c.776-.449 1.535-.132 1.594.805l.004.138v5.748l-.01.206c-.101.872-.907 1.135-1.65.684l-.111-.073-3.737-2.684-.152-.131c-.474-.485-.445-1.297.048-1.762l.105-.088 3.737-2.73.174-.114zM27 15a1 1 0 010 2H13a1 1 0 010-2h14zm0-9a1 1 0 010 2H5a1 1 0 010-2h22z" }));
+}));
+Outdent.displayName = "Outdent";
+Outdent["iconName"] = "outdent";
+var Outdent_default = Outdent;
+
+// node_modules/@ringcentral/juno/es6/icon/ParkCallMessage.js
+import React291, { forwardRef as forwardRef274, memo as memo261 } from "react";
+var __assign269 = function() {
+  __assign269 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign269.apply(this, arguments);
+};
+var ParkCallMessage = memo261(forwardRef274(function(props, svgRef) {
+  return React291.createElement("svg", __assign269({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React291.createElement("path", { d: "M22 8a2 2 0 012 2v14a2 2 0 01-2 2h-4.586a.997.997 0 00-.707.293l-3.141 3.141a.8.8 0 01-1.131 0l-3.141-3.141A1 1 0 008.587 26H4.001a2 2 0 01-2-2V10a2 2 0 012-2h18zm-1 2H5a1 1 0 00-1 1v12a1 1 0 001 1h4a2 2 0 011.414.586L13 27.172l2.586-2.586A2 2 0 0117 24h4a1 1 0 001-1V11a1 1 0 00-1-1zm-6.656 2.382c1.74 0 2.98 1.306 2.98 3.117 0 1.75-1.162 3.034-2.806 3.123l-.185.005-2.632-.001.001 1.965c0 .505-.295.898-.746 1l-.116.019-.122.007c-.54 0-.925-.376-.977-.902l-.006-.124v-7.184c0-.547.346-.963.861-1.019l.122-.007h3.625zM28 2a2 2 0 012 2v12a2 2 0 01-2 2h-3v-2h2a1 1 0 001-1V5a1 1 0 00-1-1H11a1 1 0 00-1 1v1H8V4a2 2 0 012-2h18zM14.091 14.287l-2.39-.001v2.437h2.39c.826 0 1.239-.411 1.239-1.224 0-.757-.359-1.16-1.088-1.208l-.151-.005z" }));
+}));
+ParkCallMessage.displayName = "ParkCallMessage";
+ParkCallMessage["iconName"] = "park-call-message";
+var ParkCallMessage_default = ParkCallMessage;
+
+// node_modules/@ringcentral/juno/es6/icon/ParkCallText.js
+import React292, { forwardRef as forwardRef275, memo as memo262 } from "react";
+var __assign270 = function() {
+  __assign270 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign270.apply(this, arguments);
+};
+var ParkCallText = memo262(forwardRef275(function(props, svgRef) {
+  return React292.createElement("svg", __assign270({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React292.createElement("path", { d: "M16 3c1.944 0 3.762.304 5.454.912 1.711.627 3.199 1.48 4.463 2.559s2.256 2.353 2.975 3.824C29.631 11.766 30 13.354 30 15.06s-.369 3.304-1.108 4.794c-.739 1.49-1.74 2.794-3.004 3.912s-2.751 2-4.462 2.647c-1.692.627-3.5.941-5.425.941-.369 0-.739-.01-1.108-.029s-.739-.059-1.108-.118l-.467-.088-.058.059c-.719.627-1.556 1.137-2.508 1.529s-2.012.608-3.179.647H5.59c-.35 0-.617-.162-.802-.485s-.18-.642.015-.956l.817-1.324c.292-.51.525-.946.7-1.309s.311-.681.408-.956l.029-.029-.292-.235c-.681-.569-1.293-1.186-1.837-1.853s-1.006-1.368-1.385-2.103c-.379-.735-.676-1.505-.89-2.309s-.331-1.608-.35-2.412v-.324c0-1.706.369-3.294 1.108-4.765.719-1.451 1.711-2.721 2.975-3.809s2.751-1.936 4.463-2.544C12.241 3.314 14.059 3 16.003 3zm0 1.882c-1.692 0-3.276.265-4.754.794s-2.761 1.25-3.85 2.162a10.343 10.343 0 00-2.596 3.25 8.707 8.707 0 00-.933 3.971c0 .765.097 1.52.292 2.265.214.765.51 1.495.89 2.191s.851 1.348 1.415 1.956a13.026 13.026 0 001.896 1.676c.136.098.243.23.321.397s.097.338.058.515c-.058.373-.185.789-.379 1.25S7.893 26.333 7.543 27l-.263.471h.292c.953-.039 1.818-.226 2.596-.559s1.458-.765 2.042-1.294l.175-.176c.117-.098.248-.172.394-.221s.287-.054.423-.015c.506.098.987.167 1.444.206s.909.059 1.356.059c1.672 0 3.247-.274 4.725-.824s2.766-1.294 3.865-2.235a10.26 10.26 0 002.581-3.324c.642-1.255.962-2.598.962-4.029s-.311-2.765-.933-4c-.622-1.235-1.483-2.309-2.581-3.221s-2.387-1.632-3.865-2.162c-1.478-.529-3.063-.794-4.754-.794zm.989 5.618c2.052 0 3.511 1.537 3.511 3.678 0 2.076-1.377 3.591-3.328 3.687l-.197.005h-3.303v2.493c0 .57-.332 1.007-.84 1.113l-.12.019-.126.006c-.602 0-1.027-.418-1.081-1.009l-.006-.129V11.64c0-.614.385-1.073.96-1.132l.126-.006h4.402zm-.307 2.098h-3.009v3.173h3.009c1.062 0 1.612-.547 1.612-1.593 0-.982-.486-1.518-1.439-1.575l-.173-.005z" }));
+}));
+ParkCallText.displayName = "ParkCallText";
+ParkCallText["iconName"] = "park-call-text";
+var ParkCallText_default = ParkCallText;
+
+// node_modules/@ringcentral/juno/es6/icon/ParkCall.js
+import React293, { forwardRef as forwardRef276, memo as memo263 } from "react";
+var __assign271 = function() {
+  __assign271 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign271.apply(this, arguments);
+};
+var ParkCall = memo263(forwardRef276(function(props, svgRef) {
+  return React293.createElement("svg", __assign271({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React293.createElement("path", { d: "M19.837 3.75c4.69 0 7.803 2.902 7.803 7.298 0 4.216-2.865 7.052-7.271 7.269l-.303.011-.245.003h-8.829l.001 8.259c0 .476-.232.864-.621 1.049l-.135.054-.133.035-.13.018-.111.005c-.566 0-.986-.356-1.09-.906l-.019-.141-.005-.114V4.911c0-.582.334-1.024.866-1.135l.137-.021.111-.005h9.974zm-.208 2.132h-8.637v10.315l8.64.001c3.585 0 5.75-1.949 5.75-5.15 0-3.061-1.944-4.971-5.228-5.152l-.293-.011-.233-.003z" }));
+}));
+ParkCall.displayName = "ParkCall";
+ParkCall["iconName"] = "park-call";
+var ParkCall_default = ParkCall;
+
+// node_modules/@ringcentral/juno/es6/icon/PartnerCloudContact.js
+import React294, { forwardRef as forwardRef277, memo as memo264 } from "react";
+var __assign272 = function() {
+  __assign272 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign272.apply(this, arguments);
+};
+var PartnerCloudContact = memo264(forwardRef277(function(props, svgRef) {
+  return React294.createElement("svg", __assign272({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React294.createElement("path", { d: "M28 3a2 2 0 012 2v22a2 2 0 01-2 2H7.986V3H28zM5.971 3v26H4a2 2 0 01-2-2V5a2 2 0 012-2h1.971zm18.024 14.014H13.982a2 2 0 00-2 2v5.047h14.013v-5.047a2 2 0 00-2-2zM19 7a4 4 0 100 8 4 4 0 000-8z" }));
+}));
+PartnerCloudContact.displayName = "PartnerCloudContact";
+PartnerCloudContact["iconName"] = "partner_cloud_contact";
+var PartnerCloudContact_default = PartnerCloudContact;
+
+// node_modules/@ringcentral/juno/es6/icon/PauseBorder.js
+import React295, { forwardRef as forwardRef278, memo as memo265 } from "react";
+var __assign273 = function() {
+  __assign273 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign273.apply(this, arguments);
+};
+var PauseBorder = memo265(forwardRef278(function(props, svgRef) {
+  return React295.createElement("svg", __assign273({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React295.createElement("path", { d: "M11 25H9a1 1 0 01-1-1V8a1 1 0 011-1h2a1 1 0 011 1v16a1 1 0 01-1 1zm1-20H8a2 2 0 00-2 2v18a2 2 0 002 2h4a2 2 0 002-2V7a2 2 0 00-2-2zm11 20h-2a1 1 0 01-1-1V8a1 1 0 011-1h2a1 1 0 011 1v16a1 1 0 01-1 1zm1-20h-4a2 2 0 00-2 2v18a2 2 0 002 2h4a2 2 0 002-2V7a2 2 0 00-2-2z" }));
+}));
+PauseBorder.displayName = "PauseBorder";
+PauseBorder["iconName"] = "pause_border";
+var PauseBorder_default = PauseBorder;
+
+// node_modules/@ringcentral/juno/es6/icon/PauseCircle.js
+import React296, { forwardRef as forwardRef279, memo as memo266 } from "react";
+var __assign274 = function() {
+  __assign274 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign274.apply(this, arguments);
+};
+var PauseCircle = memo266(forwardRef279(function(props, svgRef) {
+  return React296.createElement("svg", __assign274({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React296.createElement("path", { d: "M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm-3 8a1 1 0 00-.993.883L12 11v10a1 1 0 001.993.117L14 21V11a1 1 0 00-1-1zm6 0a1 1 0 00-.993.883L18 11v10a1 1 0 001.993.117L20 21V11a1 1 0 00-1-1z" }));
+}));
+PauseCircle.displayName = "PauseCircle";
+PauseCircle["iconName"] = "pause_circle";
+var PauseCircle_default = PauseCircle;
+
+// node_modules/@ringcentral/juno/es6/icon/PauseCircleBorder.js
+import React297, { forwardRef as forwardRef280, memo as memo267 } from "react";
+var __assign275 = function() {
+  __assign275 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign275.apply(this, arguments);
+};
+var PauseCircleBorder = memo267(forwardRef280(function(props, svgRef) {
+  return React297.createElement("svg", __assign275({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React297.createElement("path", { d: "M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm0 2C9.373 4 4 9.373 4 16s5.373 12 12 12 12-5.373 12-12S22.627 4 16 4zm-3 6a1 1 0 011 1v10a1 1 0 01-2 0V11a1 1 0 011-1zm6 0a1 1 0 011 1v10a1 1 0 01-2 0V11a1 1 0 011-1z" }));
+}));
+PauseCircleBorder.displayName = "PauseCircleBorder";
+PauseCircleBorder["iconName"] = "pause_circle_border";
+var PauseCircleBorder_default = PauseCircleBorder;
+
+// node_modules/@ringcentral/juno/es6/icon/Pause.js
+import React298, { forwardRef as forwardRef281, memo as memo268 } from "react";
+var __assign276 = function() {
+  __assign276 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign276.apply(this, arguments);
+};
+var Pause = memo268(forwardRef281(function(props, svgRef) {
+  return React298.createElement("svg", __assign276({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React298.createElement("path", { d: "M12 5c1.054 0 1.918.816 1.995 1.851L14 7v18a2 2 0 01-1.851 1.994L12 27H8a2.001 2.001 0 01-1.995-1.851L6 25V7c0-1.054.816-1.918 1.851-1.995L8 5h4zm12 0a2 2 0 011.994 1.851L26 7v18a2 2 0 01-1.851 1.994L24 27h-4a2 2 0 01-1.994-1.851L18 25V7c0-1.054.816-1.918 1.851-1.995L20 5h4z" }));
+}));
+Pause.displayName = "Pause";
+Pause["iconName"] = "pause";
+var Pause_default = Pause;
+
+// node_modules/@ringcentral/juno/es6/icon/PdfD.js
+import React299, { forwardRef as forwardRef282, memo as memo269 } from "react";
+var __assign277 = function() {
+  __assign277 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign277.apply(this, arguments);
+};
+var PdfD = memo269(forwardRef282(function(props, svgRef) {
+  return React299.createElement("svg", __assign277({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React299.createElement("path", { fill: "var(--color35, #43201f)", d: "M3.556 0h24.889a3.556 3.556 0 013.556 3.556v24.889a3.556 3.556 0 01-3.556 3.556H3.556A3.556 3.556 0 010 28.445V3.556A3.556 3.556 0 013.556 0z" }), React299.createElement("path", { fill: "var(--color36, #de4944)", d: "M11.919 8h4.752l5.551 4.785v9.059c0 .605-.207 1.116-.62 1.532S20.681 24 20.08 24h-8.161c-.601 0-1.108-.208-1.522-.624s-.62-.927-.62-1.532V10.156c0-.605.207-1.116.62-1.532S11.317 8 11.919 8z" }), React299.createElement("path", { fill: "var(--color20, #f1f1f1)", d: "M15.208 10.748a.834.834 0 01.9.225l.049.057.048.066c.262.387.35 1.05.28 2.02-.03.42-.166.975-.403 1.654l.041.05.959 1.201.267.328.236.281.26.297.17-.004.169-.001c1.613 0 2.705.34 3.075.981a.871.871 0 01.009.89c-.197.341-.602.552-1.096.579l-.102.003-.13-.004a2.44 2.44 0 01-.264-.033c-.653-.12-1.357-.6-2.209-1.497-.206.012-.417.028-.631.049-.768.074-1.605.222-2.4.469l-.183.323-.091.157c-.637 1.091-1.256 1.946-1.753 2.271a1.59 1.59 0 01-.722.268l-.097.004-.081-.003-.078-.009a.836.836 0 01-.667-.514c-.216-.53.084-1.232.802-1.933.546-.533 1.302-.972 2.25-1.306a24.63 24.63 0 001.257-2.712l-.08-.134-.076-.137c-.537-1.015-.695-2.253-.432-3.062.15-.459.408-.72.719-.825zm-2.156 8.19l-.164.096-.155.1c-.201.135-.38.279-.536.43-.421.411-.605.761-.604.91l.002.009.044-.004.05-.011a.854.854 0 00.233-.111c.235-.154.614-.622 1.048-1.291l.082-.128zm5.707-1.103l.104.086.111.088c.33.252.617.398.866.444l.079.012.074.007.078.003.067-.002a.612.612 0 00.328-.1l.02-.02-.024-.036-.03-.034c-.192-.193-.724-.372-1.534-.438l-.138-.01zm-3.049-2.097l-.128.3c-.175.404-.37.823-.577 1.239a13.522 13.522 0 011.719-.279l-.151-.182-.34-.42-.523-.658zm-.237-4.127l-.021.021-.022.029a.793.793 0 00-.088.19c-.147.451-.098 1.159.136 1.825.062-.246.1-.457.112-.626.058-.796-.002-1.231-.1-1.41l-.018-.029z" }));
+}));
+PdfD.displayName = "PdfD";
+PdfD["iconName"] = "pdf-D";
+var PdfD_default = PdfD;
+
+// node_modules/@ringcentral/juno/es6/icon/Pdf.js
+import React300, { forwardRef as forwardRef283, memo as memo270 } from "react";
+var __assign278 = function() {
+  __assign278 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign278.apply(this, arguments);
+};
+var __rest23 = function(s2, e2) {
+  var t2 = {};
+  for (var p in s2)
+    if (Object.prototype.hasOwnProperty.call(s2, p) && e2.indexOf(p) < 0)
+      t2[p] = s2[p];
+  if (s2 != null && typeof Object.getOwnPropertySymbols === "function")
+    for (var i2 = 0, p = Object.getOwnPropertySymbols(s2); i2 < p.length; i2++) {
+      if (e2.indexOf(p[i2]) < 0 && Object.prototype.propertyIsEnumerable.call(s2, p[i2]))
+        t2[p[i2]] = s2[p[i2]];
+    }
+  return t2;
+};
+var Pdf = memo270(forwardRef283(function(inProps, svgRef) {
+  var theme = RcUseTheme();
+  var _a2 = inProps.themeType, themeType = _a2 === void 0 ? theme.palette.type : _a2, props = __rest23(inProps, ["themeType"]);
+  return themeType === "dark" ? React300.createElement(PdfD_default, __assign278({}, props, { ref: svgRef })) : React300.createElement("svg", __assign278({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React300.createElement("path", { fill: "var(--color25, #fff)", opacity: 0.992, d: "M3.556 0h24.889a3.556 3.556 0 013.556 3.556v24.889a3.556 3.556 0 01-3.556 3.556H3.556A3.556 3.556 0 010 28.445V3.556A3.556 3.556 0 013.556 0z" }), React300.createElement("path", { fill: "var(--color54, #e6413c)", opacity: 0.16, d: "M3.556 0h24.889a3.556 3.556 0 013.556 3.556v24.889a3.556 3.556 0 01-3.556 3.556H3.556A3.556 3.556 0 010 28.445V3.556A3.556 3.556 0 013.556 0z" }), React300.createElement("path", { fill: "var(--color54, #e6413c)", d: "M11.919 8h4.752l5.551 4.785v9.059c0 .605-.207 1.116-.62 1.532S20.681 24 20.08 24h-8.161c-.601 0-1.108-.208-1.522-.624s-.62-.927-.62-1.532V10.156c0-.605.207-1.116.62-1.532S11.317 8 11.919 8zm4.239 3.029l-.049-.057a.839.839 0 00-.9-.225c-.311.104-.569.365-.719.825-.264.808-.106 2.047.432 3.062l.076.137.08.134a24.63 24.63 0 01-1.257 2.712c-.948.334-1.704.773-2.25 1.306-.718.701-1.018 1.403-.802 1.933.115.282.36.467.667.514l.078.009.081.003.097-.004a1.59 1.59 0 00.722-.268c.497-.325 1.116-1.18 1.753-2.271l.091-.157.183-.324a12.122 12.122 0 012.4-.469c.213-.021.425-.037.631-.049.852.897 1.556 1.376 2.209 1.497.088.016.177.027.264.033l.13.004.102-.003c.494-.026.899-.237 1.096-.579a.871.871 0 00-.009-.89c-.37-.641-1.462-.981-3.075-.981l-.169.001-.17.004-.26-.297-.236-.281-.267-.328-.959-1.201-.041-.05c.237-.679.373-1.234.403-1.654.07-.97-.018-1.633-.28-2.02l-.048-.066zm-3.106 7.909l-.164.096-.155.1c-.201.135-.38.279-.536.43-.421.411-.605.761-.604.91l.001.009.044-.004.05-.011a.854.854 0 00.233-.111c.235-.154.614-.622 1.048-1.291l.082-.128zm5.707-1.103l.104.087.111.088c.33.251.617.398.866.444l.079.012.074.007.078.003.067-.002a.612.612 0 00.328-.1l.02-.02-.024-.036-.03-.034c-.192-.193-.724-.372-1.534-.438l-.138-.01zm-3.049-2.097l-.127.3c-.175.404-.37.823-.577 1.239a13.522 13.522 0 011.719-.279l-.151-.182-.34-.42-.523-.658zm-.237-4.127l-.021.021-.022.029a.793.793 0 00-.088.19c-.147.451-.098 1.159.136 1.825.062-.246.1-.457.112-.626.058-.796-.002-1.231-.1-1.41l-.018-.029z" }));
+}));
+Pdf.displayName = "Pdf";
+Pdf["iconName"] = "pdf";
+var Pdf_default = Pdf;
+
+// node_modules/@ringcentral/juno/es6/icon/People.js
+import React301, { forwardRef as forwardRef284, memo as memo271 } from "react";
+var __assign279 = function() {
+  __assign279 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign279.apply(this, arguments);
+};
+var People = memo271(forwardRef284(function(props, svgRef) {
+  return React301.createElement("svg", __assign279({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React301.createElement("path", { d: "M16 18c7.067 0 13 4.315 13 10a2 2 0 01-2 2H5a2 2 0 01-2-2c0-5.685 5.933-10 13-10zm0-16a7 7 0 110 14 7 7 0 010-14z" }));
+}));
+People.displayName = "People";
+People["iconName"] = "people";
+var People_default = People;
+
+// node_modules/@ringcentral/juno/es6/icon/PhoneBorder.js
+import React302, { forwardRef as forwardRef285, memo as memo272 } from "react";
+var __assign280 = function() {
+  __assign280 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign280.apply(this, arguments);
+};
+var PhoneBorder = memo272(forwardRef285(function(props, svgRef) {
+  return React302.createElement("svg", __assign280({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React302.createElement("path", { d: "M10.791 2.353a3.42 3.42 0 011.577 1.5 33.63 33.63 0 001.257 2.265 49.99 49.99 0 001.696 2.601c.414.626.579 1.307.486 2.017-.091.699-.403 1.322-.977 1.9a6.076 6.076 0 01-1.027.705 1.161 1.161 0 01-.218.137l-.171.083-.137.078a7.09 7.09 0 01-.229.109c.016.079.043.175.083.29l.098.258c.124.331.324.717.602 1.154.285.448.649.938 1.09 1.465a13.92 13.92 0 001.328 1.391c.395.352.753.616 1.068.791.121.067.226.121.312.159l.218-.239.08-.079.085-.107.254-.263c.119-.12.226-.223.321-.31.171-.156.362-.306.617-.477a3.574 3.574 0 012.169-.483c.803.071 1.484.39 1.965.905a69.978 69.978 0 001.865 1.697l.459.399c.57.491 1.262 1.072 2.075 1.742.586.482.976 1.073 1.157 1.757.164.617.135 1.216-.074 1.743l-.087.194c-.193.479-.565 1.044-1.117 1.713-.476.576-.912 1.028-1.295 1.343l-.161.127c-.44.363-.947.637-1.516.818a6.008 6.008 0 01-1.828.264c-1.073 0-2.192-.21-3.356-.625-1.135-.405-2.29-.984-3.466-1.737a24.373 24.373 0 01-3.044-2.327l-.431-.391a36.73 36.73 0 01-3.448-3.565c-1.492-1.787-2.714-3.551-3.664-5.291-.955-1.731-1.628-3.354-2.018-4.87-.397-1.544-.493-2.938-.281-4.173.204-1.306.769-2.366 1.703-3.149.433-.361 1.041-.728 1.828-1.11.803-.39 1.468-.63 2.018-.716a3.627 3.627 0 012.133.308zm-.849 1.811a1.627 1.627 0 00-.976-.142c-.314.049-.8.222-1.451.538-.661.321-1.134.608-1.416.843-.548.46-.881 1.078-1.018 1.956-.16.934-.085 2.047.247 3.337.345 1.34.953 2.809 1.836 4.41.884 1.619 2.031 3.276 3.432 4.954a34.87 34.87 0 003.283 3.393 22.997 22.997 0 003.194 2.502c1.055.675 2.074 1.187 3.059 1.538.959.342 1.853.509 2.684.509.466 0 .872-.058 1.223-.17.274-.087.514-.206.768-.392l.155-.12c.275-.206.66-.595 1.112-1.142.391-.473.643-.844.765-1.097l.106-.236c.064-.128.078-.299.017-.53-.072-.27-.226-.504-.496-.726l-1.295-1.078a76.207 76.207 0 01-2.581-2.268l-.624-.582-.088-.088c-.138-.148-.36-.25-.681-.279a1.596 1.596 0 00-.827.134l-.119.063-.049.035a3.377 3.377 0 00-.189.145l-.079.069-.16.152-.227.231-.036.047a2.91 2.91 0 01-.09.104l-.159.162-.157.172a1.998 1.998 0 01-2.3.472 6.246 6.246 0 01-.459-.233c-.46-.256-.934-.607-1.428-1.047a16.01 16.01 0 01-1.531-1.601 16.348 16.348 0 01-1.243-1.674 8.88 8.88 0 01-.691-1.286l-.073-.183a5.005 5.005 0 01-.292-.913 2 2 0 011.025-2.162l.25-.12.178-.098.111-.054.05-.036.143-.086c.134-.073.249-.143.346-.21l.175-.127.102-.083.049-.052c.16-.183.247-.349.289-.528l.02-.109a.87.87 0 00-.147-.621 52.75 52.75 0 01-1.763-2.705 34.089 34.089 0 01-1.299-2.338 1.447 1.447 0 00-.553-.588l-.12-.063z" }));
+}));
+PhoneBorder.displayName = "PhoneBorder";
+PhoneBorder["iconName"] = "phone_border";
+var PhoneBorder_default = PhoneBorder;
+
+// node_modules/@ringcentral/juno/es6/icon/PhoneOffBorder.js
+import React303, { forwardRef as forwardRef286, memo as memo273 } from "react";
+var __assign281 = function() {
+  __assign281 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign281.apply(this, arguments);
+};
+var PhoneOffBorder = memo273(forwardRef286(function(props, svgRef) {
+  return React303.createElement("svg", __assign281({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React303.createElement("path", { d: "M21.373 17.3c.803.071 1.484.39 1.965.905a69.978 69.978 0 001.865 1.697l.459.399.947.804c.346.29.722.603 1.129.938.586.482.976 1.073 1.157 1.757.164.617.135 1.216-.074 1.743l-.087.194c-.193.479-.565 1.044-1.117 1.713-.476.576-.912 1.028-1.295 1.343l-.161.127c-.44.363-.947.637-1.516.818a6.008 6.008 0 01-1.828.264c-1.073 0-2.192-.21-3.356-.625-1.135-.405-2.29-.984-3.466-1.737a24.373 24.373 0 01-3.044-2.327l-.431-.391a34.21 34.21 0 01-1.339-1.27l1.414-1.415c.282.283.566.557.852.823l.431.394a22.997 22.997 0 003.194 2.502c1.055.675 2.074 1.187 3.059 1.538.959.342 1.853.509 2.684.509.466 0 .872-.058 1.223-.17.274-.087.514-.206.768-.392l.155-.12c.275-.206.66-.595 1.112-1.142.391-.473.643-.844.765-1.097l.106-.236c.064-.128.078-.299.017-.53-.072-.27-.226-.504-.496-.726l-1.295-1.078-.817-.695a71.406 71.406 0 01-1.764-1.573l-.624-.582-.088-.088c-.138-.148-.36-.25-.681-.279a1.596 1.596 0 00-.827.134l-.119.063-.049.035a3.377 3.377 0 00-.189.145l-.079.069-.16.152-.227.231-.036.047a2.91 2.91 0 01-.09.104l-.159.162-.157.172a1.998 1.998 0 01-2.3.472 6.246 6.246 0 01-.459-.233 7.973 7.973 0 01-1.367-.993l1.416-1.419.048.041c.319.269.611.477.874.623.121.067.226.121.312.159l.218-.239.08-.079.085-.107.254-.263.222-.218a5.112 5.112 0 01.716-.569 3.574 3.574 0 012.169-.483zm8.062-13.321a.999.999 0 010 1.414L5.393 29.435a.999.999 0 11-1.414-1.414L28.021 3.979a.999.999 0 011.414 0zM10.791 2.353a3.42 3.42 0 011.577 1.5 33.63 33.63 0 001.257 2.265 49.99 49.99 0 001.696 2.601c.414.626.579 1.307.486 2.017-.091.699-.403 1.322-.977 1.9a6.076 6.076 0 01-1.027.705 1.161 1.161 0 01-.218.137l-.171.083-.178.098-.045.022a1.99 1.99 0 00-.144.067c.016.079.043.175.083.29l.098.258c.117.314.304.677.56 1.086l-1.444 1.446c-.07-.103-.137-.205-.201-.306a8.88 8.88 0 01-.691-1.286l-.073-.183a5.005 5.005 0 01-.292-.913 2 2 0 011.025-2.162l.25-.12.178-.098.111-.054.05-.036.143-.086c.134-.073.249-.143.346-.21l.175-.127.102-.083.049-.052c.16-.183.247-.349.289-.528l.02-.109a.87.87 0 00-.147-.621 52.75 52.75 0 01-1.763-2.705 34.089 34.089 0 01-1.299-2.338 1.447 1.447 0 00-.553-.588l-.12-.063a1.627 1.627 0 00-.976-.142c-.314.049-.8.222-1.451.538-.661.321-1.134.608-1.416.843-.548.46-.881 1.078-1.018 1.956-.16.934-.085 2.047.247 3.337.345 1.34.953 2.809 1.836 4.41.74 1.355 1.664 2.737 2.767 4.135L8.508 20.66c-1.239-1.551-2.272-3.085-3.099-4.599-.955-1.731-1.628-3.354-2.018-4.87-.397-1.544-.493-2.938-.281-4.173.204-1.306.769-2.366 1.703-3.149.433-.361 1.041-.728 1.828-1.11.803-.39 1.468-.63 2.018-.716a3.627 3.627 0 012.133.308z" }));
+}));
+PhoneOffBorder.displayName = "PhoneOffBorder";
+PhoneOffBorder["iconName"] = "phone-off_border";
+var PhoneOffBorder_default = PhoneOffBorder;
+
+// node_modules/@ringcentral/juno/es6/icon/PhoneOff.js
+import React304, { forwardRef as forwardRef287, memo as memo274 } from "react";
+var __assign282 = function() {
+  __assign282 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign282.apply(this, arguments);
+};
+var PhoneOff = memo274(forwardRef287(function(props, svgRef) {
+  return React304.createElement("svg", __assign282({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React304.createElement("path", { d: "M21.373 17.3c.803.071 1.484.39 1.965.905a69.978 69.978 0 001.865 1.697l.459.399c.57.491 1.262 1.072 2.075 1.742.586.482.976 1.073 1.157 1.757.164.617.135 1.216-.074 1.743l-.087.194c-.193.479-.565 1.044-1.117 1.713-.476.576-.912 1.028-1.295 1.343l-.161.127c-.44.363-.947.637-1.516.818a6.008 6.008 0 01-1.828.264c-1.073 0-2.192-.21-3.356-.625-1.135-.405-2.29-.984-3.466-1.737a24.373 24.373 0 01-3.044-2.327l-.431-.391a34.21 34.21 0 01-1.339-1.27l5.212-5.216.048.041c.319.269.611.477.874.623.121.067.226.121.312.159l.218-.239.08-.079.085-.107.254-.263c.119-.12.226-.223.321-.31.171-.156.362-.306.617-.477a3.574 3.574 0 012.169-.483zm8.062-13.321a.999.999 0 010 1.414L5.393 29.435a.999.999 0 11-1.414-1.414L28.021 3.979a.999.999 0 011.414 0zM10.791 2.353a3.42 3.42 0 011.577 1.5 33.63 33.63 0 001.257 2.265 49.99 49.99 0 001.696 2.601c.414.626.579 1.307.486 2.017-.091.699-.403 1.322-.977 1.9a6.076 6.076 0 01-1.027.705 1.161 1.161 0 01-.218.137l-.171.083-.137.078a7.09 7.09 0 01-.229.109c.016.079.043.175.083.29l.098.258c.117.314.304.677.56 1.086l-5.28 5.281c-1.239-1.551-2.272-3.085-3.099-4.599-.955-1.731-1.628-3.354-2.018-4.87-.397-1.544-.493-2.938-.281-4.173.204-1.306.769-2.366 1.703-3.149.433-.361 1.041-.728 1.828-1.11.803-.39 1.468-.63 2.018-.716a3.627 3.627 0 012.133.308z" }));
+}));
+PhoneOff.displayName = "PhoneOff";
+PhoneOff["iconName"] = "phone-off";
+var PhoneOff_default = PhoneOff;
+
+// node_modules/@ringcentral/juno/es6/icon/Phone.js
+import React305, { forwardRef as forwardRef288, memo as memo275 } from "react";
+var __assign283 = function() {
+  __assign283 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign283.apply(this, arguments);
+};
+var Phone = memo275(forwardRef288(function(props, svgRef) {
+  return React305.createElement("svg", __assign283({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React305.createElement("path", { d: "M13.228 14.296c.124.331.324.717.602 1.154.285.448.649.938 1.09 1.465a13.92 13.92 0 001.328 1.391c.395.352.753.616 1.068.791.121.067.226.121.312.159l.218-.239.08-.078c-.004.003.001-.001.009-.015l.076-.093c.226-.238.417-.428.575-.573.171-.156.362-.306.617-.477a3.574 3.574 0 012.169-.483c.803.071 1.484.39 1.965.905.599.566 1.221 1.131 1.865 1.697s1.489 1.28 2.534 2.141c.586.482.976 1.073 1.157 1.757.184.694.125 1.365-.161 1.937-.193.479-.565 1.044-1.117 1.713-.544.659-1.035 1.155-1.456 1.47-.44.363-.947.637-1.516.818a6.01 6.01 0 01-1.829.264c-1.073 0-2.192-.21-3.356-.625-1.135-.405-2.29-.984-3.466-1.737a24.989 24.989 0 01-3.475-2.719 36.73 36.73 0 01-3.448-3.565c-1.492-1.787-2.714-3.551-3.664-5.291-.955-1.731-1.628-3.354-2.018-4.87-.397-1.544-.493-2.938-.281-4.173.204-1.306.769-2.366 1.703-3.149.433-.361 1.041-.728 1.828-1.11.803-.39 1.468-.63 2.018-.716.735-.115 1.455-.01 2.133.308s1.204.818 1.577 1.5a33.63 33.63 0 001.257 2.265 49.99 49.99 0 001.696 2.601c.414.626.579 1.307.486 2.017-.091.699-.403 1.322-.977 1.9a6.076 6.076 0 01-1.027.705 1.161 1.161 0 01-.218.137l-.171.083a2.256 2.256 0 01-.223.12 1.99 1.99 0 00-.144.067c.027.132.084.31.182.548z" }));
+}));
+Phone.displayName = "Phone";
+Phone["iconName"] = "phone";
+var Phone_default = Phone;
+
+// node_modules/@ringcentral/juno/es6/icon/PickUpCall.js
+import React306, { forwardRef as forwardRef289, memo as memo276 } from "react";
+var __assign284 = function() {
+  __assign284 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign284.apply(this, arguments);
+};
+var PickUpCall = memo276(forwardRef289(function(props, svgRef) {
+  return React306.createElement("svg", __assign284({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React306.createElement("path", { d: "M8.064 16.054a2.241 2.241 0 012.146 2.168c.054.846.025 1.695.036 2.543l-.018.279c3.111.906 8.414.901 11.523-.014l-.011-2.01a3.597 3.597 0 01.223-1.575 2.116 2.116 0 011.919-1.353 90.817 90.817 0 014.868.009 2.262 2.262 0 012.167 2.102c.022.275.039.613.052.984l.02.775.01.804v1.137l-.008.63c-.032.772-.313 2.513-.8 3.109a1.638 1.638 0 00-.08.149l-.649.673-.71.518c-.119.085-.239.169-.362.249a16.805 16.805 0 01-4.005 1.772l-.529.146c-2.453.707-6.002 1.02-8.552.927-3.121-.131-7.154-.682-10.021-1.992a10.117 10.117 0 01-2.869-1.852c-.858-.747-1.362-3.825-1.389-4.969l-.02-1.148a20.044 20.044 0 01.031-1.717c.109-1.461.956-2.316 2.407-2.368a65.916 65.916 0 014.621.025zm-4.549 1.974l-.165.01c-.211.022-.271.084-.302.317l-.017.182-.021.393-.009.427.004.73.02 1.128c.02.888.461 3.296.742 3.541a8.167 8.167 0 002.018 1.358l.329.148c2.432 1.111 6.133 1.681 9.263 1.812 2.158.079 5.316-.16 7.447-.719l.532-.146a14.715 14.715 0 003.938-1.654l.221-.15.629-.459.346-.359.068-.109.085-.104c.213-.261.337-1.587.35-1.879l.007-.581.002-.92-.01-.916-.013-.574-.018-.52-.023-.445a7.104 7.104 0 00-.014-.188c-.011-.142-.118-.247-.229-.25a90.072 90.072 0 00-4.764-.009.111.111 0 00-.097.064 1.586 1.586 0 00-.104.558l.012.296.02 3.515-1.444.425c-3.324.978-8.847 1.025-12.191.142l-.455-.126-1.517-.442.093-1.834-.002-1.41-.005-.36-.01-.314-.016-.309a.25.25 0 00-.167-.233l-.057-.01a64.05 64.05 0 00-4.473-.025zM16 2c.32 0 .604.15.787.383a.994.994 0 01.091.081l5.657 5.657a.999.999 0 11-1.414 1.414l-4.122-4.122v12.586a1 1 0 01-2 0V5.412l-4.121 4.123a.999.999 0 11-1.414-1.414l5.657-5.657.094-.083A.998.998 0 0115.999 2z" }));
+}));
+PickUpCall.displayName = "PickUpCall";
+PickUpCall["iconName"] = "pick_up_call";
+var PickUpCall_default = PickUpCall;
+
+// node_modules/@ringcentral/juno/es6/icon/Pin.js
+import React307, { forwardRef as forwardRef290, memo as memo277 } from "react";
+var __assign285 = function() {
+  __assign285 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign285.apply(this, arguments);
+};
+var Pin = memo277(forwardRef290(function(props, svgRef) {
+  return React307.createElement("svg", __assign285({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React307.createElement("path", { d: "M4.302 14.798a1.141 1.141 0 010-1.613 10.248 10.248 0 018.724-2.901l5.045-8.715a1.14 1.14 0 011.793-.234l10.802 10.801a1.141 1.141 0 01-.235 1.794l-8.715 5.046a10.246 10.246 0 01-2.901 8.723 1.141 1.141 0 01-1.613 0l-5.644-5.644-7.256 7.256c-.445.445-2.78 2.058-3.225 1.613s1.167-2.78 1.613-3.225l7.256-7.256-5.644-5.644z" }));
+}));
+Pin.displayName = "Pin";
+Pin["iconName"] = "pin";
+var Pin_default = Pin;
+
+// node_modules/@ringcentral/juno/es6/icon/PlayBorder.js
+import React308, { forwardRef as forwardRef291, memo as memo278 } from "react";
+var __assign286 = function() {
+  __assign286 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign286.apply(this, arguments);
+};
+var PlayBorder = memo278(forwardRef291(function(props, svgRef) {
+  return React308.createElement("svg", __assign286({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React308.createElement("path", { d: "M10.614 5.267l.193.101 16.217 9.164c1.294.837 1.303 2.087.017 2.934l-.214.13-16.185 9.128c-1.409.694-2.538.035-2.633-1.519l-.007-.217-.003-17.973.005-.201c.087-1.567 1.206-2.229 2.609-1.547zm-.615 1.941l.003 17.587 15.576-8.789L9.999 7.208z" }));
+}));
+PlayBorder.displayName = "PlayBorder";
+PlayBorder["iconName"] = "play_border";
+var PlayBorder_default = PlayBorder;
+
+// node_modules/@ringcentral/juno/es6/icon/PlayCircle.js
+import React309, { forwardRef as forwardRef292, memo as memo279 } from "react";
+var __assign287 = function() {
+  __assign287 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign287.apply(this, arguments);
+};
+var PlayCircle = memo279(forwardRef292(function(props, svgRef) {
+  return React309.createElement("svg", __assign287({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React309.createElement("path", { d: "M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm-2.693 8.146c-.662-.351-1.198-.049-1.292.706l-.012.138-.003.11.002 9.803.003.119c.045.801.551 1.166 1.201.885l.116-.056.089-.051 8.11-4.998c.605-.435.637-1.064.099-1.518l-.108-.083-.093-.061-8.112-4.993z" }));
+}));
+PlayCircle.displayName = "PlayCircle";
+PlayCircle["iconName"] = "play_circle";
+var PlayCircle_default = PlayCircle;
+
+// node_modules/@ringcentral/juno/es6/icon/PlayCircleBorder.js
+import React310, { forwardRef as forwardRef293, memo as memo280 } from "react";
+var __assign288 = function() {
+  __assign288 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign288.apply(this, arguments);
+};
+var PlayCircleBorder = memo280(forwardRef293(function(props, svgRef) {
+  return React310.createElement("svg", __assign288({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React310.createElement("path", { d: "M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm0 2C9.373 4 4 9.373 4 16s5.373 12 12 12 12-5.373 12-12S22.627 4 16 4zm-3.432 5.17l.116.065 9.73 5.832c.776.533.782 1.328.01 1.867l-.128.083-9.711 5.808c-.845.442-1.523.022-1.58-.967l-.004-.138-.002-11.437.003-.128c.052-.997.724-1.418 1.565-.984zm.431 2.584l.002 8.494 7.093-4.245-7.095-4.249z" }));
+}));
+PlayCircleBorder.displayName = "PlayCircleBorder";
+PlayCircleBorder["iconName"] = "play_circle_border";
+var PlayCircleBorder_default = PlayCircleBorder;
+
+// node_modules/@ringcentral/juno/es6/icon/Play.js
+import React311, { forwardRef as forwardRef294, memo as memo281 } from "react";
+var __assign289 = function() {
+  __assign289 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign289.apply(this, arguments);
+};
+var Play = memo281(forwardRef294(function(props, svgRef) {
+  return React311.createElement("svg", __assign289({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React311.createElement("path", { d: "M10.614 5.267l.193.101 16.217 9.164c1.294.837 1.303 2.087.017 2.934l-.214.13-16.185 9.128c-1.409.694-2.538.035-2.633-1.519l-.007-.217-.003-17.973.005-.201c.087-1.567 1.206-2.229 2.609-1.547z" }));
+}));
+Play.displayName = "Play";
+Play["iconName"] = "play";
+var Play_default = Play;
+
+// node_modules/@ringcentral/juno/es6/icon/PoorConnection.js
+import React312, { forwardRef as forwardRef295, memo as memo282 } from "react";
+var __assign290 = function() {
+  __assign290 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign290.apply(this, arguments);
+};
+var PoorConnection = memo282(forwardRef295(function(props, svgRef) {
+  return React312.createElement("svg", __assign290({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React312.createElement("path", { fill: "var(--color11, #000)", opacity: 0.32, d: "M27 4a2 2 0 012 2v20a2 2 0 01-2 2h-2a2 2 0 01-2-2V6a2 2 0 012-2h2zM17 14a2 2 0 012 2v10a2 2 0 01-2 2h-2a2 2 0 01-2-2V16a2 2 0 012-2h2z" }), React312.createElement("path", { fill: "var(--color11, #000)", d: "M5 20h2a2 2 0 012 2v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4a2 2 0 012-2z" }));
+}));
+PoorConnection.displayName = "PoorConnection";
+PoorConnection["iconName"] = "poor-connection";
+var PoorConnection_default = PoorConnection;
+
+// node_modules/@ringcentral/juno/es6/icon/PptD.js
+import React313, { forwardRef as forwardRef296, memo as memo283 } from "react";
+var __assign291 = function() {
+  __assign291 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign291.apply(this, arguments);
+};
+var PptD = memo283(forwardRef296(function(props, svgRef) {
+  return React313.createElement("svg", __assign291({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React313.createElement("path", { fill: "var(--color37, #43261f)", d: "M3.556 0h24.889a3.556 3.556 0 013.556 3.556v24.889a3.556 3.556 0 01-3.556 3.556H3.556A3.556 3.556 0 010 28.445V3.556A3.556 3.556 0 013.556 0z" }), React313.createElement("path", { fill: "var(--color38, #d5583c)", d: "M11.919 8c-.601 0-1.108.208-1.522.624s-.62.927-.62 1.532v11.688c0 .605.207 1.116.62 1.532s.921.624 1.522.624h8.161c.601 0 1.108-.208 1.522-.624s.62-.927.62-1.532v-9.059L16.671 8h-4.752z" }), React313.createElement("path", { fill: "var(--color20, #f1f1f1)", d: "M16.756 12.936c.426 0 .795.057 1.108.17s.582.271.808.473c.225.227.388.492.488.794s.15.656.15 1.059c0 .378-.05.725-.15 1.04s-.263.586-.488.813c-.225.202-.495.359-.808.473s-.683.17-1.108.17h-2.592v3.442h-.939v-8.436h3.532zm-.375.946h-2.217v3.102h2.217c.301 0 .57-.032.808-.095s.432-.158.582-.284c.15-.151.257-.322.319-.511s.094-.41.094-.662c0-.252-.031-.473-.094-.662s-.169-.359-.319-.511c-.15-.126-.344-.221-.582-.284s-.507-.095-.808-.095z" }));
+}));
+PptD.displayName = "PptD";
+PptD["iconName"] = "ppt-D";
+var PptD_default = PptD;
+
+// node_modules/@ringcentral/juno/es6/icon/Ppt.js
+import React314, { forwardRef as forwardRef297, memo as memo284 } from "react";
+var __assign292 = function() {
+  __assign292 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign292.apply(this, arguments);
+};
+var __rest24 = function(s2, e2) {
+  var t2 = {};
+  for (var p in s2)
+    if (Object.prototype.hasOwnProperty.call(s2, p) && e2.indexOf(p) < 0)
+      t2[p] = s2[p];
+  if (s2 != null && typeof Object.getOwnPropertySymbols === "function")
+    for (var i2 = 0, p = Object.getOwnPropertySymbols(s2); i2 < p.length; i2++) {
+      if (e2.indexOf(p[i2]) < 0 && Object.prototype.propertyIsEnumerable.call(s2, p[i2]))
+        t2[p[i2]] = s2[p[i2]];
+    }
+  return t2;
+};
+var Ppt = memo284(forwardRef297(function(inProps, svgRef) {
+  var theme = RcUseTheme();
+  var _a2 = inProps.themeType, themeType = _a2 === void 0 ? theme.palette.type : _a2, props = __rest24(inProps, ["themeType"]);
+  return themeType === "dark" ? React314.createElement(PptD_default, __assign292({}, props, { ref: svgRef })) : React314.createElement("svg", __assign292({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React314.createElement("path", { fill: "var(--color25, #fff)", opacity: 0.992, d: "M3.556 0h24.889a3.556 3.556 0 013.556 3.556v24.889a3.556 3.556 0 01-3.556 3.556H3.556A3.556 3.556 0 010 28.445V3.556A3.556 3.556 0 013.556 0z" }), React314.createElement("path", { fill: "var(--color38, #d5583c)", opacity: 0.16, d: "M3.556 0h24.889a3.556 3.556 0 013.556 3.556v24.889a3.556 3.556 0 01-3.556 3.556H3.556A3.556 3.556 0 010 28.445V3.556A3.556 3.556 0 013.556 0z" }), React314.createElement("path", { fill: "var(--color38, #d5583c)", d: "M11.919 8c-.601 0-1.108.208-1.522.624s-.62.927-.62 1.532v11.688c0 .605.207 1.116.62 1.532s.921.624 1.522.624h8.161c.601 0 1.108-.208 1.522-.624s.62-.927.62-1.532v-9.059L16.671 8h-4.752zm2.245 8.984v-3.102h2.217c.301 0 .57.032.808.095s.432.158.582.284c.15.151.257.322.319.511s.094.41.094.662c0 .252-.031.473-.094.662s-.169.359-.319.511c-.15.126-.344.221-.582.284s-.507.095-.808.095h-2.217zm-.939-4.048h3.532c.426 0 .795.057 1.108.17s.582.271.808.473c.225.227.388.492.488.794s.15.656.15 1.059c0 .378-.05.725-.15 1.04s-.263.586-.488.813c-.225.202-.495.359-.808.473s-.683.17-1.108.17h-2.592v3.442h-.939v-8.436z" }));
+}));
+Ppt.displayName = "Ppt";
+Ppt["iconName"] = "ppt";
+var Ppt_default = Ppt;
+
+// node_modules/@ringcentral/juno/es6/icon/Previous.js
+import React315, { forwardRef as forwardRef298, memo as memo285 } from "react";
+var __assign293 = function() {
+  __assign293 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign293.apply(this, arguments);
+};
+var Previous = memo285(forwardRef298(function(props, svgRef) {
+  return React315.createElement("svg", __assign293({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React315.createElement("path", { d: "M14.899 6.101a.999.999 0 010 1.414L7.413 15h19.586a1 1 0 010 2H7.411l7.488 7.486a.999.999 0 11-1.414 1.414l-9.192-9.192a.999.999 0 010-1.414l9.192-9.192a.999.999 0 011.414 0z" }));
+}));
+Previous.displayName = "Previous";
+Previous["iconName"] = "previous";
+var Previous_default = Previous;
+
+// node_modules/@ringcentral/juno/es6/icon/Quote.js
+import React316, { forwardRef as forwardRef299, memo as memo286 } from "react";
+var __assign294 = function() {
+  __assign294 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign294.apply(this, arguments);
+};
+var Quote = memo286(forwardRef299(function(props, svgRef) {
+  return React316.createElement("svg", __assign294({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React316.createElement("path", { d: "M28 4a2 2 0 012 2v16a2 2 0 01-2 2h-7.586a.997.997 0 00-.707.293l-3.141 3.141a.8.8 0 01-1.131 0l-3.141-3.141a1 1 0 00-.707-.293H4.001a2 2 0 01-2-2V6a2 2 0 012-2h24zm-1 2H5a1 1 0 00-1 1v14a1 1 0 001 1h7a2 2 0 011.414.586L16 25.172l2.586-2.586A2 2 0 0120 22h7a1 1 0 001-1V7a1 1 0 00-1-1zm-15 4a3 3 0 012.98 2.65l.015.185.005.164-.004.147a2.529 2.529 0 01-.01.152l.001-.031a6.958 6.958 0 01-3.056 5.525.5.5 0 01-.579-.818 6.018 6.018 0 002.026-2.31 3 3 0 11-1.376-5.666zm8 0a3 3 0 012.98 2.65l.015.185.005.164-.004.147a2.529 2.529 0 01-.01.152v-.031a6.958 6.958 0 01-3.056 5.525.5.5 0 01-.579-.818 6.018 6.018 0 002.026-2.31 3 3 0 11-1.376-5.666z" }));
+}));
+Quote.displayName = "Quote";
+Quote["iconName"] = "quote";
+var Quote_default = Quote;
+
+// node_modules/@ringcentral/juno/es6/icon/RadioUnselect.js
+import React317, { forwardRef as forwardRef300, memo as memo287 } from "react";
+var __assign295 = function() {
+  __assign295 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign295.apply(this, arguments);
+};
+var RadioUnselect = memo287(forwardRef300(function(props, svgRef) {
+  return React317.createElement("svg", __assign295({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React317.createElement("path", { d: "M16 0c8.837 0 16 7.163 16 16s-7.163 16-16 16S0 24.837 0 16 7.163 0 16 0zm0 2.5C8.544 2.5 2.5 8.544 2.5 16S8.544 29.5 16 29.5 29.5 23.456 29.5 16 23.456 2.5 16 2.5z" }));
+}));
+RadioUnselect.displayName = "RadioUnselect";
+RadioUnselect["iconName"] = "radio_unselect";
+var RadioUnselect_default = RadioUnselect;
+
+// node_modules/@ringcentral/juno/es6/icon/Radio.js
+import React318, { forwardRef as forwardRef301, memo as memo288 } from "react";
+var __assign296 = function() {
+  __assign296 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign296.apply(this, arguments);
+};
+var Radio = memo288(forwardRef301(function(props, svgRef) {
+  return React318.createElement("svg", __assign296({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React318.createElement("path", { d: "M16 0c8.837 0 16 7.163 16 16s-7.163 16-16 16S0 24.837 0 16 7.163 0 16 0zm0 2.5C8.544 2.5 2.5 8.544 2.5 16S8.544 29.5 16 29.5 29.5 23.456 29.5 16 23.456 2.5 16 2.5zM16 7c4.971 0 9 4.029 9 9s-4.029 9-9 9-9-4.029-9-9 4.029-9 9-9z" }));
+}));
+Radio.displayName = "Radio";
+Radio["iconName"] = "radio";
+var Radio_default = Radio;
+
+// node_modules/@ringcentral/juno/es6/icon/RcBlog.js
+import React319, { forwardRef as forwardRef302, memo as memo289 } from "react";
+var __assign297 = function() {
+  __assign297 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign297.apply(this, arguments);
+};
+var RcBlog = memo289(forwardRef302(function(props, svgRef) {
+  return React319.createElement("svg", __assign297({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React319.createElement("path", { d: "M27 1a4 4 0 014 4v22a4 4 0 01-4 4H5a4 4 0 01-4-4V5a4 4 0 014-4h22zm-8 22H8a1 1 0 000 2h11a1 1 0 000-2zm5-6H8a1 1 0 000 2h16a1 1 0 000-2zM23 7H9a2 2 0 00-2 2v2a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2zm0 2v2H9V9h14z" }));
+}));
+RcBlog.displayName = "RcBlog";
+RcBlog["iconName"] = "rc_blog";
+var RcBlog_default = RcBlog;
+
+// node_modules/@ringcentral/juno/es6/icon/RcCloudContact.js
+import React320, { forwardRef as forwardRef303, memo as memo290 } from "react";
+var __assign298 = function() {
+  __assign298 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign298.apply(this, arguments);
+};
+var RcCloudContact = memo290(forwardRef303(function(props, svgRef) {
+  return React320.createElement("svg", __assign298({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React320.createElement("path", { d: "M7.906 4h16.188A3.912 3.912 0 0128 7.913v7.285c0 2.86-2.71 4.652-4.673 5.232.882 1.667 2.262 4.193 4.142 7.57h-6.365l-4.2-7.285h-.275c-.477 0-1.603-.243-1.603-.721v-4.988h7.981V8.919H8.957v10.42c0 1.855 1.789 5.395 4.591 8.661H7.183C4.844 26.285 4 22.778 4 20.715V7.913A3.912 3.912 0 017.906 4z" }));
+}));
+RcCloudContact.displayName = "RcCloudContact";
+RcCloudContact["iconName"] = "rc_cloud_contact";
+var RcCloudContact_default = RcCloudContact;
+
+// node_modules/@ringcentral/juno/es6/icon/RcContact.js
+import React321, { forwardRef as forwardRef304, memo as memo291 } from "react";
+var __assign299 = function() {
+  __assign299 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign299.apply(this, arguments);
+};
+var RcContact = memo291(forwardRef304(function(props, svgRef) {
+  return React321.createElement("svg", __assign299({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React321.createElement("path", { fill: "var(--color41, #f80)", d: "M28 4a2 2 0 012 2v16a2 2 0 01-2 2h-7.586a.997.997 0 00-.707.293l-3.141 3.141a.8.8 0 01-1.131 0l-3.141-3.141a1 1 0 00-.707-.293H4.001a2 2 0 01-2-2V6a2 2 0 012-2h24z" }));
+}));
+RcContact.displayName = "RcContact";
+RcContact["iconName"] = "rc_contact";
+var RcContact_default = RcContact;
+
+// node_modules/@ringcentral/juno/es6/icon/RcHelp.js
+import React322, { forwardRef as forwardRef305, memo as memo292 } from "react";
+var __assign300 = function() {
+  __assign300 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign300.apply(this, arguments);
+};
+var RcHelp = memo292(forwardRef305(function(props, svgRef) {
+  return React322.createElement("svg", __assign300({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React322.createElement("path", { d: "M16 0c8.837 0 16 7.163 16 16s-7.163 16-16 16S0 24.837 0 16 7.163 0 16 0zm1.205 20.001h-2.204V22h2.204v-1.999zM15.913 9c-.893 0-1.645.198-2.258.595-.97.621-1.593 1.933-1.655 3.42h2.25c0-.433.232-1.109.484-1.511s.679-.602 1.281-.602c.612 0 1.034.163 1.265.489s.346.687.346 1.084c0 .344-.104.66-.311.947a2.004 2.004 0 01-.451.462l-.568.446c-.56.438-.908.825-1.043 1.162s-.117 1.657-.148 2.539h2.102c.005-.417-.062-.437 0-.635.099-.313.298-1.587.599-1.822l.553-.43c.561-.438.939-.798 1.137-1.08.337-.464.506-1.035.506-1.714 0-1.106-.388-1.94-1.164-2.504s-1.75-.845-2.923-.845z" }));
+}));
+RcHelp.displayName = "RcHelp";
+RcHelp["iconName"] = "rc_help";
+var RcHelp_default = RcHelp;
+
+// node_modules/@ringcentral/juno/es6/icon/RcvMicOff.js
+import React323, { forwardRef as forwardRef306, memo as memo293 } from "react";
+var __assign301 = function() {
+  __assign301 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign301.apply(this, arguments);
+};
+var RcvMicOff = memo293(forwardRef306(function(props, svgRef) {
+  return React323.createElement("svg", __assign301({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React323.createElement("path", { fill: "var(--color9, #6a7186)", d: "M23.5 12a1 1 0 011 1v3c0 4.632-3.5 8.447-7.999 8.945L16.5 29a1 1 0 01-2 0v-4.055a8.952 8.952 0 01-3.791-1.325l1.461-1.461A7 7 0 0022.5 16v-3a1 1 0 011-1zm-3 1.828V16a5 5 0 01-6.827 4.656l6.827-6.828zM7.5 12a1 1 0 011 1v3c0 1.206.305 2.341.842 3.332l-1.462 1.46A8.961 8.961 0 016.5 16v-3a1 1 0 011-1zm8-10a5 5 0 015 5v1.172l-9.655 9.656a4.978 4.978 0 01-.345-1.829v-9a5 5 0 015-5z" }), React323.createElement("path", { fill: "var(--color10, #f54c3d)", d: "M28.935 3.979a.999.999 0 010 1.414L4.893 29.435a.999.999 0 11-1.414-1.414L27.521 3.979a.999.999 0 011.414 0z" }));
+}));
+RcvMicOff.displayName = "RcvMicOff";
+RcvMicOff["iconName"] = "rcv_mic-off";
+var RcvMicOff_default = RcvMicOff;
+
+// node_modules/@ringcentral/juno/es6/icon/RcvVideocamOff.js
+import React324, { forwardRef as forwardRef307, memo as memo294 } from "react";
+var __assign302 = function() {
+  __assign302 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign302.apply(this, arguments);
+};
+var RcvVideocamOff = memo294(forwardRef307(function(props, svgRef) {
+  return React324.createElement("svg", __assign302({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React324.createElement("path", { fill: "var(--color9, #6a7186)", d: "M21 5.5c.597 0 1.132.261 1.499.675L3.172 25.5H3a2 2 0 01-2-2v-16a2 2 0 012-2h18zm2 5.828V23.5a2 2 0 01-2 2H8.827L23 11.328zm7-2.21a1 1 0 01.993.883l.007.117v10.764a1 1 0 01-1.34.94l-.107-.046-5-2.5a1 1 0 01-.545-.77L24 18.381v-5.764a1 1 0 01.445-.832l.108-.063 5-2.5c.139-.069.292-.106.447-.106z" }), React324.createElement("path", { fill: "var(--color10, #f54c3d)", d: "M29.435 3.479a.999.999 0 010 1.414L5.393 28.935a.999.999 0 11-1.414-1.414L28.021 3.479a.999.999 0 011.414 0z" }));
+}));
+RcvVideocamOff.displayName = "RcvVideocamOff";
+RcvVideocamOff["iconName"] = "rcv_videocam-off";
+var RcvVideocamOff_default = RcvVideocamOff;
+
+// node_modules/@ringcentral/juno/es6/icon/Read.js
+import React325, { forwardRef as forwardRef308, memo as memo295 } from "react";
+var __assign303 = function() {
+  __assign303 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign303.apply(this, arguments);
+};
+var Read = memo295(forwardRef308(function(props, svgRef) {
+  return React325.createElement("svg", __assign303({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React325.createElement("path", { d: "M25.615 2a2 2 0 011.752 2.965L24 11.08l3.331 5.943a2 2 0 01-1.745 2.978H6v9a1 1 0 01-2 0v-26a1 1 0 011-1h20.615zm-.001 2H6v14h19.586l-3.331-5.943a2 2 0 01-.084-1.789l.076-.154 3.366-6.115z" }));
+}));
+Read.displayName = "Read";
+Read["iconName"] = "read";
+var Read_default = Read;
+
+// node_modules/@ringcentral/juno/es6/icon/Record.js
+import React326, { forwardRef as forwardRef309, memo as memo296 } from "react";
+var __assign304 = function() {
+  __assign304 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign304.apply(this, arguments);
+};
+var Record = memo296(forwardRef309(function(props, svgRef) {
+  return React326.createElement("svg", __assign304({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React326.createElement("path", { d: "M16 4c6.627 0 12 5.373 12 12s-5.373 12-12 12S4 22.627 4 16 9.373 4 16 4zm0 4a8 8 0 100 16 8 8 0 000-16z" }));
+}));
+Record.displayName = "Record";
+Record["iconName"] = "record";
+var Record_default = Record;
+
+// node_modules/@ringcentral/juno/es6/icon/Refresh.js
+import React327, { forwardRef as forwardRef310, memo as memo297 } from "react";
+var __assign305 = function() {
+  __assign305 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign305.apply(this, arguments);
+};
+var Refresh = memo297(forwardRef310(function(props, svgRef) {
+  return React327.createElement("svg", __assign305({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React327.createElement("path", { d: "M27 3a1 1 0 011 1v6a1 1 0 01-.883.993L27 11h-6a1 1 0 010-2l3.486-.001A10.981 10.981 0 0016 5C9.925 5 5 9.925 5 16s4.925 11 11 11 11-4.925 11-11a1 1 0 012 0c0 7.18-5.82 13-13 13S3 23.18 3 16 8.82 3 16 3a12.98 12.98 0 0110.001 4.693L26 4a1 1 0 011-1z" }));
+}));
+Refresh.displayName = "Refresh";
+Refresh["iconName"] = "refresh";
+var Refresh_default = Refresh;
+
+// node_modules/@ringcentral/juno/es6/icon/RemoveBorder.js
+import React328, { forwardRef as forwardRef311, memo as memo298 } from "react";
+var __assign306 = function() {
+  __assign306 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign306.apply(this, arguments);
+};
+var RemoveBorder = memo298(forwardRef311(function(props, svgRef) {
+  return React328.createElement("svg", __assign306({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React328.createElement("path", { d: "M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm0 2C9.373 4 4 9.373 4 16s5.373 12 12 12 12-5.373 12-12S22.627 4 16 4zm7 11a1 1 0 010 2H9a1 1 0 010-2h14z" }));
+}));
+RemoveBorder.displayName = "RemoveBorder";
+RemoveBorder["iconName"] = "remove_border";
+var RemoveBorder_default = RemoveBorder;
+
+// node_modules/@ringcentral/juno/es6/icon/RemoveField.js
+import React329, { forwardRef as forwardRef312, memo as memo299 } from "react";
+var __assign307 = function() {
+  __assign307 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign307.apply(this, arguments);
+};
+var RemoveField = memo299(forwardRef312(function(props, svgRef) {
+  return React329.createElement("svg", __assign307({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React329.createElement("path", { d: "M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm3.712 7.813l-3.713 3.713-3.712-3.712a1.75 1.75 0 00-2.475 2.475l3.712 3.712-3.713 3.713a1.75 1.75 0 002.475 2.475l3.712-3.713 3.713 3.713a1.75 1.75 0 002.475-2.475l-3.713-3.713 3.713-3.712a1.75 1.75 0 00-2.475-2.475z" }));
+}));
+RemoveField.displayName = "RemoveField";
+RemoveField["iconName"] = "remove_field";
+var RemoveField_default = RemoveField;
+
+// node_modules/@ringcentral/juno/es6/icon/Remove.js
+import React330, { forwardRef as forwardRef313, memo as memo300 } from "react";
+var __assign308 = function() {
+  __assign308 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign308.apply(this, arguments);
+};
+var Remove = memo300(forwardRef313(function(props, svgRef) {
+  return React330.createElement("svg", __assign308({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React330.createElement("path", { d: "M25.899 6.101C20.432.634 11.567.634 6.1 6.101S.633 20.433 6.1 25.9c5.467 5.467 14.332 5.467 19.799 0s5.467-14.332 0-19.799zM9 15h14a1 1 0 010 2H9a1 1 0 010-2z" }));
+}));
+Remove.displayName = "Remove";
+Remove["iconName"] = "remove";
+var Remove_default = Remove;
+
+// node_modules/@ringcentral/juno/es6/icon/Repeat.js
+import React331, { forwardRef as forwardRef314, memo as memo301 } from "react";
+var __assign309 = function() {
+  __assign309 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign309.apply(this, arguments);
+};
+var Repeat = memo301(forwardRef314(function(props, svgRef) {
+  return React331.createElement("svg", __assign309({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React331.createElement("path", { d: "M27 15a1 1 0 00-1 1v6a1 1 0 01-1 1l-17.829.001 2.536-2.536a.999.999 0 10-1.414-1.414L4.05 23.294a.999.999 0 000 1.414l4.243 4.243a.999.999 0 101.414-1.414l-2.536-2.535L26 25.001a2 2 0 002-2v-7a1 1 0 00-1-1zM22.293 3.05a.999.999 0 000 1.414l2.536 2.535L6 7a2 2 0 00-2 2v7a1 1 0 002 0v-6a1 1 0 011-1l17.829-.001-2.536 2.536a.999.999 0 101.414 1.414l4.243-4.243a.999.999 0 000-1.414l-4.243-4.243a.999.999 0 00-1.414 0z" }));
+}));
+Repeat.displayName = "Repeat";
+Repeat["iconName"] = "repeat";
+var Repeat_default = Repeat;
+
+// node_modules/@ringcentral/juno/es6/icon/Reply.js
+import React332, { forwardRef as forwardRef315, memo as memo302 } from "react";
+var __assign310 = function() {
+  __assign310 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign310.apply(this, arguments);
+};
+var Reply = memo302(forwardRef315(function(props, svgRef) {
+  return React332.createElement("svg", __assign310({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React332.createElement("path", { d: "M19.287 4.297l.127.117 10.172 10.172a2 2 0 01.117 2.701l-.117.127-10.172 10.172a2 2 0 01-3.408-1.265L16 26.172 15.999 21l-.999.001c-7.18 0-13-5.82-13-13v-3c0-1.192 1.711-1.384 1.975-.221a8 8 0 007.538 6.217l.263.004h4.222l.001-5.171a2 2 0 013.287-1.531zM14 19h2.999a1 1 0 01.993.883l.007.117.001 5.689c0 .11.09.2.2.2a.197.197 0 00.141-.059l9.689-9.689a.2.2 0 000-.283l-9.689-9.689a.2.2 0 00-.342.141l-.001 5.688a1 1 0 01-1 1l-5.531-.005a9.996 9.996 0 01-7.179-3.365l-.202-.235.04.284c.759 4.955 4.824 8.822 9.873 9.277l-.001.045z" }));
+}));
+Reply.displayName = "Reply";
+Reply["iconName"] = "reply";
+var Reply_default = Reply;
+
+// node_modules/@ringcentral/juno/es6/icon/ResendFax.js
+import React333, { forwardRef as forwardRef316, memo as memo303 } from "react";
+var __assign311 = function() {
+  __assign311 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign311.apply(this, arguments);
+};
+var ResendFax = memo303(forwardRef316(function(props, svgRef) {
+  return React333.createElement("svg", __assign311({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React333.createElement("path", { d: "M6.258 4.144c.223-.069.448.1.445.335l-.084 5.619a.345.345 0 01-.548.276l-1.785-1.3c-1.844 3.856-2.155 8.04-.407 11.695 1.895 3.962 5.623 6.577 10.568 6.718.666.019 1.156.596 1.114 1.31-.044.786-.706 1.434-1.441 1.412-5.832-.166-10.264-3.245-12.55-8.034-2.167-4.528-2.223-9.621.667-14.592L.642 6.424a.345.345 0 01.103-.61zM17.193 0c4.967 0 9.624 2.747 12.252 6.831 2.772 4.306 2.97 9.477.592 14.67a1.373 1.373 0 01-.134.226l1.913 1.021a.348.348 0 01-.02.624l-5.231 2.411a.348.348 0 01-.489-.273l-.69-5.575a.347.347 0 01.507-.348l1.835.98c.012-.032.019-.063.031-.091 2.017-4.404 1.879-8.736-.414-12.3-2.183-3.399-6.249-5.549-10.22-5.688a1.244 1.244 0 01-1.206-1.162 1.26 1.26 0 011.272-1.328z" }));
+}));
+ResendFax.displayName = "ResendFax";
+ResendFax["iconName"] = "resend-fax";
+var ResendFax_default = ResendFax;
+
+// node_modules/@ringcentral/juno/es6/icon/ResetZoom.js
+import React334, { forwardRef as forwardRef317, memo as memo304 } from "react";
+var __assign312 = function() {
+  __assign312 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign312.apply(this, arguments);
+};
+var ResetZoom = memo304(forwardRef317(function(props, svgRef) {
+  return React334.createElement("svg", __assign312({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React334.createElement("path", { d: "M27 3a2 2 0 012 2v22a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h22zm-1 2H6a1 1 0 00-1 1v20a1 1 0 001 1h20a1 1 0 001-1V6a1 1 0 00-1-1zm-2 12a1 1 0 011 1v6a1 1 0 01-1 1h-6a1 1 0 010-2h5v-5a1 1 0 011-1zM14 7a1 1 0 010 2H9v5a1 1 0 01-2 0V8a1 1 0 011-1h6z" }));
+}));
+ResetZoom.displayName = "ResetZoom";
+ResetZoom["iconName"] = "reset-zoom";
+var ResetZoom_default = ResetZoom;
+
+// node_modules/@ringcentral/juno/es6/icon/RichTextEditor.js
+import React335, { forwardRef as forwardRef318, memo as memo305 } from "react";
+var __assign313 = function() {
+  __assign313 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign313.apply(this, arguments);
+};
+var RichTextEditor = memo305(forwardRef318(function(props, svgRef) {
+  return React335.createElement("svg", __assign313({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React335.createElement("path", { d: "M22.118 24.538l.796 1.96a1.176 1.176 0 01-2.121 1.008l-.059-.124-.406-1.053 1.791-1.791zM13.947 4.475l.08.126.063.133 4.188 10.33-1.772 1.772L13 8.306l-4.508 10.71 5.835-.001-1.982 1.982-4.894.001-2.184 6.385a1.176 1.176 0 01-1.402.692l-.13-.044a1.176 1.176 0 01-.692-1.402l.044-.13L11.91 4.735c.358-.884 1.522-.97 2.038-.259zm11.825 6.893l.112.066.099.076.062.055 2.257 2.062c.381.289.536.765.412 1.204l-.041.118-.053.109-.089.155-11.533 11.692a1.56 1.56 0 01-.487.329l-.162.064-.149.041-2.956.661h-.108l-.124-.003a1.106 1.106 0 01-.948-.702l-.034-.108-.025-.144-.015-.169.524-2.908c.034-.181.102-.355.221-.539l.099-.141.098-.11 11.512-11.673a1.219 1.219 0 011.325-.134zm-3.673 5.145l-7.745 7.856-.285 1.582 1.629-.363 7.685-7.789-1.285-1.285zm3.141-3.185l-1.737 1.76 1.286 1.286 1.796-1.82-1.345-1.227z" }));
+}));
+RichTextEditor.displayName = "RichTextEditor";
+RichTextEditor["iconName"] = "rich_text_editor";
+var RichTextEditor_default = RichTextEditor;
+
+// node_modules/@ringcentral/juno/es6/icon/RollAp.js
+import React336, { forwardRef as forwardRef319, memo as memo306 } from "react";
+var __assign314 = function() {
+  __assign314 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign314.apply(this, arguments);
+};
+var RollAp = memo306(forwardRef319(function(props, svgRef) {
+  return React336.createElement("svg", __assign314({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React336.createElement("path", { d: "M13 18a1 1 0 011 1v8a1 1 0 01-2 0l-.001-5.586-5.827 5.829a.999.999 0 11-1.414-1.414L10.585 20H5a1 1 0 010-2h8zm6-14a1 1 0 011 1l.001 5.586 5.827-5.829a.999.999 0 111.414 1.414L21.415 12H27a1 1 0 010 2h-8a1 1 0 01-1-1V5a1 1 0 011-1z" }));
+}));
+RollAp.displayName = "RollAp";
+RollAp["iconName"] = "roll-ap";
+var RollAp_default = RollAp;
+
+// node_modules/@ringcentral/juno/es6/icon/SaveDraft.js
+import React337, { forwardRef as forwardRef320, memo as memo307 } from "react";
+var __assign315 = function() {
+  __assign315 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign315.apply(this, arguments);
+};
+var SaveDraft = memo307(forwardRef320(function(props, svgRef) {
+  return React337.createElement("svg", __assign315({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React337.createElement("path", { d: "M22.172 3a2 2 0 011.414.586l4.828 4.828A2 2 0 0129 9.828V27a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h17.172zM10 5H6a1 1 0 00-1 1v20a1 1 0 001 1h20a1 1 0 001-1V10.243a.997.997 0 00-.293-.707L23 5.829V13c0 1.105-.767 2-1.714 2h-9.571c-.947 0-1.714-.895-1.714-2V5zm11.286 0h-9.571v7a1 1 0 001 1h7.571a1 1 0 001-1V5zM19 7a1 1 0 011 1v2a1 1 0 01-2 0V8a1 1 0 011-1z" }));
+}));
+SaveDraft.displayName = "SaveDraft";
+SaveDraft["iconName"] = "save-draft";
+var SaveDraft_default = SaveDraft;
+
+// node_modules/@ringcentral/juno/es6/icon/ScheduleMeeting.js
+import React338, { forwardRef as forwardRef321, memo as memo308 } from "react";
+var __assign316 = function() {
+  __assign316 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign316.apply(this, arguments);
+};
+var ScheduleMeeting = memo308(forwardRef321(function(props, svgRef) {
+  return React338.createElement("svg", __assign316({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React338.createElement("path", { d: "M24.889 5.333A2.667 2.667 0 0127.556 8v16a2.667 2.667 0 01-2.667 2.667H7.111A2.667 2.667 0 014.444 24V8a2.667 2.667 0 012.667-2.667h17.778zm.889 8H6.222V24c0 .456.343.832.785.883l.104.006h17.778a.889.889 0 00.883-.785l.006-.104V13.333zm-10.667 7.111a.889.889 0 110 1.778H9.778a.889.889 0 110-1.778h5.333zM22.222 16a.889.889 0 110 1.778H9.778a.889.889 0 110-1.778h12.444zm2.667-8.889H7.111a.889.889 0 00-.883.785L6.222 8v3.556h19.556V8a.889.889 0 00-.785-.883l-.104-.006z" }));
+}));
+ScheduleMeeting.displayName = "ScheduleMeeting";
+ScheduleMeeting["iconName"] = "schedule_meeting";
+var ScheduleMeeting_default = ScheduleMeeting;
+
+// node_modules/@ringcentral/juno/es6/icon/Schedule.js
+import React339, { forwardRef as forwardRef322, memo as memo309 } from "react";
+var __assign317 = function() {
+  __assign317 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign317.apply(this, arguments);
+};
+var Schedule = memo309(forwardRef322(function(props, svgRef) {
+  return React339.createElement("svg", __assign317({ viewBox: "0 0 33 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React339.createElement("path", { d: "M23.793 30.946a8.434 8.434 0 10-.001-16.867 8.434 8.434 0 00.001 16.867zm0-3.2a5.233 5.233 0 110-10.466 5.233 5.233 0 010 10.466z" }), React339.createElement("path", { d: "M23.793 19.351c.582 0 1.054.472 1.054 1.054v1.054h1.054a1.054 1.054 0 010 2.108h-1.054v1.054a1.054 1.054 0 01-2.108 0v-1.054h-1.054a1.054 1.054 0 010-2.108h1.054v-1.054c0-.582.472-1.054 1.054-1.054zM1.431 10.24h23.04v3.2H1.431v-3.2zM8 0a1.6 1.6 0 011.6 1.6v1.92a1.6 1.6 0 11-3.2 0V1.6A1.6 1.6 0 018 0zM18.24 0a1.6 1.6 0 011.6 1.6v1.92a1.6 1.6 0 11-3.2 0V1.6a1.6 1.6 0 011.6-1.6z" }), React339.createElement("path", { d: "M1.6 3.84a1.6 1.6 0 011.6 1.6V24A1.6 1.6 0 110 24V5.44a1.6 1.6 0 011.6-1.6zM24.64 3.84a1.6 1.6 0 011.6 1.6v9.6a1.6 1.6 0 11-3.2 0v-9.6a1.6 1.6 0 011.6-1.6z" }), React339.createElement("path", { d: "M1.6 3.84h23.04a1.6 1.6 0 110 3.2H1.6a1.6 1.6 0 110-3.2zM1.6 22.4h14.72a1.6 1.6 0 110 3.2H1.6a1.6 1.6 0 110-3.2z" }));
+}));
+Schedule.displayName = "Schedule";
+Schedule["iconName"] = "schedule";
+var Schedule_default = Schedule;
+
+// node_modules/@ringcentral/juno/es6/icon/ScreenshareBorder.js
+import React340, { forwardRef as forwardRef323, memo as memo310 } from "react";
+var __assign318 = function() {
+  __assign318 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign318.apply(this, arguments);
+};
+var ScreenshareBorder = memo310(forwardRef323(function(props, svgRef) {
+  return React340.createElement("svg", __assign318({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React340.createElement("path", { d: "M27 5a2 2 0 011.994 1.851L29 7v18h2a1 1 0 01.117 1.993L31 27H1a1 1 0 01-.117-1.993L1 25h2V7c0-1.054.816-1.918 1.851-1.995L5 5h22zm0 2H5v18h22V7zm-10.387 3.21l.094.083 4.657 4.657a1 1 0 01-1.32 1.497l-.094-.083-2.951-2.95L17 21a1 1 0 01-2 0l-.001-7.586-2.949 2.95a1 1 0 01-1.497-1.32l.083-.094 4.657-4.657a1 1 0 011.32-.083z" }));
+}));
+ScreenshareBorder.displayName = "ScreenshareBorder";
+ScreenshareBorder["iconName"] = "screenshare_border";
+var ScreenshareBorder_default = ScreenshareBorder;
+
+// node_modules/@ringcentral/juno/es6/icon/Screenshare.js
+import React341, { forwardRef as forwardRef324, memo as memo311 } from "react";
+var __assign319 = function() {
+  __assign319 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign319.apply(this, arguments);
+};
+var Screenshare = memo311(forwardRef324(function(props, svgRef) {
+  return React341.createElement("svg", __assign319({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React341.createElement("path", { d: "M27 5H5a2 2 0 00-2 2v18H1a1 1 0 000 2h30a1 1 0 000-2h-2V7a2 2 0 00-2-2zm-10.293 5.293l4.657 4.657a1 1 0 01-1.32 1.497l-.094-.083-2.951-2.95L17 21a1 1 0 01-2 0l-.001-7.586-2.949 2.95a1 1 0 01-1.497-1.32l.083-.094 4.657-4.657a1 1 0 011.32-.083l.094.083z" }));
+}));
+Screenshare.displayName = "Screenshare";
+Screenshare["iconName"] = "screenshare";
+var Screenshare_default = Screenshare;
+
+// node_modules/@ringcentral/juno/es6/icon/SearchNav.js
+import React342, { forwardRef as forwardRef325, memo as memo312 } from "react";
+var __assign320 = function() {
+  __assign320 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign320.apply(this, arguments);
+};
+var SearchNav = memo312(forwardRef325(function(props, svgRef) {
+  return React342.createElement("svg", __assign320({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React342.createElement("path", { d: "M14 3c6.075 0 11 4.925 11 11a10.95 10.95 0 01-2.454 6.926l6.197 6.195a1.5 1.5 0 11-2.121 2.121l-6.265-6.264A10.95 10.95 0 0114 25C7.925 25 3 20.075 3 14S7.925 3 14 3zm0 3a8 8 0 100 16 8 8 0 000-16z" }));
+}));
+SearchNav.displayName = "SearchNav";
+SearchNav["iconName"] = "search_nav";
+var SearchNav_default = SearchNav;
+
+// node_modules/@ringcentral/juno/es6/icon/Search.js
+import React343, { forwardRef as forwardRef326, memo as memo313 } from "react";
+var __assign321 = function() {
+  __assign321 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign321.apply(this, arguments);
+};
+var Search = memo313(forwardRef326(function(props, svgRef) {
+  return React343.createElement("svg", __assign321({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React343.createElement("path", { d: "M21.778 6.222c4.057 4.057 4.283 10.495.676 14.817l6.395 6.396a.999.999 0 11-1.414 1.414l-6.395-6.396c-4.322 3.607-10.76 3.382-14.818-.675-4.296-4.296-4.296-11.261 0-15.556s11.261-4.296 15.556 0zm-.859 13.535c2.968-3.556 2.744-8.822-.555-12.121a9 9 0 00-12.728 0 9 9 0 000 12.728c3.299 3.299 8.566 3.522 12.122.554l.633-.528.528-.633z" }));
+}));
+Search.displayName = "Search";
+Search["iconName"] = "search";
+var Search_default = Search;
+
+// node_modules/@ringcentral/juno/es6/icon/Selects.js
+import React344, { forwardRef as forwardRef327, memo as memo314 } from "react";
+var __assign322 = function() {
+  __assign322 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign322.apply(this, arguments);
+};
+var Selects = memo314(forwardRef327(function(props, svgRef) {
+  return React344.createElement("svg", __assign322({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React344.createElement("path", { d: "M27 2a3 3 0 013 3v22a3 3 0 01-3 3H5a3 3 0 01-3-3V5a3 3 0 013-3h22zm-4.593 8.375l-8.201 7.993-3.433-3.412a1.334 1.334 0 00-1.878 1.894l4.36 4.331a1.333 1.333 0 001.865.012l9.14-8.9a1.332 1.332 0 10-1.853-1.917z" }));
+}));
+Selects.displayName = "Selects";
+Selects["iconName"] = "selects";
+var Selects_default = Selects;
+
+// node_modules/@ringcentral/juno/es6/icon/SendFilled.js
+import React345, { forwardRef as forwardRef328, memo as memo315 } from "react";
+var __assign323 = function() {
+  __assign323 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign323.apply(this, arguments);
+};
+var SendFilled = memo315(forwardRef328(function(props, svgRef) {
+  return React345.createElement("svg", __assign323({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React345.createElement("path", { d: "M28.941 4.342l-8.666 24c-.305.843-1.48.891-1.851.074l-4.196-9.23 7.309-7.307-1.414-1.414-7.308 7.308-9.227-4.193c-.816-.371-.769-1.546.074-1.851l24-8.666a1 1 0 011.28 1.28z" }));
+}));
+SendFilled.displayName = "SendFilled";
+SendFilled["iconName"] = "send_filled";
+var SendFilled_default = SendFilled;
+
+// node_modules/@ringcentral/juno/es6/icon/Send.js
+import React346, { forwardRef as forwardRef329, memo as memo316 } from "react";
+var __assign324 = function() {
+  __assign324 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign324.apply(this, arguments);
+};
+var Send = memo316(forwardRef329(function(props, svgRef) {
+  return React346.createElement("svg", __assign324({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React346.createElement("path", { d: "M28.941 4.342l-8.666 24c-.305.843-1.48.891-1.851.074l-4.637-10.201-10.201-4.637c-.816-.371-.769-1.546.074-1.851l24-8.666a1 1 0 011.28 1.28zm-3.406 3.539l-9.796 9.796 3.489 7.675 6.307-17.471zM24.12 6.466L6.65 12.775l7.674 3.487 9.796-9.796z" }));
+}));
+Send.displayName = "Send";
+Send["iconName"] = "send";
+var Send_default = Send;
+
+// node_modules/@ringcentral/juno/es6/icon/SettingsBorder.js
+import React347, { forwardRef as forwardRef330, memo as memo317 } from "react";
+var __assign325 = function() {
+  __assign325 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign325.apply(this, arguments);
+};
+var SettingsBorder = memo317(forwardRef330(function(props, svgRef) {
+  return React347.createElement("svg", __assign325({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React347.createElement("path", { d: "M20.857 2.057a15.048 15.048 0 014.823 2.688c.357.296.477.786.297 1.21a4.13 4.13 0 00.241 3.731 4.29 4.29 0 003.411 2.095c.467.033.858.359.966.806a14.528 14.528 0 01.001 6.827c-.108.448-.5.774-.967.807a4.285 4.285 0 00-3.411 2.094 4.132 4.132 0 00-.241 3.732c.18.423.06.913-.296 1.209a15.044 15.044 0 01-4.822 2.689 1.081 1.081 0 01-1.249-.428c-.783-1.2-2.13-1.939-3.608-1.939s-2.825.739-3.61 1.939a1.08 1.08 0 01-1.248.427 15.014 15.014 0 01-4.822-2.687 1.04 1.04 0 01-.297-1.21 4.13 4.13 0 00-.241-3.731 4.29 4.29 0 00-3.411-2.095 1.066 1.066 0 01-.966-.806 14.528 14.528 0 01-.001-6.827c.108-.448.5-.774.967-.807a4.285 4.285 0 003.411-2.094 4.135 4.135 0 00.242-3.732 1.04 1.04 0 01.296-1.209 15.044 15.044 0 014.822-2.689c.467-.157.982.02 1.249.428a4.295 4.295 0 003.608 1.94c1.458 0 2.789-.719 3.562-1.867l.038-.06a1.08 1.08 0 011.257-.441zm-9.694 2.121l-.205.082c-.945.39-1.841.889-2.667 1.487l-.176.131.023.076a6.126 6.126 0 01-.495 4.501l-.136.244a6.27 6.27 0 01-4.229 2.975l-.063.01-.037.2c-.095.556-.152 1.12-.171 1.688L3 15.999c0 .714.06 1.421.179 2.115l.037.198.063.012a6.279 6.279 0 014.093 2.756l.136.22a6.13 6.13 0 01.63 4.746l-.023.075.176.132a13.017 13.017 0 002.667 1.486l.205.081.027-.031a6.302 6.302 0 014.545-2.207l.267-.006a6.3 6.3 0 014.811 2.215l.025.03.206-.081c.945-.39 1.841-.889 2.667-1.487l.175-.132-.022-.075a6.126 6.126 0 01.495-4.501l.136-.244a6.27 6.27 0 014.229-2.975l.062-.011.038-.199c.095-.556.152-1.12.171-1.688l.007-.427c0-.714-.06-1.421-.179-2.115l-.038-.199-.062-.011a6.279 6.279 0 01-4.093-2.756l-.136-.22a6.13 6.13 0 01-.63-4.746l.022-.076-.175-.131a13.05 13.05 0 00-2.668-1.487l-.203-.08-.087.104a6.305 6.305 0 01-4.489 2.134l-.262.005a6.3 6.3 0 01-4.811-2.215l-.026-.032zM16 11a5 5 0 11-.001 10.001A5 5 0 0116 11zm0 2a3 3 0 100 6 3 3 0 000-6z" }));
+}));
+SettingsBorder.displayName = "SettingsBorder";
+SettingsBorder["iconName"] = "settings_border";
+var SettingsBorder_default = SettingsBorder;
+
+// node_modules/@ringcentral/juno/es6/icon/Settings.js
+import React348, { forwardRef as forwardRef331, memo as memo318 } from "react";
+var __assign326 = function() {
+  __assign326 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign326.apply(this, arguments);
+};
+var Settings = memo318(forwardRef331(function(props, svgRef) {
+  return React348.createElement("svg", __assign326({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React348.createElement("path", { d: "M20.857 2.057a15.048 15.048 0 014.823 2.688c.357.296.477.786.297 1.21a4.13 4.13 0 00.241 3.731 4.29 4.29 0 003.411 2.095c.467.033.858.359.966.806a14.528 14.528 0 01.001 6.827c-.108.448-.5.774-.967.807a4.285 4.285 0 00-3.411 2.094 4.132 4.132 0 00-.241 3.732c.18.423.06.913-.296 1.209a15.044 15.044 0 01-4.822 2.689 1.081 1.081 0 01-1.249-.428c-.783-1.2-2.13-1.939-3.608-1.939s-2.825.739-3.61 1.939a1.08 1.08 0 01-1.248.427 15.014 15.014 0 01-4.822-2.687 1.04 1.04 0 01-.297-1.21 4.13 4.13 0 00-.241-3.731 4.29 4.29 0 00-3.411-2.095 1.066 1.066 0 01-.966-.806 14.528 14.528 0 01-.001-6.827c.108-.448.5-.774.967-.807a4.285 4.285 0 003.411-2.094 4.135 4.135 0 00.242-3.732 1.04 1.04 0 01.296-1.209 15.044 15.044 0 014.822-2.689c.467-.157.982.02 1.249.428a4.295 4.295 0 003.608 1.94c1.458 0 2.789-.719 3.562-1.867l.038-.06a1.08 1.08 0 011.257-.441zM16 12a4 4 0 100 8 4 4 0 000-8z" }));
+}));
+Settings.displayName = "Settings";
+Settings["iconName"] = "settings";
+var Settings_default = Settings;
+
+// node_modules/@ringcentral/juno/es6/icon/Share.js
+import React349, { forwardRef as forwardRef332, memo as memo319 } from "react";
+var __assign327 = function() {
+  __assign327 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign327.apply(this, arguments);
+};
+var Share = memo319(forwardRef332(function(props, svgRef) {
+  return React349.createElement("svg", __assign327({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React349.createElement("path", { d: "M26 30H6a2 2 0 01-2-2V12a2 2 0 012-2h3a1 1 0 010 2H7a1 1 0 00-1 1v14a1 1 0 001 1h18a1 1 0 001-1V13a1 1 0 00-1-1h-2a1 1 0 010-2h3a2 2 0 012 2v16a2 2 0 01-2 2zM19.884 8.292L17 5.416v11.17a1 1 0 01-2 0V5.416l-2.884 2.876a.998.998 0 01-1.411-1.411l4.588-4.588a.999.999 0 011.414 0l4.588 4.588a.998.998 0 01-1.411 1.411z" }));
+}));
+Share.displayName = "Share";
+Share["iconName"] = "share";
+var Share_default = Share;
+
+// node_modules/@ringcentral/juno/es6/icon/Sharepoint.js
+import React350, { forwardRef as forwardRef333, memo as memo320 } from "react";
+var __assign328 = function() {
+  __assign328 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign328.apply(this, arguments);
+};
+var Sharepoint = memo320(forwardRef333(function(props, svgRef) {
+  return React350.createElement("svg", __assign328({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React350.createElement("path", { d: "M18.257 2c-.041-.002-.081.009-.122.017L2.455 4.975a.57.57 0 00-.455.56v20.877c0 .269.19.51.455.56l15.68 3.011c.035.006.07.017.105.017a.535.535 0 00.35-.123.576.576 0 00.21-.437V2.56a.58.58 0 00-.21-.437.546.546 0 00-.333-.123zm1.663 4.533v6.615a3.303 3.303 0 002.66-2.362 5.718 5.718 0 012.607 2.187A3.362 3.362 0 0023.28 16a3.36 3.36 0 001.89 3.01 5.738 5.738 0 01-2.607 2.153 3.301 3.301 0 00-2.643-2.31v6.615c1.562-.251 2.717-1.544 2.783-3.167a6.817 6.817 0 003.57-2.957c.118.013.245.017.367.017a3.363 3.363 0 003.36-3.36 3.365 3.365 0 00-3.692-3.343 6.813 6.813 0 00-3.605-3.01c-.09-1.599-1.238-2.865-2.783-3.115zm-9.747 4.095c.56 0 1.008.048 1.4.105s.783.168 1.12.28V13.2a5.117 5.117 0 00-.56-.333c-.195-.1-.4-.176-.613-.227-.223-.057-.444-.105-.613-.105a2.26 2.26 0 00-.613-.07c-.28 0-.512.013-.735.07s-.392.099-.56.21a.977.977 0 00-.456.788c0 .168.066.343.123.455.111.112.216.274.385.385s.389.221.613.332c.223.112.507.239.787.35.391.169.783.337 1.12.56.337.169.617.385.84.665.223.223.391.503.56.84.111.337.175.676.175 1.067-.057.617-.164 1.061-.332 1.453-.223.392-.519.722-.91.945s-.774.396-1.278.507c-.503.111-1.015.175-1.575.175s-1.124-.063-1.627-.175a3.844 3.844 0 01-1.278-.385v-2.292c.395.342.853.603 1.348.77.503.168.949.28 1.452.28.28 0 .564.004.787-.053s.392-.116.56-.228c.169-.111.276-.221.333-.332s.105-.274.105-.385c0-.223-.046-.391-.157-.56s-.287-.286-.455-.455c-.223-.112-.455-.274-.735-.385s-.556-.234-.892-.402c-.783-.337-1.394-.722-1.785-1.225s-.613-1.061-.613-1.733c0-.56.11-1.008.333-1.4s.501-.682.893-.962c.392-.223.792-.449 1.295-.56s.997-.158 1.557-.158h.001z" }));
+}));
+Sharepoint.displayName = "Sharepoint";
+Sharepoint["iconName"] = "sharepoint";
+var Sharepoint_default = Sharepoint;
+
+// node_modules/@ringcentral/juno/es6/icon/ShortcutBorder.js
+import React351, { forwardRef as forwardRef334, memo as memo321 } from "react";
+var __assign329 = function() {
+  __assign329 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign329.apply(this, arguments);
+};
+var ShortcutBorder = memo321(forwardRef334(function(props, svgRef) {
+  return React351.createElement("svg", __assign329({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React351.createElement("path", { d: "M22 24a2 2 0 012 2v2a2 2 0 01-2 2H10a2 2 0 01-2-2v-2a2 2 0 012-2h12zm-1 2H11a1 1 0 000 2h10a1 1 0 000-2zM17.2 2.9l12.4 9.3A1 1 0 0129 14h-5v7a2 2 0 01-2 2H10a2 2 0 01-2-2v-7H3a1 1 0 01-.6-1.8l12.4-9.3a2.001 2.001 0 012.4 0zM16 4.5L5.999 11.999 9 12a1 1 0 011 1v7a1 1 0 001 1h10a1 1 0 001-1v-7a1 1 0 011-1l3-.001L16 4.5z" }));
+}));
+ShortcutBorder.displayName = "ShortcutBorder";
+ShortcutBorder["iconName"] = "shortcut_border";
+var ShortcutBorder_default = ShortcutBorder;
+
+// node_modules/@ringcentral/juno/es6/icon/Shortcut.js
+import React352, { forwardRef as forwardRef335, memo as memo322 } from "react";
+var __assign330 = function() {
+  __assign330 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign330.apply(this, arguments);
+};
+var Shortcut = memo322(forwardRef335(function(props, svgRef) {
+  return React352.createElement("svg", __assign330({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React352.createElement("path", { d: "M22 24a2 2 0 012 2v2a2 2 0 01-2 2H10a2 2 0 01-2-2v-2a2 2 0 012-2h12zM17.2 2.9l12.4 9.3A1 1 0 0129 14h-5v7a2 2 0 01-2 2H10a2 2 0 01-2-2v-7H3a1 1 0 01-.6-1.8l12.4-9.3a2.001 2.001 0 012.4 0z" }));
+}));
+Shortcut.displayName = "Shortcut";
+Shortcut["iconName"] = "shortcut";
+var Shortcut_default = Shortcut;
+
+// node_modules/@ringcentral/juno/es6/icon/Signal0.js
+import React353, { forwardRef as forwardRef336, memo as memo323 } from "react";
+var __assign331 = function() {
+  __assign331 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign331.apply(this, arguments);
+};
+var Signal0 = memo323(forwardRef336(function(props, svgRef) {
+  return React353.createElement("svg", __assign331({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React353.createElement("path", { d: "M6 12a4 4 0 110 8 4 4 0 010-8zm10 0a4 4 0 110 8 4 4 0 010-8zm10 0a4 4 0 110 8 4 4 0 010-8zM6 14a2 2 0 10-.001 3.999A2 2 0 006 14zm10 0a2 2 0 10-.001 3.999A2 2 0 0016 14zm10 0a2 2 0 10-.001 3.999A2 2 0 0026 14z" }));
+}));
+Signal0.displayName = "Signal0";
+Signal0["iconName"] = "signal-0";
+var Signal0_default = Signal0;
+
+// node_modules/@ringcentral/juno/es6/icon/Signal1.js
+import React354, { forwardRef as forwardRef337, memo as memo324 } from "react";
+var __assign332 = function() {
+  __assign332 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign332.apply(this, arguments);
+};
+var Signal1 = memo324(forwardRef337(function(props, svgRef) {
+  return React354.createElement("svg", __assign332({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React354.createElement("path", { d: "M6 12a4 4 0 110 8 4 4 0 010-8zm10 0a4 4 0 110 8 4 4 0 010-8zm10 0a4 4 0 110 8 4 4 0 010-8zm-10 2a2 2 0 10-.001 3.999A2 2 0 0016 14zm10 0a2 2 0 10-.001 3.999A2 2 0 0026 14z" }));
+}));
+Signal1.displayName = "Signal1";
+Signal1["iconName"] = "signal-1";
+var Signal1_default = Signal1;
+
+// node_modules/@ringcentral/juno/es6/icon/Signal2.js
+import React355, { forwardRef as forwardRef338, memo as memo325 } from "react";
+var __assign333 = function() {
+  __assign333 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign333.apply(this, arguments);
+};
+var Signal2 = memo325(forwardRef338(function(props, svgRef) {
+  return React355.createElement("svg", __assign333({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React355.createElement("path", { d: "M6 12a4 4 0 110 8 4 4 0 010-8zm10 0a4 4 0 110 8 4 4 0 010-8zm10 0a4 4 0 110 8 4 4 0 010-8zm0 2a2 2 0 10-.001 3.999A2 2 0 0026 14z" }));
+}));
+Signal2.displayName = "Signal2";
+Signal2["iconName"] = "signal-2";
+var Signal2_default = Signal2;
+
+// node_modules/@ringcentral/juno/es6/icon/Signal3.js
+import React356, { forwardRef as forwardRef339, memo as memo326 } from "react";
+var __assign334 = function() {
+  __assign334 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign334.apply(this, arguments);
+};
+var Signal3 = memo326(forwardRef339(function(props, svgRef) {
+  return React356.createElement("svg", __assign334({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React356.createElement("path", { d: "M10.667 16a4 4 0 11-8 0 4 4 0 018 0zM20 16a4 4 0 11-8 0 4 4 0 018 0zM29.333 16a4 4 0 11-8 0 4 4 0 018 0z" }));
+}));
+Signal3.displayName = "Signal3";
+Signal3["iconName"] = "signal-3";
+var Signal3_default = Signal3;
+
+// node_modules/@ringcentral/juno/es6/icon/SmsBorder.js
+import React357, { forwardRef as forwardRef340, memo as memo327 } from "react";
+var __assign335 = function() {
+  __assign335 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign335.apply(this, arguments);
+};
+var SmsBorder = memo327(forwardRef340(function(props, svgRef) {
+  return React357.createElement("svg", __assign335({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React357.createElement("path", { d: "M16 3c7.763 0 14 5.174 14 11.889 0 6.732-6.306 12.148-14 12.148-.586 0-1.172-.035-1.77-.103l-.451-.057-.461-.072-.048.042c-1.386 1.166-3.175 1.983-5.325 2.129l-.362.018-.333.005H5.598a.929.929 0 01-.848-1.317l.054-.099.811-1.308.271-.479.122-.221.217-.41.184-.368c.112-.232.202-.439.275-.624l.051-.135.013-.04-.294-.232c-2.617-2.133-4.235-5.11-4.433-8.229l-.016-.335L2 14.888C2 8.198 8.252 2.999 16 2.999zm0 2C9.351 5 4.167 9.285 4.004 14.6L4 14.858l.004.284c.078 2.528 1.326 5.014 3.433 6.84l.257.216 1.4 1.105-.478 1.417c-.202.557-.515 1.21-.993 2.069l-.116.206.014.001c1.623-.052 3.05-.576 4.203-1.467l.227-.183.75-.659 1.357.211c.672.094 1.311.141 1.942.141 6.671 0 12-4.61 12-10.148 0-5.485-5.223-9.889-12-9.889z" }));
+}));
+SmsBorder.displayName = "SmsBorder";
+SmsBorder["iconName"] = "sms_border";
+var SmsBorder_default = SmsBorder;
+
+// node_modules/@ringcentral/juno/es6/icon/SmsDefault.js
+import React358, { forwardRef as forwardRef341, memo as memo328 } from "react";
+var __assign336 = function() {
+  __assign336 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign336.apply(this, arguments);
+};
+var SmsDefault = memo328(forwardRef341(function(props, svgRef) {
+  return React358.createElement("svg", __assign336({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React358.createElement("path", { d: "M16 8c-4.649 0-8.4 3.159-8.4 7.225l.003.191c.06 1.969 1.043 3.862 2.669 5.204l.176.141-.008.024c-.114.32-.324.748-.671 1.36l-.486.795c-.23.376.038.86.477.86h.991l.2-.003a5.452 5.452 0 003.412-1.305l.029-.026.276.043c.454.065.893.097 1.332.097 4.616 0 8.4-3.292 8.4-7.382 0-4.081-3.742-7.225-8.4-7.225z" }));
+}));
+SmsDefault.displayName = "SmsDefault";
+SmsDefault["iconName"] = "sms-default";
+var SmsDefault_default = SmsDefault;
+
+// node_modules/@ringcentral/juno/es6/icon/SmsInviteBorder.js
+import React359, { forwardRef as forwardRef342, memo as memo329 } from "react";
+var __assign337 = function() {
+  __assign337 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign337.apply(this, arguments);
+};
+var SmsInviteBorder = memo329(forwardRef342(function(props, svgRef) {
+  return React359.createElement("svg", __assign337({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React359.createElement("path", { d: "M16 3c7.763 0 14 5.174 14 11.889 0 .858-.102 1.694-.297 2.501a8.047 8.047 0 00-1.779-1.363c.05-.374.076-.754.076-1.138C28 9.404 22.777 5 16 5 9.351 5 4.167 9.285 4.004 14.6L4 14.858l.004.284c.078 2.528 1.326 5.014 3.433 6.84l.257.216 1.4 1.105-.478 1.417c-.202.557-.515 1.21-.993 2.069l-.116.206.014.001c1.623-.052 3.05-.576 4.203-1.467l.227-.183.75-.659 1.357.211c.672.094 1.311.141 1.942.141l.261-.002c.183.698.458 1.358.811 1.968a15.607 15.607 0 01-2.842-.069l-.451-.057-.461-.072-.048.042c-1.386 1.166-3.175 1.983-5.325 2.129l-.362.018-.333.005H5.598a.929.929 0 01-.848-1.317l.054-.099.811-1.308.271-.479.122-.221.217-.41.184-.368c.112-.232.202-.439.275-.624l.051-.135.013-.04-.294-.232c-2.617-2.133-4.235-5.11-4.433-8.229l-.016-.335L2 14.89C2 8.2 8.252 3.001 16 3.001zm8 14a1 1 0 011 1v4h4a1 1 0 010 2h-4.001L25 28a1 1 0 01-2 0l-.001-4H19a1 1 0 010-2h4v-4a1 1 0 011-1z" }));
+}));
+SmsInviteBorder.displayName = "SmsInviteBorder";
+SmsInviteBorder["iconName"] = "sms_invite_border";
+var SmsInviteBorder_default = SmsInviteBorder;
+
+// node_modules/@ringcentral/juno/es6/icon/Sms.js
+import React360, { forwardRef as forwardRef343, memo as memo330 } from "react";
+var __assign338 = function() {
+  __assign338 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign338.apply(this, arguments);
+};
+var Sms = memo330(forwardRef343(function(props, svgRef) {
+  return React360.createElement("svg", __assign338({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React360.createElement("path", { d: "M16 3C8.252 3 2 8.199 2 14.889l.005.314c.1 3.24 1.738 6.355 4.449 8.564l.294.232-.013.04c-.191.526-.539 1.231-1.119 2.237l-.811 1.308A.929.929 0 005.6 29h1.652l.333-.005c2.311-.074 4.224-.916 5.687-2.147l.048-.042.461.072a15.9 15.9 0 002.221.16c7.694 0 14-5.417 14-12.148 0-6.715-6.237-11.889-14-11.889z" }));
+}));
+Sms.displayName = "Sms";
+Sms["iconName"] = "sms";
+var Sms_default = Sms;
+
+// node_modules/@ringcentral/juno/es6/icon/Sort.js
+import React361, { forwardRef as forwardRef344, memo as memo331 } from "react";
+var __assign339 = function() {
+  __assign339 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign339.apply(this, arguments);
+};
+var Sort = memo331(forwardRef344(function(props, svgRef) {
+  return React361.createElement("svg", __assign339({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React361.createElement("path", { fill: "var(--color11, #000)", d: "M16.707 5.293l5.586 5.586a1 1 0 01-.707 1.707H10.414a1 1 0 01-.707-1.707l5.586-5.586a.999.999 0 011.414 0z" }), React361.createElement("path", { fill: "var(--color47, #212121)", d: "M16.703 26.293l5.586-5.586A1 1 0 0021.582 19H10.41a1 1 0 00-.707 1.707l5.586 5.586a1 1 0 001.414 0z" }));
+}));
+Sort.displayName = "Sort";
+Sort["iconName"] = "sort";
+var Sort_default = Sort;
+
+// node_modules/@ringcentral/juno/es6/icon/SpeakerDown.js
+import React362, { forwardRef as forwardRef345, memo as memo332 } from "react";
+var __assign340 = function() {
+  __assign340 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign340.apply(this, arguments);
+};
+var SpeakerDown = memo332(forwardRef345(function(props, svgRef) {
+  return React362.createElement("svg", __assign340({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React362.createElement("path", { d: "M21.414 3.414A2 2 0 0122 4.828v22.343a2 2 0 01-3.414 1.414L12 21.999H6a2 2 0 01-2-2v-8a2 2 0 012-2h6l6.586-6.586a2 2 0 012.828 0zM20 4.828l-6.586 6.586A2 2 0 0112 12H7a1 1 0 00-1 1v6a1 1 0 001 1h5a2 2 0 011.414.586L20 27.172V4.829zm5.511 5.551a1 1 0 011.332.474A11.959 11.959 0 0128 16c0 1.839-.415 3.621-1.202 5.24a1 1 0 11-1.799-.875 9.958 9.958 0 001-4.366 9.96 9.96 0 00-.963-4.288 1 1 0 01.474-1.332z" }));
+}));
+SpeakerDown.displayName = "SpeakerDown";
+SpeakerDown["iconName"] = "speaker-down";
+var SpeakerDown_default = SpeakerDown;
+
+// node_modules/@ringcentral/juno/es6/icon/SpeakerMute.js
+import React363, { forwardRef as forwardRef346, memo as memo333 } from "react";
+var __assign341 = function() {
+  __assign341 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign341.apply(this, arguments);
+};
+var SpeakerMute = memo333(forwardRef346(function(props, svgRef) {
+  return React363.createElement("svg", __assign341({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React363.createElement("path", { d: "M19.414 3.414A2 2 0 0120 4.828v22.343a2 2 0 01-3.414 1.414L10 21.999H4a2 2 0 01-2-2v-8a2 2 0 012-2h6l6.586-6.586a2 2 0 012.828 0zM18 4.828l-6.586 6.586A2 2 0 0110 12H5a1 1 0 00-1 1v6a1 1 0 001 1h5a2 2 0 011.414.586L18 27.172V4.829zm5.172 6.929l2.83 2.828 2.827-2.828a.999.999 0 111.414 1.414l-2.827 2.828 2.827 2.828a.999.999 0 11-1.414 1.414l-2.827-2.828-2.83 2.828a.999.999 0 11-1.414-1.414l2.83-2.828-2.83-2.828a.999.999 0 111.414-1.414z" }));
+}));
+SpeakerMute.displayName = "SpeakerMute";
+SpeakerMute["iconName"] = "speaker-mute";
+var SpeakerMute_default = SpeakerMute;
+
+// node_modules/@ringcentral/juno/es6/icon/SpeakerUp.js
+import React364, { forwardRef as forwardRef347, memo as memo334 } from "react";
+var __assign342 = function() {
+  __assign342 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign342.apply(this, arguments);
+};
+var SpeakerUp = memo334(forwardRef347(function(props, svgRef) {
+  return React364.createElement("svg", __assign342({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React364.createElement("path", { d: "M19.414 3.414A2 2 0 0120 4.828v22.343a2 2 0 01-3.414 1.414L10 21.999H4a2 2 0 01-2-2v-8a2 2 0 012-2h6l6.586-6.586a2 2 0 012.828 0zM18 4.828l-6.586 6.586A2 2 0 0110 12H5a1 1 0 00-1 1v6a1 1 0 001 1h5a2 2 0 011.414.586L18 27.172V4.829zm8.003 2.809a1 1 0 011.395.232C29.081 10.224 30 13.044 30 16s-.919 5.776-2.602 8.131a1 1 0 01-1.627-1.163C27.213 20.95 28 18.535 28 16s-.787-4.95-2.229-6.968a1 1 0 01.232-1.395zm-3.521 3.568a1 1 0 011.362.38A8.963 8.963 0 0125 16.001a8.953 8.953 0 01-1.171 4.441 1 1 0 11-1.738-.988A6.965 6.965 0 0023 16.001a6.962 6.962 0 00-.898-3.433 1 1 0 01.38-1.362z" }));
+}));
+SpeakerUp.displayName = "SpeakerUp";
+SpeakerUp["iconName"] = "speaker-up";
+var SpeakerUp_default = SpeakerUp;
+
+// node_modules/@ringcentral/juno/es6/icon/StarBorder.js
+import React365, { forwardRef as forwardRef348, memo as memo335 } from "react";
+var __assign343 = function() {
+  __assign343 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign343.apply(this, arguments);
+};
+var StarBorder = memo335(forwardRef348(function(props, svgRef) {
+  return React365.createElement("svg", __assign343({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React365.createElement("path", { d: "M16.885 1.726c.394.195.714.514.908.908l2.97 6.018a1 1 0 00.753.547l6.641.965a2.001 2.001 0 011.109 3.412L24.46 18.26c-.236.23-.343.561-.288.885l1.134 6.614a1.999 1.999 0 01-2.902 2.108l-5.94-3.123a1.002 1.002 0 00-.931 0l-5.94 3.123a2 2 0 01-2.902-2.109l1.134-6.614a.999.999 0 00-.288-.885l-4.806-4.684a2 2 0 011.109-3.411l6.641-.965a1 1 0 00.753-.547l2.97-6.018a2 2 0 012.679-.908zM13.03 9.537a3.001 3.001 0 01-2.259 1.641l-6.24.907a.2.2 0 00-.111.341l4.515 4.401a3 3 0 01.863 2.655l-1.066 6.215a.2.2 0 00.29.211l5.581-2.934a3.003 3.003 0 012.792 0l5.581 2.934a.2.2 0 00.27-.084c.02-.039.028-.084.02-.127L22.2 19.482a3 3 0 01.863-2.655l4.515-4.401a.2.2 0 00-.11-.341l-6.24-.907a3.001 3.001 0 01-2.259-1.641l-2.791-5.655a.2.2 0 00-.359 0l-2.791 5.655z" }));
+}));
+StarBorder.displayName = "StarBorder";
+StarBorder["iconName"] = "star_border";
+var StarBorder_default = StarBorder;
+
+// node_modules/@ringcentral/juno/es6/icon/Star.js
+import React366, { forwardRef as forwardRef349, memo as memo336 } from "react";
+var __assign344 = function() {
+  __assign344 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign344.apply(this, arguments);
+};
+var Star = memo336(forwardRef349(function(props, svgRef) {
+  return React366.createElement("svg", __assign344({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React366.createElement("path", { d: "M16.885 1.726c.394.195.714.514.908.908l2.97 6.018a1 1 0 00.753.547l6.641.965a2.001 2.001 0 011.109 3.412L24.46 18.26c-.236.23-.343.561-.288.885l1.134 6.614a1.999 1.999 0 01-2.902 2.108l-5.94-3.123a1.002 1.002 0 00-.931 0l-5.94 3.123a2 2 0 01-2.902-2.109l1.134-6.614a.999.999 0 00-.288-.885l-4.806-4.684a2 2 0 011.109-3.411l6.641-.965a1 1 0 00.753-.547l2.97-6.018a2 2 0 012.679-.908z" }));
+}));
+Star.displayName = "Star";
+Star["iconName"] = "star";
+var Star_default = Star;
+
+// node_modules/@ringcentral/juno/es6/icon/StartMeeting.js
+import React367, { forwardRef as forwardRef350, memo as memo337 } from "react";
+var __assign345 = function() {
+  __assign345 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign345.apply(this, arguments);
+};
+var StartMeeting = memo337(forwardRef350(function(props, svgRef) {
+  return React367.createElement("svg", __assign345({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React367.createElement("path", { d: "M22.222 6.222a2.667 2.667 0 012.667 2.667v2.153l3.17-1.672a1.778 1.778 0 012.163 1.736v9.79a1.778 1.778 0 01-2.164 1.736l-3.17-1.673v2.154a2.667 2.667 0 01-2.667 2.667H4.443a2.667 2.667 0 01-2.667-2.667V8.891a2.667 2.667 0 012.667-2.667h17.778zm0 1.778H4.444a.889.889 0 00-.883.785l-.006.104v14.222c0 .456.343.832.785.883l.104.006h17.778a.889.889 0 00.883-.785l.006-.104V8.889a.889.889 0 00-.785-.883L22.222 8zm6.222 3.105l-3.556 1.877v6.037l3.556 1.877v-9.79zm-15.111.451c.491 0 .889.398.889.889v2.667h2.667a.889.889 0 110 1.778h-2.667v2.667a.889.889 0 11-1.778 0v-2.668l-2.667.001a.889.889 0 110-1.778l2.667-.001v-2.666c0-.491.398-.889.889-.889z" }));
+}));
+StartMeeting.displayName = "StartMeeting";
+StartMeeting["iconName"] = "start_meeting";
+var StartMeeting_default = StartMeeting;
+
+// node_modules/@ringcentral/juno/es6/icon/Start.js
+import React368, { forwardRef as forwardRef351, memo as memo338 } from "react";
+var __assign346 = function() {
+  __assign346 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign346.apply(this, arguments);
+};
+var Start = memo338(forwardRef351(function(props, svgRef) {
+  return React368.createElement("svg", __assign346({ viewBox: "0 0 27 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React368.createElement("path", { d: "M2.667 5.49h21.02a2.667 2.667 0 012.667 2.667v21.02a2.667 2.667 0 01-2.667 2.667H2.667A2.667 2.667 0 010 29.177V8.157A2.667 2.667 0 012.667 5.49zm.666 3.334V28.51h19.686V8.824H3.333z" }), React368.createElement("path", { d: "M13.176 13.176c.606 0 1.098.492 1.098 1.098v3.294h3.294a1.099 1.099 0 010 2.196h-3.294v3.294a1.099 1.099 0 01-2.196 0v-3.294H8.784a1.099 1.099 0 010-2.196h3.294v-3.294c0-.606.492-1.098 1.098-1.098zM13.176 0a5.49 5.49 0 015.49 5.49h-3.294a2.196 2.196 0 10-4.392 0H7.686A5.49 5.49 0 0113.176 0z" }));
+}));
+Start.displayName = "Start";
+Start["iconName"] = "start";
+var Start_default = Start;
+
+// node_modules/@ringcentral/juno/es6/icon/StopBorder.js
+import React369, { forwardRef as forwardRef352, memo as memo339 } from "react";
+var __assign347 = function() {
+  __assign347 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign347.apply(this, arguments);
+};
+var StopBorder = memo339(forwardRef352(function(props, svgRef) {
+  return React369.createElement("svg", __assign347({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React369.createElement("path", { d: "M25 5a2 2 0 012 2v18a2 2 0 01-2 2H7a2 2 0 01-2-2V7a2 2 0 012-2h18zm-1 2H8a1 1 0 00-1 1v16a1 1 0 001 1h16a1 1 0 001-1V8a1 1 0 00-1-1z" }));
+}));
+StopBorder.displayName = "StopBorder";
+StopBorder["iconName"] = "stop_border";
+var StopBorder_default = StopBorder;
+
+// node_modules/@ringcentral/juno/es6/icon/StopCircle.js
+import React370, { forwardRef as forwardRef353, memo as memo340 } from "react";
+var __assign348 = function() {
+  __assign348 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign348.apply(this, arguments);
+};
+var StopCircle = memo340(forwardRef353(function(props, svgRef) {
+  return React370.createElement("svg", __assign348({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React370.createElement("path", { d: "M16 2C8.268 2 2 8.268 2 16s6.268 14 14 14 14-6.268 14-14S23.732 2 16 2zm3 9a2 2 0 012 2v6a2 2 0 01-2 2h-6a2 2 0 01-2-2v-6a2 2 0 012-2h6z" }));
+}));
+StopCircle.displayName = "StopCircle";
+StopCircle["iconName"] = "stop_circle";
+var StopCircle_default = StopCircle;
+
+// node_modules/@ringcentral/juno/es6/icon/StopCircleBorder.js
+import React371, { forwardRef as forwardRef354, memo as memo341 } from "react";
+var __assign349 = function() {
+  __assign349 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign349.apply(this, arguments);
+};
+var StopCircleBorder = memo341(forwardRef354(function(props, svgRef) {
+  return React371.createElement("svg", __assign349({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React371.createElement("path", { d: "M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm0 2C9.373 4 4 9.373 4 16s5.373 12 12 12 12-5.373 12-12S22.627 4 16 4zm3 7a2 2 0 012 2v6a2 2 0 01-2 2h-6a2 2 0 01-2-2v-6a2 2 0 012-2h6z" }));
+}));
+StopCircleBorder.displayName = "StopCircleBorder";
+StopCircleBorder["iconName"] = "stop_circle_border";
+var StopCircleBorder_default = StopCircleBorder;
+
+// node_modules/@ringcentral/juno/es6/icon/StopRecord.js
+import React372, { forwardRef as forwardRef355, memo as memo342 } from "react";
+var __assign350 = function() {
+  __assign350 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign350.apply(this, arguments);
+};
+var StopRecord = memo342(forwardRef355(function(props, svgRef) {
+  return React372.createElement("svg", __assign350({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React372.createElement("path", { fill: "var(--color75, #f44336)", d: "M26 23.441A2.54 2.54 0 0123.441 26H8.558a2.54 2.54 0 01-2.559-2.559V8.558a2.54 2.54 0 012.559-2.559h14.883A2.54 2.54 0 0126 8.558v14.883z" }));
+}));
+StopRecord.displayName = "StopRecord";
+StopRecord["iconName"] = "stop-record";
+var StopRecord_default = StopRecord;
+
+// node_modules/@ringcentral/juno/es6/icon/Stop.js
+import React373, { forwardRef as forwardRef356, memo as memo343 } from "react";
+var __assign351 = function() {
+  __assign351 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign351.apply(this, arguments);
+};
+var Stop = memo343(forwardRef356(function(props, svgRef) {
+  return React373.createElement("svg", __assign351({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React373.createElement("path", { d: "M25 5a2 2 0 012 2v18a2 2 0 01-2 2H7a2 2 0 01-2-2V7a2 2 0 012-2h18z" }));
+}));
+Stop.displayName = "Stop";
+Stop["iconName"] = "stop";
+var Stop_default = Stop;
+
+// node_modules/@ringcentral/juno/es6/icon/Strike.js
+import React374, { forwardRef as forwardRef357, memo as memo344 } from "react";
+var __assign352 = function() {
+  __assign352 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign352.apply(this, arguments);
+};
+var Strike = memo344(forwardRef357(function(props, svgRef) {
+  return React374.createElement("svg", __assign352({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React374.createElement("path", { d: "M24.21 18c.824.974 1.212 2.165 1.212 3.633 0 4.412-3.691 7.383-9.369 7.383-4.781 0-8.402-2.18-9.281-5.66a3.708 3.708 0 01-.105-.844c0-.721.422-1.16 1.143-1.16.615 0 .879.299 1.125.967.791 2.777 3.568 4.553 7.137 4.553 4.061 0 6.855-2.092 6.855-4.975 0-1.815-.992-3.004-3.256-3.896h4.54zM29 16a1 1 0 010 2H3a1 1 0 010-2h26zM16 3c4.518 0 7.928 2.215 8.701 5.396.07.264.105.58.105.791 0 .686-.439 1.09-1.125 1.09-.563 0-.879-.264-1.072-.809C21.888 6.779 19.41 5.144 16 5.144c-3.604 0-6.328 1.969-6.328 4.764 0 1.997 1.371 3.193 4.449 4.092H8.743c-1.062-1.035-1.567-2.329-1.567-3.934C7.176 5.935 10.973 3 16 3z" }));
+}));
+Strike.displayName = "Strike";
+Strike["iconName"] = "strike";
+var Strike_default = Strike;
+
+// node_modules/@ringcentral/juno/es6/icon/TakeOver.js
+import React375, { forwardRef as forwardRef358, memo as memo345 } from "react";
+var __assign353 = function() {
+  __assign353 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign353.apply(this, arguments);
+};
+var TakeOver = memo345(forwardRef358(function(props, svgRef) {
+  return React375.createElement("svg", __assign353({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React375.createElement("path", { d: "M9.064 16.054a2.241 2.241 0 012.146 2.168c.054.846.025 1.695.036 2.543l-.018 1.279c3.111.906 6.414.901 9.523-.014l-.011-3.01a3.597 3.597 0 01.223-1.575 2.116 2.116 0 011.919-1.353 90.817 90.817 0 014.868.009 2.262 2.262 0 012.167 2.102c.022.275.039.613.052.984l.02.775.01.804v1.137l-.008.63c-.032.772-.313 2.513-.8 3.109a1.638 1.638 0 00-.08.149l-.649.673-.71.518c-.119.085-.239.169-.362.249a16.805 16.805 0 01-4.005 1.772l-.529.146a24.097 24.097 0 01-7.552.927c-3.121-.131-6.154-.682-9.021-1.992a10.117 10.117 0 01-2.869-1.852c-.858-.747-1.362-3.825-1.389-4.969l-.02-1.148a20.044 20.044 0 01.031-1.717c.109-1.461.956-2.316 2.407-2.368a65.916 65.916 0 014.621.025zM16 2c.32 0 .604.15.787.383a.994.994 0 01.091.081l5.657 5.657a.999.999 0 11-1.414 1.414l-4.122-4.122v12.586a1 1 0 01-2 0V5.412l-4.121 4.123a.999.999 0 11-1.414-1.414l5.657-5.657.094-.083A.998.998 0 0115.999 2z" }));
+}));
+TakeOver.displayName = "TakeOver";
+TakeOver["iconName"] = "take_over";
+var TakeOver_default = TakeOver;
+
+// node_modules/@ringcentral/juno/es6/icon/TaskNewBorder.js
+import React376, { forwardRef as forwardRef359, memo as memo346 } from "react";
+var __assign354 = function() {
+  __assign354 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign354.apply(this, arguments);
+};
+var TaskNewBorder = memo346(forwardRef359(function(props, svgRef) {
+  return React376.createElement("svg", __assign354({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React376.createElement("path", { d: "M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm0 2C9.373 4 4 9.373 4 16s5.373 12 12 12 12-5.373 12-12S22.627 4 16 4zm6.376 7.741a.999.999 0 010 1.414l-7.071 7.071a.99.99 0 01-.531.277l-.117.014h-.118a.997.997 0 01-.648-.291l-4.243-4.243a.999.999 0 111.414-1.414l3.535 3.535 6.365-6.363a.999.999 0 011.414 0z" }));
+}));
+TaskNewBorder.displayName = "TaskNewBorder";
+TaskNewBorder["iconName"] = "task-new_border";
+var TaskNewBorder_default = TaskNewBorder;
+
+// node_modules/@ringcentral/juno/es6/icon/TaskNew.js
+import React377, { forwardRef as forwardRef360, memo as memo347 } from "react";
+var __assign355 = function() {
+  __assign355 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign355.apply(this, arguments);
+};
+var TaskNew = memo347(forwardRef360(function(props, svgRef) {
+  return React377.createElement("svg", __assign355({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React377.createElement("path", { d: "M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm6.376 9.741a1 1 0 00-1.32-.083l-.094.083-6.365 6.363-3.535-3.535a.999.999 0 00-1.497 1.32l.083.094 4.243 4.243a.99.99 0 00.531.277l.117.014h.118l.117-.014a.99.99 0 00.436-.194l.094-.083 7.071-7.071a.999.999 0 000-1.414z" }));
+}));
+TaskNew.displayName = "TaskNew";
+TaskNew["iconName"] = "task-new";
+var TaskNew_default = TaskNew;
+
+// node_modules/@ringcentral/juno/es6/icon/TeamBorder.js
+import React378, { forwardRef as forwardRef361, memo as memo348 } from "react";
+var __assign356 = function() {
+  __assign356 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign356.apply(this, arguments);
+};
+var TeamBorder = memo348(forwardRef361(function(props, svgRef) {
+  return React378.createElement("svg", __assign356({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React378.createElement("path", { d: "M8 19c-4.346 0-8 3.045-8 7a2 2 0 002 2l6.536.001a3.98 3.98 0 01-.527-1.73L8 26c-3.576.011-5.455.011-5.637 0-.272-.017-.363-.289-.324-.574C2.381 22.935 4.919 21 8 21c.452 0 .892.042 1.315.12.358-.62.784-1.204 1.267-1.747A9.02 9.02 0 008 19zm13-2c-5.981 0-11 3.904-11 9a2 2 0 002 2h18a2 2 0 002-2c0-5.096-5.019-9-11-9zm0 2c4.707 0 8.571 2.811 8.967 6.393.053.479-.253.607-.448.607H12.28c-.177 0-.279-.209-.264-.416C12.293 21.912 16.209 19 21 19zM8 7a5 5 0 10.001 10.001A5 5 0 008 7zm13-4a6 6 0 100 12 6 6 0 000-12zM8 9a3 3 0 110 6 3 3 0 010-6zm13-4a4 4 0 110 8 4 4 0 010-8z" }));
+}));
+TeamBorder.displayName = "TeamBorder";
+TeamBorder["iconName"] = "team_border";
+var TeamBorder_default = TeamBorder;
+
+// node_modules/@ringcentral/juno/es6/icon/TeamDefault.js
+import React379, { forwardRef as forwardRef362, memo as memo349 } from "react";
+var __assign357 = function() {
+  __assign357 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign357.apply(this, arguments);
+};
+var TeamDefault = memo349(forwardRef362(function(props, svgRef) {
+  return React379.createElement("svg", __assign357({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React379.createElement("path", { d: "M23.6 12.7c0 .596-.218 1.112-.653 1.547s-.951.653-1.547.653-1.111-.218-1.547-.653-.653-.951-.653-1.547.218-1.112.653-1.547.951-.653 1.547-.653 1.111.218 1.547.653.653.951.653 1.547zm-10.999 0c0 .596-.218 1.112-.653 1.547s-.951.653-1.547.653-1.111-.218-1.547-.653-.653-.951-.653-1.547.218-1.112.653-1.547.951-.653 1.547-.653 1.111.218 1.547.653.653.951.653 1.547zm5.499 9.899c0 .596-.218 1.112-.653 1.547s-.951.653-1.547.653-1.111-.218-1.547-.653-.653-.951-.653-1.547.218-1.112.653-1.547.951-.653 1.547-.653 1.111.218 1.547.653.653.951.653 1.547zm5.5-3.299c0 .596-.218 1.112-.653 1.547s-.951.653-1.547.653-1.111-.218-1.547-.653-.653-.951-.653-1.547.218-1.112.653-1.547.951-.653 1.547-.653 1.111.218 1.547.653.653.951.653 1.547zm-10.999 0c0 .596-.218 1.112-.653 1.547s-.951.653-1.547.653-1.111-.218-1.547-.653-.653-.951-.653-1.547.218-1.112.653-1.547.951-.653 1.547-.653 1.111.218 1.547.653.653.951.653 1.547zM18.1 9.401c0 .596-.218 1.112-.653 1.547s-.951.653-1.547.653-1.111-.218-1.547-.653-.653-.951-.653-1.547.218-1.112.653-1.547.951-.653 1.547-.653 1.111.218 1.547.653.653.951.653 1.547z" }));
+}));
+TeamDefault.displayName = "TeamDefault";
+TeamDefault["iconName"] = "team-default";
+var TeamDefault_default = TeamDefault;
+
+// node_modules/@ringcentral/juno/es6/icon/Team.js
+import React380, { forwardRef as forwardRef363, memo as memo350 } from "react";
+var __assign358 = function() {
+  __assign358 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign358.apply(this, arguments);
+};
+var Team = memo350(forwardRef363(function(props, svgRef) {
+  return React380.createElement("svg", __assign358({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React380.createElement("path", { d: "M8 19c-4.346 0-8 3.045-8 7a2 2 0 002 2l6.536.001A3.98 3.98 0 018 26c0-2.541.969-4.815 2.582-6.627A9.02 9.02 0 008 19zm13-2c-5.981 0-11 3.904-11 9a2 2 0 002 2h18a2 2 0 002-2c0-5.096-5.019-9-11-9zM8 7a5 5 0 10.001 10.001A5 5 0 008 7zm13-4a6 6 0 100 12 6 6 0 000-12z" }));
+}));
+Team.displayName = "Team";
+Team["iconName"] = "team";
+var Team_default = Team;
+
+// node_modules/@ringcentral/juno/es6/icon/Text.js
+import React381, { forwardRef as forwardRef364, memo as memo351 } from "react";
+var __assign359 = function() {
+  __assign359 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign359.apply(this, arguments);
+};
+var Text = memo351(forwardRef364(function(props, svgRef) {
+  return React381.createElement("svg", __assign359({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React381.createElement("path", { d: "M16.533 5.001c.466-.02.906.263 1.069.719l7.279 20.333a.92.92 0 01-.628 1.2 1.086 1.086 0 01-1.303-.683l-2.126-5.939a.978.978 0 01-.163.013h-8.553l-2.12 5.926c-.19.532-.757.829-1.303.683a.921.921 0 01-.651-1.128c.007-.024.014-.048.023-.072L15.336 5.72a1.086 1.086 0 011.135-.714zm3.578 13.644L16.467 8.463l-3.645 10.182h7.289z" }));
+}));
+Text.displayName = "Text";
+Text["iconName"] = "text";
+var Text_default = Text;
+
+// node_modules/@ringcentral/juno/es6/icon/Theme.js
+import React382, { forwardRef as forwardRef365, memo as memo352 } from "react";
+var __assign360 = function() {
+  __assign360 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign360.apply(this, arguments);
+};
+var Theme = memo352(forwardRef365(function(props, svgRef) {
+  return React382.createElement("svg", __assign360({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React382.createElement("path", { d: "M25.5 17a2.5 2.5 0 110-5 2.5 2.5 0 010 5zm-5-7a2.5 2.5 0 110-5 2.5 2.5 0 010 5zM9 7.5a2.5 2.5 0 115 0 2.5 2.5 0 01-5 0zM6.5 17a2.5 2.5 0 110-5 2.5 2.5 0 010 5zM16 2C8.268 2 2 8.268 2 16s6.268 14 14 14a2.333 2.333 0 002.333-2.333c0-.607-.233-1.151-.607-1.556a2.407 2.407 0 01-.591-1.556 2.333 2.333 0 012.333-2.333h2.753a7.777 7.777 0 007.778-7.778C29.999 7.568 23.73 2 15.999 2z" }));
+}));
+Theme.displayName = "Theme";
+Theme["iconName"] = "theme";
+var Theme_default = Theme;
+
+// node_modules/@ringcentral/juno/es6/icon/ThumbupBorder.js
+import React383, { forwardRef as forwardRef366, memo as memo353 } from "react";
+var __assign361 = function() {
+  __assign361 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign361.apply(this, arguments);
+};
+var ThumbupBorder = memo353(forwardRef366(function(props, svgRef) {
+  return React383.createElement("svg", __assign361({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React383.createElement("path", { d: "M4 28a2 2 0 01-2-2v-9a2 2 0 012-2h4l6.825-11.12A4 4 0 0118.217 2H19a2.305 2.305 0 012.227 2.899L19.867 10H26a4 4 0 014 4v4.5a9.5 9.5 0 01-9.5 9.5H4zm3-11H5a1 1 0 00-1 1v7a1 1 0 001 1h2v-9zM19 4h-.783a1.99 1.99 0 00-1.687.926l-6.825 11.12C9.341 16.639 9 17 9 17v9h11.5a7.5 7.5 0 007.5-7.5V14a2 2 0 00-2-2h-6.133a2 2 0 01-1.933-2.515l1.36-5.101A.305.305 0 0018.999 4z" }));
+}));
+ThumbupBorder.displayName = "ThumbupBorder";
+ThumbupBorder["iconName"] = "thumbup_border";
+var ThumbupBorder_default = ThumbupBorder;
+
+// node_modules/@ringcentral/juno/es6/icon/Thumbup.js
+import React384, { forwardRef as forwardRef367, memo as memo354 } from "react";
+var __assign362 = function() {
+  __assign362 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign362.apply(this, arguments);
+};
+var Thumbup = memo354(forwardRef367(function(props, svgRef) {
+  return React384.createElement("svg", __assign362({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React384.createElement("path", { d: "M7 15v13H4a2 2 0 01-2-2v-9a2 2 0 012-2h3zM19 2a2.305 2.305 0 012.227 2.899L19.867 10H26a4 4 0 014 4v4.5a9.5 9.5 0 01-9.5 9.5H9V13.37l5.825-9.49A4 4 0 0118.217 2H19z" }));
+}));
+Thumbup.displayName = "Thumbup";
+Thumbup["iconName"] = "thumbup";
+var Thumbup_default = Thumbup;
+
+// node_modules/@ringcentral/juno/es6/icon/TimeBorder.js
+import React385, { forwardRef as forwardRef368, memo as memo355 } from "react";
+var __assign363 = function() {
+  __assign363 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign363.apply(this, arguments);
+};
+var TimeBorder = memo355(forwardRef368(function(props, svgRef) {
+  return React385.createElement("svg", __assign363({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React385.createElement("path", { d: "M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm0 2C9.373 4 4 9.373 4 16s5.373 12 12 12 12-5.373 12-12S22.627 4 16 4zM9 17a1 1 0 010-2h6V7a1 1 0 012 0v9a1 1 0 01-.883.993L16 17H9z" }));
+}));
+TimeBorder.displayName = "TimeBorder";
+TimeBorder["iconName"] = "time_border";
+var TimeBorder_default = TimeBorder;
+
+// node_modules/@ringcentral/juno/es6/icon/Time.js
+import React386, { forwardRef as forwardRef369, memo as memo356 } from "react";
+var __assign364 = function() {
+  __assign364 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign364.apply(this, arguments);
+};
+var Time = memo356(forwardRef369(function(props, svgRef) {
+  return React386.createElement("svg", __assign364({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React386.createElement("path", { d: "M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2zm0 4a1 1 0 00-.993.883L15 7v8H9a1 1 0 00-.117 1.993L9 17l7.117-.007c.459-.053.823-.418.877-.877l.007-.117v-9a1 1 0 00-1-1z" }));
+}));
+Time.displayName = "Time";
+Time["iconName"] = "time";
+var Time_default = Time;
+
+// node_modules/@ringcentral/juno/es6/icon/Transcription.js
+import React387, { forwardRef as forwardRef370, memo as memo357 } from "react";
+var __assign365 = function() {
+  __assign365 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign365.apply(this, arguments);
+};
+var Transcription = memo357(forwardRef370(function(props, svgRef) {
+  return React387.createElement("svg", __assign365({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React387.createElement("path", { d: "M28 4a2 2 0 012 2v16a2 2 0 01-2 2h-7.586a.997.997 0 00-.707.293l-3.141 3.141a.8.8 0 01-1.131 0l-3.141-3.141a1 1 0 00-.707-.293H4.001a2 2 0 01-2-2V6a2 2 0 012-2h24zm-1 2H5a1 1 0 00-1 1v14a1 1 0 001 1h7a2 2 0 011.414.586L16 25.172l2.586-2.586A2 2 0 0120 22h7a1 1 0 001-1V7a1 1 0 00-1-1zm-3 11a1 1 0 010 2h-4a1 1 0 010-2h4zm-8 0a1 1 0 010 2h-4a1 1 0 010-2h4zm-8 0a1 1 0 010 2H7a1 1 0 010-2h1zm17-4a1 1 0 010 2h-2a1 1 0 010-2h2zm-6 0a1 1 0 010 2h-5a1 1 0 010-2h5zm-9 0a1 1 0 010 2H7a1 1 0 010-2h3z" }));
+}));
+Transcription.displayName = "Transcription";
+Transcription["iconName"] = "transcription";
+var Transcription_default = Transcription;
+
+// node_modules/@ringcentral/juno/es6/icon/TransferCall.js
+import React388, { forwardRef as forwardRef371, memo as memo358 } from "react";
+var __assign366 = function() {
+  __assign366 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign366.apply(this, arguments);
+};
+var TransferCall = memo358(forwardRef371(function(props, svgRef) {
+  return React388.createElement("svg", __assign366({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React388.createElement("path", { d: "M15.998 19.956c-.011.453.06.432-.433.556-.803.208-1.633.268-2.456.314a99.83 99.83 0 01-3.946.156c-2.256.038-4.513.035-6.758-.236a8.248 8.248 0 01-1.114-.239c-.108-.029-.194-.144-.291-.222v-.706c.011-.046.023-.095.031-.141.046-.242.071-.487.137-.721.222-.784.729-1.349 1.407-1.776.644-.407 1.359-.666 2.048-.977.618-.277 1.222-.588 1.835-.882.103-.049.131-.118.128-.231a16.172 16.172 0 010-.853.269.269 0 00-.111-.234 3.778 3.778 0 01-1.009-1.211c-.544-1.027-.652-2.114-.425-3.241.199-.972.627-1.822 1.373-2.491 1.274-1.139 3.143-1.087 4.336.13.883.9 1.282 2.013 1.313 3.258.037 1.445-.444 2.67-1.593 3.596-.04.032-.066.11-.066.164-.009.297 0 .597-.006.897-.003.101.028.164.12.208.561.265 1.117.542 1.681.799.672.306 1.362.574 2.023.9.65.32 1.177.796 1.479 1.476.242.545.311 1.122.293 1.71zm14.704 4.291c.242.545.311 1.122.296 1.707-.011.45.06.432-.436.559-.803.208-1.632.268-2.456.314a99.78 99.78 0 01-3.945.156c-2.256.038-4.512.035-6.757-.236a8.248 8.248 0 01-1.114-.239c-.108-.029-.194-.144-.291-.222v-.706c.011-.046.023-.095.031-.141.046-.242.071-.487.137-.721.222-.784.729-1.349 1.407-1.776.644-.407 1.359-.666 2.048-.977.618-.277 1.222-.588 1.835-.882.103-.049.131-.118.128-.231a20.214 20.214 0 010-.853.269.269 0 00-.111-.234 3.763 3.763 0 01-1.008-1.211c-.544-1.026-.652-2.114-.424-3.241.199-.972.627-1.822 1.373-2.491 1.273-1.139 3.142-1.087 4.336.13.883.9 1.282 2.013 1.313 3.258.037 1.445-.444 2.67-1.592 3.596-.04.032-.066.11-.066.164-.009.3 0 .597-.006.897-.003.101.029.164.12.208.561.265 1.117.542 1.681.799.672.306 1.362.574 2.023.9.649.32 1.176.796 1.478 1.476zM13.996 6.08a.765.765 0 01-.933-.448.806.806 0 01.481-1.079c1.296-.419 3.451-.733 5.761.358.407.192.77.445 1.099.739L23.001 4l-.242 6.546a.51.51 0 01-.798.361L16.9 7.881l2.012-1.28a4.005 4.005 0 00-.402-.227c-1.838-.873-3.434-.64-4.513-.294z" }));
+}));
+TransferCall.displayName = "TransferCall";
+TransferCall["iconName"] = "transfer-call";
+var TransferCall_default = TransferCall;
+
+// node_modules/@ringcentral/juno/es6/icon/TransferCallBorder.js
+import React389, { forwardRef as forwardRef372, memo as memo359 } from "react";
+var __assign367 = function() {
+  __assign367 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign367.apply(this, arguments);
+};
+var TransferCallBorder = memo359(forwardRef372(function(props, svgRef) {
+  return React389.createElement("svg", __assign367({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React389.createElement("path", { d: "M8.791 2.353a3.42 3.42 0 011.577 1.5 33.63 33.63 0 001.257 2.265 49.99 49.99 0 001.696 2.601c.414.626.579 1.307.486 2.017-.091.699-.403 1.322-.977 1.9a6.076 6.076 0 01-1.027.705 1.161 1.161 0 01-.218.137l-.171.083-.137.078a7.09 7.09 0 01-.229.109c.016.079.043.175.083.29l.098.258c.124.331.324.717.602 1.154.285.448.649.938 1.09 1.465a13.92 13.92 0 001.328 1.391c.395.352.753.616 1.068.791.121.067.226.121.312.159l.218-.239.08-.079.085-.107.254-.263c.119-.12.226-.223.321-.31.171-.156.362-.306.617-.477a3.574 3.574 0 012.169-.483c.803.071 1.484.39 1.965.905a69.978 69.978 0 001.865 1.697l.459.399c.57.491 1.262 1.072 2.075 1.742.586.482.976 1.073 1.157 1.757.164.617.135 1.216-.074 1.743l-.087.194c-.193.479-.565 1.044-1.117 1.713-.476.576-.912 1.028-1.295 1.343l-.161.127c-.44.363-.947.637-1.516.818a6.008 6.008 0 01-1.828.264c-1.073 0-2.192-.21-3.356-.625-1.135-.405-2.29-.984-3.466-1.737a24.373 24.373 0 01-3.044-2.327l-.431-.391a36.73 36.73 0 01-3.448-3.565c-1.492-1.787-2.714-3.551-3.664-5.291-.955-1.731-1.628-3.354-2.018-4.87C.992 9.65.896 8.256 1.108 7.021c.204-1.306.769-2.366 1.703-3.149.433-.361 1.041-.728 1.828-1.11.803-.39 1.468-.63 2.018-.716a3.627 3.627 0 012.133.308zM6.966 4.022c-.314.049-.8.222-1.451.538-.661.321-1.134.608-1.416.843-.548.46-.881 1.078-1.018 1.956-.16.934-.085 2.047.247 3.337.345 1.34.953 2.809 1.836 4.41.884 1.619 2.031 3.276 3.432 4.954a34.87 34.87 0 003.283 3.393 22.997 22.997 0 003.194 2.502c1.055.675 2.074 1.187 3.059 1.538.959.342 1.853.509 2.684.509.466 0 .872-.058 1.223-.17.274-.087.514-.206.768-.392l.155-.12c.275-.206.66-.595 1.112-1.142.391-.473.643-.844.765-1.097l.106-.236c.064-.128.078-.299.017-.53-.072-.27-.226-.504-.496-.726l-1.295-1.078a76.207 76.207 0 01-2.581-2.268l-.624-.582-.088-.088c-.138-.148-.36-.25-.681-.279a1.596 1.596 0 00-.827.134l-.119.063-.049.035a3.377 3.377 0 00-.189.145l-.079.069-.16.152-.227.231-.036.047a2.91 2.91 0 01-.09.104l-.159.162-.157.172a1.998 1.998 0 01-2.3.472 6.246 6.246 0 01-.459-.233c-.46-.256-.934-.607-1.428-1.047a16.01 16.01 0 01-1.531-1.601 16.348 16.348 0 01-1.243-1.674 8.88 8.88 0 01-.691-1.286l-.073-.183a5.005 5.005 0 01-.292-.913 2 2 0 011.025-2.162l.25-.12.178-.098.111-.054.05-.036.143-.086c.134-.073.249-.143.346-.21l.175-.127.102-.083.049-.052c.16-.183.247-.349.289-.528l.02-.109a.87.87 0 00-.147-.621 52.75 52.75 0 01-1.763-2.705 34.089 34.089 0 01-1.299-2.338 1.447 1.447 0 00-.553-.588l-.12-.063a1.627 1.627 0 00-.976-.142zm17.135 1.265a1.014 1.014 0 011.414 0l5.192 5.019a.968.968 0 010 1.388l-5.192 5.019c-.391.383-1.024.383-1.414 0s-.391-1.004 0-1.388l3.488-3.344H17.001c-.552 0-1-.439-1-.981s.448-.981 1-.981h10.586l-3.486-3.344a.968.968 0 010-1.388z" }));
+}));
+TransferCallBorder.displayName = "TransferCallBorder";
+TransferCallBorder["iconName"] = "transfer_call_border";
+var TransferCallBorder_default = TransferCallBorder;
+
+// node_modules/@ringcentral/juno/es6/icon/Unblocked.js
+import React390, { forwardRef as forwardRef373, memo as memo360 } from "react";
+var __assign368 = function() {
+  __assign368 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign368.apply(this, arguments);
+};
+var Unblocked = memo360(forwardRef373(function(props, svgRef) {
+  return React390.createElement("svg", __assign368({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React390.createElement("path", { d: "M6.101 6.101C11.568.634 20.433.634 25.9 6.101s5.467 14.332 0 19.799c-5.467 5.467-14.332 5.467-19.799 0s-5.467-14.332 0-19.799zm16.97 1.414L7.515 23.071a.999.999 0 001.32 1.497l.094-.083L24.485 8.929a.999.999 0 00-1.32-1.497l-.094.083z" }));
+}));
+Unblocked.displayName = "Unblocked";
+Unblocked["iconName"] = "unblocked";
+var Unblocked_default = Unblocked;
+
+// node_modules/@ringcentral/juno/es6/icon/Underline.js
+import React391, { forwardRef as forwardRef374, memo as memo361 } from "react";
+var __assign369 = function() {
+  __assign369 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign369.apply(this, arguments);
+};
+var Underline = memo361(forwardRef374(function(props, svgRef) {
+  return React391.createElement("svg", __assign369({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React391.createElement("path", { d: "M24 26a1 1 0 010 2H8a1 1 0 010-2h16zm0-22a1 1 0 011 1v10c0 4.971-4.029 9-9 9s-9-4.029-9-9V5a1 1 0 012 0v10a7 7 0 006.759 6.996L16 22a7 7 0 006.996-6.759L23 15V5a1 1 0 011-1z" }));
+}));
+Underline.displayName = "Underline";
+Underline["iconName"] = "underline";
+var Underline_default = Underline;
+
+// node_modules/@ringcentral/juno/es6/icon/UndockBorder.js
+import React392, { forwardRef as forwardRef375, memo as memo362 } from "react";
+var __assign370 = function() {
+  __assign370 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign370.apply(this, arguments);
+};
+var UndockBorder = memo362(forwardRef375(function(props, svgRef) {
+  return React392.createElement("svg", __assign370({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React392.createElement("path", { d: "M20 10a2 2 0 012 2v16a2 2 0 01-2 2H4a2 2 0 01-2-2V12a2 2 0 012-2h16zm0 2H4v16h16V12zm-3 3v6l-2.343-2.344-6.536 6.536a.999.999 0 11-1.414-1.414l6.536-6.536L11 15h6zM28 2a2 2 0 012 2v16a2 2 0 01-2 2h-4v-2h4V4H12v4h-2V4a2 2 0 012-2h16z" }));
+}));
+UndockBorder.displayName = "UndockBorder";
+UndockBorder["iconName"] = "undock_border";
+var UndockBorder_default = UndockBorder;
+
+// node_modules/@ringcentral/juno/es6/icon/Undock.js
+import React393, { forwardRef as forwardRef376, memo as memo363 } from "react";
+var __assign371 = function() {
+  __assign371 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign371.apply(this, arguments);
+};
+var Undock = memo363(forwardRef376(function(props, svgRef) {
+  return React393.createElement("svg", __assign371({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React393.createElement("path", { d: "M20 10a2 2 0 012 2v16a2 2 0 01-2 2H4a2 2 0 01-2-2V12a2 2 0 012-2h16zm-3 5h-6l2.243 2.242-6.536 6.536a.999.999 0 001.32 1.497l.094-.083 6.536-6.536L17 21v-6zM28 2a2 2 0 012 2v16a2 2 0 01-2 2h-4V8H10V4a2 2 0 012-2h16z" }));
+}));
+Undock.displayName = "Undock";
+Undock["iconName"] = "undock";
+var Undock_default = Undock;
+
+// node_modules/@ringcentral/juno/es6/icon/UnfoldLess.js
+import React394, { forwardRef as forwardRef377, memo as memo364 } from "react";
+var __assign372 = function() {
+  __assign372 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign372.apply(this, arguments);
+};
+var UnfoldLess = memo364(forwardRef377(function(props, svgRef) {
+  return React394.createElement("svg", __assign372({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React394.createElement("path", { d: "M11.05 27.621l4.95-4.95 4.95 4.95a.999.999 0 101.414-1.414l-5.657-5.657a.999.999 0 00-1.414 0l-5.657 5.657a.999.999 0 101.414 1.414zM9.636 5.707l5.657 5.657a1 1 0 001.32.083l.094-.083 5.657-5.657a.999.999 0 00-1.32-1.497l-.094.083L16 9.243l-4.95-4.95a.999.999 0 00-1.497 1.32l.083.094z" }));
+}));
+UnfoldLess.displayName = "UnfoldLess";
+UnfoldLess["iconName"] = "unfold_less";
+var UnfoldLess_default = UnfoldLess;
+
+// node_modules/@ringcentral/juno/es6/icon/UnfoldMore.js
+import React395, { forwardRef as forwardRef378, memo as memo365 } from "react";
+var __assign373 = function() {
+  __assign373 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign373.apply(this, arguments);
+};
+var UnfoldMore = memo365(forwardRef378(function(props, svgRef) {
+  return React395.createElement("svg", __assign373({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React395.createElement("path", { d: "M11.05 20.55L16 25.5l4.95-4.95a.999.999 0 111.414 1.414l-5.657 5.657a.999.999 0 01-1.414 0l-5.657-5.657a.999.999 0 111.414-1.414zM9.636 9.95l5.657-5.657a1 1 0 011.32-.083l.094.083 5.657 5.657a.999.999 0 01-1.32 1.497l-.094-.083L16 6.414l-4.95 4.95a.999.999 0 01-1.497-1.32l.083-.094z" }));
+}));
+UnfoldMore.displayName = "UnfoldMore";
+UnfoldMore["iconName"] = "unfold_more";
+var UnfoldMore_default = UnfoldMore;
+
+// node_modules/@ringcentral/juno/es6/icon/Unlock.js
+import React396, { forwardRef as forwardRef379, memo as memo366 } from "react";
+var __assign374 = function() {
+  __assign374 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign374.apply(this, arguments);
+};
+var Unlock = memo366(forwardRef379(function(props, svgRef) {
+  return React396.createElement("svg", __assign374({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React396.createElement("path", { d: "M24 2a6 6 0 016 6v4h-2V8a4 4 0 00-3.8-3.995L24 4a4 4 0 00-3.995 3.8L20 8v6h4a2 2 0 011.994 1.851L26 16v12a2 2 0 01-1.851 1.994L24 30H8a2.001 2.001 0 01-1.995-1.851L6 28V16c0-1.054.816-1.918 1.851-1.995L8 14h10V8a6 6 0 016-6zm-1 14H9a1 1 0 00-.993.883L8 17v10a1 1 0 00.883.993L9 28h14a1 1 0 00.993-.883L24 27V17a1 1 0 00-.883-.993L23 16zm-7 3a1 1 0 011 1v4a1 1 0 01-2 0v-4a1 1 0 011-1z" }));
+}));
+Unlock.displayName = "Unlock";
+Unlock["iconName"] = "unlock";
+var Unlock_default = Unlock;
+
+// node_modules/@ringcentral/juno/es6/icon/UnpinSlash.js
+import React397, { forwardRef as forwardRef380, memo as memo367 } from "react";
+var __assign375 = function() {
+  __assign375 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign375.apply(this, arguments);
+};
+var UnpinSlash = memo367(forwardRef380(function(props, svgRef) {
+  return React397.createElement("svg", __assign375({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React397.createElement("path", { d: "M3.565 2.979a.999.999 0 011.414 0l24.042 24.042a.999.999 0 11-1.414 1.414l-5.984-5.983-.078.359a10.215 10.215 0 01-2.73 4.888 1.141 1.141 0 01-1.613 0l-5.644-5.644-7.256 7.256c-.445.445-2.78 2.058-3.225 1.613s1.167-2.78 1.613-3.225l7.256-7.256-5.644-5.644a1.141 1.141 0 010-1.613 10.214 10.214 0 015.246-2.808L3.565 4.394a.999.999 0 010-1.414zm7.788 9.202a8.23 8.23 0 00-4.716 1.623l-.281.219 11.62 11.62.029-.033a8.234 8.234 0 001.814-4.964l-8.466-8.465zM19.63 1.154c.086.05.165.11.235.181l10.802 10.801a1.141 1.141 0 01-.235 1.794l-7.394 4.28-1.464-1.463 6.887-3.988-9.219-9.219-3.987 6.888-1.463-1.464 4.28-7.394a1.14 1.14 0 011.558-.415z" }));
+}));
+UnpinSlash.displayName = "UnpinSlash";
+UnpinSlash["iconName"] = "unpin-slash";
+var UnpinSlash_default = UnpinSlash;
+
+// node_modules/@ringcentral/juno/es6/icon/Unpin.js
+import React398, { forwardRef as forwardRef381, memo as memo368 } from "react";
+var __assign376 = function() {
+  __assign376 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign376.apply(this, arguments);
+};
+var Unpin = memo368(forwardRef381(function(props, svgRef) {
+  return React398.createElement("svg", __assign376({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React398.createElement("path", { d: "M9.946 20.442l1.613 1.613-7.256 7.256c-.445.445-2.78 2.058-3.225 1.613s1.167-2.78 1.613-3.225l7.256-7.256zM19.63 1.154c.086.05.165.11.235.181l10.802 10.801a1.141 1.141 0 01-.235 1.794l-8.715 5.046a10.246 10.246 0 01-2.901 8.723 1.141 1.141 0 01-1.613 0l-12.9-12.9a1.141 1.141 0 010-1.613 10.248 10.248 0 018.724-2.901l5.045-8.715a1.14 1.14 0 011.558-.415zm-.389 2.385l-5.161 8.917-1.338-.192a8.249 8.249 0 00-6.105 1.54l-.281.219 11.62 11.62.029-.033a8.24 8.24 0 001.768-6.055l-.037-.296-.192-1.338 8.916-5.163-9.219-9.219z" }));
+}));
+Unpin.displayName = "Unpin";
+Unpin["iconName"] = "unpin";
+var Unpin_default = Unpin;
+
+// node_modules/@ringcentral/juno/es6/icon/Unread.js
+import React399, { forwardRef as forwardRef382, memo as memo369 } from "react";
+var __assign377 = function() {
+  __assign377 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign377.apply(this, arguments);
+};
+var Unread = memo369(forwardRef382(function(props, svgRef) {
+  return React399.createElement("svg", __assign377({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React399.createElement("path", { d: "M25.615 2a2 2 0 011.752 2.965L24 11.08l3.331 5.943a2 2 0 01-1.745 2.978H6v9a1 1 0 01-2 0v-26a1 1 0 011-1h20.615z" }));
+}));
+Unread.displayName = "Unread";
+Unread["iconName"] = "unread";
+var Unread_default = Unread;
+
+// node_modules/@ringcentral/juno/es6/icon/Unselect.js
+import React400, { forwardRef as forwardRef383, memo as memo370 } from "react";
+var __assign378 = function() {
+  __assign378 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign378.apply(this, arguments);
+};
+var Unselect = memo370(forwardRef383(function(props, svgRef) {
+  return React400.createElement("svg", __assign378({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React400.createElement("path", { d: "M27 2a3 3 0 013 3v22a3 3 0 01-3 3H5a3 3 0 01-3-3V5a3 3 0 013-3h22zm0 2.5H5a.5.5 0 00-.492.41L4.5 5v22a.5.5 0 00.41.492L5 27.5h22a.5.5 0 00.492-.41L27.5 27V5a.5.5 0 00-.41-.492L27 4.5z" }));
+}));
+Unselect.displayName = "Unselect";
+Unselect["iconName"] = "unselect";
+var Unselect_default = Unselect;
+
+// node_modules/@ringcentral/juno/es6/icon/UserDefault.js
+import React401, { forwardRef as forwardRef384, memo as memo371 } from "react";
+var __assign379 = function() {
+  __assign379 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign379.apply(this, arguments);
+};
+var UserDefault = memo371(forwardRef384(function(props, svgRef) {
+  return React401.createElement("svg", __assign379({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React401.createElement("path", { d: "M16.8 5.66a5.222 5.222 0 014.168 2.106 5.276 5.276 0 011.056 3.794 26.765 26.765 0 00-.136 2.901v.139a3.457 3.457 0 010 2.106 5.804 5.804 0 01-1.144 2.459 5.648 5.648 0 01-.6 2.459 8.879 8.879 0 00-.456 1.828v.155c.001.59.01.59.136.59 2.188.662 4.644 1.774 6.763 2.708A15.152 15.152 0 0116 31.199a15.151 15.151 0 01-10.724-4.428.14.14 0 01.059-.021 57.038 57.038 0 016.96-2.618h.019c.117-.002.117-.037.117-.746a5.668 5.668 0 00-.272-1.828c-.136-.615-.456-1.5-.6-2.459a5.694 5.694 0 01-1.048-2.459 3.3 3.3 0 010-2.106v-.074c0-.279-.144-1.688-.28-2.901a5.276 5.276 0 011.056-3.794 5.259 5.259 0 014.176-2.106h1.336z" }));
+}));
+UserDefault.displayName = "UserDefault";
+UserDefault["iconName"] = "user-default";
+var UserDefault_default = UserDefault;
+
+// node_modules/@ringcentral/juno/es6/icon/VideoAndMessage.js
+import React402, { forwardRef as forwardRef385, memo as memo372 } from "react";
+var __assign380 = function() {
+  __assign380 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign380.apply(this, arguments);
+};
+var VideoAndMessage = memo372(forwardRef385(function(props, svgRef) {
+  return React402.createElement("svg", __assign380({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React402.createElement("path", { d: "M21 6a2 2 0 012 2v14a2 2 0 01-2 2h-4.586a.997.997 0 00-.707.293l-3.141 3.141a.8.8 0 01-1.131 0l-3.141-3.141A1 1 0 007.587 24H3.001a2 2 0 01-2-2V8a2 2 0 012-2h18zm-1 2H4a1 1 0 00-1 1v12a1 1 0 001 1h4a2 2 0 011.414.586L12 25.172l2.586-2.586A2 2 0 0116 22h4a1 1 0 001-1V9a1 1 0 00-1-1zm10 .618a1 1 0 01.993.883l.007.117v10.764a1 1 0 01-1.34.94l-.107-.046-5-2.5a1 1 0 01-.545-.77L24 17.881v-5.764a1 1 0 01.445-.832l.108-.063 5-2.5c.139-.069.292-.106.447-.106zm-1 2.618l-3 1.5v4.528l3 1.5v-7.528zM13 16a1 1 0 010 2H6a1 1 0 010-2h7zm5-4a1 1 0 010 2H6a1 1 0 010-2h12z" }));
+}));
+VideoAndMessage.displayName = "VideoAndMessage";
+VideoAndMessage["iconName"] = "video_and_message";
+var VideoAndMessage_default = VideoAndMessage;
+
+// node_modules/@ringcentral/juno/es6/icon/VideoMeeting.js
+import React403, { forwardRef as forwardRef386, memo as memo373 } from "react";
+var __assign381 = function() {
+  __assign381 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign381.apply(this, arguments);
+};
+var VideoMeeting = memo373(forwardRef386(function(props, svgRef) {
+  return React403.createElement("svg", __assign381({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React403.createElement("path", { d: "M21.182 8C22.186 8 23 8.761 23 9.7v13.6c0 .939-.814 1.7-1.818 1.7H4.818C3.814 25 3 24.239 3 23.3V9.7C3 8.761 3.814 8 4.818 8h16.364zm7.104 3c.366 0 .668.333.709.761l.005.101v9.276c0 .134-.026.266-.075.385-.164.395-.545.572-.882.425l-.077-.04-3.571-2.154c-.215-.13-.36-.38-.389-.663L24 18.983v-4.967c0-.29.121-.558.318-.717l.077-.054 3.571-2.154a.615.615 0 01.319-.091z" }));
+}));
+VideoMeeting.displayName = "VideoMeeting";
+VideoMeeting["iconName"] = "video_meeting";
+var VideoMeeting_default = VideoMeeting;
+
+// node_modules/@ringcentral/juno/es6/icon/VideocamBorder.js
+import React404, { forwardRef as forwardRef387, memo as memo374 } from "react";
+var __assign382 = function() {
+  __assign382 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign382.apply(this, arguments);
+};
+var VideocamBorder = memo374(forwardRef387(function(props, svgRef) {
+  return React404.createElement("svg", __assign382({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React404.createElement("path", { d: "M21 6a2 2 0 012 2v16a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h18zm-1 2H4a1 1 0 00-1 1v14a1 1 0 001 1h16a1 1 0 001-1V9a1 1 0 00-1-1zm10 1.618a1 1 0 01.993.883l.007.117v10.764a1 1 0 01-1.34.94l-.107-.046-5-2.5a1 1 0 01-.545-.77L24 18.881v-5.764a1 1 0 01.445-.832l.108-.063 5-2.5c.139-.069.292-.106.447-.106zm-1 2.618l-3 1.5v4.528l3 1.5v-7.528z" }));
+}));
+VideocamBorder.displayName = "VideocamBorder";
+VideocamBorder["iconName"] = "videocam_border";
+var VideocamBorder_default = VideocamBorder;
+
+// node_modules/@ringcentral/juno/es6/icon/VideocamOffBorder.js
+import React405, { forwardRef as forwardRef388, memo as memo375 } from "react";
+var __assign383 = function() {
+  __assign383 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign383.apply(this, arguments);
+};
+var VideocamOffBorder = memo375(forwardRef388(function(props, svgRef) {
+  return React405.createElement("svg", __assign383({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React405.createElement("path", { d: "M21 6c.597 0 1.132.261 1.499.675l-1.711 1.709A.998.998 0 0020 8H4a1 1 0 00-1 1v14a1 1 0 001 1h1.172l-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h18zM5.393 29.434a.999.999 0 11-1.414-1.414L28.021 3.978a.999.999 0 111.414 1.414L23 11.827v12.172a2 2 0 01-2 2H8.827l2-2H20a1 1 0 001-1v-9.172L5.393 29.433zM30 9.618a1 1 0 01.993.883l.007.117v10.764a1 1 0 01-1.34.94l-.107-.046-5-2.5a1 1 0 01-.545-.77L24 18.881v-5.764a1 1 0 01.445-.832l.108-.063 5-2.5c.139-.069.292-.106.447-.106zm-1 2.618l-3 1.5v4.528l3 1.5v-7.528z" }));
+}));
+VideocamOffBorder.displayName = "VideocamOffBorder";
+VideocamOffBorder["iconName"] = "videocam-off_border";
+var VideocamOffBorder_default = VideocamOffBorder;
+
+// node_modules/@ringcentral/juno/es6/icon/VideocamOff.js
+import React406, { forwardRef as forwardRef389, memo as memo376 } from "react";
+var __assign384 = function() {
+  __assign384 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign384.apply(this, arguments);
+};
+var VideocamOff = memo376(forwardRef389(function(props, svgRef) {
+  return React406.createElement("svg", __assign384({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React406.createElement("path", { d: "M29.435 3.979a.999.999 0 010 1.414L5.393 29.435a.999.999 0 11-1.414-1.414L28.021 3.979a.999.999 0 011.414 0zM21 6c.597 0 1.132.261 1.499.675L3.172 26H3a2 2 0 01-2-2V8a2 2 0 012-2h18zm2 5.828V24a2 2 0 01-2 2H8.827L23 11.828zm7-2.21a1 1 0 01.993.883l.007.117v10.764a1 1 0 01-1.34.94l-.107-.046-5-2.5a1 1 0 01-.545-.77L24 18.881v-5.764a1 1 0 01.445-.832l.108-.063 5-2.5c.139-.069.292-.106.447-.106z" }));
+}));
+VideocamOff.displayName = "VideocamOff";
+VideocamOff["iconName"] = "videocam-off";
+var VideocamOff_default = VideocamOff;
+
+// node_modules/@ringcentral/juno/es6/icon/Videocam.js
+import React407, { forwardRef as forwardRef390, memo as memo377 } from "react";
+var __assign385 = function() {
+  __assign385 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign385.apply(this, arguments);
+};
+var Videocam = memo377(forwardRef390(function(props, svgRef) {
+  return React407.createElement("svg", __assign385({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React407.createElement("path", { d: "M21 6a2 2 0 012 2v16a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h18zm9 3.618a1 1 0 01.993.883l.007.117v10.764a1 1 0 01-1.34.94l-.107-.046-5-2.5a1 1 0 01-.545-.77L24 18.881v-5.764a1 1 0 01.445-.832l.108-.063 5-2.5c.139-.069.292-.106.447-.106z" }));
+}));
+Videocam.displayName = "Videocam";
+Videocam["iconName"] = "videocam";
+var Videocam_default = Videocam;
+
+// node_modules/@ringcentral/juno/es6/icon/ViewBorder.js
+import React408, { forwardRef as forwardRef391, memo as memo378 } from "react";
+var __assign386 = function() {
+  __assign386 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign386.apply(this, arguments);
+};
+var ViewBorder = memo378(forwardRef391(function(props, svgRef) {
+  return React408.createElement("svg", __assign386({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React408.createElement("path", { d: "M16 5c8.284 0 15 8 15 11s-6.716 11-15 11C7.716 27 1 19 1 16S7.716 5 16 5zm0 2c-3.233 0-6.526 1.462-9.29 3.88-1.169 1.022-2.162 2.156-2.853 3.223C3.289 14.981 3 15.712 3 16s.289 1.019.857 1.897c.691 1.066 1.684 2.2 2.853 3.223C9.474 23.538 12.766 25 16 25s6.526-1.462 9.29-3.88c1.169-1.022 2.162-2.156 2.853-3.223.569-.878.857-1.609.857-1.897s-.289-1.019-.857-1.897c-.691-1.066-1.684-2.2-2.853-3.223C22.526 8.462 19.234 7 16 7zm0 3a6 6 0 110 12 6 6 0 010-12zm0 2a4 4 0 100 8 4 4 0 000-8z" }));
+}));
+ViewBorder.displayName = "ViewBorder";
+ViewBorder["iconName"] = "view_border";
+var ViewBorder_default = ViewBorder;
+
+// node_modules/@ringcentral/juno/es6/icon/ViewLogBorder.js
+import React409, { forwardRef as forwardRef392, memo as memo379 } from "react";
+var __assign387 = function() {
+  __assign387 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign387.apply(this, arguments);
+};
+var ViewLogBorder = memo379(forwardRef392(function(props, svgRef) {
+  return React409.createElement("svg", __assign387({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React409.createElement("path", { d: "M14 2a1 1 0 010 2H7a1 1 0 00-1 1v22a1 1 0 001 1h18a1 1 0 001-1V16l.007-.117A1 1 0 0128 16v12a2 2 0 01-2 2H6a2 2 0 01-2-2V4a2 2 0 012-2zm7 17a1 1 0 01.117 1.993L21 21h-9.997a1 1 0 01-.117-1.993l.117-.007H21zm-5-6a1 1 0 01.117 1.993L16 15h-4.997a1 1 0 01-.117-1.993l.117-.007H16zM27 2a1 1 0 011 1v8a1 1 0 01-2 0l-.001-5.586-5.827 5.829a1 1 0 01-1.414-1.414L24.585 4H19a1 1 0 010-2h8z" }));
+}));
+ViewLogBorder.displayName = "ViewLogBorder";
+ViewLogBorder["iconName"] = "view-log_border";
+var ViewLogBorder_default = ViewLogBorder;
+
+// node_modules/@ringcentral/juno/es6/icon/View.js
+import React410, { forwardRef as forwardRef393, memo as memo380 } from "react";
+var __assign388 = function() {
+  __assign388 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign388.apply(this, arguments);
+};
+var View = memo380(forwardRef393(function(props, svgRef) {
+  return React410.createElement("svg", __assign388({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React410.createElement("path", { d: "M16 5c8.284 0 15 8 15 11s-6.716 11-15 11C7.716 27 1 19 1 16S7.716 5 16 5zm0 5a6 6 0 100 12 6 6 0 000-12zm0 2a4 4 0 110 8 4 4 0 010-8z" }));
+}));
+View.displayName = "View";
+View["iconName"] = "view";
+var View_default = View;
+
+// node_modules/@ringcentral/juno/es6/icon/Voicemail.js
+import React411, { forwardRef as forwardRef394, memo as memo381 } from "react";
+var __assign389 = function() {
+  __assign389 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign389.apply(this, arguments);
+};
+var Voicemail = memo381(forwardRef394(function(props, svgRef) {
+  return React411.createElement("svg", __assign389({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React411.createElement("path", { d: "M8 23a7 7 0 116.326-3.999h3.348A7 7 0 1124 23H8zm0-10a3 3 0 100 6 3 3 0 000-6zm16 0a3 3 0 100 6 3 3 0 000-6z" }));
+}));
+Voicemail.displayName = "Voicemail";
+Voicemail["iconName"] = "voicemail";
+var Voicemail_default = Voicemail;
+
+// node_modules/@ringcentral/juno/es6/icon/Warning.js
+import React412, { forwardRef as forwardRef395, memo as memo382 } from "react";
+var __assign390 = function() {
+  __assign390 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign390.apply(this, arguments);
+};
+var Warning = memo382(forwardRef395(function(props, svgRef) {
+  return React412.createElement("svg", __assign390({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React412.createElement("path", { d: "M16.999 4.27c.304.176.557.428.733.733l11.537 19.998a2 2 0 01-1.732 3H4.463a2 2 0 01-1.732-2.999L14.268 5.004A2 2 0 0117 4.271zM16 22a1 1 0 100 2 1 1 0 000-2zm0-10a1 1 0 00-1 1v6a1 1 0 002 0v-6a1 1 0 00-1-1z" }));
+}));
+Warning.displayName = "Warning";
+Warning["iconName"] = "warning";
+var Warning_default = Warning;
+
+// node_modules/@ringcentral/juno/es6/icon/WatchVideo.js
+import React413, { forwardRef as forwardRef396, memo as memo383 } from "react";
+var __assign391 = function() {
+  __assign391 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign391.apply(this, arguments);
+};
+var WatchVideo = memo383(forwardRef396(function(props, svgRef) {
+  return React413.createElement("svg", __assign391({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React413.createElement("path", { d: "M17.818 5a5 5 0 015 5v3.92l6.328-5.751c.614-.559 1.584-.166 1.667.629l.006.111v14.545c0 .868-1.03 1.324-1.673.74l-6.328-5.753v3.922a4.999 4.999 0 01-4.783 4.995l-.217.005H6a5 5 0 01-5-5V9.999a5 5 0 015-5zm0 2H6a3 3 0 00-3 3v12.364a3 3 0 003 3h11.818a3 3 0 003-3V10a3 3 0 00-3-3zm11 4.168l-5.514 5.012 5.514 5.014V11.168z" }));
+}));
+WatchVideo.displayName = "WatchVideo";
+WatchVideo["iconName"] = "watch-video";
+var WatchVideo_default = WatchVideo;
+
+// node_modules/@ringcentral/juno/es6/icon/WeakConnection.js
+import React414, { forwardRef as forwardRef397, memo as memo384 } from "react";
+var __assign392 = function() {
+  __assign392 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign392.apply(this, arguments);
+};
+var WeakConnection = memo384(forwardRef397(function(props, svgRef) {
+  return React414.createElement("svg", __assign392({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React414.createElement("path", { fill: "var(--color11, #000)", opacity: 0.32, d: "M25 4h2a2 2 0 012 2v20a2 2 0 01-2 2h-2a2 2 0 01-2-2V6a2 2 0 012-2z" }), React414.createElement("path", { fill: "var(--color11, #000)", d: "M17 14a2 2 0 012 2v10a2 2 0 01-2 2h-2a2 2 0 01-2-2V16a2 2 0 012-2h2zM7 20a2 2 0 012 2v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4a2 2 0 012-2h2z" }));
+}));
+WeakConnection.displayName = "WeakConnection";
+WeakConnection["iconName"] = "weak-connection";
+var WeakConnection_default = WeakConnection;
+
+// node_modules/@ringcentral/juno/es6/icon/WebinarBorder.js
+import React415, { forwardRef as forwardRef398, memo as memo385 } from "react";
+var __assign393 = function() {
+  __assign393 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign393.apply(this, arguments);
+};
+var WebinarBorder = memo385(forwardRef398(function(props, svgRef) {
+  return React415.createElement("svg", __assign393({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React415.createElement("path", { d: "M11.5 21.5c0 .783-.257 1.506-.691 2.089 1.884.846 3.191 2.532 3.191 4.578 0 .965-.691 1.751-1.565 1.827l-.139.006H3.704C2.766 30 2 29.183 2 28.167c0-2.046 1.307-3.732 3.192-4.578a3.48 3.48 0 01-.692-2.088c0-.537.121-1.045.337-1.5H4c-1.105 0-2-1.007-2-2.25v-13.5c0-1.243.895-2.25 2-2.25h24c1.105 0 2 1.007 2 2.25v13.5c0 1.243-.895 2.25-2 2.25h-.837c.216.455.337.963.337 1.5 0 .783-.257 1.506-.691 2.089 1.884.846 3.191 2.532 3.191 4.578 0 .965-.691 1.751-1.565 1.827l-.139.006h-8.592c-.938 0-1.704-.817-1.704-1.833 0-2.046 1.307-3.732 3.192-4.578a3.48 3.48 0 01-.692-2.088c0-.537.121-1.045.337-1.5h-9.674c.216.455.337.963.337 1.5zM24 25c-2.046 0-3.67 1.197-3.96 2.689l-.026.161-.015.15h8l-.014-.15c-.186-1.46-1.647-2.674-3.561-2.832l-.214-.013-.21-.004zM8 25c-2.046 0-3.67 1.197-3.96 2.689l-.026.161-.015.15h8l-.014-.15c-.187-1.46-1.647-2.674-3.561-2.832l-.214-.013-.21-.004zm16-5a1.5 1.5 0 10.001 3.001A1.5 1.5 0 0024 20zM8 20a1.5 1.5 0 10.001 3.001A1.5 1.5 0 008 20zM27 4H5a1 1 0 00-.993.883L4 5v12a1 1 0 00.883.993L5 18h22a1 1 0 00.993-.883L28 17V5a1 1 0 00-1-1zM16 6a5 5 0 11-.001 10.001A5 5 0 0116 6zm0 2a3 3 0 100 6 3 3 0 000-6z" }));
+}));
+WebinarBorder.displayName = "WebinarBorder";
+WebinarBorder["iconName"] = "webinar_border";
+var WebinarBorder_default = WebinarBorder;
+
+// node_modules/@ringcentral/juno/es6/icon/Webinar.js
+import React416, { forwardRef as forwardRef399, memo as memo386 } from "react";
+var __assign394 = function() {
+  __assign394 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign394.apply(this, arguments);
+};
+var Webinar = memo386(forwardRef399(function(props, svgRef) {
+  return React416.createElement("svg", __assign394({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React416.createElement("path", { d: "M8 24c3.262 0 6 2.157 6 5 0 .552-.413 1-.923 1H2.923C2.413 30 2 29.552 2 29c0-2.843 2.738-5 6-5zm16 0c3.262 0 6 2.157 6 5 0 .552-.413 1-.923 1H18.923c-.51 0-.923-.448-.923-1 0-2.843 2.738-5 6-5zm4-22c1.105 0 2 1.007 2 2.25v13.5c0 1.243-.895 2.25-2 2.25h-1.171a3 3 0 11-5.658 0H10.83a3 3 0 11-5.658 0H4.001c-1.105 0-2-1.007-2-2.25V4.25c0-1.243.895-2.25 2-2.25h24zM16 6a5 5 0 10.001 10.001A5 5 0 0016 6z" }));
+}));
+Webinar.displayName = "Webinar";
+Webinar["iconName"] = "webinar";
+var Webinar_default = Webinar;
+
+// node_modules/@ringcentral/juno/es6/icon/Webpage.js
+import React417, { forwardRef as forwardRef400, memo as memo387 } from "react";
+var __assign395 = function() {
+  __assign395 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign395.apply(this, arguments);
+};
+var Webpage = memo387(forwardRef400(function(props, svgRef) {
+  return React417.createElement("svg", __assign395({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React417.createElement("path", { d: "M16.607 5.494a7 7 0 019.899 9.899l-2.364 2.367a9.05 9.05 0 00-.122-2.708l1.071-1.073a5 5 0 000-7.071 5 5 0 00-7.071 0l-4.243 4.243a5 5 0 002.828 8.485l-1.645 1.645a6.999 6.999 0 01-2.597-11.544l4.243-4.243zM6 16.101l2.364-2.367a9.05 9.05 0 00.122 2.708l-1.071 1.073a5 5 0 000 7.071 5 5 0 007.071 0l4.243-4.243a5 5 0 00-2.828-8.485l1.645-1.645a6.999 6.999 0 012.597 11.544L15.9 26a7 7 0 01-9.899-9.899z" }));
+}));
+Webpage.displayName = "Webpage";
+Webpage["iconName"] = "webpage";
+var Webpage_default = Webpage;
+
+// node_modules/@ringcentral/juno/es6/icon/Whisper.js
+import React418, { forwardRef as forwardRef401, memo as memo388 } from "react";
+var __assign396 = function() {
+  __assign396 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign396.apply(this, arguments);
+};
+var Whisper = memo388(forwardRef401(function(props, svgRef) {
+  return React418.createElement("svg", __assign396({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React418.createElement("path", { d: "M8.832 6.356c.365-1.305 2.042-2.795 3.836-2.234s4.948-.047 4.983-.047a.16.16 0 01.11.04.162.162 0 01.056.112c.012.454-.157.894-.47 1.218 2.67 1.811 2.004 5.368 1.696 6.89l.027.037c.642.862.69 2.075.458 2.907-.142.523-.407 1.462-1.007 2.062-.24.846-.978 1.633-1.505 2.331v.922c0 .029.019.054.047.062 2.281.538 7.938 2.252 7.938 6.536 0 .462-.453.803-.908.808H1.727c-.454-.01-.729-.352-.726-.813 0-4.289 5.718-6.058 8.004-6.593a.063.063 0 00.047-.062v-.907c-.528-.704-1.332-1.44-1.571-2.292-.598-.6-.862-1.549-1.004-2.062-.233-.832-.112-2.038.528-2.899l.029-.037c-.044-.249-.427-.498-.447-.747-.289-1.953-.071-3.408.664-4.322.391-.5.959-.826 1.582-.909zm15.908-.822l1.86 1.022A6.985 6.985 0 0024 12a6.992 6.992 0 002.902 5.676l-1.706 1.203A8.98 8.98 0 0122 12a8.97 8.97 0 012.74-6.466zm2.821 1.549l2.093 1.149a4.002 4.002 0 00-.03 7.525l-1.849 1.304A5.995 5.995 0 0125 12a5.992 5.992 0 012.561-4.917zM31 9v2a1 1 0 000 2v1.787l-.283.2A3 3 0 0131 9z" }));
+}));
+Whisper.displayName = "Whisper";
+Whisper["iconName"] = "whisper";
+var Whisper_default = Whisper;
+
+// node_modules/@ringcentral/juno/es6/icon/Work.js
+import React419, { forwardRef as forwardRef402, memo as memo389 } from "react";
+var __assign397 = function() {
+  __assign397 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign397.apply(this, arguments);
+};
+var Work = memo389(forwardRef402(function(props, svgRef) {
+  return React419.createElement("svg", __assign397({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React419.createElement("path", { d: "M22 3a2 2 0 012 2v3h4a2 2 0 012 2v17a2 2 0 01-2 2H4a2 2 0 01-2-2V10a2 2 0 012-2h4V5a2 2 0 012-2h12zm5 7H5a1 1 0 00-1 1v15a1 1 0 001 1h22a1 1 0 001-1V11a1 1 0 00-1-1zm-6-5H11a1 1 0 00-1 1v2h12V6a1 1 0 00-1-1z" }));
+}));
+Work.displayName = "Work";
+Work["iconName"] = "work";
+var Work_default = Work;
+
+// node_modules/@ringcentral/juno/es6/icon/WorkspaceBorder.js
+import React420, { forwardRef as forwardRef403, memo as memo390 } from "react";
+var __assign398 = function() {
+  __assign398 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign398.apply(this, arguments);
+};
+var WorkspaceBorder = memo390(forwardRef403(function(props, svgRef) {
+  return React420.createElement("svg", __assign398({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React420.createElement("path", { d: "M23.558 4a2 2 0 011.897 1.368l4.236 12.709c.204.612.308 1.252.308 1.897V26a2 2 0 01-2 2h-24a2 2 0 01-2-2v-6.026c0-.645.104-1.286.308-1.897L6.543 5.368A2 2 0 018.44 4h15.117zM9.172 20H4v5a1 1 0 001 1h22a1 1 0 001-1v-5h-5.172a1 1 0 00-.608.206l-.099.087-1.828 1.828a3 3 0 01-1.923.872l-.198.007h-4.343a3.006 3.006 0 01-1.977-.743l-.145-.135-1.828-1.828a.996.996 0 00-.576-.284l-.131-.009zM22.838 6H9.163a1 1 0 00-.949.684L4.441 18h4.731c.729 0 1.431.266 1.977.743l.145.135 1.828 1.828a.996.996 0 00.576.284l.131.009h4.343a1 1 0 00.608-.206l.099-.087 1.828-1.828a3 3 0 011.923-.872l.198-.007h4.73L23.786 6.683a1 1 0 00-.949-.684zM23 13a1 1 0 010 2H9a1 1 0 010-2h14zm-2-5a1 1 0 010 2H11a1 1 0 010-2h10z" }));
+}));
+WorkspaceBorder.displayName = "WorkspaceBorder";
+WorkspaceBorder["iconName"] = "workspace_border";
+var WorkspaceBorder_default = WorkspaceBorder;
+
+// node_modules/@ringcentral/juno/es6/icon/Workspace.js
+import React421, { forwardRef as forwardRef404, memo as memo391 } from "react";
+var __assign399 = function() {
+  __assign399 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign399.apply(this, arguments);
+};
+var Workspace = memo391(forwardRef404(function(props, svgRef) {
+  return React421.createElement("svg", __assign399({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React421.createElement("path", { d: "M9.172 20l.131.009c.173.023.338.091.477.197l.099.087 1.828 1.828.145.135c.491.43 1.108.688 1.759.735l.218.008h4.343l.198-.007a3 3 0 001.764-.724l.16-.148 1.828-1.828.099-.087c.139-.106.303-.174.477-.197l.131-.009h7.172v6a2 2 0 01-2 2h-24a2 2 0 01-2-2v-6h7.172zM23.558 4a2 2 0 011.897 1.368L29.666 18l-7.037.007a3 3 0 00-1.764.724l-.16.148-1.828 1.828-.099.087a1.003 1.003 0 01-.477.197L18.17 21h-4.343l-.131-.009a1.007 1.007 0 01-.477-.197l-.099-.087-1.828-1.828-.145-.135a2.996 2.996 0 00-1.759-.735l-.218-.008H2.33L6.542 5.369a2 2 0 011.897-1.368h15.117zM23 13H9a1 1 0 00-.117 1.993L9 15h14a1 1 0 00.117-1.993L23 13zm-2-5H11a1 1 0 00-.117 1.993L11 10h10a1 1 0 00.117-1.993L21 8z" }));
+}));
+Workspace.displayName = "Workspace";
+Workspace["iconName"] = "workspace";
+var Workspace_default = Workspace;
+
+// node_modules/@ringcentral/juno/es6/icon/ZipD.js
+import React422, { forwardRef as forwardRef405, memo as memo392 } from "react";
+var __assign400 = function() {
+  __assign400 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign400.apply(this, arguments);
+};
+var ZipD = memo392(forwardRef405(function(props, svgRef) {
+  return React422.createElement("svg", __assign400({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React422.createElement("path", { fill: "var(--color14, #222b42)", d: "M3.556 0h24.889a3.556 3.556 0 013.556 3.556v24.889a3.556 3.556 0 01-3.556 3.556H3.556A3.556 3.556 0 010 28.445V3.556A3.556 3.556 0 013.556 0z" }), React422.createElement("path", { fill: "var(--color31, #356afd)", d: "M16.756 8l5.466 4.962-.024 8.878c0 .607-.204 1.118-.612 1.535s-.909.625-1.503.625h-8.154c-.594 0-1.095-.209-1.503-.625s-.612-.929-.612-1.535l-.035-11.661c0-.607.204-1.118.612-1.535s.909-.625 1.503-.625l1.44-.005v1.765h-1.778v.889h1.778v1.778h-1.778v.889h1.778v1.778h-1.778v.889h1.778v1.778h-1.778v.889H16v-.889h-1.778v-1.778H16v-.889h-1.778v-1.778H16v-.889h-1.778v-1.778H16v-.889h-1.778V8.01l2.534-.009z" }), React422.createElement("path", { fill: "var(--color20, #f1f1f1)", d: "M13.333 8.012v1.766h-1.777v.889h1.777v1.777h-1.777v.889h1.777v1.778h-1.777V16h1.777v1.778h-1.777v.889H16v-.889h-1.778V16H16v-.889h-1.778v-1.778H16v-.889h-1.778v-1.778H16v-.888h-1.778V8.009z" }));
+}));
+ZipD.displayName = "ZipD";
+ZipD["iconName"] = "zip-D";
+var ZipD_default = ZipD;
+
+// node_modules/@ringcentral/juno/es6/icon/Zip.js
+import React423, { forwardRef as forwardRef406, memo as memo393 } from "react";
+var __assign401 = function() {
+  __assign401 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign401.apply(this, arguments);
+};
+var __rest25 = function(s2, e2) {
+  var t2 = {};
+  for (var p in s2)
+    if (Object.prototype.hasOwnProperty.call(s2, p) && e2.indexOf(p) < 0)
+      t2[p] = s2[p];
+  if (s2 != null && typeof Object.getOwnPropertySymbols === "function")
+    for (var i2 = 0, p = Object.getOwnPropertySymbols(s2); i2 < p.length; i2++) {
+      if (e2.indexOf(p[i2]) < 0 && Object.prototype.propertyIsEnumerable.call(s2, p[i2]))
+        t2[p[i2]] = s2[p[i2]];
+    }
+  return t2;
+};
+var Zip = memo393(forwardRef406(function(inProps, svgRef) {
+  var theme = RcUseTheme();
+  var _a2 = inProps.themeType, themeType = _a2 === void 0 ? theme.palette.type : _a2, props = __rest25(inProps, ["themeType"]);
+  return themeType === "dark" ? React423.createElement(ZipD_default, __assign401({}, props, { ref: svgRef })) : React423.createElement("svg", __assign401({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React423.createElement("path", { fill: "var(--color25, #fff)", opacity: 0.992, d: "M3.556 0h24.889a3.556 3.556 0 013.556 3.556v24.889a3.556 3.556 0 01-3.556 3.556H3.556A3.556 3.556 0 010 28.445V3.556A3.556 3.556 0 013.556 0z" }), React423.createElement("path", { fill: "var(--color52, #4475fd)", opacity: 0.16, d: "M3.556 0h24.889a3.556 3.556 0 013.556 3.556v24.889a3.556 3.556 0 01-3.556 3.556H3.556A3.556 3.556 0 010 28.445V3.556A3.556 3.556 0 013.556 0z" }), React423.createElement("path", { fill: "var(--color52, #4475fd)", d: "M16.756 8l5.466 4.962-.024 8.878c0 .607-.204 1.118-.612 1.535s-.909.625-1.503.625h-8.154c-.594 0-1.095-.209-1.503-.625s-.612-.929-.612-1.535l-.035-11.661c0-.607.204-1.118.612-1.535s.909-.625 1.503-.625l1.44-.005v1.765h-1.778v.889h1.778v1.778h-1.778v.889h1.778v1.778h-1.778v.889h1.778v1.778h-1.778v.889H16v-.889h-1.778v-1.778H16v-.889h-1.778v-1.778H16v-.889h-1.778v-1.778H16v-.889h-1.778V8.01l2.534-.009z" }));
+}));
+Zip.displayName = "Zip";
+Zip["iconName"] = "zip";
+var Zip_default = Zip;
+
+// node_modules/@ringcentral/juno/es6/icon/ZoomIn.js
+import React424, { forwardRef as forwardRef407, memo as memo394 } from "react";
+var __assign402 = function() {
+  __assign402 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign402.apply(this, arguments);
+};
+var ZoomIn = memo394(forwardRef407(function(props, svgRef) {
+  return React424.createElement("svg", __assign402({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React424.createElement("path", { d: "M16 4a1 1 0 011 1v10h10a1 1 0 010 2H17v10a1 1 0 01-2 0V17H5a1 1 0 010-2h10V5a1 1 0 011-1z" }));
+}));
+ZoomIn.displayName = "ZoomIn";
+ZoomIn["iconName"] = "zoom-in";
+var ZoomIn_default = ZoomIn;
+
+// node_modules/@ringcentral/juno/es6/icon/ZoomOut.js
+import React425, { forwardRef as forwardRef408, memo as memo395 } from "react";
+var __assign403 = function() {
+  __assign403 = Object.assign || function(t2) {
+    for (var s2, i2 = 1, n2 = arguments.length; i2 < n2; i2++) {
+      s2 = arguments[i2];
+      for (var p in s2)
+        if (Object.prototype.hasOwnProperty.call(s2, p))
+          t2[p] = s2[p];
+    }
+    return t2;
+  };
+  return __assign403.apply(this, arguments);
+};
+var ZoomOut = memo395(forwardRef408(function(props, svgRef) {
+  return React425.createElement("svg", __assign403({ viewBox: "0 0 32 32", xmlns: "http://www.w3.org/2000/svg", ref: svgRef }, props), React425.createElement("path", { d: "M28 16a1 1 0 01-1 1H5a1 1 0 010-2h22a1 1 0 011 1z" }));
+}));
+ZoomOut.displayName = "ZoomOut";
+ZoomOut["iconName"] = "zoom-out";
+var ZoomOut_default = ZoomOut;
+
+// src/Battery.tsx
 var Battery = (_a2) => {
-  var _b = _a2, { children2 } = _b, rest = __objRest(_b, ["children2"]);
-  return /* @__PURE__ */ React33.createElement(RcThemeProvider, null, /* @__PURE__ */ React33.createElement(RcButton, __spreadValues({}, rest), children2));
+  var _b = _a2, {
+    children,
+    children2,
+    startIcon,
+    endIcon
+  } = _b, rest = __objRest(_b, [
+    "children",
+    "children2",
+    "startIcon",
+    "endIcon"
+  ]);
+  const StartIcon = startIcon === "" ? void 0 : /* @__PURE__ */ React426.createElement(RcIcon, {
+    css: true,
+    symbol: icon_exports[startIcon]
+  });
+  const EndIcon = endIcon === "" ? void 0 : /* @__PURE__ */ React426.createElement(RcIcon, {
+    css: true,
+    symbol: icon_exports[endIcon]
+  });
+  return /* @__PURE__ */ React426.createElement(RcThemeProvider, null, /* @__PURE__ */ React426.createElement(RcButton, __spreadProps(__spreadValues({}, rest), {
+    startIcon: StartIcon,
+    endIcon: EndIcon
+  }), children, children2));
 };
 export {
   Battery
