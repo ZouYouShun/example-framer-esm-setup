@@ -14613,8 +14613,8 @@ var templateObject_113;
 // src/Battery.tsx
 import React33 from "react";
 var Battery = (_a2) => {
-  var _b = _a2, { children } = _b, rest = __objRest(_b, ["children"]);
-  return /* @__PURE__ */ React33.createElement(RcThemeProvider, null, /* @__PURE__ */ React33.createElement(RcButton, __spreadValues({}, rest), children));
+  var _b = _a2, { children2 } = _b, rest = __objRest(_b, ["children2"]);
+  return /* @__PURE__ */ React33.createElement(RcThemeProvider, null, /* @__PURE__ */ React33.createElement(RcButton, __spreadValues({}, rest), children2));
 };
 export {
   Battery
